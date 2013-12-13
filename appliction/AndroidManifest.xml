@@ -19,7 +19,7 @@
         <receiver android:name="se.mah.kingdom.AlarmReceiver" />
 
         <activity
-            android:name="se.mah.kingdom.MainActivity"
+            android:name="se.mah.kingdom.StoryManager"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="se.mah.kingdom.WakeUp"
+            android:name="se.mah.kingdom.Event"
             android:label="@string/title_activity_wake_up" >
         </activity>
     </application>

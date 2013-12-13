@@ -16,7 +16,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 
-public class WakeUp extends Activity {
+public class Event extends Activity {
 	private MediaPlayer event_player;
 	private AudioManager event_am;
     private static PowerManager.WakeLock wakeLock;
@@ -74,7 +74,7 @@ public class WakeUp extends Activity {
 		event_am.setMode(AudioManager.MODE_IN_CALL);
 		event_am.setSpeakerphoneOn(false);
 		event_am.setBluetoothScoOn(true);
-		event_player = MediaPlayer.create(WakeUp.this, R.raw.event_voice);
+		event_player = MediaPlayer.create(Event.this, R.raw.event_voice);
 		event_player.start();
 	}
 }

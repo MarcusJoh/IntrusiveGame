@@ -10,7 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
 
-public class MainActivity extends Activity {
+public class StoryManager extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

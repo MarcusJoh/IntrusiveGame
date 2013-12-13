@@ -11,7 +11,7 @@ public class AlarmReceiver extends BroadcastReceiver{
     public void onReceive(Context context, Intent intent) {
     	 
         Toast.makeText(context, "Alarm went off", Toast.LENGTH_SHORT).show();
-        Intent intent2 = new Intent(context, WakeUp.class);
+        Intent intent2 = new Intent(context, Event.class);
         intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 
         context.startActivity(intent2);
 
