@@ -1,35 +1,35 @@
 package se.mah.kingdom;
 
 public class Resources {
-	private int food;
-	private int gold;
-	private int happyness;
-	public int getFood() {
+	private static int food;
+	private static int gold;
+	private static int happyness;
+	public static int getFood() {
 		return food;
 	}
-	public void setFood(int food) {
-		this.food = food;
+	public static void setFood(int setFood) {
+		food = setFood;
 	}
-	public void setFoodChange(int food) {
-		this.food = this.food+food;
+	public static void setFoodChange(int setFood) {
+		food = food+setFood;
 	}
-	public int getGold() {
+	public static int getGold() {
 		return gold;
 	}
-	public void setGold(int gold) {
-		this.gold = gold;
+	public static void setGold(int setGold) {
+		gold = setGold;
 	}
-	public void setGoldChange(int gold) {
-		this.gold = this.gold+gold;
+	public static void setGoldChange(int setGold) {
+		gold = gold+setGold;
 	}
-	public int getHappyness() {
+	public static int getHappyness() {
 		return happyness;
 	}
-	public void setHappyness(int happyness) {
-		this.happyness = happyness;
+	public static void setHappyness(int setHappyness) {
+		happyness = setHappyness;
 	}
-	public void setHappynessChange(int happyness) {
-		this.happyness = this.happyness+happyness;
+	public static void setHappynessChange(int setHappyness) {
+		happyness = happyness+setHappyness;
 	}
 
 	
