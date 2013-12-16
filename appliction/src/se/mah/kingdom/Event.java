@@ -2,6 +2,8 @@ package se.mah.kingdom;
 
 import java.util.zip.Inflater;
 
+
+
 import android.hardware.Camera.Parameters;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -12,6 +14,7 @@ import android.app.Activity;
 import android.app.KeyguardManager;
 import android.app.KeyguardManager.KeyguardLock;
 import android.content.Context;
+import android.content.Intent;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
@@ -59,22 +62,24 @@ public class Event extends Activity {
 	}
 
 	public void onDestroy() {
-		event_player.stop(); 
+		 
 		event_player.release();
 		super.onDestroy();
 	}
 
 	public void onPause() {
-		event_player.pause();
+		 event_player.stop();
 		super.onPause();
 	}
 
 	public void phone_button(View v) {
-		event_player.stop();
-		event_am.setMode(AudioManager.MODE_IN_CALL);
-		event_am.setSpeakerphoneOn(false);
-		event_am.setBluetoothScoOn(true);
-		event_player = MediaPlayer.create(Event.this, R.raw.event_voice);
-		event_player.start();
+		//event_player.stop();
+		//event_player.release();
+
+		Intent intent = new Intent(Event.this, EventManager.class);
+		Event.this.finish();
+		startActivity(intent);
 	}
+	
+
 }
