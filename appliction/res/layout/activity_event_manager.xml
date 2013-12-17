@@ -21,7 +21,7 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView1"
         android:onClick="option1_button"
-        android:text="yes" />
+        android:text="yes food" />
 
     <Button
         android:id="@+id/button2"
@@ -31,6 +31,62 @@
         android:layout_below="@+id/button1"
         android:layout_marginTop="28dp"
         android:onClick="option2_button"
-        android:text="no" />
+        android:text="no food" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="36dp"
+        android:onClick="option3_button"
+        android:text="yes gold" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button2"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="43dp"
+        android:onClick="option4_button"
+        android:text="no gold" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_toRightOf="@+id/textView1"
+        android:onClick="option5_button"
+        android:text="yes happy" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button5"
+        android:layout_alignTop="@+id/button4"
+        android:onClick="option6_button"
+        android:text="no happy" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/button4"
+            android:onClick="option7_button"
+            android:text="reset" />
+
+         <Button
+             android:id="@+id/button8"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:onClick="option8_button"
+             android:text="changegame" />
 
 </RelativeLayout>
