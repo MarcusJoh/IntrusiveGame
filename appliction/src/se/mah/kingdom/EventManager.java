@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class EventManager extends Activity {
 	private MediaPlayer event_player;
 	private AudioManager event_am;
-	
+	private Resources resourcePrefs;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,7 @@ public class EventManager extends Activity {
 		event_am.setBluetoothScoOn(true);
 		event_player = MediaPlayer.create(this, R.raw.event_voice);
 		event_player.start();
+		resourcePrefs = new Resources(getApplicationContext());
 
 	};
 
@@ -44,15 +45,14 @@ public class EventManager extends Activity {
 
 	public void option1_button(View v) {
 
-		
 		Resources.setFoodChange(-5);
-Toast.makeText(this, "yes", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, "yes", Toast.LENGTH_SHORT).show();
 	}
 
 	public void option2_button(View v) {
-		int food=Resources.getFood();
+		int food = Resources.getFood();
 
-		Toast.makeText(this,Integer.toString(food), Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, Integer.toString(food), Toast.LENGTH_SHORT).show();
 
 	}
 
