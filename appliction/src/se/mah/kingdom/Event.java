@@ -1,8 +1,6 @@
 package se.mah.kingdom;
 
-import java.util.zip.Inflater;
 
-import android.hardware.Camera.Parameters;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -10,11 +8,10 @@ import android.os.PowerManager;
 import android.provider.Settings;
 import android.app.Activity;
 import android.app.KeyguardManager;
-import android.app.KeyguardManager.KeyguardLock;
 import android.content.Context;
+import android.content.Intent;
 import android.view.View;
 import android.view.WindowManager;
-import android.view.WindowManager.LayoutParams;
 
 public class Event extends Activity {
 	private MediaPlayer event_player;
@@ -25,8 +22,7 @@ public class Event extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_wake_up);
-		wakeDevice();
-		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD); 
+		wakeDevice(); 
 		event_am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 		event_am.setMode(AudioManager.MODE_NORMAL);
 		event_am.setSpeakerphoneOn(true);
@@ -63,6 +59,7 @@ public class Event extends Activity {
 		event_player.stop(); 
 		event_player.release();
 		super.onDestroy();
+		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD); 
 	}
 
 	public void onPause() {
@@ -71,11 +68,16 @@ public class Event extends Activity {
 	}
 
 	public void phone_button(View v) {
-		event_player.stop();
-		event_am.setMode(AudioManager.MODE_IN_CALL);
-		event_am.setSpeakerphoneOn(false);
-		event_am.setBluetoothScoOn(true);
-		event_player = MediaPlayer.create(Event.this, R.raw.event_voice);
-		event_player.start();
+		
+		Intent intent = new Intent(Event.this, EventManager.class);
+		Event.this.finish();
+		startActivity(intent);
+		
+		//event_player.stop();
+		//event_am.setMode(AudioManager.MODE_IN_CALL);
+		//event_am.setSpeakerphoneOn(false);
+		//event_am.setBluetoothScoOn(true);
+		//event_player = MediaPlayer.create(Event.this, R.raw.event_voice);
+		//event_player.start();
 	}
 }
