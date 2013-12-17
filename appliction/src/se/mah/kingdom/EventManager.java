@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class EventManager extends Activity {
 	private MediaPlayer event_player;
-	private AudioManager event_am;
+	private AudioManager event_am; 
 	private Resources resourcePrefs;
 
 	@Override

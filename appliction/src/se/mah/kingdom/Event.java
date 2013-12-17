@@ -53,13 +53,13 @@ public class Event extends Activity {
 	public void onStart() {
 		event_player.start();
 		super.onStart();
-	}
+	} 
 
 	public void onDestroy() {
 		event_player.stop(); 
-		event_player.release();
+		event_player.release(); 
 		super.onDestroy();
-		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD); 
+		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);  
 	}
 
 	public void onPause() {
