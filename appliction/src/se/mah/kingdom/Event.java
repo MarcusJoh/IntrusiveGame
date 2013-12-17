@@ -26,6 +26,7 @@ public class Event extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_wake_up);
 		wakeDevice();
+		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD); 
 		event_am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 		event_am.setMode(AudioManager.MODE_NORMAL);
 		event_am.setSpeakerphoneOn(true);
@@ -41,16 +42,16 @@ public class Event extends Activity {
         wakeLock.acquire();
 
         KeyguardManager keyguardManager = (KeyguardManager) getSystemService(Context.KEYGUARD_SERVICE);
-        KeyguardLock keyguardLock = keyguardManager.newKeyguardLock("TAG");
-        keyguardLock.disableKeyguard();
         runOnUiThread(new Runnable(){
             public void run(){
-                getWindow().addFlags(
+                getWindow().addFlags( 
                           WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
                         | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON
                         | WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON
-                        | WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);                
+                        | WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD); 
+                
             }
+            
         });
     }
 	public void onStart() {
