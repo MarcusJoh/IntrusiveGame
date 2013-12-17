@@ -1,6 +1,5 @@
 package se.mah.kingdom;
 
-
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -8,6 +7,7 @@ import android.os.PowerManager;
 import android.provider.Settings;
 import android.app.Activity;
 import android.app.KeyguardManager;
+import android.app.KeyguardManager.KeyguardLock;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
@@ -22,7 +22,7 @@ public class Event extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_wake_up);
-		wakeDevice(); 
+		wakeDevice();
 		event_am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 		event_am.setMode(AudioManager.MODE_NORMAL);
 		event_am.setSpeakerphoneOn(true);
@@ -38,46 +38,42 @@ public class Event extends Activity {
         wakeLock.acquire();
 
         KeyguardManager keyguardManager = (KeyguardManager) getSystemService(Context.KEYGUARD_SERVICE);
+        KeyguardLock keyguardLock = keyguardManager.newKeyguardLock("TAG");
+        keyguardLock.disableKeyguard();
         runOnUiThread(new Runnable(){
             public void run(){
-                getWindow().addFlags( 
+                getWindow().addFlags(
                           WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
                         | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON
                         | WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON
-                        | WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD); 
-                
+                        | WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);                
             }
-            
         });
     }
 	public void onStart() {
 		event_player.start();
 		super.onStart();
-	} 
+	}
 
 	public void onDestroy() {
-		event_player.stop(); 
-		event_player.release(); 
+		 
+		event_player.release();
 		super.onDestroy();
-		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);  
 	}
 
 	public void onPause() {
-		event_player.pause();
+		 event_player.stop();
 		super.onPause();
 	}
 
 	public void phone_button(View v) {
-		
+		//event_player.stop();
+		//event_player.release();
+
 		Intent intent = new Intent(Event.this, EventManager.class);
 		Event.this.finish();
 		startActivity(intent);
-		
-		//event_player.stop();
-		//event_am.setMode(AudioManager.MODE_IN_CALL);
-		//event_am.setSpeakerphoneOn(false);
-		//event_am.setBluetoothScoOn(true);
-		//event_player = MediaPlayer.create(Event.this, R.raw.event_voice);
-		//event_player.start();
 	}
+	
+
 }

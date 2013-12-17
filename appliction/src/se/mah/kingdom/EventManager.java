@@ -5,13 +5,12 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Toast;
 
 public class EventManager extends Activity {
 	private MediaPlayer event_player;
-	private AudioManager event_am; 
+	private AudioManager event_am;
 	private Resources resourcePrefs;
 
 	@Override
@@ -47,15 +46,53 @@ public class EventManager extends Activity {
 	public void option1_button(View v) {
 
 		Resources.setFoodChange(-5);
-		Toast.makeText(this, "yes", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, "food yes", Toast.LENGTH_SHORT).show();
 	}
 
 	public void option2_button(View v) {
 		int food = Resources.getFood();
 
-		Toast.makeText(this, Integer.toString(food), Toast.LENGTH_SHORT).show();
+		Toast.makeText(this,"food "+ Integer.toString(food), Toast.LENGTH_SHORT).show();
 
 	}
+	public void option3_button(View v) {
+
+		Resources.setGoldChange(-5);
+		Toast.makeText(this, "gold yes", Toast.LENGTH_SHORT).show();
+	}
+
+	public void option4_button(View v) {
+		int gold = Resources.getGold();
+
+		Toast.makeText(this, "gold "+Integer.toString(gold), Toast.LENGTH_SHORT).show();
+
+	}
+	public void option5_button(View v) {
+
+		Resources.setHappyChange(-5);
+		Toast.makeText(this, "happy yes", Toast.LENGTH_SHORT).show();
+	}
+
+	public void option6_button(View v) {
+		int happy = Resources.getHappy();
+
+		Toast.makeText(this, "happy "+Integer.toString(happy), Toast.LENGTH_SHORT).show();
+
+	}
+	public void option7_button(View v) {
+		Resources.resetGame();
+
+		Toast.makeText(this, "game over ", Toast.LENGTH_SHORT).show();
+
+	}
+	public void option8_button(View v) {
+		Resources.setstateGame();
+		
+
+		Toast.makeText(this, "game "+Resources.getstateGame(), Toast.LENGTH_SHORT).show();
+
+	}
+
 
 	@Override
 	public void onBackPressed() {
