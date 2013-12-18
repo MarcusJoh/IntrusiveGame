@@ -28,12 +28,14 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
-        public static final int minister=0x7f020001;
+        public static final int kaspar=0x7f020001;
+        public static final int map_pre=0x7f020002;
+        public static final int minister=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a000d;
-        public static final int btn_phone_accept=0x7f0a000b;
-        public static final int btn_phone_decline=0x7f0a000a;
+        public static final int action_settings=0x7f0a000e;
+        public static final int btn_phone_accept=0x7f0a000c;
+        public static final int btn_phone_decline=0x7f0a000b;
         public static final int button1=0x7f0a0001;
         public static final int button2=0x7f0a0002;
         public static final int button3=0x7f0a0003;
@@ -42,8 +44,9 @@ public final class R {
         public static final int button6=0x7f0a0006;
         public static final int button7=0x7f0a0007;
         public static final int button8=0x7f0a0008;
-        public static final int editText1=0x7f0a000c;
+        public static final int editText1=0x7f0a000d;
         public static final int imageView1=0x7f0a0009;
+        public static final int imageView2=0x7f0a000a;
         public static final int textView1=0x7f0a0000;
     }
     public static final class layout {
@@ -66,6 +69,7 @@ public final class R {
         public static final int btn_phone_decline=0x7f060005;
         public static final int caller_name=0x7f060006;
         public static final int hello_world=0x7f060002;
+        public static final int jester_text=0x7f060008;
         public static final int title_activity_event_manager=0x7f060007;
         public static final int title_activity_wake_up=0x7f060003;
     }

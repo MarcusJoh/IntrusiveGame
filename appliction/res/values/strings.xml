@@ -17,5 +17,6 @@
     <color name="white">#FFFFFFFF</color>
 
     <string name="title_activity_event_manager">EventManager</string>
+    <string name="jester_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique mauris id posuere tempus. </string>
 
 </resources>
