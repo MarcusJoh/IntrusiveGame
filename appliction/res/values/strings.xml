@@ -11,8 +11,11 @@
     <color name="black">#FF000000</color>
     <color name="green">#FF00FF00</color>
     <color name="red">#FFFF0000</color>
+    <color name="clr_event_text">#FF2C4466</color>
 
     <string name="caller_name">Ministry of Agricuture</string>
+    <string name="event_text">A fire started out in the most eastern district of the city My King and its getting out of control for the fire patrol and the townsfolk. The fire patrol seek your permission to open the eastern floodgate to quell the flames?</string>
+    
 
     <color name="white">#FFFFFFFF</color>
 

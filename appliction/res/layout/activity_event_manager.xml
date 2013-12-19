@@ -48,6 +48,18 @@
             android:layout_toRightOf="@+id/imageView3"
             android:src="@drawable/btn_event_replay" />
 
+        <TextView
+            android:id="@+id/text_jester_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="44dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="@string/event_text"
+            android:textColor="@color/clr_event_text"
+            android:textSize="16dp" />
+
     </RelativeLayout>
 
 </LinearLayout>

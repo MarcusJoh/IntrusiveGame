@@ -16,7 +16,7 @@ import android.view.WindowManager;
 public class Event extends Activity {
 	private MediaPlayer event_player;
 	private AudioManager event_am;
-    private static PowerManager.WakeLock wakeLock; 
+    private static PowerManager.WakeLock wakeLock;  
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
