@@ -1,5 +1,6 @@
 package se.mah.kingdom;
 
+import android.R;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -7,7 +8,6 @@ import android.os.PowerManager;
 import android.provider.Settings;
 import android.app.Activity;
 import android.app.KeyguardManager;
-import android.app.KeyguardManager.KeyguardLock;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
@@ -16,12 +16,12 @@ import android.view.WindowManager;
 public class Event extends Activity {
 	private MediaPlayer event_player;
 	private AudioManager event_am;
-    private static PowerManager.WakeLock wakeLock;
+    private static PowerManager.WakeLock wakeLock; 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_wake_up);
+		setContentView(se.mah.kingdom.R.layout.activity_wake_up);
 		wakeDevice();
 		event_am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 		event_am.setMode(AudioManager.MODE_NORMAL);
@@ -38,8 +38,6 @@ public class Event extends Activity {
         wakeLock.acquire();
 
         KeyguardManager keyguardManager = (KeyguardManager) getSystemService(Context.KEYGUARD_SERVICE);
-        KeyguardLock keyguardLock = keyguardManager.newKeyguardLock("TAG");
-        keyguardLock.disableKeyguard();
         runOnUiThread(new Runnable(){
             public void run(){
                 getWindow().addFlags(
@@ -59,6 +57,7 @@ public class Event extends Activity {
 		 
 		event_player.release();
 		super.onDestroy();
+		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
 	}
 
 	public void onPause() {

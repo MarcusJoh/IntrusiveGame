@@ -1,92 +1,53 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/clr_event_background"
+    android:orientation="vertical"
     tools:context=".EventManager" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Stuff have happend" />
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="600dp" >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
-        android:onClick="option1_button"
-        android:text="yes food" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/btn_event_volume" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="28dp"
-        android:onClick="option2_button"
-        android:text="no food" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_below="@+id/button2"
-        android:layout_marginTop="36dp"
-        android:onClick="option3_button"
-        android:text="yes gold" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/button2"
-        android:layout_below="@+id/button3"
-        android:layout_marginTop="43dp"
-        android:onClick="option4_button"
-        android:text="no gold" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button4"
-        android:layout_toRightOf="@+id/textView1"
-        android:onClick="option5_button"
-        android:text="yes happy" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/button5"
-        android:layout_alignTop="@+id/button4"
-        android:onClick="option6_button"
-        android:text="no happy" />
-
-        <Button
-            android:id="@+id/button7"
+        <ImageView
+            android:id="@+id/imageView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/button4"
-            android:onClick="option7_button"
-            android:text="reset" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="Minister window background"
+            android:src="@drawable/pic_minister_event_small" />
 
-         <Button
-             android:id="@+id/button8"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_alignParentRight="true"
-             android:layout_alignParentTop="true"
-             android:onClick="option8_button"
-             android:text="changegame" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginLeft="38dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:src="@drawable/btn_event_play" />
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_marginLeft="42dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:src="@drawable/btn_event_replay" />
+
+    </RelativeLayout>
+
+</LinearLayout>
