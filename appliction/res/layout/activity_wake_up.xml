@@ -6,47 +6,57 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@android:color/black"
+    android:background="@color/clr_event_background"
     android:orientation="vertical"
     tools:context=".Event" >
 
     <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:src="@drawable/minister" />
-
-    <Button
         android:id="@+id/btn_phone_decline"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="@string/btn_phone_decline"
-        android:textColor="@color/red" />
+        android:onClick="btnDecline"
+        android:src="@drawable/btn_decline" />
 
-    <Button
+    <ImageView
         android:id="@+id/btn_phone_accept"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/btn_phone_decline"
         android:layout_alignBottom="@+id/btn_phone_decline"
         android:layout_alignParentLeft="true"
         android:onClick="phone_button"
-        android:text="@string/btn_phone_accept"
-        android:textColor="@color/green" />
+        android:src="@drawable/btn_accept" />"
 
-    <EditText
-        android:id="@+id/editText1"
+    
+
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView1"
-        android:layout_alignParentRight="true"
+        android:src="@drawable/pic_background_call" />
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/imageView1"
-        android:layout_marginTop="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
         android:text="@string/caller_name"
-        android:textColor="@color/white"
-        android:ems="10" >
-    </EditText>
+        android:layout_marginLeft="90dp"
+        android:textColor="@color/clr_event_text"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/minister" />
 
 </RelativeLayout>

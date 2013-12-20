@@ -15,7 +15,7 @@ public class StoryManager extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_story_manager);
 		AlarmManager alarmMgr = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
 		Intent intent = new Intent(this, AlarmReceiver.class);
 		PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);

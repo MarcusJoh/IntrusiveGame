@@ -15,7 +15,7 @@
 
     <string name="caller_name">Ministry of Agricuture</string>
     <string name="event_text">A fire started out in the most eastern district of the city My King and its getting out of control for the fire patrol and the townsfolk. The fire patrol seek your permission to open the eastern floodgate to quell the flames?</string>
-    
+    <string name="event_option_1">Yes! You may tell the patrol open the floodgate.</string>
 
     <color name="white">#FFFFFFFF</color>
 

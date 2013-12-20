@@ -22,8 +22,8 @@ public class EventManager extends Activity {
 		event_am.setSpeakerphoneOn(false);
 		event_am.setBluetoothScoOn(true);
 		event_player = MediaPlayer.create(this, R.raw.event_voice);
-		event_player.start();
-		resourcePrefs = new Resources(getApplicationContext());
+		event_player.start(); 
+		resourcePrefs = new Resources(getApplicationContext()); 
 
 	};
 
@@ -41,6 +41,33 @@ public class EventManager extends Activity {
 	public void onPause() {
 		event_player.pause();
 		super.onPause();
+	}
+	
+	public void btnSound (View v){
+		Toast.makeText(this, "music set", Toast.LENGTH_SHORT).show();
+		if (event_am.getMode()==AudioManager.MODE_IN_CALL){
+			event_am.setMode(AudioManager.MODE_NORMAL);}
+		else{
+			event_player.pause();
+			event_am.setMode(AudioManager.MODE_IN_CALL);
+			event_player.start();
+		}
+	}
+	
+	public void btnStop (View v){
+		Toast.makeText(this, "music stop", Toast.LENGTH_SHORT).show();
+		if(event_player.isPlaying()){
+			event_player.pause();}
+		else{
+			event_player.start();
+		}
+	}
+	
+	public void btnReplay (View v){
+		Toast.makeText(this, "music reset", Toast.LENGTH_SHORT).show();
+		event_player.stop();
+		event_player = MediaPlayer.create(this, R.raw.event_voice);
+		event_player.start();
 	}
 
 	public void option1_button(View v) {

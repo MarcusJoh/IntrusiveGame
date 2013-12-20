@@ -25,38 +25,40 @@ public final class R {
         public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int btn_event_play=0x7f020000;
-        public static final int btn_event_replay=0x7f020001;
-        public static final int btn_event_volume=0x7f020002;
-        public static final int ic_action_refresh=0x7f020003;
-        public static final int ic_action_replay=0x7f020004;
-        public static final int ic_action_stop=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int kaspar=0x7f020007;
-        public static final int map_pre=0x7f020008;
-        public static final int minister=0x7f020009;
-        public static final int pic_event_bottom=0x7f02000a;
-        public static final int pic_minister_event=0x7f02000b;
-        public static final int pic_minister_event_small=0x7f02000c;
-        public static final int separator=0x7f02000d;
+        public static final int btn_accept=0x7f020000;
+        public static final int btn_decline=0x7f020001;
+        public static final int btn_event_play=0x7f020002;
+        public static final int btn_event_replay=0x7f020003;
+        public static final int btn_event_volume=0x7f020004;
+        public static final int ic_action_refresh=0x7f020005;
+        public static final int ic_action_replay=0x7f020006;
+        public static final int ic_action_stop=0x7f020007;
+        public static final int ic_launcher=0x7f020008;
+        public static final int kaspar=0x7f020009;
+        public static final int map_pre=0x7f02000a;
+        public static final int minister=0x7f02000b;
+        public static final int pic_background_call=0x7f02000c;
+        public static final int pic_event_bottom=0x7f02000d;
+        public static final int pic_minister_event=0x7f02000e;
+        public static final int pic_minister_event_small=0x7f02000f;
+        public static final int separator=0x7f020010;
     }
     public static final class id {
         public static final int LinearLayout2=0x7f0a0000;
-        public static final int action_settings=0x7f0a000b;
-        public static final int btn_phone_accept=0x7f0a0009;
-        public static final int btn_phone_decline=0x7f0a0008;
-        public static final int editText1=0x7f0a000a;
+        public static final int TextView1=0x7f0a0009;
+        public static final int action_settings=0x7f0a000a;
+        public static final int btn_phone_accept=0x7f0a0008;
+        public static final int btn_phone_decline=0x7f0a0007;
         public static final int imageView1=0x7f0a0002;
         public static final int imageView2=0x7f0a0001;
         public static final int imageView3=0x7f0a0003;
         public static final int imageView4=0x7f0a0004;
-        public static final int spinner1=0x7f0a0007;
-        public static final int statusMap=0x7f0a0006;
-        public static final int text_jester_comment=0x7f0a0005;
+        public static final int text_event=0x7f0a0005;
+        public static final int text_options=0x7f0a0006;
     }
     public static final class layout {
         public static final int activity_event_manager=0x7f030000;
-        public static final int activity_main=0x7f030001;
+        public static final int activity_story_manager=0x7f030001;
         public static final int activity_wake_up=0x7f030002;
     }
     public static final class menu {
@@ -73,10 +75,11 @@ public final class R {
         public static final int btn_phone_accept=0x7f060004;
         public static final int btn_phone_decline=0x7f060005;
         public static final int caller_name=0x7f060006;
+        public static final int event_option_1=0x7f060008;
         public static final int event_text=0x7f060007;
         public static final int hello_world=0x7f060002;
-        public static final int jester_text=0x7f060009;
-        public static final int title_activity_event_manager=0x7f060008;
+        public static final int jester_text=0x7f06000a;
+        public static final int title_activity_event_manager=0x7f060009;
         public static final int title_activity_wake_up=0x7f060003;
     }
     public static final class style {
