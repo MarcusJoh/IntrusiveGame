@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 
-public class Resources {
+public class ResourcesKingdom {
 	private static int food = 100;
 	private static int gold = 100;
 	private static int happy = 100;
@@ -15,15 +15,15 @@ public class Resources {
 	private static final String KEY_PREFS_GOLD = "Gold";
 	private static final String KEY_PREFS_HAPPY = "Happy";
 
-	private static final String APP_SHARED_PREFS = Resources.class
+	private static final String APP_SHARED_PREFS = ResourcesKingdom.class
 			.getSimpleName(); // Name of the file -.xml
 	private static SharedPreferences resourcePref;
 	private static Editor resourceEditor;
 
-	public Resources(Context context) {
-		Resources.resourcePref = context.getSharedPreferences(APP_SHARED_PREFS,
+	public ResourcesKingdom(Context context) {
+		ResourcesKingdom.resourcePref = context.getSharedPreferences(APP_SHARED_PREFS,
 				Activity.MODE_PRIVATE);
-		Resources.resourceEditor = resourcePref.edit();
+		ResourcesKingdom.resourceEditor = resourcePref.edit();
 	}
 
 	public static boolean setstateGame() {

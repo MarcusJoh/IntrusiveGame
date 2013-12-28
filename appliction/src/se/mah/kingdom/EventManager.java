@@ -5,25 +5,31 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.Resources;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 public class EventManager extends Activity {
 	private MediaPlayer event_player;
 	private AudioManager event_am;
-	private Resources resourcePrefs;
+	private ResourcesKingdom resourcePrefs;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
 		setContentView(R.layout.activity_event_manager);
 		event_am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 		event_am.setMode(AudioManager.MODE_IN_CALL);
 		event_am.setSpeakerphoneOn(false);
 		event_am.setBluetoothScoOn(true);
-		event_player = MediaPlayer.create(this, R.raw.event_voice);
+		int musicfileid;
+		Resources res=this.getResources();
+		musicfileid = getResources().getIdentifier("event_voice", "raw", "se.mah.kingdom");
+		event_player = MediaPlayer.create(this, musicfileid);
 		event_player.start(); 
-		resourcePrefs = new Resources(getApplicationContext()); 
+		resourcePrefs = new ResourcesKingdom(getApplicationContext()); 
 
 	};
 
@@ -41,6 +47,11 @@ public class EventManager extends Activity {
 	public void onPause() {
 		event_player.pause();
 		super.onPause();
+		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
+	}
+	public void onStop(){
+		super.onStop();
+		
 	}
 	
 	public void btnSound (View v){
@@ -72,51 +83,51 @@ public class EventManager extends Activity {
 
 	public void option1_button(View v) {
 
-		Resources.setFoodChange(-5);
+		ResourcesKingdom.setFoodChange(-5);
 		Toast.makeText(this, "food yes", Toast.LENGTH_SHORT).show();
 	}
 
 	public void option2_button(View v) {
-		int food = Resources.getFood();
+		int food = ResourcesKingdom.getFood();
 
 		Toast.makeText(this,"food "+ Integer.toString(food), Toast.LENGTH_SHORT).show();
 
 	}
 	public void option3_button(View v) {
 
-		Resources.setGoldChange(-5);
+		ResourcesKingdom.setGoldChange(-5);
 		Toast.makeText(this, "gold yes", Toast.LENGTH_SHORT).show();
 	}
 
 	public void option4_button(View v) {
-		int gold = Resources.getGold();
+		int gold = ResourcesKingdom.getGold();
 
 		Toast.makeText(this, "gold "+Integer.toString(gold), Toast.LENGTH_SHORT).show();
 
 	}
 	public void option5_button(View v) {
 
-		Resources.setHappyChange(-5);
+		ResourcesKingdom.setHappyChange(-5);
 		Toast.makeText(this, "happy yes", Toast.LENGTH_SHORT).show();
 	}
 
 	public void option6_button(View v) {
-		int happy = Resources.getHappy();
+		int happy = ResourcesKingdom.getHappy();
 
 		Toast.makeText(this, "happy "+Integer.toString(happy), Toast.LENGTH_SHORT).show();
 
 	}
 	public void option7_button(View v) {
-		Resources.resetGame();
+		ResourcesKingdom.resetGame();
 
 		Toast.makeText(this, "game over ", Toast.LENGTH_SHORT).show();
 
 	}
 	public void option8_button(View v) {
-		Resources.setstateGame();
+		ResourcesKingdom.setstateGame();
 		
 
-		Toast.makeText(this, "game "+Resources.getstateGame(), Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, "game "+ResourcesKingdom.getstateGame(), Toast.LENGTH_SHORT).show();
 
 	}
 

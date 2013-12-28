@@ -31,22 +31,17 @@ public class Event extends Activity {
 				Settings.System.DEFAULT_RINGTONE_URI);
 		event_player.setAudioStreamType(AudioManager.STREAM_MUSIC);
 		event_player.start();
+		
 	}
     public void wakeDevice() {
         PowerManager powerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
         wakeLock = powerManager.newWakeLock((PowerManager.SCREEN_BRIGHT_WAKE_LOCK | PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP), "TAG");
         wakeLock.acquire();
-
-        KeyguardManager keyguardManager = (KeyguardManager) getSystemService(Context.KEYGUARD_SERVICE);
-        runOnUiThread(new Runnable(){
-            public void run(){
-                getWindow().addFlags(
-                          WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
-                        | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON
-                        | WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON
-                        | WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);                
-            }
-        });
+        getWindow().addFlags(
+                WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
+              | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON
+              | WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);   
+        
     }
 	public void onStart() {
 		event_player.start();
@@ -57,20 +52,25 @@ public class Event extends Activity {
 		 
 		event_player.release();
 		super.onDestroy();
-		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
+		
+		
 	}
 
 	public void onPause() {
 		 event_player.stop();
 		super.onPause();
+		
+		
 	}
+	
 
 	public void phone_button(View v) {
 		//event_player.stop();
 		//event_player.release();
-
+		
 		Intent intent = new Intent(Event.this, EventManager.class);
 		Event.this.finish();
+		
 		startActivity(intent);
 	}
 	
@@ -79,6 +79,7 @@ public class Event extends Activity {
 		intent.addCategory(Intent.CATEGORY_HOME);
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		startActivity(intent);
+		
 	}
 	
 
