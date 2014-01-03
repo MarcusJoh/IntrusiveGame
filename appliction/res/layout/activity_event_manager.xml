@@ -69,12 +69,68 @@
            android:layout_height="wrap_content"
            android:layout_below="@+id/text_event"
            android:layout_centerHorizontal="true"
-           android:layout_marginTop="45dp"
+           android:layout_marginTop="20dp"
            android:layout_marginLeft="40dp"
            android:layout_marginRight="40dp"
-           android:text="@string/event_option_1"
+           android:text="@string/event_option"
            android:textColor="@color/clr_event_text"
            android:textSize="16dp" />
+
+       <ImageView
+           android:id="@+id/ImageOption01"
+           android:layout_width="24dp"
+           android:layout_height="24dp"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentLeft="true"
+           android:layout_marginTop="390dp"
+           android:layout_marginLeft="163dp"
+           android:layout_centerHorizontal="true"
+           android:onClick="btnOption1"
+           android:src="@drawable/icon_latin_1" />
+
+      <ImageView
+          android:id="@+id/ImageOption02"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_below="@+id/ImageOption01"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="110dp"
+          android:layout_marginTop="14dp"
+          android:onClick="btnOption2"
+          android:src="@drawable/icon_latin_2" />
+
+      <ImageView
+          android:id="@+id/ImageOption03"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_below="@+id/ImageOption01"
+          android:layout_toRightOf="@+id/ImageOption02"
+          android:layout_marginTop="14dp"
+          android:layout_marginLeft="75dp"
+          android:onClick="btnOption3"
+          android:src="@drawable/icon_latin_3" />
+
+      <ImageView
+          android:id="@+id/ImageOption04"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_below="@+id/ImageOption01"
+          android:layout_alignParentLeft="true"          
+          android:layout_marginTop="48dp"
+          android:layout_marginLeft="163dp"
+          android:onClick="btnOption4"
+          android:src="@drawable/icon_latin_4" />
+
+      <ImageView
+          android:id="@+id/btn_confirm"
+          android:layout_width="16dp"
+          android:layout_height="16dp"
+          android:layout_below="@+id/ImageOption04"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="165dp"
+          android:layout_marginTop="50dp"
+          android:onClick="btnConfirm"
+          android:src="@drawable/ok" />
 
     </RelativeLayout>
 

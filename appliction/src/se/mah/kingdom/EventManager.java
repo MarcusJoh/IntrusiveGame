@@ -8,12 +8,18 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class EventManager extends Activity {
 	private MediaPlayer event_player;
 	private AudioManager event_am;
 	private ResourcesKingdom resourcePrefs;
+	public String option1="Yes! You may tell the patrol open the floodgate.";
+	public String option2="If we let the flood lose, it risks the whole city to flood as well. Tell them to contain the flames to the eastern district.";
+	public String option3="Send more men to the district to help quell this and to keep the townsfolk clam.";
+	public String option4="They can handle it fine for themselves.";
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +69,48 @@ public class EventManager extends Activity {
 			event_am.setMode(AudioManager.MODE_IN_CALL);
 			event_player.start();
 		}
+	}
+	public void btnOption1(View v){
+		TextView text = (TextView)findViewById(R.id.text_options);
+		
+		text.setText(option1);
+	}
+	public void btnOption2(View v){
+		TextView text = (TextView)findViewById(R.id.text_options);
+		
+		text.setText(option2);
+
+	}
+	public void btnOption3(View v){
+		TextView text = (TextView)findViewById(R.id.text_options);
+		
+		text.setText(option3);
+
+	}
+	public void btnOption4(View v){
+		TextView text = (TextView)findViewById(R.id.text_options);
+		
+		text.setText(option4);
+
+	}
+	public void btnConfirm(View v){
+		TextView text = (TextView)findViewById(R.id.text_options);
+		if(text.getText().toString().equals(option1)){
+			Toast.makeText(this, "option1 selected", Toast.LENGTH_SHORT).show();
+		}
+		else if (text.getText().toString().equals(option2)) {
+			Toast.makeText(this, "option2 selected", Toast.LENGTH_SHORT).show();
+		}
+		else if (text.getText().toString().equals(option3)) {
+			Toast.makeText(this, "option3 selected", Toast.LENGTH_SHORT).show();
+		}
+		else if (text.getText().toString().equals(option4)) {
+			Toast.makeText(this, "option4 selected", Toast.LENGTH_SHORT).show();
+		}
+		else{
+			Toast.makeText(this, "error", Toast.LENGTH_SHORT).show();
+		}
+
 	}
 	
 	public void btnStop (View v){
