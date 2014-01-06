@@ -18,10 +18,14 @@ public class EventManager extends Activity {
 	private MediaPlayer event_player;
 	private AudioManager event_am;
 	private ResourcesKingdom resourcePrefs;
-	public String option1 = "";
-	public String option2 = "";
-	public String option3 = "";
-	public String option4 = "";
+	public String optionEvent1 = null;
+	public String optionEvent2 = null;
+	public String optionEvent3 = null;
+	public String optionEvent4 = null;
+	public String resourceEffect1 = null;
+	public String resourceEffect2 = null;
+	public String resourceEffect3 = null;
+	public String resourceEffect4 = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -68,34 +72,58 @@ public class EventManager extends Activity {
 					+ eventOption2);
 
 			eventtext.setText(eventCont);
-			option1 = eventOption1;
-			option2 = eventOption2;
-			option3 = eventOption3;
-			option4 = eventOption4;
-			String[] optionEffect = eventOption1.split("¤");
-			Log.i("optionEffect", optionEffect[0] + "" + optionEffect[1]);
 
-			String[] resourceEffect = optionEffect[1].split("#");
-			Log.i("resourceEffect", resourceEffect[0] + "" + resourceEffect[1]);
+			String[] optionEffect1 = eventOption1.split("¤");
+			String[] optionEffect2 = eventOption2.split("¤");
+
+			Log.i("optionEffect", optionEffect1[0] + "" + optionEffect1[1]);
+			optionEvent1 = optionEffect1[0];
+			optionEvent2 = optionEffect2[0];
+
+			resourceEffect1 = optionEffect1[1];
+			resourceEffect2 = optionEffect2[1];
+
 			eventChain = optionChain[1];
 		}
 		if (optionNumber == 3) {
 			Log.i("eventArrey", eventCont + " " + eventOption1 + " "
 					+ eventOption2 + " " + eventOption3);
 			eventtext.setText(eventCont);
-			option1 = eventOption1;
-			option2 = eventOption2;
-			option3 = eventOption3;
-			option4 = eventOption4;
+
+			String[] optionEffect1 = eventOption1.split("¤");
+			String[] optionEffect2 = eventOption2.split("¤");
+			String[] optionEffect3 = eventOption3.split("¤");
+
+			Log.i("optionEffect", optionEffect1[0] + "" + optionEffect1[1]);
+			optionEvent1 = optionEffect1[0];
+			optionEvent2 = optionEffect2[0];
+			optionEvent3 = optionEffect3[0];
+			resourceEffect1 = optionEffect1[1];
+			resourceEffect2 = optionEffect2[1];
+			resourceEffect3 = optionEffect3[1];
+
+			eventChain = optionChain[1];
 		}
 		if (optionNumber == 4) {
 			Log.i("eventArrey", eventCont + " " + eventOption1 + " "
 					+ eventOption2 + " " + eventOption3 + " " + eventOption4);
 			eventtext.setText(eventCont);
-			option1 = eventOption1;
-			option2 = eventOption2;
-			option3 = eventOption3;
-			option4 = eventOption4;
+
+			String[] optionEffect1 = eventOption1.split("¤");
+			String[] optionEffect2 = eventOption2.split("¤");
+			String[] optionEffect3 = eventOption3.split("¤");
+			String[] optionEffect4 = eventOption4.split("¤");
+			Log.i("optionEffect", optionEffect1[0] + "" + optionEffect1[1]);
+			optionEvent1 = optionEffect1[0];
+			optionEvent2 = optionEffect2[0];
+			optionEvent3 = optionEffect3[0];
+			optionEvent4 = optionEffect4[0];
+			resourceEffect1 = optionEffect1[1];
+			resourceEffect2 = optionEffect2[1];
+			resourceEffect3 = optionEffect3[1];
+			resourceEffect4 = optionEffect4[1];
+
+			eventChain = optionChain[1];
 		}
 		if (eventChain != null) {
 
@@ -143,41 +171,70 @@ public class EventManager extends Activity {
 	public void btnOption1(View v) {
 		TextView text = (TextView) findViewById(R.id.text_options);
 
-		text.setText(option1);
+		text.setText(optionEvent1);
 	}
 
 	public void btnOption2(View v) {
 		TextView text = (TextView) findViewById(R.id.text_options);
 
-		text.setText(option2);
+		text.setText(optionEvent2);
 
 	}
 
 	public void btnOption3(View v) {
 		TextView text = (TextView) findViewById(R.id.text_options);
 
-		text.setText(option3);
+		text.setText(optionEvent3);
 
 	}
 
 	public void btnOption4(View v) {
 		TextView text = (TextView) findViewById(R.id.text_options);
 
-		text.setText(option4);
+		text.setText(optionEvent4);
 
 	}
 
 	public void btnConfirm(View v) {
 		TextView text = (TextView) findViewById(R.id.text_options);
-		if (text.getText().toString().equals(option1)) {
-			Toast.makeText(this, "option1 selected", Toast.LENGTH_SHORT).show();
-		} else if (text.getText().toString().equals(option2)) {
-			Toast.makeText(this, "option2 selected", Toast.LENGTH_SHORT).show();
-		} else if (text.getText().toString().equals(option3)) {
+		if (text.getText().toString().equals(optionEvent1)) {
+			if (optionEvent1 != null) {
+				if (resourceEffect1.length() <= 6) {
+					String[] resourceEffect = resourceEffect1.split("#");
+					Log.i("resourceEffect", resourceEffect[0] + ""
+							+ resourceEffect[1]);
+					
+				} else {Toast.makeText(this, "option1 selected", Toast.LENGTH_SHORT)
+							.show();
+				}
+			}
+		} else if (text.getText().toString().equals(optionEvent2)) {
+			if (optionEvent1 != null) {
+				String[] resourceEffect = resourceEffect2.split("#");
+				Log.i("resourceEffect", resourceEffect[0] + ""
+						+ resourceEffect[1]);
+
+				Toast.makeText(this, "option2 selected", Toast.LENGTH_SHORT)
+						.show();
+			}
+		} else if (text.getText().toString().equals(optionEvent3)) {
+			if (optionEvent1 != null) {
+				String[] resourceEffect = resourceEffect3.split("#");
+				Log.i("resourceEffect", resourceEffect[0] + ""
+						+ resourceEffect[1]);
+			}
+
 			Toast.makeText(this, "option3 selected", Toast.LENGTH_SHORT).show();
-		} else if (text.getText().toString().equals(option4)) {
+		} else if (text.getText().toString().equals(optionEvent4)) {
+			if (optionEvent1 != null) {
+				String[] resourceEffect = resourceEffect4.split("#");
+				Log.i("resourceEffect", resourceEffect[0] + ""
+						+ resourceEffect[1]);
+			}
+
 			Toast.makeText(this, "option4 selected", Toast.LENGTH_SHORT).show();
 		} else {
+
 			Toast.makeText(this, "error", Toast.LENGTH_SHORT).show();
 		}
 
