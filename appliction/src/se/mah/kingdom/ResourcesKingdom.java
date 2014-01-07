@@ -94,5 +94,11 @@ public class ResourcesKingdom {
 		resourceEditor.commit();
 
 	}
+	public static int CombinedResources()
+	{
+
+		return ((food+happy)+gold)/3;
+	}
+
 
 }

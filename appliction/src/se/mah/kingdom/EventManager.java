@@ -1,5 +1,6 @@
 package se.mah.kingdom;
 
+import java.util.Calendar;
 import java.util.Random;
 
 import android.media.AudioManager;
@@ -27,6 +28,16 @@ public class EventManager extends Activity {
 	public String resourceEffect3 = null;
 	public String resourceEffect4 = null;
 
+	private Timer timer;
+	private int update;
+	private int timesHappend;
+	private Calendar time;
+	private double increaseInterval;
+	private int increaseRate;
+	private double totalTimeElapsed;
+	private int likenessOfEmergency;
+	private boolean emergencyHappening;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -132,6 +143,15 @@ public class EventManager extends Activity {
 
 			}
 		}
+		timer = new Timer();
+		time = Calendar.getInstance();
+		update = 1;
+		increaseInterval = 1 * 60;
+		timesHappend = 0;
+		increaseRate = 1;
+		totalTimeElapsed = 0;
+		likenessOfEmergency = 1;
+		emergencyHappening = false;
 	};
 
 	public void onStart() {
@@ -312,6 +332,28 @@ public class EventManager extends Activity {
 				Toast.LENGTH_SHORT).show();
 
 	}
+	
+	public void SomeEmergency() {
+		Toast.makeText(this, "Lord the kingdom is on fire, open the dam!", Toast.LENGTH_SHORT).show();
+		emergencyHappening = true;
+	}
+
+	public boolean UpdateRate_Increase() {
+		if (totalTimeElapsed >= increaseInterval) {
+			increaseRate++;
+			totalTimeElapsed = 0;
+			Toast.makeText(this, "increaseRate is up ", Toast.LENGTH_LONG)
+					.show();
+			return true;
+		}
+		return false;
+	}
+
+
+	public void timer_button(View v) {
+
+	}
+
 
 	@Override
 	public void onBackPressed() {

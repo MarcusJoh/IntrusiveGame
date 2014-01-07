@@ -45,6 +45,10 @@
             android:label="@string/title_activity_event_manager"
             android:theme="@style/NoActionBar" >
         </activity>
+        <service
+            android:name="se.mah.kingdom.DecideCall"
+            android:enabled="true">
+        </service>
     </application>
 
 </manifest>
