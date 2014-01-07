@@ -37,8 +37,14 @@
         <activity
             android:name="se.mah.kingdom.EventManager"
             android:label="@string/title_activity_event_manager"
+            android:screenOrientation="portrait"
             android:theme="@style/NoActionBar" >
+            
         </activity>
+        <service
+            android:name="se.mah.kingdom.DecideCall"
+            android:enabled="true">
+            </service>
     </application>
 
 </manifest>

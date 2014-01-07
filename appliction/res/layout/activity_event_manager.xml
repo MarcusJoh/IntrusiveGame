@@ -8,85 +8,150 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".EventManager" >
 
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button4"
+        android:onClick="option7_button"
+        android:text="reset" />
+
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stuff have happend" />
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:text="Time Passed" />
 
-    <Button
-        android:id="@+id/button1"
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
-        android:onClick="option1_button"
-        android:text="yes food" />
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignRight="@+id/button7"
+        android:text="Increase Rate" />
 
-    <Button
-        android:id="@+id/button2"
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="28dp"
-        android:onClick="option2_button"
-        android:text="no food" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_below="@+id/button2"
-        android:layout_marginTop="36dp"
-        android:onClick="option3_button"
-        android:text="yes gold" />
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:text="Update Time" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/button2"
-        android:layout_below="@+id/button3"
-        android:layout_marginTop="43dp"
+        android:layout_alignBaseline="@+id/button6"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_alignLeft="@+id/button3"
         android:onClick="option4_button"
         android:text="no gold" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button4"
-        android:layout_toRightOf="@+id/textView1"
-        android:onClick="option5_button"
-        android:text="yes happy" />
+        android:layout_alignBaseline="@+id/button5"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_alignLeft="@+id/button2"
+        android:onClick="option3_button"
+        android:text="yes gold" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignLeft="@+id/textView5"
+        android:onClick="option2_button"
+        android:text="no food" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_marginBottom="16dp"
+        android:layout_toRightOf="@+id/button7"
+        android:onClick="timer_button"
+        android:text="changegame" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button9"
+        android:layout_alignRight="@+id/button9"
+        android:onClick="option1_button"
+        android:text="yes food" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="18dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:text="Max Min Between Updates" />
+
+    <TextView
+        android:id="@+id/randMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="20dp"
+        android:text="Random Of Max" />
+
+    <TextView
+        android:id="@+id/maxMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/randMax"
+        android:layout_alignRight="@+id/randMax"
+        android:layout_below="@+id/textView5"
+        android:text="Max Min" />
+
+    <TextView
+        android:id="@+id/minMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/button1"
+        android:text="Min Min" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/button5"
-        android:layout_alignTop="@+id/button4"
+        android:layout_above="@+id/button7"
+        android:layout_toRightOf="@+id/button7"
         android:onClick="option6_button"
         android:text="no happy" />
 
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/button4"
-            android:onClick="option7_button"
-            android:text="reset" />
-
-         <Button
-             android:id="@+id/button8"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_alignParentRight="true"
-             android:layout_alignParentTop="true"
-             android:onClick="option8_button"
-             android:text="changegame" />
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button6"
+        android:layout_alignRight="@+id/button6"
+        android:layout_marginBottom="20dp"
+        android:onClick="option5_button"
+        android:text="yes happy" />
 
 </RelativeLayout>

@@ -22,7 +22,7 @@ public class StoryManager extends Activity {
 		Calendar time = Calendar.getInstance();
 		time.setTimeInMillis(System.currentTimeMillis());
 		time.add(Calendar.SECOND, 5);
-		alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(), pendingIntent);
+		alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(),pendingIntent);
 	}
 
 	@Override 
