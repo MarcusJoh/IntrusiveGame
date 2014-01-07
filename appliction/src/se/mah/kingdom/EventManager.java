@@ -2,22 +2,38 @@ package se.mah.kingdom;
 
 import java.util.Calendar;
 import java.util.Random;
+<<<<<<< HEAD
+=======
+import java.util.Timer;
+import java.util.TimerTask;
+>>>>>>> origin/Tim
 
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
+<<<<<<< HEAD
 import android.content.res.Resources;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+=======
+import android.content.Intent;
+import android.text.format.Time;
+import android.util.Log;
+import android.view.View;
+>>>>>>> origin/Tim
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class EventManager extends Activity {
 	private MediaPlayer event_player;
 	private AudioManager event_am;
+<<<<<<< HEAD
 	private ResourcesKingdom resourcePrefs;
 	public String optionEvent1 = null;
 	public String optionEvent2 = null;
@@ -27,6 +43,18 @@ public class EventManager extends Activity {
 	public String resourceEffect2 = null;
 	public String resourceEffect3 = null;
 	public String resourceEffect4 = null;
+=======
+	private Resources resourcePrefs;
+	private Timer timer;
+	private int update;
+	private int timesHappend;
+	private Calendar time;
+	private double increaseInterval;
+	private int increaseRate;
+	private double totalTimeElapsed;
+	private int likenessOfEmergency;
+	private boolean emergencyHappening;
+>>>>>>> origin/Tim
 
 	private Timer timer;
 	private int update;
@@ -53,6 +81,7 @@ public class EventManager extends Activity {
 				"se.mah.kingdom");
 		event_player = MediaPlayer.create(this, musicfileid);
 		event_player.start();
+<<<<<<< HEAD
 		resourcePrefs = new ResourcesKingdom(getApplicationContext());
 
 		Resources resStory = getResources();
@@ -100,6 +129,18 @@ public class EventManager extends Activity {
 			Log.i("eventArrey", eventCont + " " + eventOption1 + " "
 					+ eventOption2 + " " + eventOption3);
 			eventtext.setText(eventCont);
+=======
+		resourcePrefs = new Resources(getApplicationContext());
+		timer = new Timer();
+		time = Calendar.getInstance();
+		update = 1;
+		increaseInterval = 1 * 60;
+		timesHappend = 0;
+		increaseRate = 1;
+		totalTimeElapsed = 0;
+		likenessOfEmergency = 1;
+		emergencyHappening = false;
+>>>>>>> origin/Tim
 
 			String[] optionEffect1 = eventOption1.split("¤");
 			String[] optionEffect2 = eventOption2.split("¤");
@@ -294,7 +335,7 @@ public class EventManager extends Activity {
 
 		ResourcesKingdom.setGoldChange(-5);
 		Toast.makeText(this, "gold yes", Toast.LENGTH_SHORT).show();
-	}
+	};
 
 	public void option4_button(View v) {
 		int gold = ResourcesKingdom.getGold();
@@ -326,6 +367,7 @@ public class EventManager extends Activity {
 	}
 
 	public void option8_button(View v) {
+<<<<<<< HEAD
 		ResourcesKingdom.setstateGame();
 
 		Toast.makeText(this, "game " + ResourcesKingdom.getstateGame(),
@@ -351,9 +393,35 @@ public class EventManager extends Activity {
 
 
 	public void timer_button(View v) {
+=======
+		Resources.setstateGame();
+
+		Toast.makeText(this, "game " + Resources.getstateGame(),
+				Toast.LENGTH_SHORT).show();
+>>>>>>> origin/Tim
 
 	}
 
+	public void SomeEmergency() {
+		Toast.makeText(this, "Lord the kingdom is on fire, open the dam!", Toast.LENGTH_SHORT).show();
+		emergencyHappening = true;
+	}
+
+	public boolean UpdateRate_Increase() {
+		if (totalTimeElapsed >= increaseInterval) {
+			increaseRate++;
+			totalTimeElapsed = 0;
+			Toast.makeText(this, "increaseRate is up ", Toast.LENGTH_LONG)
+					.show();
+			return true;
+		}
+		return false;
+	}
+
+
+	public void timer_button(View v) {
+
+	}
 
 	@Override
 	public void onBackPressed() {
