@@ -14,13 +14,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class EventFragment extends Fragment implements
-		ObservableScrollView.Callbacks {
+		ObservableScrollView.Callbacks, OnClickListener {
 
 	private TextView eventText;
 	private TextView option1Text;
@@ -61,8 +63,8 @@ public class EventFragment extends Fragment implements
 		 */
 		Toast.makeText(getActivity(), "PM", Toast.LENGTH_SHORT).show();
 
-		ViewGroup rootView = (ViewGroup) inflater.inflate(
-				R.layout.event_fragment, container, false);
+		View rootView = inflater.inflate(R.layout.event_fragment, container,
+				false);
 
 		mObservableScrollView = (ObservableScrollView) rootView
 				.findViewById(R.id.scroll_view);
@@ -101,6 +103,19 @@ public class EventFragment extends Fragment implements
 
 		resourcePrefs = new ResourcesKingdom(getActivity()
 				.getApplicationContext());
+
+		Button btnOption1 = (Button) rootView
+				.findViewById(R.id.btn_option1_confirm);
+		btnOption1.setOnClickListener(this);
+		Button btnOption2 = (Button) rootView
+				.findViewById(R.id.btn_option2_confirm);
+		btnOption2.setOnClickListener(this);
+		Button btnOption3 = (Button) rootView
+				.findViewById(R.id.btn_option3_confirm);
+		btnOption3.setOnClickListener(this);
+		Button btnOption4 = (Button) rootView
+				.findViewById(R.id.btn_option4_confirm);
+		btnOption4.setOnClickListener(this);
 
 		Resources resStory = getResources();
 		String[] eventArrey = resStory.getStringArray(R.array.event_picker);
@@ -204,6 +219,355 @@ public class EventFragment extends Fragment implements
 			}
 		}
 		return rootView;
+
+	}
+
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.btn_option1_confirm:
+			int resourceNumber = 0;
+			if (optionEvent1 != null) {
+				if (resourceEffect1.length() <= 7) {
+					String[] resourceEffect = resourceEffect1.split("#");
+
+					if (resourceEffect[0].equals("gold")) {
+						Log.i("resourceEffect", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+
+						resourceNumber = Integer.parseInt(resourceEffect[1]);
+
+						ResourcesKingdom.setGoldChange(resourceNumber);
+					}
+					if (resourceEffect[0].equals("happ")) {
+						Log.i("resourceEffect", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+						resourceNumber = Integer.parseInt(resourceEffect[1]);
+
+						ResourcesKingdom.setHappyChange(resourceNumber);
+					}
+					if (resourceEffect[0].equals("food")) {
+						Log.i("resourceEffect", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+						resourceNumber = Integer.parseInt(resourceEffect[1]);
+
+						ResourcesKingdom.setFoodChange(resourceNumber);
+					} else {
+						Log.i("error", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+					}
+				} else {
+					String[] resourceEffect = resourceEffect1.split("Ö");
+					String[] resourceEffectOne = resourceEffect[0].split("#");
+					String[] resourceEffectTwo = resourceEffect[1].split("#");
+
+					if (resourceEffectOne[0].equals("gold")) {
+						Log.i("resourceEffectOne", resourceEffectOne[0] + ""
+								+ resourceEffectOne[1]);
+						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
+
+						ResourcesKingdom.setGoldChange(resourceNumber);
+					}
+					if (resourceEffectOne[0].equals("happ")) {
+						Log.i("resourceEffectOne", resourceEffectOne[0] + ""
+								+ resourceEffectOne[1]);
+						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
+
+						ResourcesKingdom.setHappyChange(resourceNumber);
+					}
+					if (resourceEffectOne[0].equals("food")) {
+						Log.i("resourceEffectOne", resourceEffectOne[0] + ""
+								+ resourceEffectOne[1]);
+						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
+
+						ResourcesKingdom.setFoodChange(resourceNumber);
+					}
+					if (resourceEffectTwo.equals("gold")) {
+						Log.i("resourceEffectTwo", resourceEffectTwo[0] + ""
+								+ resourceEffectTwo[1]);
+						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
+
+						ResourcesKingdom.setGoldChange(resourceNumber);
+					}
+					if (resourceEffectTwo.equals("happ")) {
+						Log.i("resourceEffectTwo", resourceEffectTwo[0] + ""
+								+ resourceEffectTwo[1]);
+						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
+
+						ResourcesKingdom.setHappyChange(resourceNumber);
+					}
+					if (resourceEffectTwo.equals("food")) {
+						Log.i("resourceEffectTwo", resourceEffectTwo[0] + ""
+								+ resourceEffectTwo[1]);
+						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
+
+						ResourcesKingdom.setFoodChange(resourceNumber);
+					} else {
+						Log.i("error", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+					}
+				}
+			}
+			break;
+		case R.id.btn_option2_confirm:
+			resourceNumber = 0;
+			if (optionEvent2 != null) {
+				if (resourceEffect2.length() <= 7) {
+					String[] resourceEffect = resourceEffect2.split("#");
+
+					if (resourceEffect[0].equals("gold")) {
+						Log.i("resourceEffect", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+
+						resourceNumber = Integer.parseInt(resourceEffect[1]);
+
+						ResourcesKingdom.setGoldChange(resourceNumber);
+					}
+					if (resourceEffect[0].equals("happ")) {
+						Log.i("resourceEffect", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+						resourceNumber = Integer.parseInt(resourceEffect[1]);
+
+						ResourcesKingdom.setHappyChange(resourceNumber);
+					}
+					if (resourceEffect[0].equals("food")) {
+						Log.i("resourceEffect", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+						resourceNumber = Integer.parseInt(resourceEffect[1]);
+
+						ResourcesKingdom.setFoodChange(resourceNumber);
+					} else {
+						Log.i("error", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+					}
+				} else {
+					String[] resourceEffect = resourceEffect2.split("Ö");
+					String[] resourceEffectOne = resourceEffect[0].split("#");
+					String[] resourceEffectTwo = resourceEffect[1].split("#");
+
+					if (resourceEffectOne[0].equals("gold")) {
+						Log.i("resourceEffectOne", resourceEffectOne[0] + ""
+								+ resourceEffectOne[1]);
+						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
+
+						ResourcesKingdom.setGoldChange(resourceNumber);
+					}
+					if (resourceEffectOne[0].equals("happ")) {
+						Log.i("resourceEffectOne", resourceEffectOne[0] + ""
+								+ resourceEffectOne[1]);
+						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
+
+						ResourcesKingdom.setHappyChange(resourceNumber);
+					}
+					if (resourceEffectOne[0].equals("food")) {
+						Log.i("resourceEffectOne", resourceEffectOne[0] + ""
+								+ resourceEffectOne[1]);
+						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
+
+						ResourcesKingdom.setFoodChange(resourceNumber);
+					}
+					if (resourceEffectTwo.equals("gold")) {
+						Log.i("resourceEffectTwo", resourceEffectTwo[0] + ""
+								+ resourceEffectTwo[1]);
+						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
+
+						ResourcesKingdom.setGoldChange(resourceNumber);
+					}
+					if (resourceEffectTwo.equals("happ")) {
+						Log.i("resourceEffectTwo", resourceEffectTwo[0] + ""
+								+ resourceEffectTwo[1]);
+						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
+
+						ResourcesKingdom.setHappyChange(resourceNumber);
+					}
+					if (resourceEffectTwo.equals("food")) {
+						Log.i("resourceEffectTwo", resourceEffectTwo[0] + ""
+								+ resourceEffectTwo[1]);
+						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
+
+						ResourcesKingdom.setFoodChange(resourceNumber);
+					} else {
+						Log.i("error", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+					}
+				}
+			}
+
+			break;
+		case R.id.btn_option3_confirm:
+
+			resourceNumber = 0;
+			if (optionEvent3 != null) {
+				if (resourceEffect1.length() <= 7) {
+					String[] resourceEffect = resourceEffect1.split("#");
+
+					if (resourceEffect[0].equals("gold")) {
+						Log.i("resourceEffect", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+
+						resourceNumber = Integer.parseInt(resourceEffect[1]);
+
+						ResourcesKingdom.setGoldChange(resourceNumber);
+					}
+					if (resourceEffect[0].equals("happ")) {
+						Log.i("resourceEffect", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+						resourceNumber = Integer.parseInt(resourceEffect[1]);
+
+						ResourcesKingdom.setHappyChange(resourceNumber);
+					}
+					if (resourceEffect[0].equals("food")) {
+						Log.i("resourceEffect", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+						resourceNumber = Integer.parseInt(resourceEffect[1]);
+
+						ResourcesKingdom.setFoodChange(resourceNumber);
+					} else {
+						Log.i("error", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+					}
+				} else {
+					String[] resourceEffect = resourceEffect3.split("Ö");
+					String[] resourceEffectOne = resourceEffect[0].split("#");
+					String[] resourceEffectTwo = resourceEffect[1].split("#");
+
+					if (resourceEffectOne[0].equals("gold")) {
+						Log.i("resourceEffectOne", resourceEffectOne[0] + ""
+								+ resourceEffectOne[1]);
+						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
+
+						ResourcesKingdom.setGoldChange(resourceNumber);
+					}
+					if (resourceEffectOne[0].equals("happ")) {
+						Log.i("resourceEffectOne", resourceEffectOne[0] + ""
+								+ resourceEffectOne[1]);
+						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
+
+						ResourcesKingdom.setHappyChange(resourceNumber);
+					}
+					if (resourceEffectOne[0].equals("food")) {
+						Log.i("resourceEffectOne", resourceEffectOne[0] + ""
+								+ resourceEffectOne[1]);
+						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
+
+						ResourcesKingdom.setFoodChange(resourceNumber);
+					}
+					if (resourceEffectTwo.equals("gold")) {
+						Log.i("resourceEffectTwo", resourceEffectTwo[0] + ""
+								+ resourceEffectTwo[1]);
+						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
+
+						ResourcesKingdom.setGoldChange(resourceNumber);
+					}
+					if (resourceEffectTwo.equals("happ")) {
+						Log.i("resourceEffectTwo", resourceEffectTwo[0] + ""
+								+ resourceEffectTwo[1]);
+						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
+
+						ResourcesKingdom.setHappyChange(resourceNumber);
+					}
+					if (resourceEffectTwo.equals("food")) {
+						Log.i("resourceEffectTwo", resourceEffectTwo[0] + ""
+								+ resourceEffectTwo[1]);
+						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
+
+						ResourcesKingdom.setFoodChange(resourceNumber);
+					} else {
+						Log.i("error", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+					}
+				}
+			}
+
+			break;
+		case R.id.btn_option4_confirm:
+
+			resourceNumber = 0;
+			if (optionEvent4 != null) {
+				if (resourceEffect1.length() <= 7) {
+					String[] resourceEffect = resourceEffect1.split("#");
+
+					if (resourceEffect[0].equals("gold")) {
+						Log.i("resourceEffect", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+
+						resourceNumber = Integer.parseInt(resourceEffect[1]);
+
+						ResourcesKingdom.setGoldChange(resourceNumber);
+					}
+					if (resourceEffect[0].equals("happ")) {
+						Log.i("resourceEffect", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+						resourceNumber = Integer.parseInt(resourceEffect[1]);
+
+						ResourcesKingdom.setHappyChange(resourceNumber);
+					}
+					if (resourceEffect[0].equals("food")) {
+						Log.i("resourceEffect", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+						resourceNumber = Integer.parseInt(resourceEffect[1]);
+
+						ResourcesKingdom.setFoodChange(resourceNumber);
+					} else {
+						Log.i("error", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+					}
+				} else {
+					String[] resourceEffect = resourceEffect1.split("Ö");
+					String[] resourceEffectOne = resourceEffect[0].split("#");
+					String[] resourceEffectTwo = resourceEffect[1].split("#");
+
+					if (resourceEffectOne[0].equals("gold")) {
+						Log.i("resourceEffectOne", resourceEffectOne[0] + ""
+								+ resourceEffectOne[1]);
+						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
+
+						ResourcesKingdom.setGoldChange(resourceNumber);
+					}
+					if (resourceEffectOne[0].equals("happ")) {
+						Log.i("resourceEffectOne", resourceEffectOne[0] + ""
+								+ resourceEffectOne[1]);
+						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
+
+						ResourcesKingdom.setHappyChange(resourceNumber);
+					}
+					if (resourceEffectOne[0].equals("food")) {
+						Log.i("resourceEffectOne", resourceEffectOne[0] + ""
+								+ resourceEffectOne[1]);
+						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
+
+						ResourcesKingdom.setFoodChange(resourceNumber);
+					}
+					if (resourceEffectTwo.equals("gold")) {
+						Log.i("resourceEffectTwo", resourceEffectTwo[0] + ""
+								+ resourceEffectTwo[1]);
+						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
+
+						ResourcesKingdom.setGoldChange(resourceNumber);
+					}
+					if (resourceEffectTwo.equals("happ")) {
+						Log.i("resourceEffectTwo", resourceEffectTwo[0] + ""
+								+ resourceEffectTwo[1]);
+						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
+
+						ResourcesKingdom.setHappyChange(resourceNumber);
+					}
+					if (resourceEffectTwo.equals("food")) {
+						Log.i("resourceEffectTwo", resourceEffectTwo[0] + ""
+								+ resourceEffectTwo[1]);
+						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
+
+						ResourcesKingdom.setFoodChange(resourceNumber);
+					} else {
+						Log.i("error", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+					}
+				}
+			}
+
+			break;
+		}
+
 	}
 
 	@Override
@@ -224,41 +588,4 @@ public class EventFragment extends Fragment implements
 
 	}
 
-	public void btn_option1_confirm(View v) {
-
-		int resourceNumber = 0;
-
-		if (optionEvent1 != null) {
-			if (resourceEffect1.length() <= 7) {
-				String[] resourceEffect = resourceEffect1.split("#");
-
-				if (resourceEffect[0].equals("gold")) {
-					Log.i("resourceEffect", resourceEffect[0] + ""
-							+ resourceEffect[1]);
-
-					resourceNumber = Integer.parseInt(resourceEffect[1]);
-
-					ResourcesKingdom.setGoldChange(resourceNumber);
-				}
-				if (resourceEffect[0].equals("happ")) {
-					Log.i("resourceEffect", resourceEffect[0] + ""
-							+ resourceEffect[1]);
-					resourceNumber = Integer.parseInt(resourceEffect[1]);
-
-					ResourcesKingdom.setHappyChange(resourceNumber);
-				}
-				if (resourceEffect[0].equals("food")) {
-					Log.i("resourceEffect", resourceEffect[0] + ""
-							+ resourceEffect[1]);
-					resourceNumber = Integer.parseInt(resourceEffect[1]);
-
-					ResourcesKingdom.setFoodChange(resourceNumber);
-				} else {
-					Log.i("error", resourceEffect[0] + "" + resourceEffect[1]);
-				}
-
-			}
-
-		}
-	}
 }

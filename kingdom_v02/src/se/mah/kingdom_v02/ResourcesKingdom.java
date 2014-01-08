@@ -1,6 +1,5 @@
 package se.mah.kingdom_v02;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
