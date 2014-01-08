@@ -10,6 +10,9 @@
     <string name="title_activity_wake_up">WakeUp</string>
     <string name="btn_phone_accept">Accept</string>
     <string name="btn_phone_decline">Decline</string>
+    <string name="makeChoice">MAKE A CHOICE</string>
+    <string name="text_minister_first_name">BARON BARTHOLOMEW</string>
+    <string name="text_minister_last_name">THORP</string>
 
     <color name="black">#FF000000</color>
     <color name="green">#FF00FF00</color>

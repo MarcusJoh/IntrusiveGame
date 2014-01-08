@@ -22,42 +22,81 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/royal_beige">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <RelativeLayout
-                android:layout_width="360dp"
-                android:layout_height="600dp" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:background="@color/royal_blue"
+                android:orientation="vertical" >
+                
+                <ImageView
+		           android:id="@+id/image_minister"
+		           android:layout_width="fill_parent"
+		           android:layout_height="wrap_content"
+		           android:layout_alignParentTop="true"
+		           android:layout_alignParentLeft="true"
+		           android:layout_marginTop="30dp"
+		           android:layout_centerHorizontal="true"
+		           android:src="@drawable/ic_char_agriculture" />
 
                 <TextView
-                    android:id="@+id/text_options"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/text_minister_name_1"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/imageView2"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="40dp"
-                    android:layout_marginTop="20dp"
-                    android:text="@string/event_option"
-                    android:textColor="@color/clr_event_text"
-                    android:textSize="16dp" />
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="@string/text_minister_first_name"
+                    android:textColor="@color/royal_beige"
+                    android:textSize="22dp" />
+                
+                <TextView
+                    android:id="@+id/text_minister_name_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/text_minister_last_name"
+                    android:textColor="@color/royal_beige"
+                    android:textSize="64dp" />
 
                 
-            </RelativeLayout>
-
-            <View
-                android:id="@+id/placeholder"
+            </LinearLayout>
+			<LinearLayout 
+			    android:id="@+id/placeholder"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/sticky_height" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:background="@color/royal_teal" >
+                
+                <TextView
+                    android:id="@+id/text_make_choice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="@string/makeChoice"
+                    android:textColor="@color/royal_teal"
+                    android:textSize="16dp" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical" >
+                android:orientation="horizontal"
+                android:background="@color/royal_teal" >
+                
                 <ImageView
 		           android:id="@+id/ImageOption01"
 		           android:layout_width="24dp"
@@ -81,23 +120,23 @@
                     android:textColor="@color/clr_event_text"
                     android:textSize="16dp" />
                 
-                <ImageView
-		           android:id="@+id/btn_option1_confirm"
-		           android:layout_width="24dp"
-		           android:layout_height="24dp"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="390dp"
-		           android:layout_marginLeft="163dp"
-		           android:layout_centerHorizontal="true"
-		           android:onClick="btnOption1"
-		           android:src="@drawable/icon_latin_1" />
+             <Button
+                    android:id="@+id/btn_option1_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="163dp"
+                    android:layout_marginTop="390dp"
+                    android:text="Accept" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:background="@color/royal_teal" >
                 <ImageView
 		           android:id="@+id/ImageOption02"
 		           android:layout_width="24dp"
@@ -121,22 +160,22 @@
                     android:textColor="@color/clr_event_text"
                     android:textSize="16dp" />
                 
-                <ImageView
-		           android:id="@+id/btn_option2_confirm"
-		           android:layout_width="24dp"
-		           android:layout_height="24dp"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="390dp"
-		           android:layout_marginLeft="163dp"
-		           android:layout_centerHorizontal="true"
-		           android:onClick="btnOption1"
-		           android:src="@drawable/icon_latin_2" />
+                <Button
+                    android:id="@+id/btn_option2_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="163dp"
+                    android:layout_marginTop="390dp"
+                    android:text="Accept" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:background="@color/royal_teal" >
                 
                 <ImageView
 		           android:id="@+id/ImageOption03"
@@ -161,22 +200,25 @@
                     android:textColor="@color/clr_event_text"
                     android:textSize="16dp" />
                 
-                <ImageView
-		           android:id="@+id/btn_option3_confirm"
-		           android:layout_width="24dp"
-		           android:layout_height="24dp"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="390dp"
-		           android:layout_marginLeft="163dp"
-		           android:layout_centerHorizontal="true"
-		           android:onClick="btnOption3"
-		           android:src="@drawable/icon_latin_3" />
+                <Button
+                    android:id="@+id/btn_option3_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="163dp"
+                    android:layout_marginTop="390dp"
+                    android:onClick="btnOption3"
+                    android:src="@drawable/icon_latin_3"
+                    android:text="Accept" />
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:background="@color/royal_teal" >
                 <ImageView
 		           android:id="@+id/ImageOption04"
 		           android:layout_width="24dp"
@@ -200,21 +242,23 @@
                     android:textColor="@color/clr_event_text"
                     android:textSize="16dp" />
                 
-                <ImageView
-		           android:id="@+id/btn_option4_confirm"
-		           android:layout_width="24dp"
-		           android:layout_height="24dp"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="390dp"
-		           android:layout_marginLeft="163dp"
-		           android:layout_centerHorizontal="true"
-		           android:onClick="btnOption4"
-		           android:src="@drawable/icon_latin_4" />
+                <Button
+                    android:id="@+id/btn_option4_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="163dp"
+                    android:layout_marginTop="390dp"
+                    android:text="Accept" />
             </LinearLayout>
         </LinearLayout>
-
-        <TextView android:id="@+id/eventText" style="@style/Item.Sticky" />
+		
+        <TextView 
+            android:id="@+id/eventText" 
+            style="@style/Item.Sticky" 
+            />
 
     </FrameLayout>
 
