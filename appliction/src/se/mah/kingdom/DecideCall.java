@@ -62,8 +62,8 @@ public class DecideCall extends Service{
 		Random rand = new Random();
 		Log.i("Resources", String.valueOf(ResourcesKingdom.CombinedResources()));
 		int numb = rand.nextInt(4);
-//		if(numb==0)
-//			StartCall();
+		if(numb==0)
+			StartCall();
 //		if (!Resources.isSomthingBad()) {
 //			int emergency = rand.nextInt(Resources.CombinedResources());
 //			if (likenessOfEmergency == emergency) {

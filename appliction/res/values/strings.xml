@@ -30,5 +30,7 @@
         <item>e1p2/event4/option1e4¤food#+5/option2e4¤gold#+10/option3e4¤gold#+5/option3e4¤happy#+15/4¤none</item>
   
     </string-array>
+    <string name="sticky_item">Sticky</string>
+    <string name="quick_return_item">Quick Return</string>
 
 </resources>

@@ -1,32 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/LinearLayout2"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/clr_event_background"
-    android:orientation="vertical"
-    tools:context=".EventManager" >
-	<FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <View style="@style/Item.Top" />
-
-            <View android:id="@+id/placeholder"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/sticky_height" />
-
-            <View style="@style/Item.Bottom" />
-            <View style="@style/Item.Bottom.Alt" />
-            <View style="@style/Item.Bottom" />
-            <View style="@style/Item.Bottom.Alt" />
-            <View style="@style/Item.Bottom" />
-    </LinearLayout>
-    <RelativeLayout
+ <RelativeLayout
         android:layout_width="360dp"
         android:layout_height="600dp" >
 
@@ -152,13 +124,3 @@
           android:src="@drawable/ok" />
 
     </RelativeLayout>
-
-
- 
-
-        <TextView android:id="@+id/sticky" style="@style/Item.Sticky" />
-
-    </FrameLayout>
-    
-   
-</LinearLayout>

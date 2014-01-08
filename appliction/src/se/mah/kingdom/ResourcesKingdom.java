@@ -95,33 +95,12 @@ public class ResourcesKingdom {
 		resourceEditor.commit();
 
 	}
-<<<<<<< HEAD:appliction/src/se/mah/kingdom/ResourcesKingdom.java
+
 	public static int CombinedResources()
 	{
 
 		return ((food+happy)+gold)/3;
 	}
-
-=======
-	
-	public static int CombinedResources()
-	{
-		Log.i("Food",String.valueOf(food));
-		Log.i("Happy",String.valueOf(happy));
-		Log.i("Gold",String.valueOf(gold));
-		int i =food + happy;
-		Log.i("Food and Happy",String.valueOf(i));
-		int j = i + gold;
-		Log.i("Happy and Food and Gold",String.valueOf(j));
-		int x = j/3;
-		Log.i("Everything / 3",String.valueOf(x));
-		return ((food+happy)+gold)/3;
-	}
-	
-	public static boolean isSomthingBad()
-	{
-		return (food <= 0 || gold <= 0|| happy <= 0) ? true : false;
-	}
->>>>>>> origin/Tim:appliction/src/se/mah/kingdom/Resources.java
-
 }
+
+
