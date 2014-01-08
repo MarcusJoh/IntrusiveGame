@@ -14,24 +14,18 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int black=0x7f060003;
-        public static final int bottom_item=0x7f060001;
-        public static final int bottom_item_alt=0x7f060002;
-        public static final int clr_event_background=0x7f060008;
-        public static final int clr_event_text=0x7f060006;
-        public static final int green=0x7f060004;
-        public static final int red=0x7f060005;
-        public static final int sticky_item_text=0x7f060009;
-        public static final int top_item=0x7f060000;
-        public static final int white=0x7f060007;
+        public static final int black=0x7f080000;
+        public static final int clr_event_background=0x7f080005;
+        public static final int clr_event_text=0x7f080003;
+        public static final int green=0x7f080001;
+        public static final int red=0x7f080002;
+        public static final int white=0x7f080004;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
          */
-        public static final int activity_horizontal_margin=0x7f070000;
-        public static final int activity_vertical_margin=0x7f070001;
-        public static final int page_margin=0x7f070003;
-        public static final int sticky_height=0x7f070002;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
     }
     public static final class drawable {
         public static final int btn_accept=0x7f020000;
@@ -56,34 +50,29 @@ public final class R {
         public static final int pic_minister_event=0x7f020013;
         public static final int pic_minister_event_small=0x7f020014;
         public static final int separator=0x7f020015;
-        public static final int sticky_item_background=0x7f020016;
     }
     public static final class id {
-        public static final int ImageOption01=0x7f0c0008;
-        public static final int ImageOption02=0x7f0c0009;
-        public static final int ImageOption03=0x7f0c000a;
-        public static final int ImageOption04=0x7f0c000b;
+        public static final int ImageOption01=0x7f0c0007;
+        public static final int ImageOption02=0x7f0c0008;
+        public static final int ImageOption03=0x7f0c0009;
+        public static final int ImageOption04=0x7f0c000a;
         public static final int LinearLayout2=0x7f0c0000;
-        public static final int TextView1=0x7f0c0010;
-        public static final int action_settings=0x7f0c0012;
-        public static final int btn_confirm=0x7f0c000c;
-        public static final int btn_phone_accept=0x7f0c000f;
-        public static final int btn_phone_decline=0x7f0c000e;
-        public static final int imageView1=0x7f0c0003;
-        public static final int imageView2=0x7f0c0002;
-        public static final int imageView3=0x7f0c0004;
-        public static final int imageView4=0x7f0c0005;
-        public static final int placeholder=0x7f0c0001;
-        public static final int scroll_view=0x7f0c0011;
-        public static final int sticky=0x7f0c000d;
-        public static final int text_event=0x7f0c0006;
-        public static final int text_options=0x7f0c0007;
+        public static final int TextView1=0x7f0c000e;
+        public static final int action_settings=0x7f0c000f;
+        public static final int btn_confirm=0x7f0c000b;
+        public static final int btn_phone_accept=0x7f0c000d;
+        public static final int btn_phone_decline=0x7f0c000c;
+        public static final int imageView1=0x7f0c0002;
+        public static final int imageView2=0x7f0c0001;
+        public static final int imageView3=0x7f0c0003;
+        public static final int imageView4=0x7f0c0004;
+        public static final int text_event=0x7f0c0005;
+        public static final int text_options=0x7f0c0006;
     }
     public static final class layout {
         public static final int activity_event_manager=0x7f030000;
         public static final int activity_story_manager=0x7f030001;
         public static final int activity_wake_up=0x7f030002;
-        public static final int fragment_content=0x7f030003;
     }
     public static final class menu {
         public static final int event_manager=0x7f0b0000;
@@ -91,23 +80,20 @@ public final class R {
         public static final int wake_up=0x7f0b0002;
     }
     public static final class raw {
-        public static final int backup=0x7f050000;
-        public static final int event_voice=0x7f050001;
+        public static final int event_voice=0x7f050000;
     }
     public static final class string {
-        public static final int action_settings=0x7f080001;
-        public static final int app_name=0x7f080000;
-        public static final int btn_phone_accept=0x7f080004;
-        public static final int btn_phone_decline=0x7f080005;
-        public static final int caller_name=0x7f080006;
-        public static final int event_option=0x7f080008;
-        public static final int event_text=0x7f080007;
-        public static final int hello_world=0x7f080002;
-        public static final int jester_text=0x7f08000a;
-        public static final int quick_return_item=0x7f08000c;
-        public static final int sticky_item=0x7f08000b;
-        public static final int title_activity_event_manager=0x7f080009;
-        public static final int title_activity_wake_up=0x7f080003;
+        public static final int action_settings=0x7f070001;
+        public static final int app_name=0x7f070000;
+        public static final int btn_phone_accept=0x7f070004;
+        public static final int btn_phone_decline=0x7f070005;
+        public static final int caller_name=0x7f070006;
+        public static final int event_option=0x7f070008;
+        public static final int event_text=0x7f070007;
+        public static final int hello_world=0x7f070002;
+        public static final int jester_text=0x7f07000a;
+        public static final int title_activity_event_manager=0x7f070009;
+        public static final int title_activity_wake_up=0x7f070003;
     }
     public static final class style {
         /** 
@@ -136,11 +122,6 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0a0001;
-        public static final int Item=0x7f0a0003;
-        public static final int Item_Bottom=0x7f0a0006;
-        public static final int Item_Bottom_Alt=0x7f0a0007;
-        public static final int Item_Sticky=0x7f0a0005;
-        public static final int Item_Top=0x7f0a0004;
         public static final int NoActionBar=0x7f0a0002;
     }
     public static final class xml {
