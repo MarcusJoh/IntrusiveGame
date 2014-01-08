@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <string name="title_activity_event__manager">Event_Manager</string>
+    <string name="landscape_message">This is Landscape mode fragment</string>
+    <string name="portrait_message">This is Portrait mode fragment</string>
+    <string name="app_name">kingdom</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_wake_up">WakeUp</string>
+    <string name="btn_phone_accept">Accept</string>
+    <string name="btn_phone_decline">Decline</string>
+
+    <color name="black">#FF000000</color>
+    <color name="green">#FF00FF00</color>
+    <color name="red">#FFFF0000</color>
+    <color name="clr_event_text">#FF2C4466</color>
+
+    <string name="caller_name">Ministry of Agriculture</string>
+    <string name="event_text">A fire started out in the most eastern district of the city My King and its getting out of control for the fire patrol and the townsfolk. The fire patrol seek your permission to open the eastern floodgate to quell the flames?</string>
+    <string name="event_option">They can handle it fine for themselves.</string>
+
+    <color name="white">#FFFFFFFF</color>
+
+    <string name="title_activity_event_manager">EventManager</string>
+    <string name="jester_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique mauris id posuere tempus. </string>
+    <color name="clr_event_background">#F7E095</color>
+    
+     <string-array name="event_picker">
+        <item>e1p1/event1/option1e1¤food#-5/option2e1¤gold#-5*gold#-5/none/none/2¤e1p2</item>
+        <item>e2/event2/option1e2¤food#+5*gold#-5/option2e2¤food#-5/option3e2¤gold#-5/none/3¤none</item>
+        <item>e3/event3/option1e3¤food#-5/option2e3¤happ#-5*gold#-5/option3e3¤happ#-5*gold#-5/option3e3¤food#+5/4¤none</item>
+        <item>e1p2/event4/option1e4¤food#+5/option2e4¤gold#+10/option3e4¤gold#+5/option3e4¤happy#+15/4¤none</item>
+  
+    </string-array>
+    
+    <string name="sticky_item">Sticky</string>
+    <string name="quick_return_item">Quick Return</string>
+
+</resources>

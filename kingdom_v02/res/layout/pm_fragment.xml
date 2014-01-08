@@ -1,0 +1,183 @@
+<!--
+  Copyright 2013 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<se.mah.kingdom_v02.ObservableScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View style="@style/Item.Top" />
+            <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="600dp" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="120dp"
+            android:onClick="btnSound"
+            android:src="@drawable/btn_event_volume" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="Minister window background"
+            android:src="@drawable/pic_minister_event_small" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginLeft="38dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:onClick="btnStop"
+            android:src="@drawable/btn_event_play" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_marginLeft="42dp"
+            android:onClick="btnReplay"
+            android:layout_toRightOf="@+id/imageView3"
+            android:src="@drawable/btn_event_replay" />
+
+        <TextView
+            android:id="@+id/text_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="44dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="@string/event_text"
+            android:textColor="@color/clr_event_text"
+            android:textSize="16dp" />
+
+       <TextView
+           android:id="@+id/text_options"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/text_event"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="40dp"
+           android:layout_marginRight="40dp"
+           android:text="@string/event_option"
+           android:textColor="@color/clr_event_text"
+           android:textSize="16dp" />
+
+       <ImageView
+           android:id="@+id/ImageOption01"
+           android:layout_width="24dp"
+           android:layout_height="24dp"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentLeft="true"
+           android:layout_marginTop="390dp"
+           android:layout_marginLeft="163dp"
+           android:layout_centerHorizontal="true"
+           android:onClick="btnOption1"
+           android:src="@drawable/icon_latin_1" />
+
+      <ImageView
+          android:id="@+id/ImageOption02"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_below="@+id/ImageOption01"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="110dp"
+          android:layout_marginTop="14dp"
+          android:onClick="btnOption2"
+          android:src="@drawable/icon_latin_2" />
+
+      <ImageView
+          android:id="@+id/ImageOption03"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_below="@+id/ImageOption01"
+          android:layout_toRightOf="@+id/ImageOption02"
+          android:layout_marginTop="14dp"
+          android:layout_marginLeft="75dp"
+          android:onClick="btnOption3"
+          android:src="@drawable/icon_latin_3" />
+
+      <ImageView
+          android:id="@+id/ImageOption04"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_below="@+id/ImageOption01"
+          android:layout_alignParentLeft="true"          
+          android:layout_marginTop="48dp"
+          android:layout_marginLeft="163dp"
+          android:onClick="btnOption4"
+          android:src="@drawable/icon_latin_4" />
+
+      <ImageView
+          android:id="@+id/btn_confirm"
+          android:layout_width="16dp"
+          android:layout_height="16dp"
+          android:layout_below="@+id/ImageOption04"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="165dp"
+          android:layout_marginTop="50dp"
+          android:onClick="btnConfirm"
+          android:src="@drawable/ok" />
+
+    </RelativeLayout>
+
+            <View android:id="@+id/placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sticky_height" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/sticky" style="@style/Item.Sticky" />
+
+    </FrameLayout>
+
+</se.mah.kingdom_v02.ObservableScrollView>
