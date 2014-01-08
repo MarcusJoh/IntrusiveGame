@@ -120,17 +120,16 @@
                     android:textColor="@color/clr_event_text"
                     android:textSize="16dp" />
                 
-                <ImageView
-		           android:id="@+id/btn_option1_confirm"
-		           android:layout_width="24dp"
-		           android:layout_height="24dp"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="390dp"
-		           android:layout_marginLeft="163dp"
-		           android:layout_centerHorizontal="true"
-		           android:onClick="btnOption1"
-		           android:src="@drawable/icon_latin_1" />
+             <Button
+                    android:id="@+id/btn_option1_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="163dp"
+                    android:layout_marginTop="390dp"
+                    android:text="Accept" />
             </LinearLayout>
 
             <LinearLayout
@@ -161,17 +160,16 @@
                     android:textColor="@color/clr_event_text"
                     android:textSize="16dp" />
                 
-                <ImageView
-		           android:id="@+id/btn_option2_confirm"
-		           android:layout_width="24dp"
-		           android:layout_height="24dp"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="390dp"
-		           android:layout_marginLeft="163dp"
-		           android:layout_centerHorizontal="true"
-		           android:onClick="btnOption1"
-		           android:src="@drawable/icon_latin_2" />
+                <Button
+                    android:id="@+id/btn_option2_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="163dp"
+                    android:layout_marginTop="390dp"
+                    android:text="Accept" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -202,17 +200,19 @@
                     android:textColor="@color/clr_event_text"
                     android:textSize="16dp" />
                 
-                <ImageView
-		           android:id="@+id/btn_option3_confirm"
-		           android:layout_width="24dp"
-		           android:layout_height="24dp"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="390dp"
-		           android:layout_marginLeft="163dp"
-		           android:layout_centerHorizontal="true"
-		           android:onClick="btnOption3"
-		           android:src="@drawable/icon_latin_3" />
+                <Button
+                    android:id="@+id/btn_option3_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="163dp"
+                    android:layout_marginTop="390dp"
+                    android:onClick="btnOption3"
+                    android:src="@drawable/icon_latin_3"
+                    android:text="Accept" />
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -242,17 +242,16 @@
                     android:textColor="@color/clr_event_text"
                     android:textSize="16dp" />
                 
-                <ImageView
-		           android:id="@+id/btn_option4_confirm"
-		           android:layout_width="24dp"
-		           android:layout_height="24dp"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="390dp"
-		           android:layout_marginLeft="163dp"
-		           android:layout_centerHorizontal="true"
-		           android:onClick="btnOption4"
-		           android:src="@drawable/icon_latin_4" />
+                <Button
+                    android:id="@+id/btn_option4_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="163dp"
+                    android:layout_marginTop="390dp"
+                    android:text="Accept" />
             </LinearLayout>
         </LinearLayout>
 		
