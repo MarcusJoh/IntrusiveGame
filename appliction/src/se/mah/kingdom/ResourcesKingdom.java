@@ -35,6 +35,7 @@ public class ResourcesKingdom {
 		resourceEditor.commit();
 		return gameOver;
 	}
+	
 
 	public static boolean getstateGame() {
 		return resourcePref.getBoolean(KEY_PREFS_GAME, gameOver);

@@ -214,7 +214,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <TextView android:id="@+id/sticky" style="@style/Item.Sticky" />
+        <TextView android:id="@+id/eventText" style="@style/Item.Sticky" />
 
     </FrameLayout>
 

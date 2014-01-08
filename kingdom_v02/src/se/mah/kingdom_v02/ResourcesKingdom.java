@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.util.Log;
 
 public class ResourcesKingdom {
 	private static int food = 100;
@@ -23,7 +22,7 @@ public class ResourcesKingdom {
 
 	public ResourcesKingdom(Context context) {
 		ResourcesKingdom.resourcePref = context.getSharedPreferences(APP_SHARED_PREFS,
-				Activity.MODE_PRIVATE);
+				Context.MODE_PRIVATE);
 		ResourcesKingdom.resourceEditor = resourcePref.edit();
 	}
 

@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.PowerManager;
 import android.provider.Settings;
 import android.app.Activity;
-import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
@@ -43,11 +42,13 @@ public class Event extends Activity {
               | WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);   
         
     }
+	@Override
 	public void onStart() {
 		event_player.start();
 		super.onStart();
 	}
 
+	@Override
 	public void onDestroy() {
 		 
 		event_player.release();
@@ -56,6 +57,7 @@ public class Event extends Activity {
 		
 	}
 
+	@Override
 	public void onPause() {
 		 event_player.stop();
 		super.onPause();

@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.content.res.Configuration;
-import android.view.WindowManager;
 
 public class EventManager extends Activity {
 
@@ -16,7 +14,7 @@ public class EventManager extends Activity {
       FragmentManager fragmentManager = getFragmentManager();
       FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-      PM_Fragment pm_fragment = new PM_Fragment();
+      EventFragment pm_fragment = new EventFragment();
       fragmentTransaction.replace(android.R.id.content, pm_fragment);
    
       fragmentTransaction.commit();

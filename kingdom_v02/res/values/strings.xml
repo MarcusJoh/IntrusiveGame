@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    
     <string name="title_activity_event__manager">Event_Manager</string>
     <string name="landscape_message">This is Landscape mode fragment</string>
     <string name="portrait_message">This is Portrait mode fragment</string>
@@ -25,16 +24,16 @@
 
     <string name="title_activity_event_manager">EventManager</string>
     <string name="jester_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique mauris id posuere tempus. </string>
+
     <color name="clr_event_background">#F7E095</color>
-    
-     <string-array name="event_picker">
-        <item>e1p1/event1/option1e1¤food#-5/option2e1¤gold#-5*gold#-5/none/none/2¤e1p2</item>
-        <item>e2/event2/option1e2¤food#+5*gold#-5/option2e2¤food#-5/option3e2¤gold#-5/none/3¤none</item>
-        <item>e3/event3/option1e3¤food#-5/option2e3¤happ#-5*gold#-5/option3e3¤happ#-5*gold#-5/option3e3¤food#+5/4¤none</item>
-        <item>e1p2/event4/option1e4¤food#+5/option2e4¤gold#+10/option3e4¤gold#+5/option3e4¤happy#+15/4¤none</item>
-  
+
+    <string-array name="event_picker">
+        <item>e1p1/event1/option1e1¤gold#-5/option2e1¤gold#-5Ögold#-5/none/none/2¤e1p2</item>
+        <item>e2/event2/option1e2¤food#5Ögold#-5/option2e2¤food#-5/option3e2¤gold#-5/none/3¤none</item>
+        <item>e3/event3/option1e3¤gold#-5/option2e3¤happ#-5Ögold#-5/option3e3¤happ#-5Ögold#-5/option3e3¤food#5/4¤none</item>
+        <item>e1p2/event4/option1e4¤gold#-5/option2e4¤gold#10/option3e4¤gold#5/option3e4¤happy#15/4¤none</item>
     </string-array>
-    
+
     <string name="sticky_item">Sticky</string>
     <string name="quick_return_item">Quick Return</string>
 

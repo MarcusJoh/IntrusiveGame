@@ -5,7 +5,6 @@ import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
-
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -39,7 +38,6 @@ public class EventManager extends Activity {
 	public String resourceEffect3 = null;
 	public String resourceEffect4 = null;
 
-
 	private Timer timer;
 	private int update;
 	private int timesHappend;
@@ -50,7 +48,6 @@ public class EventManager extends Activity {
 	private int likenessOfEmergency;
 	private boolean emergencyHappening;
 
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -115,15 +112,15 @@ public class EventManager extends Activity {
 					+ eventOption2 + " " + eventOption3);
 			eventtext.setText(eventCont);
 
-		timer = new Timer();
-		time = Calendar.getInstance();
-		update = 1;
-		increaseInterval = 1 * 60;
-		timesHappend = 0;
-		increaseRate = 1;
-		totalTimeElapsed = 0;
-		likenessOfEmergency = 1;
-		emergencyHappening = false;
+			timer = new Timer();
+			time = Calendar.getInstance();
+			update = 1;
+			increaseInterval = 1 * 60;
+			timesHappend = 0;
+			increaseRate = 1;
+			totalTimeElapsed = 0;
+			likenessOfEmergency = 1;
+			emergencyHappening = false;
 
 			String[] optionEffect1 = eventOption1.split("¤");
 			String[] optionEffect2 = eventOption2.split("¤");
@@ -162,7 +159,7 @@ public class EventManager extends Activity {
 		}
 		if (eventChain != null) {
 
-			if (eventChain == "e1p2") {
+			if (eventChain.equals("e1p2")) {
 				Log.i("chain", "saved " + eventChain);
 
 			}
@@ -241,16 +238,91 @@ public class EventManager extends Activity {
 
 	public void btnConfirm(View v) {
 		TextView text = (TextView) findViewById(R.id.text_options);
+		int resourceNumber = 0;
 		if (text.getText().toString().equals(optionEvent1)) {
 			if (optionEvent1 != null) {
-				if (resourceEffect1.length() <= 6) {
+				if (resourceEffect1.length() <= 7) {
 					String[] resourceEffect = resourceEffect1.split("#");
-					Log.i("resourceEffect", resourceEffect[0] + ""
-							+ resourceEffect[1]);
-					
-				} else {Toast.makeText(this, "option1 selected", Toast.LENGTH_SHORT)
-							.show();
+
+					if (resourceEffect[0].equals("gold")) {
+						Log.i("resourceEffect", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+
+						resourceNumber = Integer.parseInt(resourceEffect[1]);
+
+						ResourcesKingdom.setGoldChange(resourceNumber);
+					}
+					if (resourceEffect[0].equals("happ")) {
+						Log.i("resourceEffect", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+						resourceNumber = Integer.parseInt(resourceEffect[1]);
+
+						ResourcesKingdom.setHappyChange(resourceNumber);
+					}
+					if (resourceEffect[0].equals("food")) {
+						Log.i("resourceEffect", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+						resourceNumber = Integer.parseInt(resourceEffect[1]);
+
+						ResourcesKingdom.setFoodChange(resourceNumber);
+					} else {
+						Log.i("error", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+					}
+
+				} else {
+					String[] resourceEffect = resourceEffect1.split("Ö");
+					String[] resourceEffectOne = resourceEffect[0].split("#");
+					String[] resourceEffectTwo = resourceEffect[1].split("#");
+
+					if (resourceEffectOne[0].equals("gold")) {
+						Log.i("resourceEffectOne", resourceEffectOne[0] + ""
+								+ resourceEffectOne[1]);
+						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
+
+						ResourcesKingdom.setGoldChange(resourceNumber);
+					}
+					if (resourceEffectOne[0].equals("happ")) {
+						Log.i("resourceEffectOne", resourceEffectOne[0] + ""
+								+ resourceEffectOne[1]);
+						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
+
+						ResourcesKingdom.setHappyChange(resourceNumber);
+					}
+					if (resourceEffectOne[0].equals("food")) {
+						Log.i("resourceEffectOne", resourceEffectOne[0] + ""
+								+ resourceEffectOne[1]);
+						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
+
+						ResourcesKingdom.setFoodChange(resourceNumber);
+					}
+					if (resourceEffectTwo.equals("gold")) {
+						Log.i("resourceEffectTwo", resourceEffectTwo[0] + ""
+								+ resourceEffectTwo[1]);
+						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
+
+						ResourcesKingdom.setGoldChange(resourceNumber);
+					}
+					if (resourceEffectTwo.equals("happ")) {
+						Log.i("resourceEffectTwo", resourceEffectTwo[0] + ""
+								+ resourceEffectTwo[1]);
+						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
+
+						ResourcesKingdom.setHappyChange(resourceNumber);
+					}
+					if (resourceEffectTwo.equals("food")) {
+						Log.i("resourceEffectTwo", resourceEffectTwo[0] + ""
+								+ resourceEffectTwo[1]);
+						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
+
+						ResourcesKingdom.setFoodChange(resourceNumber);
+					} else {
+						Log.i("error", resourceEffect[0] + ""
+								+ resourceEffect[1]);
+					}
+
 				}
+			
 			}
 		} else if (text.getText().toString().equals(optionEvent2)) {
 			if (optionEvent1 != null) {
@@ -300,65 +372,9 @@ public class EventManager extends Activity {
 		event_player.start();
 	}
 
-	public void option1_button(View v) {
-
-		ResourcesKingdom.setFoodChange(-5);
-		Toast.makeText(this, "food yes", Toast.LENGTH_SHORT).show();
-	}
-
-	public void option2_button(View v) {
-		int food = ResourcesKingdom.getFood();
-
-		Toast.makeText(this, "food " + Integer.toString(food),
-				Toast.LENGTH_SHORT).show();
-
-	}
-
-	public void option3_button(View v) {
-
-		ResourcesKingdom.setGoldChange(-5);
-		Toast.makeText(this, "gold yes", Toast.LENGTH_SHORT).show();
-	};
-
-	public void option4_button(View v) {
-		int gold = ResourcesKingdom.getGold();
-
-		Toast.makeText(this, "gold " + Integer.toString(gold),
-				Toast.LENGTH_SHORT).show();
-
-	}
-
-	public void option5_button(View v) {
-
-		ResourcesKingdom.setHappyChange(-5);
-		Toast.makeText(this, "happy yes", Toast.LENGTH_SHORT).show();
-	}
-
-	public void option6_button(View v) {
-		int happy = ResourcesKingdom.getHappy();
-
-		Toast.makeText(this, "happy " + Integer.toString(happy),
-				Toast.LENGTH_SHORT).show();
-
-	}
-
-	public void option7_button(View v) {
-		ResourcesKingdom.resetGame();
-
-		Toast.makeText(this, "game over ", Toast.LENGTH_SHORT).show();
-
-	}
-
-	public void option8_button(View v) {
-		ResourcesKingdom.setstateGame();
-
-		Toast.makeText(this, "game " + ResourcesKingdom.getstateGame(),
-				Toast.LENGTH_SHORT).show();
-
-	}
-	
 	public void SomeEmergency() {
-		Toast.makeText(this, "Lord the kingdom is on fire, open the dam!", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, "Lord the kingdom is on fire, open the dam!",
+				Toast.LENGTH_SHORT).show();
 		emergencyHappening = true;
 	}
 
@@ -373,13 +389,10 @@ public class EventManager extends Activity {
 		return false;
 	}
 
-
 	public void timer_button(View v) {
-		//Resources.setstateGame();
+		// Resources.setstateGame();
 
 	}
-
-
 
 	@Override
 	public void onBackPressed() {
