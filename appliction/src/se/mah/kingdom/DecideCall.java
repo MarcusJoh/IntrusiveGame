@@ -61,9 +61,9 @@ public class DecideCall extends Service{
 		Calendar c = Calendar.getInstance();
 		Random rand = new Random();
 		Log.i("Resources", String.valueOf(ResourcesKingdom.CombinedResources()));
-		int numb = rand.nextInt(4);
-//		if(numb==0)
-//			StartCall();
+		int numb = 0;
+		if(numb==0)
+			StartCall();
 //		if (!Resources.isSomthingBad()) {
 //			int emergency = rand.nextInt(Resources.CombinedResources());
 //			if (likenessOfEmergency == emergency) {
