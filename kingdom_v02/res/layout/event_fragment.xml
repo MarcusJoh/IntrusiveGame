@@ -23,7 +23,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/royal_beige">
+        android:background="@color/royal_red">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="420dp"
+                android:layout_height="500dp"
                 android:background="@color/royal_blue"
                 android:orientation="vertical" >
                 
@@ -52,7 +52,7 @@
                     android:gravity="center"
                     android:text="@string/text_minister_first_name"
                     android:textColor="@color/royal_beige"
-                    android:textSize="22dp" />
+                    android:textSize="22sp" />
                 
                 <TextView
                     android:id="@+id/text_minister_name_2"
@@ -61,8 +61,22 @@
                     android:gravity="center"
                     android:text="@string/text_minister_last_name"
                     android:textColor="@color/royal_beige"
-                    android:textSize="64dp" />
+                    android:textSize="64sp" />
 
+                
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/royal_red"
+                android:orientation="vertical" >
+                
+                <ImageView
+					android:id="@+id/event_icon"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="40dp"
+					android:src="@drawable/ic_event_flood" />
                 
             </LinearLayout>
 			<LinearLayout 
@@ -71,219 +85,297 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
             </LinearLayout>
+            
+			
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="240dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="200dp"
                 android:orientation="horizontal"
-                android:background="@color/royal_teal" >
+                android:background="@color/royal_blue" >
                 
                 <TextView
                     android:id="@+id/text_make_choice"
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
                     android:text="@string/makeChoice"
-                    android:textColor="@color/royal_teal"
-                    android:textSize="16dp" />
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
             </LinearLayout>
 
-            <LinearLayout
+            
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="360dp"
                 android:orientation="horizontal"
-                android:background="@color/royal_teal" >
+                android:background="@color/royal_orange" >
                 
                 <ImageView
-		           android:id="@+id/ImageOption01"
-		           android:layout_width="24dp"
-		           android:layout_height="24dp"
+		           android:id="@+id/imageBorderLeft1"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
 		           android:layout_alignParentTop="true"
 		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="390dp"
-		           android:layout_marginLeft="163dp"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/ic_marginred_l" />
+                <ImageView
+		           android:id="@+id/imageBorderRight1"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_alignParentTop="true"
+		           android:layout_alignParentRight="true"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/ic_marginred_r" />
+
+                
+                <ImageView
+		           android:id="@+id/imageOption01"
+		           android:layout_width="100dp"
+		           android:layout_height="100dp"
+		           android:layout_alignParentTop="true"
 		           android:layout_centerHorizontal="true"
-		           android:onClick="btnOption1"
-		           android:src="@drawable/icon_latin_1" />
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/ic_option_one" />
 
                 <TextView
                     android:id="@+id/text_option1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="40dp"
-                    android:layout_marginTop="44dp"
-                    android:text="@string/event_text"
-                    android:textColor="@color/clr_event_text"
-                    android:textSize="16dp" />
+                    android:layout_below="@id/imageOption01"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/event_option_1"
+                    android:textColor="@color/royal_red"
+                    android:textSize="16sp" />
                 
-             <Button
+             	<Button
                     android:id="@+id/btn_option1_confirm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="163dp"
-                    android:layout_marginTop="390dp"
+                    android:layout_marginBottom="20dp"
                     android:text="Accept" />
-            </LinearLayout>
+            </RelativeLayout>
 
-            <LinearLayout
+            
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="360dp"
                 android:orientation="vertical"
                 android:background="@color/royal_teal" >
+             	
                 <ImageView
-		           android:id="@+id/ImageOption02"
-		           android:layout_width="24dp"
-		           android:layout_height="24dp"
+		           android:id="@+id/imageBorderLeft2"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
 		           android:layout_alignParentTop="true"
 		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="390dp"
-		           android:layout_marginLeft="163dp"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/ic_marginblu_l" />
+                
+                <ImageView
+		           android:id="@+id/imageBorderRight2"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_alignParentTop="true"
+		           android:layout_alignParentRight="true"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/ic_marginblu_r" />
+             	
+                <ImageView
+		           android:id="@+id/imageOption02"
+		           android:layout_width="100dp"
+		           android:layout_height="100dp"
+		           android:layout_alignParentTop="true"
 		           android:layout_centerHorizontal="true"
-		           android:onClick="btnOption2"
-		           android:src="@drawable/icon_latin_2" />
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/ic_option_one" />
 
                 <TextView
                     android:id="@+id/text_option2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="40dp"
-                    android:layout_marginTop="44dp"
-                    android:text="@string/event_text"
-                    android:textColor="@color/clr_event_text"
-                    android:textSize="16dp" />
+                    android:layout_below="@id/imageOption02"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/event_option_2"
+                    android:textColor="@color/royal_blue"
+                    android:textSize="16sp" />
                 
                 <Button
                     android:id="@+id/btn_option2_confirm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="163dp"
-                    android:layout_marginTop="390dp"
+                    android:layout_marginBottom="20dp"
                     android:text="Accept" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+            </RelativeLayout>
+            
+            
+            <RelativeLayout
+                android:layout_width="match_parent"                
+                android:layout_height="360dp"
                 android:orientation="vertical"
-                android:background="@color/royal_teal" >
+                android:background="@color/royal_orange" >
                 
                 <ImageView
-		           android:id="@+id/ImageOption03"
-		           android:layout_width="24dp"
-		           android:layout_height="24dp"
+		           android:id="@+id/imageBorderLeft3"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
 		           android:layout_alignParentTop="true"
 		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="390dp"
-		           android:layout_marginLeft="163dp"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/ic_marginred_l" />
+                <ImageView
+		           android:id="@+id/imageBorderRight3"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_alignParentTop="true"
+		           android:layout_alignParentRight="true"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/ic_marginred_r" />
+                
+                <ImageView
+		           android:id="@+id/imageOption03"
+		           android:layout_width="100dp"
+		           android:layout_height="100dp"
+		           android:layout_alignParentTop="true"
 		           android:layout_centerHorizontal="true"
-		           android:onClick="btnOption1"
-		           android:src="@drawable/icon_latin_3" />
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/ic_option_one" />
 
                 <TextView
                     android:id="@+id/text_option3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="40dp"
-                    android:layout_marginTop="44dp"
-                    android:text="@string/event_text"
-                    android:textColor="@color/clr_event_text"
-                    android:textSize="16dp" />
+                    android:layout_below="@id/imageOption03"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/event_option_3"
+                    android:textColor="@color/royal_red"
+                    android:textSize="16sp" />
                 
                 <Button
                     android:id="@+id/btn_option3_confirm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="163dp"
-                    android:layout_marginTop="390dp"
-                    android:onClick="btnOption3"
-                    android:src="@drawable/icon_latin_3"
+                    android:layout_marginBottom="20dp"
                     android:text="Accept" />
 
-            </LinearLayout>
-            <LinearLayout
+            </RelativeLayout>
+            
+            
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="360dp"
                 android:orientation="vertical"
                 android:background="@color/royal_teal" >
+                
                 <ImageView
-		           android:id="@+id/ImageOption04"
-		           android:layout_width="24dp"
-		           android:layout_height="24dp"
+		           android:id="@+id/imageBorderLeft4"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
 		           android:layout_alignParentTop="true"
 		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="390dp"
-		           android:layout_marginLeft="163dp"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/ic_marginblu_l" />
+                
+                <ImageView
+		           android:id="@+id/imageBorderRight4"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_alignParentTop="true"
+		           android:layout_alignParentRight="true"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/ic_marginblu_r" />
+                
+                <ImageView
+		           android:id="@+id/imageOption04"
+		           android:layout_width="100dp"
+		           android:layout_height="100dp"
+		           android:layout_alignParentTop="true"
 		           android:layout_centerHorizontal="true"
-		           android:onClick="btnOption3"
-		           android:src="@drawable/icon_latin_4" />
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/ic_option_one" />
 
                 <TextView
                     android:id="@+id/text_option4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="40dp"
-                    android:layout_marginTop="44dp"
-                    android:text="@string/event_text"
-                    android:textColor="@color/clr_event_text"
-                    android:textSize="16dp" />
+                    android:layout_below="@id/imageOption04"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/event_option_4"
+                    android:textColor="@color/royal_blue"
+                    android:textSize="16sp" />
                 
                 <Button
                     android:id="@+id/btn_option4_confirm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="163dp"
-                    android:layout_marginTop="390dp"
+                    android:layout_marginBottom="20dp"
                     android:text="Accept" />
-            </LinearLayout>
+            </RelativeLayout>
         </LinearLayout>
 		
-        <!--<TextView 
-            android:id="@+id/eventText" 
-            style="@style/Item.Sticky" 
-            />  -->
-        <LinearLayout 
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:id="@+id/linear"
-    >
-    
-    <ImageView
-		android:id="@+id/ImageTest"
-		android:layout_width="24dp"
-		android:layout_height="24dp"
-		android:layout_centerHorizontal="true"
-		android:onClick="btnOption1"
-		android:src="@drawable/icon_latin_1" />
+  
+	    <LinearLayout 
+		    android:layout_width="match_parent"
+		  	android:layout_height="wrap_content"
+		   	android:orientation="vertical"
+		   	android:id="@+id/linear"
+		   	android:background="@color/royal_red" >
+		
+		    <TextView
+				android:id="@+id/eventName"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="40dp"
+				android:text="@string/event_name"
+				android:gravity="center"
+				android:textColor="@android:color/white"
+				android:textSize="22sp" />
+					
+			<TextView
+				android:id="@+id/eventText"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="@string/event_text"
+				android:textColor="@color/royal_beige"
+				android:textSize="16sp" />
+		
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+				android:layout_height="40dp">    
+			</LinearLayout>
+	  	</LinearLayout>
 
-      <TextView
-		android:id="@+id/eventText"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginLeft="40dp"
-		android:layout_marginRight="40dp"
-		android:layout_marginTop="44dp"
-		android:text="@string/event_text"
-		android:textColor="@color/clr_event_text"
-		android:textSize="16dp" />
 
-</LinearLayout>
 
     </FrameLayout>
 
