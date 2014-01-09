@@ -6,57 +6,71 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/clr_event_background"
+    android:background="@color/royal_blue"
     android:orientation="vertical"
     tools:context=".Event" >
 
-    <ImageView
-        android:id="@+id/btn_phone_decline"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:onClick="btnDecline"
-        android:src="@drawable/btn_decline" />
+                
+                <ImageView
+		           android:id="@+id/image_minister"
+		           android:layout_width="200dp"
+		           android:layout_height="200dp"
+		           android:layout_alignParentTop="true"
+		           android:layout_centerHorizontal="true"
+		           android:layout_marginTop="48dp"
+		           android:src="@drawable/ic_char_agriculture" />
 
-    <ImageView
-        android:id="@+id/btn_phone_accept"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btn_phone_decline"
-        android:layout_alignBottom="@+id/btn_phone_decline"
-        android:layout_alignParentLeft="true"
-        android:onClick="phone_button"
-        android:src="@drawable/btn_accept" />"
+                <TextView
+                    android:id="@+id/text_minister_name_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image_minister"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="@string/text_minister_first_name"
+                    android:textColor="@color/royal_beige"
+                    android:textSize="22sp" />
+                
+                <TextView
+                    android:id="@+id/text_minister_name_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_minister_name_1"
+                    android:gravity="center"
+                    android:text="@string/text_minister_last_name"
+                    android:textColor="@color/royal_beige"
+                    android:textSize="64sp" />
+                
+                <ImageView
+			        android:id="@+id/iconclock"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerHorizontal="true"
+			        android:layout_marginTop="24dp"
+					android:layout_below="@id/text_minister_name_2"
+			        android:src="@drawable/ic_clock" />
+
+                
+			    <ImageView
+			        android:id="@+id/btn_phone_decline"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginRight="48dp"
+			        android:layout_alignParentBottom="true"
+			        android:layout_alignParentRight="true"
+			        android:onClick="btnDecline"
+			        android:src="@drawable/ic_cancel" />
+			
+			    <ImageView
+			        android:id="@+id/btn_phone_accept"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="48dp"
+			        android:layout_alignBaseline="@+id/btn_phone_decline"
+			        android:layout_alignBottom="@+id/btn_phone_decline"
+			        android:layout_alignParentLeft="true"
+			        android:onClick="phone_button"
+			        android:src="@drawable/ic_accept" />
 
     
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/pic_background_call" />
-
-    <TextView
-        android:id="@+id/TextView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:text="@string/caller_name"
-        android:layout_marginLeft="90dp"
-        android:textColor="@color/clr_event_text"
-        android:textSize="24dp" />
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_alignLeft="@+id/imageView2"
-        android:layout_alignTop="@+id/imageView2"
-        android:layout_marginTop="130dp"
-        android:src="@drawable/minister" />
-
 </RelativeLayout>
