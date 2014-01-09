@@ -101,6 +101,7 @@ public class EventFragment extends Fragment implements
 		event_player = MediaPlayer.create(getActivity(), musicfileid);
 		event_player.start();
 
+		
 		resourcePrefs = new ResourcesKingdom(getActivity()
 				.getApplicationContext());
 
@@ -132,6 +133,7 @@ public class EventFragment extends Fragment implements
 		String eventOption4 = null;
 		String eventChain = null;// getting this from resources
 		String[] optionSplit = eventid.split("/");
+		
 		eventCont = optionSplit[1];
 		eventOption1 = optionSplit[2];
 		eventOption2 = optionSplit[3];

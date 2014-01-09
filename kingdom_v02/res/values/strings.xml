@@ -31,10 +31,10 @@
     <color name="clr_event_background">#F7E095</color>
 
     <string-array name="event_picker">
-        <item>e1p1/event1/option1e1¤gold#-5/option2e1¤gold#-5Ögold#-5/none/none/2¤e1p2</item>
-        <item>e2/event2/option1e2¤food#5Ögold#-5/option2e2¤food#-5/option3e2¤gold#-5/none/3¤none</item>
-        <item>e3/event3/option1e3¤gold#-5/option2e3¤happ#-5Ögold#-5/option3e3¤happ#-5Ögold#-5/option3e3¤food#5/4¤none</item>
-        <item>e1p2/event4/option1e4¤gold#-5/option2e4¤gold#10/option3e4¤gold#5/option3e4¤happy#15/4¤none</item>
+        <item>e1p1Åc1Åi1/event1/option1e1¤gold#-5/option2e1¤gold#-5Ögold#-5/none/none/2¤e1p2</item>
+        <item>e2Åc2Åi2/event2/option1e2¤food#5Ögold#-5/option2e2¤food#-5/option3e2¤gold#-5/none/3¤none</item>
+        <item>e3Åc3Åi3/event3/option1e3¤gold#-5/option2e3¤happ#-5Ögold#-5/option3e3¤happ#-5Ögold#-5/option3e3¤food#5/4¤none</item>
+        <item>e1p2Åc4Åi4/event4/option1e4¤gold#-5/option2e4¤gold#10/option3e4¤gold#5/option3e4¤happy#15/4¤none</item>
     </string-array>
 
     <string name="sticky_item">Sticky</string>
