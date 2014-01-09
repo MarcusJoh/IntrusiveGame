@@ -40,10 +40,8 @@
 		           android:id="@+id/image_minister"
 		           android:layout_width="fill_parent"
 		           android:layout_height="wrap_content"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentLeft="true"
 		           android:layout_marginTop="30dp"
-		           android:layout_centerHorizontal="true"
+		           android:layout_gravity="center"
 		           android:src="@drawable/ic_char_agriculture" />
 
                 <TextView
@@ -255,10 +253,37 @@
             </LinearLayout>
         </LinearLayout>
 		
-        <TextView 
+        <!--<TextView 
             android:id="@+id/eventText" 
             style="@style/Item.Sticky" 
-            />
+            />  -->
+        <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linear"
+    >
+    
+    <ImageView
+		android:id="@+id/ImageTest"
+		android:layout_width="24dp"
+		android:layout_height="24dp"
+		android:layout_centerHorizontal="true"
+		android:onClick="btnOption1"
+		android:src="@drawable/icon_latin_1" />
+
+      <TextView
+		android:id="@+id/eventText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="40dp"
+		android:layout_marginRight="40dp"
+		android:layout_marginTop="44dp"
+		android:text="@string/event_text"
+		android:textColor="@color/clr_event_text"
+		android:textSize="16dp" />
+
+</LinearLayout>
 
     </FrameLayout>
 

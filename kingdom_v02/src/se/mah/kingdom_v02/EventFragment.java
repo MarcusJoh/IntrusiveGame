@@ -18,6 +18,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +32,7 @@ public class EventFragment extends Fragment implements
 	private TextView option4Text;
 	private View mPlaceholderView;
 	private ObservableScrollView mObservableScrollView;
+	private View stickyView;
 
 	private MediaPlayer event_player;
 	private AudioManager event_am;
@@ -65,6 +67,7 @@ public class EventFragment extends Fragment implements
 
 		View rootView = inflater.inflate(R.layout.event_fragment, container,
 				false);
+		stickyView = (LinearLayout) rootView.findViewById(R.id.linear);
 
 		mObservableScrollView = (ObservableScrollView) rootView
 				.findViewById(R.id.scroll_view);
@@ -574,7 +577,11 @@ public class EventFragment extends Fragment implements
 
 	@Override
 	public void onScrollChanged(int scrollY) {
-		eventText.setTranslationY(Math.max(mPlaceholderView.getTop(), scrollY));
+		
+		//eventText.setTranslationY(Math.max(mPlaceholderView.getTop(), scrollY));
+		
+		
+		stickyView.setTranslationY(Math.max(mPlaceholderView.getTop(), scrollY));
 
 	}
 
