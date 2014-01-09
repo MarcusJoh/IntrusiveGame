@@ -4,7 +4,7 @@
     <string name="title_activity_event__manager">Event_Manager</string>
     <string name="landscape_message">This is Landscape mode fragment</string>
     <string name="portrait_message">This is Portrait mode fragment</string>
-    <string name="app_name">kingdom</string>
+    <string name="app_name">Arbitrea</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_wake_up">WakeUp</string>
@@ -13,6 +13,7 @@
     <string name="makeChoice">MAKE A CHOICE</string>
     <string name="text_minister_first_name">BARON BARTHOLOMEW</string>
     <string name="text_minister_last_name">THORP</string>
+    <string name="game_name">Arbitrea</string>
 
     <color name="black">#FF000000</color>
     <color name="green">#FF00FF00</color>
