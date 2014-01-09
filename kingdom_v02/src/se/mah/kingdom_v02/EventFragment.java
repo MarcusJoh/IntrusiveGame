@@ -121,14 +121,8 @@ public class EventFragment extends Fragment implements
 				.findViewById(R.id.btn_option4_confirm);
 		btnOption4.setOnClickListener(this);
 
-		Resources resStory = getResources();
-		String[] eventArrey = resStory.getStringArray(R.array.event_picker);
-		Random r = new Random();
-		int min = 0;
-		int max = eventArrey.length;
-		int i1 = r.nextInt(max - min) + min;
-		Log.i("id ", Integer.toString(i1));
-		String eventid = eventArrey[i1];
+		
+		String eventid=getActivity().getIntent().getExtras().getString("event");
 		String eventCont = null;
 		String eventOption1 = null;
 		String eventOption2 = null;
@@ -148,7 +142,7 @@ public class EventFragment extends Fragment implements
 		option2Text = (TextView) rootView.findViewById(R.id.text_option2);
 		option3Text = (TextView) rootView.findViewById(R.id.text_option3);
 		option4Text = (TextView) rootView.findViewById(R.id.text_option4);
-
+		
 		String[] eventNames = eventName.split("Å");
 		String eventMain = eventNames[0];
 		String eventChar = eventNames[1];
