@@ -99,8 +99,14 @@
 	    android:layout_marginTop="20dp"
 	    android:visibility="visible"
 	    android:src="@drawable/map_happy_hi" />
-    
 
-
+    <Button
+        android:id="@+id/buttonChangeStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="changeStat"
+        android:text="Change" />
 
 </RelativeLayout>
