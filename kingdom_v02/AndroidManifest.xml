@@ -7,7 +7,7 @@
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="18" />
-    
+
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
@@ -18,12 +18,12 @@
         android:label="@string/game_name"
         android:theme="@style/AppTheme" >
         <receiver android:name="se.mah.kingdom_v02.AlarmReceiver" />
-        
+
         <activity
             android:name="se.mah.kingdom_v02.StoryManager"
-            android:label="@string/app_name"
             android:configChanges="orientation"
-    		android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@style/NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,23 +33,28 @@
         </activity>
         <activity
             android:name="se.mah.kingdom_v02.Event"
-            android:label="@string/title_activity_wake_up"
             android:configChanges="orientation"
-    		android:screenOrientation="portrait"
+            android:label="@string/title_activity_wake_up"
+            android:screenOrientation="portrait"
             android:theme="@style/NoActionBar" >
         </activity>
         <activity
             android:name="se.mah.kingdom_v02.EventManager"
             android:configChanges="orientation"
-    		android:screenOrientation="portrait"
             android:label="@string/title_activity_event_manager"
+            android:screenOrientation="portrait"
             android:theme="@style/NoActionBar" >
         </activity>
+
         <service
             android:name="se.mah.kingdom_v02.DecideCall"
-            android:enabled="true">
+            android:enabled="true" >
         </service>
 
+        <activity
+            android:name="se.mah.kingdom_v02.DeathEvent"
+            android:label="@string/title_activity_death_event" >
+        </activity>
     </application>
 
 </manifest>
