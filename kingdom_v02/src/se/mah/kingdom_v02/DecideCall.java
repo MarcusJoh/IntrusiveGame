@@ -11,7 +11,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
-import android.widget.Toast;
 
 public class DecideCall extends Service{
 
@@ -43,7 +42,6 @@ public class DecideCall extends Service{
 	  @Override
 	  public int onStartCommand(Intent intent, int flags, int startId) {
 	    //TODO do something useful
-		  Toast.makeText(getBaseContext(), "Alarm started", Toast.LENGTH_SHORT).show();
 		  SetAlarm();
 //	        Intent intent2 = new Intent(this, Event.class);
 //	        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 

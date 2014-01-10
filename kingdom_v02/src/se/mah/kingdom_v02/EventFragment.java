@@ -20,7 +20,6 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class EventFragment extends Fragment implements
 		ObservableScrollView.Callbacks, OnClickListener {
@@ -64,8 +63,6 @@ public class EventFragment extends Fragment implements
 		/**
 		 * Inflate the layout for this fragment
 		 */
-		Toast.makeText(getActivity(), "PM", Toast.LENGTH_SHORT).show();
-
 		View rootView = inflater.inflate(R.layout.event_fragment, container,
 				false);
 		stickyView = rootView.findViewById(R.id.linear);
@@ -121,14 +118,7 @@ public class EventFragment extends Fragment implements
 				.findViewById(R.id.btn_option4_confirm);
 		btnOption4.setOnClickListener(this);
 
-		Resources resStory = getResources();
-		String[] eventArrey = resStory.getStringArray(R.array.event_picker);
-		Random r = new Random();
-		int min = 0;
-		int max = eventArrey.length;
-		int i1 = r.nextInt(max - min) + min;
-		Log.i("id ", Integer.toString(i1));
-		String eventid = eventArrey[i1];
+		String eventid=getActivity().getIntent().getExtras().getString("event");
 		String eventCont = null;
 		String eventOption1 = null;
 		String eventOption2 = null;
