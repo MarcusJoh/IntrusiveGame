@@ -154,7 +154,7 @@
                     android:textColor="@color/royal_red"
                     android:textSize="16sp" />
                 
-             	<Button
+             	<TextView
                     android:id="@+id/btn_option1_confirm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -213,7 +213,7 @@
                     android:textColor="@color/royal_blue"
                     android:textSize="16sp" />
                 
-                <Button
+                <TextView
                     android:id="@+id/btn_option2_confirm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -271,7 +271,7 @@
                     android:textColor="@color/royal_red"
                     android:textSize="16sp" />
                 
-                <Button
+                <TextView
                     android:id="@+id/btn_option3_confirm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -331,7 +331,7 @@
                     android:textColor="@color/royal_blue"
                     android:textSize="16sp" />
                 
-                <Button
+                <TextView
                     android:id="@+id/btn_option4_confirm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

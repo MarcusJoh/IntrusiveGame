@@ -106,16 +106,16 @@ public class EventFragment extends Fragment implements
 		resourcePrefs = new ResourcesKingdom(getActivity()
 				.getApplicationContext());
 
-		Button btnOption1 = (Button) rootView
+		TextView btnOption1 = (TextView) rootView
 				.findViewById(R.id.btn_option1_confirm);
 		btnOption1.setOnClickListener(this);
-		Button btnOption2 = (Button) rootView
+		TextView btnOption2 = (TextView) rootView
 				.findViewById(R.id.btn_option2_confirm);
 		btnOption2.setOnClickListener(this);
-		Button btnOption3 = (Button) rootView
+		TextView btnOption3 = (TextView) rootView
 				.findViewById(R.id.btn_option3_confirm);
 		btnOption3.setOnClickListener(this);
-		Button btnOption4 = (Button) rootView
+		TextView btnOption4 = (TextView) rootView
 				.findViewById(R.id.btn_option4_confirm);
 		btnOption4.setOnClickListener(this);
 

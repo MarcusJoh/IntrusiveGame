@@ -20,13 +20,85 @@
                     android:textSize="48sp" />
     
     <ImageView
-	    android:id="@+id/imageMap"
+	    android:id="@+id/imageMapBase"
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:layout_alignParentTop="true"
 	    android:layout_marginTop="20dp"
 	    android:visibility="visible"
-	    android:src="@drawable/map" />
+	    android:src="@drawable/map_base" />
+    <ImageView
+	    android:id="@+id/imageMapLF"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="20dp"
+	    android:visibility="visible"
+	    android:src="@drawable/map_food_low" />
+    <ImageView
+	    android:id="@+id/imageMapMF"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="20dp"
+	    android:visibility="visible"
+	    android:src="@drawable/map_food_med" />
+    <ImageView
+	    android:id="@+id/imageMapHF"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="20dp"
+	    android:visibility="visible"
+	    android:src="@drawable/map_food_hi" />
+    <ImageView
+	    android:id="@+id/imageMapLG"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="20dp"
+	    android:visibility="visible"
+	    android:src="@drawable/map_money_low" />
+    <ImageView
+	    android:id="@+id/imageMapMG"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="20dp"
+	    android:visibility="visible"
+	    android:src="@drawable/map_money_med" />
+    <ImageView
+	    android:id="@+id/imageMapHG"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="20dp"
+	    android:visibility="visible"
+	    android:src="@drawable/map_money_hi" />
+    <ImageView
+	    android:id="@+id/imageMapLH"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="20dp"
+	    android:visibility="visible"
+	    android:src="@drawable/map_happy_low" />
+    <ImageView
+	    android:id="@+id/imageMapMH"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="20dp"
+	    android:visibility="visible"
+	    android:src="@drawable/map_happy_med" />
+    <ImageView
+	    android:id="@+id/imageMapHH"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="20dp"
+	    android:visibility="visible"
+	    android:src="@drawable/map_happy_hi" />
     
 
 
