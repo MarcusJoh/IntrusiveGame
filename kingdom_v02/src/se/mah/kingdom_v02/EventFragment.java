@@ -86,7 +86,7 @@ public class EventFragment extends Fragment implements
 		event_am.setMode(AudioManager.MODE_IN_CALL);
 		event_am.setSpeakerphoneOn(false);
 		event_am.setBluetoothScoOn(true);
-		int musicfileid;
+		
 		timer = new Timer();
 		time = Calendar.getInstance();
 		update = 1;
@@ -96,6 +96,7 @@ public class EventFragment extends Fragment implements
 		totalTimeElapsed = 0;
 		likenessOfEmergency = 1;
 		emergencyHappening = false;
+		int musicfileid;
 		Resources res = this.getResources();
 		musicfileid = getResources().getIdentifier("event_voice", "raw",
 				"se.mah.kingdom_v02");
@@ -639,6 +640,7 @@ public class EventFragment extends Fragment implements
 	public void onDestroy() {
 
 		event_player.release();
+		decline();
 		super.onDestroy();
 
 	}

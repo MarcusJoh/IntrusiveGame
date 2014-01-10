@@ -56,7 +56,7 @@ public class DecideCall extends Service{
 		PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
 		Calendar time = Calendar.getInstance();
 		time.setTimeInMillis(System.currentTimeMillis());
-		time.add(Calendar.MINUTE, update);
+		time.add(Calendar.SECOND, update);
 		Log.i("Update", String.valueOf(update));
 		alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(), pendingIntent);
 		

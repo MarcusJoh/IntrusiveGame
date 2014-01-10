@@ -5,6 +5,7 @@ import java.util.Random;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.PowerManager;
 import android.provider.Settings;
 import android.app.Activity;
@@ -30,7 +31,8 @@ public class Event extends Activity {
 		setContentView(R.layout.activity_wake_up);
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
 		wakeDevice();
-		
+		beenPaused = false;
+
 		event_am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 		event_am.setMode(AudioManager.MODE_NORMAL);
 		event_am.setSpeakerphoneOn(true);
@@ -39,7 +41,7 @@ public class Event extends Activity {
 				Settings.System.DEFAULT_RINGTONE_URI);
 		event_player.setAudioStreamType(AudioManager.STREAM_MUSIC);
 		event_player.start();
-		
+
 		resourcePrefs = new ResourcesKingdom(Event.this.getApplicationContext());
 		Resources resStory = getResources();
 		String[] eventArrey = resStory.getStringArray(R.array.event_picker);
@@ -181,8 +183,10 @@ public class Event extends Activity {
 
 	@Override
 	public void onDestroy() {
-		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
+		getWindow()
+				.clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
 		event_player.release();
+		decline();
 		super.onDestroy();
 
 	}
@@ -190,7 +194,7 @@ public class Event extends Activity {
 	@Override
 	public void onResume() {
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
-		
+
 		if (beenPaused == true) {
 			decline();
 			Intent intent = new Intent(Event.this, StoryManager.class);
@@ -205,7 +209,8 @@ public class Event extends Activity {
 
 	@Override
 	public void onPause() {
-		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
+		getWindow()
+				.clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
 		beenPaused = true;
 		event_player.stop();
 		super.onPause();
@@ -213,16 +218,33 @@ public class Event extends Activity {
 	}
 
 	public void phone_button(View v) {
-		// event_player.stop();
-		// event_player.release();
+		event_player.stop();
+		int musicfileid;
+		event_am = (AudioManager) Event.this.getSystemService(
+				Context.AUDIO_SERVICE);
+		event_am.setMode(AudioManager.MODE_IN_CALL);
+		event_am.setSpeakerphoneOn(false);
+		event_am.setBluetoothScoOn(true);
+		Resources res = this.getResources();
+		musicfileid = getResources().getIdentifier("event_voice", "raw",
+				"se.mah.kingdom_v02");
+		event_player = MediaPlayer.create(Event.this, musicfileid);
+		event_player.start();
 
-		Intent intent = new Intent(Event.this, EventManager.class);
+		Handler handler = new Handler();
+		handler.postDelayed(new Runnable() {
+		    public void run() {
+		     Intent intent = new Intent(Event.this, EventManager.class);
 		intent.putExtra("event", event);
 		Event.this.finish();
-		startActivity(intent);
+		startActivity(intent);// Actions to do after 5 seconds
+		    }
+		}, 5000);
+		
 	}
 
 	public void btnDecline(View v) {
+		
 		decline();
 		Intent intent = new Intent(Intent.ACTION_MAIN);
 		intent.addCategory(Intent.CATEGORY_HOME);
