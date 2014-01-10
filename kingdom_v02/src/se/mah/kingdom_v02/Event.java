@@ -28,6 +28,7 @@ public class Event extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_wake_up);
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
 		wakeDevice();
 		
 		event_am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
@@ -180,7 +181,7 @@ public class Event extends Activity {
 
 	@Override
 	public void onDestroy() {
-
+		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
 		event_player.release();
 		super.onDestroy();
 
@@ -188,6 +189,7 @@ public class Event extends Activity {
 
 	@Override
 	public void onResume() {
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
 		
 		if (beenPaused == true) {
 			decline();
@@ -197,12 +199,13 @@ public class Event extends Activity {
 			startActivity(intent);
 		}
 
-		super.onPause();
+		super.onResume();
 
 	}
 
 	@Override
 	public void onPause() {
+		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
 		beenPaused = true;
 		event_player.stop();
 		super.onPause();
