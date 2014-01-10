@@ -25,7 +25,9 @@
 	    android:layout_height="wrap_content"
 	    android:layout_alignParentTop="true"
 	    android:layout_marginTop="20dp"
+	    android:visibility="visible"
 	    android:src="@drawable/map" />
+    
 
 
 
