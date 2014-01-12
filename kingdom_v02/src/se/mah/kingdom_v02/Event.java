@@ -196,7 +196,7 @@ public class Event extends Activity {
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
 
 		if (beenPaused == true) {
-			decline();
+			
 			Intent intent = new Intent(Event.this, StoryManager.class);
 
 			Event.this.finish();
@@ -211,6 +211,7 @@ public class Event extends Activity {
 	public void onPause() {
 		getWindow()
 				.clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
+		decline();
 		beenPaused = true;
 		event_player.stop();
 		super.onPause();
