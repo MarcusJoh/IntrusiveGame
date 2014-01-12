@@ -20,7 +20,6 @@ import android.widget.Toast;
 public class DecideCall extends Service{
 
 	private int update = 1;
-	private int timesHappend = 0;
 	private double increaseInterval=60*4;
 	private int increaseRate = 1;
 	private double totalTimeElapsed = 0;
@@ -39,14 +38,13 @@ public class DecideCall extends Service{
 		Calendar c = Calendar.getInstance();
 		Random rand = new Random();
 		Log.i("Resources", String.valueOf(ResourcesKingdom.CombinedResources()));
-		if (!ResourcesKingdom.isSomthingBad()) {
+		if (!ResourcesKingdom.ResourceIsZero()) {
 				StartCall();
 		}
 		else
 			return;
-			
-		int min = ((60 - c.get(Calendar.MINUTE)) / increaseRate);
-		int max = 60 / increaseRate;
+		int min = ((60 - c.get(Calendar.MINUTE)) );
+		int max = 60;
 		int random = rand.nextInt(max);
 		update = random + min;
 		int maxMins = (max + min);
@@ -56,7 +54,7 @@ public class DecideCall extends Service{
 		PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
 		Calendar time = Calendar.getInstance();
 		time.setTimeInMillis(System.currentTimeMillis());
-		time.add(Calendar.SECOND, update);
+		time.add(Calendar.MINUTE, update);
 		Log.i("Update", String.valueOf(update));
 		alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(), pendingIntent);
 		
