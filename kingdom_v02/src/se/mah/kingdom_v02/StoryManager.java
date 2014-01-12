@@ -18,18 +18,24 @@ public class StoryManager extends Activity {
 	private int gold = 2;
 	private int food = 2;
 	private int happy = 2;
+	private ResourcesKingdom resourcePrefs;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_story_manager);
+		resourcePrefs = new ResourcesKingdom(StoryManager.this.getApplicationContext());
 		AlarmManager alarmMgr = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
 		Intent intent = new Intent(this, AlarmReceiver.class);
 		PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
 		Calendar time = Calendar.getInstance();
 		time.setTimeInMillis(System.currentTimeMillis());
-		time.add(Calendar.SECOND, 5);
-		alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(),pendingIntent);
+		if(ResourcesKingdom.getstateGame())
+		{
+			time.add(Calendar.MINUTE, update);
+			ResourcesKingdom.setstateGame();
+			alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(),pendingIntent);
+		}
 		ImageView fl = (ImageView) findViewById(R.id.imageMapLF);
 		ImageView fm = (ImageView) findViewById(R.id.imageMapMF);
 		ImageView fh = (ImageView) findViewById(R.id.imageMapHF);
