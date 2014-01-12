@@ -18,7 +18,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+import android.webkit.WebView.FindListener;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class EventFragment extends Fragment implements
@@ -162,6 +164,10 @@ public class EventFragment extends Fragment implements
 
 		String[] optionChain = optionSplit[6].split("¤");
 		int optionNumber = Integer.parseInt(optionChain[0]);
+		if (optionNumber==3){
+			RelativeLayout layout4 = (RelativeLayout) rootView.findViewById(R.id.option4Frame);
+			layout4.setVisibility(View.GONE);
+		}
 		if (optionNumber == 2) {
 			Log.i("eventArrey", eventCont + " " + eventOption1 + " "
 					+ eventOption2);

@@ -107,6 +107,8 @@
 
             
             <RelativeLayout
+                android:id="@+id/option1Frame"
+                android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="360dp"
                 android:orientation="horizontal"
@@ -166,6 +168,8 @@
 
             
             <RelativeLayout
+                android:id="@+id/option2Frame"
+                android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="360dp"
                 android:orientation="vertical"
@@ -225,6 +229,8 @@
             
             
             <RelativeLayout
+                android:id="@+id/option3Frame"
+                android:visibility="visible"
                 android:layout_width="match_parent"                
                 android:layout_height="360dp"
                 android:orientation="vertical"
@@ -284,6 +290,8 @@
             
             
             <RelativeLayout
+                android:id="@+id/option4Frame"
+                android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="360dp"
                 android:orientation="vertical"
