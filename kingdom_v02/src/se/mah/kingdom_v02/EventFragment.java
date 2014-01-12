@@ -4,6 +4,8 @@ import java.util.Calendar;
 import java.util.Random;
 import java.util.Timer;
 
+import org.w3c.dom.Text;
+
 import se.mah.kingdom_v02.ObservableScrollView;
 import android.app.Fragment;
 import android.content.Context;
@@ -20,6 +22,7 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.webkit.WebView.FindListener;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -146,17 +149,33 @@ public class EventFragment extends Fragment implements
 		String eventMain = eventNames[0];
 		String eventChar = eventNames[1];
 		String eventIcon = eventNames[2];
+		ImageView minister = (ImageView)rootView.findViewById(R.id.image_minister);
+		TextView minister_first_name = (TextView)rootView.findViewById(R.id.text_minister_name_1);
+		TextView minister_last_name = (TextView)rootView.findViewById(R.id.text_minister_name_2);
 		if (eventChar.equals("c1")) {
 			Log.i("Char is ", "The Chancellor");
+			minister.setImageResource(R.drawable.ic_char_laurent);
+			minister_first_name.setText("LADY LAURENT");
+			minister_last_name.setText("FORTESCUE");
+			
 		}
 		if (eventChar.equals("c2")) {
 			Log.i("Char is ", "The Minister of Finance");
+			minister.setImageResource(R.drawable.ic_char_krane);
+			minister_first_name.setText("DUKE LUDWIG");
+			minister_last_name.setText("von KRANE");
 		}
 		if (eventChar.equals("c3")) {
 			Log.i("Char is ", "The Minister of Defence");
+			minister.setImageResource(R.drawable.ic_char_brion);
+			minister_first_name.setText("SER GODFRIED");
+			minister_last_name.setText("BRION");
 		}
 		if (eventChar.equals("c4")) {
 			Log.i("Char is ", "The Minister of Agriculture");
+			minister.setImageResource(R.drawable.ic_char_agriculture);
+			minister_first_name.setText("BARON BARTHOLOMEW");
+			minister_last_name.setText("THORP");
 		}
 		if (eventIcon.equals("i1")) {
 			Log.i("Icon is ", eventIcon);
