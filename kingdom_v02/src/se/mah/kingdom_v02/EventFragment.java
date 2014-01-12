@@ -91,7 +91,7 @@ public class EventFragment extends Fragment implements
 		event_am.setMode(AudioManager.MODE_IN_CALL);
 		event_am.setSpeakerphoneOn(false);
 		event_am.setBluetoothScoOn(true);
-		
+
 		timer = new Timer();
 		time = Calendar.getInstance();
 		update = 1;
@@ -124,7 +124,8 @@ public class EventFragment extends Fragment implements
 				.findViewById(R.id.btn_option4_confirm);
 		btnOption4.setOnClickListener(this);
 
-		String eventid=getActivity().getIntent().getExtras().getString("event");
+		String eventid = getActivity().getIntent().getExtras()
+				.getString("event");
 		String eventCont = null;
 		String eventOption1 = null;
 		String eventOption2 = null;
@@ -149,15 +150,18 @@ public class EventFragment extends Fragment implements
 		String eventMain = eventNames[0];
 		String eventChar = eventNames[1];
 		String eventIcon = eventNames[2];
-		ImageView minister = (ImageView)rootView.findViewById(R.id.image_minister);
-		TextView minister_first_name = (TextView)rootView.findViewById(R.id.text_minister_name_1);
-		TextView minister_last_name = (TextView)rootView.findViewById(R.id.text_minister_name_2);
+		ImageView minister = (ImageView) rootView
+				.findViewById(R.id.image_minister);
+		TextView minister_first_name = (TextView) rootView
+				.findViewById(R.id.text_minister_name_1);
+		TextView minister_last_name = (TextView) rootView
+				.findViewById(R.id.text_minister_name_2);
 		if (eventChar.equals("c1")) {
 			Log.i("Char is ", "The Chancellor");
 			minister.setImageResource(R.drawable.ic_char_laurent);
 			minister_first_name.setText("LADY LAURENT");
 			minister_last_name.setText("FORTESCUE");
-			
+
 		}
 		if (eventChar.equals("c2")) {
 			Log.i("Char is ", "The Minister of Finance");
@@ -183,8 +187,9 @@ public class EventFragment extends Fragment implements
 
 		String[] optionChain = optionSplit[6].split("¤");
 		int optionNumber = Integer.parseInt(optionChain[0]);
-		if (optionNumber==3){
-			RelativeLayout layout4 = (RelativeLayout) rootView.findViewById(R.id.option4Frame);
+		if (optionNumber == 3) {
+			RelativeLayout layout4 = (RelativeLayout) rootView
+					.findViewById(R.id.option4Frame);
 			layout4.setVisibility(View.GONE);
 		}
 		if (optionNumber == 2) {
@@ -291,8 +296,6 @@ public class EventFragment extends Fragment implements
 				resourceNumber = Integer.parseInt(resourceEffect[1]);
 
 				ResourcesKingdom.setFoodChange(resourceNumber);
-			} else {
-				Log.i("error", resourceEffect[0] + "" + resourceEffect[1]);
 			}
 		} else {
 			String[] resourceEffect = resourceEffect1.split("Ö");
@@ -340,16 +343,8 @@ public class EventFragment extends Fragment implements
 				resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
 
 				ResourcesKingdom.setFoodChange(resourceNumber);
-			} else {
-				Log.i("error", resourceEffect[0] + "" + resourceEffect[1]);
 			}
 		}
-		Intent intent = new Intent(getActivity().getBaseContext(),
-				StoryManager.class);
-
-		getActivity().finish();
-
-		startActivity(intent);
 	}
 
 	@Override
@@ -359,6 +354,12 @@ public class EventFragment extends Fragment implements
 			int resourceNumber = 0;
 			if (optionEvent1 != null) {
 				decline();
+				Intent intent = new Intent(getActivity().getBaseContext(),
+						StoryManager.class);
+
+				getActivity().finish();
+
+				startActivity(intent);
 			}
 			break;
 		case R.id.btn_option2_confirm:
@@ -390,9 +391,6 @@ public class EventFragment extends Fragment implements
 						resourceNumber = Integer.parseInt(resourceEffect[1]);
 
 						ResourcesKingdom.setFoodChange(resourceNumber);
-					} else {
-						Log.i("error", resourceEffect[0] + ""
-								+ resourceEffect[1]);
 					}
 				} else {
 
@@ -441,9 +439,6 @@ public class EventFragment extends Fragment implements
 						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
 
 						ResourcesKingdom.setFoodChange(resourceNumber);
-					} else {
-						Log.i("error", resourceEffect[0] + ""
-								+ resourceEffect[1]);
 					}
 				}
 				Intent intent = new Intent(getActivity().getBaseContext(),
@@ -483,9 +478,6 @@ public class EventFragment extends Fragment implements
 						resourceNumber = Integer.parseInt(resourceEffect[1]);
 
 						ResourcesKingdom.setFoodChange(resourceNumber);
-					} else {
-						Log.i("error", resourceEffect[0] + ""
-								+ resourceEffect[1]);
 					}
 				} else {
 					String[] resourceEffect = resourceEffect3.split("Ö");
@@ -533,9 +525,6 @@ public class EventFragment extends Fragment implements
 						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
 
 						ResourcesKingdom.setFoodChange(resourceNumber);
-					} else {
-						Log.i("error", resourceEffect[0] + ""
-								+ resourceEffect[1]);
 					}
 				}
 				Intent intent = new Intent(getActivity().getBaseContext(),
@@ -575,9 +564,6 @@ public class EventFragment extends Fragment implements
 						resourceNumber = Integer.parseInt(resourceEffect[1]);
 
 						ResourcesKingdom.setFoodChange(resourceNumber);
-					} else {
-						Log.i("error", resourceEffect[0] + ""
-								+ resourceEffect[1]);
 					}
 				} else {
 					String[] resourceEffect = resourceEffect1.split("Ö");
@@ -625,9 +611,6 @@ public class EventFragment extends Fragment implements
 						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
 
 						ResourcesKingdom.setFoodChange(resourceNumber);
-					} else {
-						Log.i("error", resourceEffect[0] + ""
-								+ resourceEffect[1]);
 					}
 				}
 				Intent intent = new Intent(getActivity().getBaseContext(),
@@ -645,7 +628,8 @@ public class EventFragment extends Fragment implements
 
 	@Override
 	public void onScrollChanged(int scrollY) {
-		stickyView.setTranslationY(Math.max(mPlaceholderView.getTop(), scrollY));
+		stickyView
+				.setTranslationY(Math.max(mPlaceholderView.getTop(), scrollY));
 
 	}
 
@@ -663,9 +647,9 @@ public class EventFragment extends Fragment implements
 
 	@Override
 	public void onDestroy() {
-
-		event_player.release();
 		decline();
+		event_player.release();
+
 		super.onDestroy();
 
 	}
@@ -674,7 +658,12 @@ public class EventFragment extends Fragment implements
 	public void onResume() {
 		event_player.stop();
 		if (beenPaused == true) {
-			decline();
+			Intent intent = new Intent(getActivity().getBaseContext(),
+					StoryManager.class);
+
+			getActivity().finish();
+
+			startActivity(intent);
 		}
 
 		super.onPause();
@@ -683,6 +672,7 @@ public class EventFragment extends Fragment implements
 
 	@Override
 	public void onPause() {
+		decline();
 		beenPaused = true;
 		event_player.stop();
 		super.onPause();
