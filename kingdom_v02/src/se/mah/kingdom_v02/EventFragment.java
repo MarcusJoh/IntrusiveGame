@@ -162,8 +162,8 @@ public class EventFragment extends Fragment implements
 		if (eventChar.equals("c2")) {
 			Log.i("Char is ", "The Minister of Finance");
 			minister.setImageResource(R.drawable.ic_char_krane);
-			minister_first_name.setText("DUKE LUDWIG");
-			minister_last_name.setText("von KRANE");
+			minister_first_name.setText("DUKE LUDWIG von");
+			minister_last_name.setText("KRANE");
 		}
 		if (eventChar.equals("c3")) {
 			Log.i("Char is ", "The Minister of Defence");

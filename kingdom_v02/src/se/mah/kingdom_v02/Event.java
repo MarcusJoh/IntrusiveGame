@@ -15,6 +15,8 @@ import android.content.res.Resources;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Event extends Activity {
 	private MediaPlayer event_player;
@@ -60,17 +62,34 @@ public class Event extends Activity {
 
 		String eventChar = eventNames[1];
 
+		ImageView minister = (ImageView) findViewById(R.id.image_minister);
+		TextView minister_first_name = (TextView) findViewById(R.id.text_minister_name_1);
+		TextView minister_last_name = (TextView) findViewById(R.id.text_minister_name_2);
+		
 		if (eventChar.equals("c1")) {
 			Log.i("Char is ", "The Chancellor");
+			minister.setImageResource(R.drawable.ic_char_laurent);
+			minister_first_name.setText("LADY LAURENT");
+			minister_last_name.setText("FORTESCUE");
+			
 		}
 		if (eventChar.equals("c2")) {
 			Log.i("Char is ", "The Minister of Finance");
+			minister.setImageResource(R.drawable.ic_char_krane);
+			minister_first_name.setText("DUKE LUDWIG von");
+			minister_last_name.setText("KRANE");
 		}
 		if (eventChar.equals("c3")) {
 			Log.i("Char is ", "The Minister of Defence");
+			minister.setImageResource(R.drawable.ic_char_brion);
+			minister_first_name.setText("SER GODFRIED");
+			minister_last_name.setText("BRION");
 		}
 		if (eventChar.equals("c4")) {
 			Log.i("Char is ", "The Minister of Agriculture");
+			minister.setImageResource(R.drawable.ic_char_agriculture);
+			minister_first_name.setText("BARON BARTHOLOMEW");
+			minister_last_name.setText("THORP");
 		}
 		String[] optionEffect1 = eventOption1.split("¤");
 		resourceEffect1 = optionEffect1[1];
