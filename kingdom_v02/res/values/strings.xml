@@ -44,9 +44,9 @@
         <item>e2Åc4Åi1/Your excellency. Some farms in the western area are having problems with meeting up this month harvest tax./Tell the farmer the the kingdom cant handle to lower the tax and that they have to make due for now.¤happ#-10Ögold#-5/Ease their taxings this month but only this month.¤gold#-10Öfood#-10/We can not have such problems in our farms, lower the harvest tax until the farms can handle higher taxings.¤food#-10Öhapp#5/My kingdom demands its harvest more now than ever, increase the tax so my people do not go hungry.¤happ#-10Öfood#-10/4¤none</item>
         <item>e3p1Åc4Åi1/Your excellency, Royal Family wishes to expand the your lands into the West. Onto the fertile land that now belongs to the farmers and their brethren who feed there. They ask for your approval of this./Those land are not for the family to take.¤happ#0/Remove the entire community and build a palace on it for the family.¤happ#-15Ögold#10/Let the farming community keep the piece of land but add a tax for it. Distribute the excess to the family .¤gold#10Öhapp#-15/Usurp the land, create a palace and hire the farmers under the land owned by the royals.¤happ#-15Ögold#-10/4¤e3p2</item>
         <item>e3p2Åc4Åi1/Your excellency, The farmers of the West have begun to throw meat onto Palace walls, setting the crops on fire and injuring royals!/This matter have to solve itself.¤happ#10Ögold#-10/Set up a meeting with the head of the farmers and the royals to discuss the land.¤happ#10Öfood#-15/Banish all farmers from the land for riot and bad behavior.¤gold#10Öhapp#-15/Bring in the army to fight them off but make no decision of the land.¤happ#10Ögold#-10/4¤e3p3</item>
-        <item> e3p3Åc4Åi1/Your excellency, Due to the riots between the farmers and the Royals, almost all the crops were destroyed and our food storage is running low do to it./What is done is done.¤happ#-15Öfood#-15/Import food from the neighbouring country.¤happ#10Ögold#-15/Make the farmers suffer for their decision and pay for the food.¤gold#10Öhapp#-15/Kill all the farmers for this treachery.¤happ#-10Öfood#-10/4¤none</item>
+        <item>e3p3Åc4Åi1/Your excellency, Due to the riots between the farmers and the Royals, almost all the crops were destroyed and our food storage is running low do to it./What is done is done.¤happ#-15Öfood#-15/Import food from the neighbouring country.¤happ#10Ögold#-15/Make the farmers suffer for their decision and pay for the food.¤gold#10Öhapp#-15/Kill all the farmers for this treachery.¤happ#-10Öfood#-10/4¤none</item>
         <item>e4p1Åc4Åi1/Your excellency, I have received word that the showers are belated for over two fortnights, the harvest may wither if we do not act in haste!/Pray the Lord and may the heavens quench the thirst of our soils!¤food#-15/Gather townsfolk to irrigate the fields.¤happ#-10Öfood#10/Punish the wicked of this kingdom, as they are responsible for this terrible fate!¤food#-5Öhapp#-15/Ration the resources, one pint of water and a fistful o flour per household!¤happ#-5Öfood#5/4¤e4p2</item>
-        <item>e4p1Åc4Åi1/Your excellency, the country is plagued by drought, the harvest will not deliver!/My Kingdom has survived worse!¤food#-5Öhapp#-10/Gather townsfolk to irrigate the fields.¤happ#-15Öfood#5/Bargain grains from the neighbouring kingdom.¤food#10Ögold#-15/none/3¤none</item>
+        <item>e4p2Åc4Åi1/Your excellency, the country is plagued by drought, the harvest will not deliver!/My Kingdom has survived worse!¤food#-5Öhapp#-10/Gather townsfolk to irrigate the fields.¤happ#-15Öfood#5/Bargain grains from the neighbouring kingdom.¤food#10Ögold#-15/none/3¤none</item>
         <item>e30p1Åc3Åi1/Good Sir, villains with their vile daggers! Roaming clean through the bounds of our fair kingdom! Shall I put this business into my own dispatch?/We can waste our gold and such filth, the outskirts can handle themselves.¤food#-5Öhapp#-10/We can not have robbers roaming around in my kingdom! Take as many men you need.¤happ#10Ögold#5/Set up a reward for capturing them.¤gold#-5Öhapp#-15/none/3¤e30p2</item>
         <item>e30p2Åc3Åi1/Good Sir, the dungeons repleted with villains, I stand at your command!/Let is be for now. Its better to have them in there then out here with the people.¤food#-5Ögold#-5/They are just filth Ser, hang them all!¤happ#-5Öfood#10/Make them work down in the quarries as punishment instead¤gold#10Öhapp#-15/none/3¤none </item>
         <item>e31Åc3Åi1/Good Sir, In what particular thought to work I know not, But seemeth it as a monstrosity is tormenting the commoners. Souls and bodies hath it divorced four! /Tis is flibbertigibbet, I shall be much bound to thee for not wasting my time hereafter!¤happ#-10/Ser Godfrey, strike at it with your partisan! May this end without the perdition of more souls!¤happ#10Ögold#-5/Dispatch a missive, a handsome reward to whom seizes this beast.¤gold#-10Öhapp#5/none/3¤none</item>
@@ -77,5 +77,262 @@
     <string name="quick_return_item">Quick Return</string>
     <string name="title_activity_death_event">DeathEvent</string>
     <string name="title_activity_coronation">Coronation</string>
+    
+    <string name="e1-jester-o1">e1-o1</string>
+    <string name="e1-jester-o2">e1-o2</string>
+    <string name="e1-jester-o3">e1-o3</string>
+    <string name="e1-jester-o4">e1-o1</string>
+    
+    <string name="e2-jester-o1">e2-o1</string>
+    <string name="e2-jester-o2">e2-o2</string>
+    <string name="e2-jester-o3">e2-o3</string>
+    <string name="e2-jester-o4">e2-o1</string>
+    
+    <string name="e3p1-jester-o1">e3p1-o1</string>
+    <string name="e3p1-jester-o2">e3p1-o2</string>
+    <string name="e3p1-jester-o3">e3p1-o3</string>
+    <string name="e3p1-jester-o4">e3p1-o1</string>
+    
+    <string name="e3p2-jester-o1">e3p2-o1</string>
+    <string name="e3p2-jester-o2">e3p2-o2</string>
+    <string name="e3p2-jester-o3">e3p2-o3</string>
+    <string name="e3p2-jester-o4">e3p2-o1</string>
+    
+    <string name="e3p3-jester-o1">e3p3-o1</string>
+    <string name="e3p3-jester-o2">e3p3-o2</string>
+    <string name="e3p3-jester-o3">e3p3-o3</string>
+    <string name="e3p3-jester-o4">e3p3-o1</string>
+    
+    <string name="e4p1-jester-o1">e4p1-o1</string>
+    <string name="e4p1-jester-o2">e4p1-o2</string>
+    <string name="e4p1-jester-o3">e4p1-o3</string>
+    <string name="e4p1-jester-o4">e4p1-o1</string>
+    
+    <string name="e4p2-jester-o1">e4p2-o1</string>
+    <string name="e4p2-jester-o2">e4p2-o2</string>
+    <string name="e4p2-jester-o3">e4p2-o3</string>
+    <string name="e4p2-jester-o4">e4p2-o1</string>
+    
+    <string name="e5-jester-o1">e5-o1</string>
+    <string name="e5-jester-o2">e5-o2</string>
+    <string name="e5-jester-o3">e5-o3</string>
+    <string name="e5-jester-o4">e5-o1</string>
+    
+    <string name="e6-jester-o1">e6-o1</string>
+    <string name="e6-jester-o2">e6-o2</string>
+    <string name="e6-jester-o3">e6-o3</string>
+    <string name="e6-jester-o4">e6-o1</string>
+    
+    <string name="e7-jester-o1">e7-o1</string>
+    <string name="e7-jester-o2">e7-o2</string>
+    <string name="e7-jester-o3">e7-o3</string>
+    <string name="e7-jester-o4">e7-o1</string>
+    
+    <string name="e8-jester-o1">e8-o1</string>
+    <string name="e8-jester-o2">e8-o2</string>
+    <string name="e8-jester-o3">e8-o3</string>
+    <string name="e8-jester-o4">e8-o1</string>
+    
+    <string name="e9-jester-o1">e9-o1</string>
+    <string name="e9-jester-o2">e9-o2</string>
+    <string name="e9-jester-o3">e9-o3</string>
+    <string name="e9-jester-o4">e9-o1</string>
+    
+    <string name="e10-jester-o1">e10-o1</string>
+    <string name="e10-jester-o2">e10-o2</string>
+    <string name="e10-jester-o3">e10-o3</string>
+    <string name="e10-jester-o4">e10-o1</string>
+    
+    <string name="e11-jester-o1">e11-o1</string>
+    <string name="e11-jester-o2">e11-o2</string>
+    <string name="e11-jester-o3">e11-o3</string>
+    <string name="e11-jester-o4">e11-o1</string>
+    
+    <string name="e12-jester-o1">e12-o1</string>
+    <string name="e12-jester-o2">e12-o2</string>
+    <string name="e12-jester-o3">e12-o3</string>
+    <string name="e12-jester-o4">e12-o1</string>
+    
+    <string name="e13p1-jester-o1">e13p1-o1</string>
+    <string name="e13p1-jester-o2">e13p1-o2</string>
+    <string name="e13p1-jester-o3">e13p1-o3</string>
+    <string name="e13p1-jester-o4">e13p1-o1</string>
+    
+    <string name="e13p2-jester-o1">e13p2-o1</string>
+    <string name="e13p2-jester-o2">e13p2-o2</string>
+    <string name="e13p2-jester-o3">e13p2-o3</string>
+    <string name="e13p2-jester-o4">e13p2-o1</string>
+    
+    <string name="e14-jester-o1">e14-o1</string>
+    <string name="e14-jester-o2">e14-o2</string>
+    <string name="e14-jester-o3">e14-o3</string>
+    <string name="e14-jester-o4">e14-o1</string>
+    
+    <string name="e15-jester-o1">e15-o1</string>
+    <string name="e15-jester-o2">e15-o2</string>
+    <string name="e15-jester-o3">e15-o3</string>
+    <string name="e15-jester-o4">e15-o1</string>
+    
+    <string name="e16-jester-o1">e16-o1</string>
+    <string name="e16-jester-o2">e16-o2</string>
+    <string name="e16-jester-o3">e16-o3</string>
+    <string name="e16-jester-o4">e16-o1</string>
+    
+    <string name="e17-jester-o1">e17-o1</string>
+    <string name="e17-jester-o2">e17-o2</string>
+    <string name="e17-jester-o3">e17-o3</string>
+    <string name="e17-jester-o4">e17-o1</string>
+    
+    <string name="e18-jester-o1">e18-o1</string>
+    <string name="e18-jester-o2">e18-o2</string>
+    <string name="e18-jester-o3">e18-o3</string>
+    <string name="e18-jester-o4">e18-o1</string>
+    
+    <string name="e19-jester-o1">e19-o1</string>
+    <string name="e19-jester-o2">e19-o2</string>
+    <string name="e19-jester-o3">e19-o3</string>
+    <string name="e19-jester-o4">e19-o1</string>
+    
+    <string name="e20p1-jester-o1">e20p1-o1</string>
+    <string name="e20p1-jester-o2">e20p1-o2</string>
+    <string name="e20p1-jester-o3">e20p1-o3</string>
+    <string name="e20p1-jester-o4">e20p1-o1</string>
+    
+    <string name="e20p2-jester-o1">e20p2-o1</string>
+    <string name="e20p2-jester-o2">e20p2-o2</string>
+    <string name="e20p2-jester-o3">e20p2-o3</string>
+    <string name="e20p2-jester-o4">e20p2-o1</string>
+    
+    <string name="e21p1-jester-o1">e21p1-o1</string>
+    <string name="e21p1-jester-o2">e21p1-o2</string>
+    <string name="e21p1-jester-o3">e21p1-o3</string>
+    <string name="e21p1-jester-o4">e21p1-o1</string>
+    
+    <string name="e21p2-jester-o1">e21p2-o1</string>
+    <string name="e21p2-jester-o2">e21p2-o2</string>
+    <string name="e21p2-jester-o3">e21p2-o3</string>
+    <string name="e21p2-jester-o4">e21p2-o1</string>
+    
+    <string name="e22-jester-o1">e22-o1</string>
+    <string name="e22-jester-o2">e22-o2</string>
+    <string name="e22-jester-o3">e22-o3</string>
+    <string name="e22-jester-o4">e22-o1</string>
+    
+    <string name="e23-jester-o1">e23-o1</string>
+    <string name="e23-jester-o2">e23-o2</string>
+    <string name="e23-jester-o3">e23-o3</string>
+    <string name="e23-jester-o4">e23-o1</string>
+    
+    <string name="e24-jester-o1">e24-o1</string>
+    <string name="e24-jester-o2">e24-o2</string>
+    <string name="e24-jester-o3">e24-o3</string>
+    <string name="e24-jester-o4">e24-o1</string>
+    
+    <string name="e25p1-jester-o1">e25p1-o1</string>
+    <string name="e25p1-jester-o2">e25p1-o2</string>
+    <string name="e25p1-jester-o3">e25p1-o3</string>
+    <string name="e25p1-jester-o4">e25p1-o1</string>
+    
+    <string name="e25p2-jester-o1">e25p2-o1</string>
+    <string name="e25p2-jester-o2">e25p2-o2</string>
+    <string name="e25p2-jester-o3">e25p2-o3</string>
+    <string name="e25p2-jester-o4">e25p2-o1</string>
+    
+    <string name="e26p1-jester-o1">e26p1-o1</string>
+    <string name="e26p1-jester-o2">e26p1-o2</string>
+    <string name="e26p1-jester-o3">e26p1-o3</string>
+    <string name="e26p1-jester-o4">e26p1-o1</string>
+    
+    <string name="e26p2-jester-o1">e26p2-o1</string>
+    <string name="e26p2-jester-o2">e26p2-o2</string>
+    <string name="e26p2-jester-o3">e26p2-o3</string>
+    <string name="e26p2-jester-o4">e26p2-o1</string>
+    
+    <string name="e27p1-jester-o1">e27p1-o1</string>
+    <string name="e27p1-jester-o2">e27p1-o2</string>
+    <string name="e27p1-jester-o3">e27p1-o3</string>
+    <string name="e27p1-jester-o4">e27p1-o1</string>
+    
+    <string name="e27p2-jester-o1">e27p2-o1</string>
+    <string name="e27p2-jester-o2">e27p2-o2</string>
+    <string name="e27p2-jester-o3">e27p2-o3</string>
+    <string name="e27p2-jester-o4">e27p2-o1</string>
+    
+    <string name="e28-jester-o1">e28-o1</string>
+    <string name="e28-jester-o2">e28-o2</string>
+    <string name="e28-jester-o3">e28-o3</string>
+    <string name="e28-jester-o4">e28-o1</string>
+    
+    <string name="e29-jester-o1">e29-o1</string>
+    <string name="e29-jester-o2">e29-o2</string>
+    <string name="e29-jester-o3">e29-o3</string>
+    <string name="e29-jester-o4">e29-o1</string>
+
+    <string name="e30p1-jester-o1">e30p1-o1</string>
+    <string name="e30p1-jester-o2">e30p1-o2</string>
+    <string name="e30p1-jester-o3">e30p1-o3</string>
+    <string name="e30p1-jester-o4">e30p1-o1</string>
+    
+    <string name="e30p2-jester-o1">e30p2-o1</string>
+    <string name="e30p2-jester-o2">e30p2-o2</string>
+    <string name="e30p2-jester-o3">e30p2-o3</string>
+    <string name="e30p2-jester-o4">e30p2-o1</string>
+    
+    <string name="e31-jester-o1">e31-o1</string>
+    <string name="e31-jester-o2">e31-o2</string>
+    <string name="e31-jester-o3">e31-o3</string>
+    <string name="e31-jester-o4">e31-o1</string>
+    
+    <string name="e32p1-jester-o1">e32p1-o1</string>
+    <string name="e32p1-jester-o2">e32p1-o2</string>
+    <string name="e32p1-jester-o3">e32p1-o3</string>
+    <string name="e32p1-jester-o4">e32p1-o1</string>
+    
+    <string name="e32p2-jester-o1">e32p2-o1</string>
+    <string name="e32p2-jester-o2">e32p2-o2</string>
+    <string name="e32p2-jester-o3">e32p2-o3</string>
+    <string name="e32p2-jester-o4">e32p2-o1</string>
+    
+    <string name="e32p3-jester-o1">e32p3-o1</string>
+    <string name="e32p3-jester-o2">e32p3-o2</string>
+    <string name="e32p3-jester-o3">e32p3-o3</string>
+    <string name="e32p3-jester-o4">e32p3-o1</string>
+    
+    <string name="e33-jester-o1">e33-o1</string>
+    <string name="e33-jester-o2">e33-o2</string>
+    <string name="e33-jester-o3">e33-o3</string>
+    <string name="e33-jester-o4">e33-o1</string>
+    
+    <string name="e34-jester-o1">e34-o1</string>
+    <string name="e34-jester-o2">e34-o2</string>
+    <string name="e34-jester-o3">e34-o3</string>
+    <string name="e34-jester-o4">e34-o1</string>
+    
+    <string name="e35-jester-o1">e35-o1</string>
+    <string name="e35-jester-o2">e35-o2</string>
+    <string name="e35-jester-o3">e35-o3</string>
+    <string name="e35-jester-o4">e35-o1</string>
+    
+    <string name="e36-jester-o1">e36-o1</string>
+    <string name="e36-jester-o2">e36-o2</string>
+    <string name="e36-jester-o3">e36-o3</string>
+    <string name="e36-jester-o4">e36-o1</string>
+    
+    <string name="e37-jester-o1">e37-o1</string>
+    <string name="e37-jester-o2">e37-o2</string>
+    <string name="e37-jester-o3">e37-o3</string>
+    <string name="e37-jester-o4">e37-o1</string>
+    
+    <string name="e38-jester-o1">e38-o1</string>
+    <string name="e38-jester-o2">e38-o2</string>
+    <string name="e38-jester-o3">e38-o3</string>
+    <string name="e38-jester-o4">e38-o1</string>
+    
+    <string name="e39-jester-o1">e39-o1</string>
+    <string name="e39-jester-o2">e39-o2</string>
+    <string name="e39-jester-o3">e39-o3</string>
+    <string name="e39-jester-o4">e39-o1</string>
+    
+    
 
 </resources>
