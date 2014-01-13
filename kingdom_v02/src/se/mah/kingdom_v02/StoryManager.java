@@ -29,6 +29,11 @@ public class StoryManager extends Activity {
 		Intent intent = new Intent(this, AlarmReceiver.class);
 		PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
 		Calendar time = Calendar.getInstance();
+		int min = ((60 - time.get(Calendar.MINUTE)) );
+		int max = 60;
+		Random rand = new Random();
+		int random = rand.nextInt(max);
+		int update = random + min;
 		time.setTimeInMillis(System.currentTimeMillis());
 		if(ResourcesKingdom.getstateGame())
 		{

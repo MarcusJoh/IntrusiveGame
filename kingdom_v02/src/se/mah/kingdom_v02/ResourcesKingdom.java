@@ -102,7 +102,7 @@ public class ResourcesKingdom {
 
 	
 	
-	public static boolean isSomthingBad()
+	public static boolean ResourceIsZero()
 	{
 		return (food <= 0 || gold <= 0|| happy <= 0) ? true : false;
 	}
