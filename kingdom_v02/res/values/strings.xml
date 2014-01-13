@@ -78,260 +78,260 @@
     <string name="title_activity_death_event">DeathEvent</string>
     <string name="title_activity_coronation">Coronation</string>
     
-    <string name="e1-jester-o1">e1-o1</string>
-    <string name="e1-jester-o2">e1-o2</string>
-    <string name="e1-jester-o3">e1-o3</string>
-    <string name="e1-jester-o4">e1-o1</string>
+    <string name="e1_jester_o1">e1-o1</string>
+    <string name="e1_jester_o2">e1-o2</string>
+    <string name="e1_jester_o3">e1-o3</string>
+    <string name="e1_jester_o4">e1-o1</string>
     
-    <string name="e2-jester-o1">e2-o1</string>
-    <string name="e2-jester-o2">e2-o2</string>
-    <string name="e2-jester-o3">e2-o3</string>
-    <string name="e2-jester-o4">e2-o1</string>
+    <string name="e2_jester_o1">e2-o1</string>
+    <string name="e2_jester_o2">e2-o2</string>
+    <string name="e2_jester_o3">e2-o3</string>
+    <string name="e2_jester_o4">e2-o1</string>
     
-    <string name="e3p1-jester-o1">e3p1-o1</string>
-    <string name="e3p1-jester-o2">e3p1-o2</string>
-    <string name="e3p1-jester-o3">e3p1-o3</string>
-    <string name="e3p1-jester-o4">e3p1-o1</string>
+    <string name="e3p1_jester_o1">e3p1-o1</string>
+    <string name="e3p1_jester_o2">e3p1-o2</string>
+    <string name="e3p1_jester_o3">e3p1-o3</string>
+    <string name="e3p1_jester_o4">e3p1-o1</string>
     
-    <string name="e3p2-jester-o1">e3p2-o1</string>
-    <string name="e3p2-jester-o2">e3p2-o2</string>
-    <string name="e3p2-jester-o3">e3p2-o3</string>
-    <string name="e3p2-jester-o4">e3p2-o1</string>
+    <string name="e3p2_jester_o1">e3p2-o1</string>
+    <string name="e3p2_jester_o2">e3p2-o2</string>
+    <string name="e3p2_jester_o3">e3p2-o3</string>
+    <string name="e3p2_jester_o4">e3p2-o1</string>
     
-    <string name="e3p3-jester-o1">e3p3-o1</string>
-    <string name="e3p3-jester-o2">e3p3-o2</string>
-    <string name="e3p3-jester-o3">e3p3-o3</string>
-    <string name="e3p3-jester-o4">e3p3-o1</string>
+    <string name="e3p3_jester_o1">e3p3-o1</string>
+    <string name="e3p3_jester_o2">e3p3-o2</string>
+    <string name="e3p3_jester_o3">e3p3-o3</string>
+    <string name="e3p3_jester_o4">e3p3-o1</string>
     
-    <string name="e4p1-jester-o1">e4p1-o1</string>
-    <string name="e4p1-jester-o2">e4p1-o2</string>
-    <string name="e4p1-jester-o3">e4p1-o3</string>
-    <string name="e4p1-jester-o4">e4p1-o1</string>
+    <string name="e4p1_jester_o1">e4p1-o1</string>
+    <string name="e4p1_jester_o2">e4p1-o2</string>
+    <string name="e4p1_jester_o3">e4p1-o3</string>
+    <string name="e4p1_jester_o4">e4p1-o1</string>
     
-    <string name="e4p2-jester-o1">e4p2-o1</string>
-    <string name="e4p2-jester-o2">e4p2-o2</string>
-    <string name="e4p2-jester-o3">e4p2-o3</string>
-    <string name="e4p2-jester-o4">e4p2-o1</string>
+    <string name="e4p2_jester_o1">e4p2-o1</string>
+    <string name="e4p2_jester_o2">e4p2-o2</string>
+    <string name="e4p2_jester_o3">e4p2-o3</string>
+    <string name="e4p2_jester_o4">e4p2-o1</string>
     
-    <string name="e5-jester-o1">e5-o1</string>
-    <string name="e5-jester-o2">e5-o2</string>
-    <string name="e5-jester-o3">e5-o3</string>
-    <string name="e5-jester-o4">e5-o1</string>
+    <string name="e5_jester_o1">e5-o1</string>
+    <string name="e5_jester_o2">e5-o2</string>
+    <string name="e5_jester_o3">e5-o3</string>
+    <string name="e5_jester_o4">e5-o1</string>
     
-    <string name="e6-jester-o1">e6-o1</string>
-    <string name="e6-jester-o2">e6-o2</string>
-    <string name="e6-jester-o3">e6-o3</string>
-    <string name="e6-jester-o4">e6-o1</string>
+    <string name="e6_jester_o1">e6-o1</string>
+    <string name="e6_jester_o2">e6-o2</string>
+    <string name="e6_jester_o3">e6-o3</string>
+    <string name="e6_jester_o4">e6-o1</string>
     
-    <string name="e7-jester-o1">e7-o1</string>
-    <string name="e7-jester-o2">e7-o2</string>
-    <string name="e7-jester-o3">e7-o3</string>
-    <string name="e7-jester-o4">e7-o1</string>
+    <string name="e7_jester_o1">e7-o1</string>
+    <string name="e7_jester_o2">e7-o2</string>
+    <string name="e7_jester_o3">e7-o3</string>
+    <string name="e7_jester_o4">e7-o1</string>
     
-    <string name="e8-jester-o1">e8-o1</string>
-    <string name="e8-jester-o2">e8-o2</string>
-    <string name="e8-jester-o3">e8-o3</string>
-    <string name="e8-jester-o4">e8-o1</string>
+    <string name="e8_jester_o1">e8-o1</string>
+    <string name="e8_jester_o2">e8-o2</string>
+    <string name="e8_jester_o3">e8-o3</string>
+    <string name="e8_jester_o4">e8-o1</string>
     
-    <string name="e9-jester-o1">e9-o1</string>
-    <string name="e9-jester-o2">e9-o2</string>
-    <string name="e9-jester-o3">e9-o3</string>
-    <string name="e9-jester-o4">e9-o1</string>
+    <string name="e9_jester_o1">e9-o1</string>
+    <string name="e9_jester_o2">e9-o2</string>
+    <string name="e9_jester_o3">e9-o3</string>
+    <string name="e9_jester_o4">e9-o1</string>
     
-    <string name="e10-jester-o1">e10-o1</string>
-    <string name="e10-jester-o2">e10-o2</string>
-    <string name="e10-jester-o3">e10-o3</string>
-    <string name="e10-jester-o4">e10-o1</string>
+    <string name="e10_jester_o1">e10-o1</string>
+    <string name="e10_jester_o2">e10-o2</string>
+    <string name="e10_jester_o3">e10-o3</string>
+    <string name="e10_jester_o4">e10-o1</string>
     
-    <string name="e11-jester-o1">e11-o1</string>
-    <string name="e11-jester-o2">e11-o2</string>
-    <string name="e11-jester-o3">e11-o3</string>
-    <string name="e11-jester-o4">e11-o1</string>
+    <string name="e11_jester_o1">e11-o1</string>
+    <string name="e11_jester_o2">e11-o2</string>
+    <string name="e11_jester_o3">e11-o3</string>
+    <string name="e11_jester_o4">e11-o1</string>
     
-    <string name="e12-jester-o1">e12-o1</string>
-    <string name="e12-jester-o2">e12-o2</string>
-    <string name="e12-jester-o3">e12-o3</string>
-    <string name="e12-jester-o4">e12-o1</string>
+    <string name="e12_jester_o1">e12-o1</string>
+    <string name="e12_jester_o2">e12-o2</string>
+    <string name="e12_jester_o3">e12-o3</string>
+    <string name="e12_jester_o4">e12-o1</string>
     
-    <string name="e13p1-jester-o1">e13p1-o1</string>
-    <string name="e13p1-jester-o2">e13p1-o2</string>
-    <string name="e13p1-jester-o3">e13p1-o3</string>
-    <string name="e13p1-jester-o4">e13p1-o1</string>
+    <string name="e13p1_jester_o1">e13p1-o1</string>
+    <string name="e13p1_jester_o2">e13p1-o2</string>
+    <string name="e13p1_jester_o3">e13p1-o3</string>
+    <string name="e13p1_jester_o4">e13p1-o1</string>
     
-    <string name="e13p2-jester-o1">e13p2-o1</string>
-    <string name="e13p2-jester-o2">e13p2-o2</string>
-    <string name="e13p2-jester-o3">e13p2-o3</string>
-    <string name="e13p2-jester-o4">e13p2-o1</string>
+    <string name="e13p2_jester_o1">e13p2-o1</string>
+    <string name="e13p2_jester_o2">e13p2-o2</string>
+    <string name="e13p2_jester_o3">e13p2-o3</string>
+    <string name="e13p2_jester_o4">e13p2-o1</string>
     
-    <string name="e14-jester-o1">e14-o1</string>
-    <string name="e14-jester-o2">e14-o2</string>
-    <string name="e14-jester-o3">e14-o3</string>
-    <string name="e14-jester-o4">e14-o1</string>
+    <string name="e14_jester_o1">e14-o1</string>
+    <string name="e14_jester_o2">e14-o2</string>
+    <string name="e14_jester_o3">e14-o3</string>
+    <string name="e14_jester_o4">e14-o1</string>
     
-    <string name="e15-jester-o1">e15-o1</string>
-    <string name="e15-jester-o2">e15-o2</string>
-    <string name="e15-jester-o3">e15-o3</string>
-    <string name="e15-jester-o4">e15-o1</string>
+    <string name="e15_jester_o1">e15-o1</string>
+    <string name="e15_jester_o2">e15-o2</string>
+    <string name="e15_jester_o3">e15-o3</string>
+    <string name="e15_jester_o4">e15-o1</string>
     
-    <string name="e16-jester-o1">e16-o1</string>
-    <string name="e16-jester-o2">e16-o2</string>
-    <string name="e16-jester-o3">e16-o3</string>
-    <string name="e16-jester-o4">e16-o1</string>
+    <string name="e16_jester_o1">e16-o1</string>
+    <string name="e16_jester_o2">e16-o2</string>
+    <string name="e16_jester_o3">e16-o3</string>
+    <string name="e16_jester_o4">e16-o1</string>
     
-    <string name="e17-jester-o1">e17-o1</string>
-    <string name="e17-jester-o2">e17-o2</string>
-    <string name="e17-jester-o3">e17-o3</string>
-    <string name="e17-jester-o4">e17-o1</string>
+    <string name="e17_jester_o1">e17-o1</string>
+    <string name="e17_jester_o2">e17-o2</string>
+    <string name="e17_jester_o3">e17-o3</string>
+    <string name="e17_jester_o4">e17-o1</string>
     
-    <string name="e18-jester-o1">e18-o1</string>
-    <string name="e18-jester-o2">e18-o2</string>
-    <string name="e18-jester-o3">e18-o3</string>
-    <string name="e18-jester-o4">e18-o1</string>
+    <string name="e18_jester_o1">e18-o1</string>
+    <string name="e18_jester_o2">e18-o2</string>
+    <string name="e18_jester_o3">e18-o3</string>
+    <string name="e18_jester_o4">e18-o1</string>
     
-    <string name="e19-jester-o1">e19-o1</string>
-    <string name="e19-jester-o2">e19-o2</string>
-    <string name="e19-jester-o3">e19-o3</string>
-    <string name="e19-jester-o4">e19-o1</string>
+    <string name="e19_jester_o1">e19-o1</string>
+    <string name="e19_jester_o2">e19-o2</string>
+    <string name="e19_jester_o3">e19-o3</string>
+    <string name="e19_jester_o4">e19-o1</string>
     
-    <string name="e20p1-jester-o1">e20p1-o1</string>
-    <string name="e20p1-jester-o2">e20p1-o2</string>
-    <string name="e20p1-jester-o3">e20p1-o3</string>
-    <string name="e20p1-jester-o4">e20p1-o1</string>
+    <string name="e20p1_jester_o1">e20p1-o1</string>
+    <string name="e20p1_jester_o2">e20p1-o2</string>
+    <string name="e20p1_jester_o3">e20p1-o3</string>
+    <string name="e20p1_jester_o4">e20p1-o1</string>
     
-    <string name="e20p2-jester-o1">e20p2-o1</string>
-    <string name="e20p2-jester-o2">e20p2-o2</string>
-    <string name="e20p2-jester-o3">e20p2-o3</string>
-    <string name="e20p2-jester-o4">e20p2-o1</string>
+    <string name="e20p2_jester_o1">e20p2-o1</string>
+    <string name="e20p2_jester_o2">e20p2-o2</string>
+    <string name="e20p2_jester_o3">e20p2-o3</string>
+    <string name="e20p2_jester_o4">e20p2-o1</string>
     
-    <string name="e21p1-jester-o1">e21p1-o1</string>
-    <string name="e21p1-jester-o2">e21p1-o2</string>
-    <string name="e21p1-jester-o3">e21p1-o3</string>
-    <string name="e21p1-jester-o4">e21p1-o1</string>
+    <string name="e21p1_jester_o1">e21p1-o1</string>
+    <string name="e21p1_jester_o2">e21p1-o2</string>
+    <string name="e21p1_jester_o3">e21p1-o3</string>
+    <string name="e21p1_jester_o4">e21p1-o1</string>
     
-    <string name="e21p2-jester-o1">e21p2-o1</string>
-    <string name="e21p2-jester-o2">e21p2-o2</string>
-    <string name="e21p2-jester-o3">e21p2-o3</string>
-    <string name="e21p2-jester-o4">e21p2-o1</string>
+    <string name="e21p2_jester_o1">e21p2-o1</string>
+    <string name="e21p2_jester_o2">e21p2-o2</string>
+    <string name="e21p2_jester_o3">e21p2-o3</string>
+    <string name="e21p2_jester_o4">e21p2-o1</string>
     
-    <string name="e22-jester-o1">e22-o1</string>
-    <string name="e22-jester-o2">e22-o2</string>
-    <string name="e22-jester-o3">e22-o3</string>
-    <string name="e22-jester-o4">e22-o1</string>
+    <string name="e22_jester_o1">e22-o1</string>
+    <string name="e22_jester_o2">e22-o2</string>
+    <string name="e22_jester_o3">e22-o3</string>
+    <string name="e22_jester_o4">e22-o1</string>
     
-    <string name="e23-jester-o1">e23-o1</string>
-    <string name="e23-jester-o2">e23-o2</string>
-    <string name="e23-jester-o3">e23-o3</string>
-    <string name="e23-jester-o4">e23-o1</string>
+    <string name="e23_jester_o1">e23-o1</string>
+    <string name="e23_jester_o2">e23-o2</string>
+    <string name="e23_jester_o3">e23-o3</string>
+    <string name="e23_jester_o4">e23-o1</string>
     
-    <string name="e24-jester-o1">e24-o1</string>
-    <string name="e24-jester-o2">e24-o2</string>
-    <string name="e24-jester-o3">e24-o3</string>
-    <string name="e24-jester-o4">e24-o1</string>
+    <string name="e24_jester_o1">e24-o1</string>
+    <string name="e24_jester_o2">e24-o2</string>
+    <string name="e24_jester_o3">e24-o3</string>
+    <string name="e24_jester_o4">e24-o1</string>
     
-    <string name="e25p1-jester-o1">e25p1-o1</string>
-    <string name="e25p1-jester-o2">e25p1-o2</string>
-    <string name="e25p1-jester-o3">e25p1-o3</string>
-    <string name="e25p1-jester-o4">e25p1-o1</string>
+    <string name="e25p1_jester_o1">e25p1-o1</string>
+    <string name="e25p1_jester_o2">e25p1-o2</string>
+    <string name="e25p1_jester_o3">e25p1-o3</string>
+    <string name="e25p1_jester_o4">e25p1-o1</string>
     
-    <string name="e25p2-jester-o1">e25p2-o1</string>
-    <string name="e25p2-jester-o2">e25p2-o2</string>
-    <string name="e25p2-jester-o3">e25p2-o3</string>
-    <string name="e25p2-jester-o4">e25p2-o1</string>
+    <string name="e25p2_jester_o1">e25p2-o1</string>
+    <string name="e25p2_jester_o2">e25p2-o2</string>
+    <string name="e25p2_jester_o3">e25p2-o3</string>
+    <string name="e25p2_jester_o4">e25p2-o1</string>
     
-    <string name="e26p1-jester-o1">e26p1-o1</string>
-    <string name="e26p1-jester-o2">e26p1-o2</string>
-    <string name="e26p1-jester-o3">e26p1-o3</string>
-    <string name="e26p1-jester-o4">e26p1-o1</string>
+    <string name="e26p1_jester_o1">e26p1-o1</string>
+    <string name="e26p1_jester_o2">e26p1-o2</string>
+    <string name="e26p1_jester_o3">e26p1-o3</string>
+    <string name="e26p1_jester_o4">e26p1-o1</string>
     
-    <string name="e26p2-jester-o1">e26p2-o1</string>
-    <string name="e26p2-jester-o2">e26p2-o2</string>
-    <string name="e26p2-jester-o3">e26p2-o3</string>
-    <string name="e26p2-jester-o4">e26p2-o1</string>
+    <string name="e26p2_jester_o1">e26p2-o1</string>
+    <string name="e26p2_jester_o2">e26p2-o2</string>
+    <string name="e26p2_jester_o3">e26p2-o3</string>
+    <string name="e26p2_jester_o4">e26p2-o1</string>
     
-    <string name="e27p1-jester-o1">e27p1-o1</string>
-    <string name="e27p1-jester-o2">e27p1-o2</string>
-    <string name="e27p1-jester-o3">e27p1-o3</string>
-    <string name="e27p1-jester-o4">e27p1-o1</string>
+    <string name="e27p1_jester_o1">e27p1-o1</string>
+    <string name="e27p1_jester_o2">e27p1-o2</string>
+    <string name="e27p1_jester_o3">e27p1-o3</string>
+    <string name="e27p1_jester_o4">e27p1-o1</string>
     
-    <string name="e27p2-jester-o1">e27p2-o1</string>
-    <string name="e27p2-jester-o2">e27p2-o2</string>
-    <string name="e27p2-jester-o3">e27p2-o3</string>
-    <string name="e27p2-jester-o4">e27p2-o1</string>
+    <string name="e27p2_jester_o1">e27p2-o1</string>
+    <string name="e27p2_jester_o2">e27p2-o2</string>
+    <string name="e27p2_jester_o3">e27p2-o3</string>
+    <string name="e27p2_jester_o4">e27p2-o1</string>
     
-    <string name="e28-jester-o1">e28-o1</string>
-    <string name="e28-jester-o2">e28-o2</string>
-    <string name="e28-jester-o3">e28-o3</string>
-    <string name="e28-jester-o4">e28-o1</string>
+    <string name="e28_jester_o1">e28-o1</string>
+    <string name="e28_jester_o2">e28-o2</string>
+    <string name="e28_jester_o3">e28-o3</string>
+    <string name="e28_jester_o4">e28-o1</string>
     
-    <string name="e29-jester-o1">e29-o1</string>
-    <string name="e29-jester-o2">e29-o2</string>
-    <string name="e29-jester-o3">e29-o3</string>
-    <string name="e29-jester-o4">e29-o1</string>
+    <string name="e29_jester_o1">e29-o1</string>
+    <string name="e29_jester_o2">e29-o2</string>
+    <string name="e29_jester_o3">e29-o3</string>
+    <string name="e29_jester_o4">e29-o1</string>
 
-    <string name="e30p1-jester-o1">e30p1-o1</string>
-    <string name="e30p1-jester-o2">e30p1-o2</string>
-    <string name="e30p1-jester-o3">e30p1-o3</string>
-    <string name="e30p1-jester-o4">e30p1-o1</string>
+    <string name="e30p1_jester_o1">e30p1-o1</string>
+    <string name="e30p1_jester_o2">e30p1-o2</string>
+    <string name="e30p1_jester_o3">e30p1-o3</string>
+    <string name="e30p1_jester_o4">e30p1-o1</string>
     
-    <string name="e30p2-jester-o1">e30p2-o1</string>
-    <string name="e30p2-jester-o2">e30p2-o2</string>
-    <string name="e30p2-jester-o3">e30p2-o3</string>
-    <string name="e30p2-jester-o4">e30p2-o1</string>
+    <string name="e30p2_jester_o1">e30p2-o1</string>
+    <string name="e30p2_jester_o2">e30p2-o2</string>
+    <string name="e30p2_jester_o3">e30p2-o3</string>
+    <string name="e30p2_jester_o4">e30p2-o1</string>
     
-    <string name="e31-jester-o1">e31-o1</string>
-    <string name="e31-jester-o2">e31-o2</string>
-    <string name="e31-jester-o3">e31-o3</string>
-    <string name="e31-jester-o4">e31-o1</string>
+    <string name="e31_jester_o1">e31-o1</string>
+    <string name="e31_jester_o2">e31-o2</string>
+    <string name="e31_jester_o3">e31-o3</string>
+    <string name="e31_jester_o4">e31-o1</string>
     
-    <string name="e32p1-jester-o1">e32p1-o1</string>
-    <string name="e32p1-jester-o2">e32p1-o2</string>
-    <string name="e32p1-jester-o3">e32p1-o3</string>
-    <string name="e32p1-jester-o4">e32p1-o1</string>
+    <string name="e32p1_jester_o1">e32p1-o1</string>
+    <string name="e32p1_jester_o2">e32p1-o2</string>
+    <string name="e32p1_jester_o3">e32p1-o3</string>
+    <string name="e32p1_jester_o4">e32p1-o1</string>
     
-    <string name="e32p2-jester-o1">e32p2-o1</string>
-    <string name="e32p2-jester-o2">e32p2-o2</string>
-    <string name="e32p2-jester-o3">e32p2-o3</string>
-    <string name="e32p2-jester-o4">e32p2-o1</string>
+    <string name="e32p2_jester_o1">e32p2-o1</string>
+    <string name="e32p2_jester_o2">e32p2-o2</string>
+    <string name="e32p2_jester_o3">e32p2-o3</string>
+    <string name="e32p2_jester_o4">e32p2-o1</string>
     
-    <string name="e32p3-jester-o1">e32p3-o1</string>
-    <string name="e32p3-jester-o2">e32p3-o2</string>
-    <string name="e32p3-jester-o3">e32p3-o3</string>
-    <string name="e32p3-jester-o4">e32p3-o1</string>
+    <string name="e32p3_jester_o1">e32p3-o1</string>
+    <string name="e32p3_jester_o2">e32p3-o2</string>
+    <string name="e32p3_jester_o3">e32p3-o3</string>
+    <string name="e32p3_jester_o4">e32p3-o1</string>
     
-    <string name="e33-jester-o1">e33-o1</string>
-    <string name="e33-jester-o2">e33-o2</string>
-    <string name="e33-jester-o3">e33-o3</string>
-    <string name="e33-jester-o4">e33-o1</string>
+    <string name="e33_jester_o1">e33-o1</string>
+    <string name="e33_jester_o2">e33-o2</string>
+    <string name="e33_jester_o3">e33-o3</string>
+    <string name="e33_jester_o4">e33-o1</string>
     
-    <string name="e34-jester-o1">e34-o1</string>
-    <string name="e34-jester-o2">e34-o2</string>
-    <string name="e34-jester-o3">e34-o3</string>
-    <string name="e34-jester-o4">e34-o1</string>
+    <string name="e34_jester_o1">e34-o1</string>
+    <string name="e34_jester_o2">e34-o2</string>
+    <string name="e34_jester_o3">e34-o3</string>
+    <string name="e34_jester_o4">e34-o1</string>
     
-    <string name="e35-jester-o1">e35-o1</string>
-    <string name="e35-jester-o2">e35-o2</string>
-    <string name="e35-jester-o3">e35-o3</string>
-    <string name="e35-jester-o4">e35-o1</string>
+    <string name="e35_jester_o1">e35-o1</string>
+    <string name="e35_jester_o2">e35-o2</string>
+    <string name="e35_jester_o3">e35-o3</string>
+    <string name="e35_jester_o4">e35-o1</string>
     
-    <string name="e36-jester-o1">e36-o1</string>
-    <string name="e36-jester-o2">e36-o2</string>
-    <string name="e36-jester-o3">e36-o3</string>
-    <string name="e36-jester-o4">e36-o1</string>
+    <string name="e36_jester_o1">e36-o1</string>
+    <string name="e36_jester_o2">e36-o2</string>
+    <string name="e36_jester_o3">e36-o3</string>
+    <string name="e36_jester_o4">e36-o1</string>
     
-    <string name="e37-jester-o1">e37-o1</string>
-    <string name="e37-jester-o2">e37-o2</string>
-    <string name="e37-jester-o3">e37-o3</string>
-    <string name="e37-jester-o4">e37-o1</string>
+    <string name="e37_jester_o1">e37-o1</string>
+    <string name="e37_jester_o2">e37-o2</string>
+    <string name="e37_jester_o3">e37-o3</string>
+    <string name="e37_jester_o4">e37-o1</string>
     
-    <string name="e38-jester-o1">e38-o1</string>
-    <string name="e38-jester-o2">e38-o2</string>
-    <string name="e38-jester-o3">e38-o3</string>
-    <string name="e38-jester-o4">e38-o1</string>
+    <string name="e38_jester_o1">e38-o1</string>
+    <string name="e38_jester_o2">e38-o2</string>
+    <string name="e38_jester_o3">e38-o3</string>
+    <string name="e38_jester_o4">e38-o1</string>
     
-    <string name="e39-jester-o1">e39-o1</string>
-    <string name="e39-jester-o2">e39-o2</string>
-    <string name="e39-jester-o3">e39-o3</string>
-    <string name="e39-jester-o4">e39-o1</string>
+    <string name="e39_jester_o1">e39-o1</string>
+    <string name="e39_jester_o2">e39-o2</string>
+    <string name="e39_jester_o3">e39-o3</string>
+    <string name="e39_jester_o4">e39-o1</string>
     
     
 
