@@ -78,6 +78,8 @@
     <string name="title_activity_death_event">DeathEvent</string>
     <string name="title_activity_coronation">Coronation</string>
     
+    <string name="jester_comment">e4-o4</string>
+    
     <string name="e1_jester_o1">e1-o1</string>
     <string name="e1_jester_o2">e1-o2</string>
     <string name="e1_jester_o3">e1-o3</string>

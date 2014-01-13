@@ -8,8 +8,8 @@ public class ResourcesKingdom {
 	private static int food = 500;
 	private static int gold = 500;
 	private static int happy = 500;
-	private static String eventName = "";
-	private static int eventOption = 10;
+	private static String eventName = "e1";
+	private static int eventOption = 1;
 	private static boolean gameOver = true;
 	private static final String KEY_PREFS_GAME = "Game";
 	private static final String KEY_PREFS_FOOD = "Food";

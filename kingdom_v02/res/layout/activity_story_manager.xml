@@ -106,5 +106,16 @@
         android:layout_centerHorizontal="true"
         android:onClick="changeStat"
         android:text="Change" />
+    
+    <TextView
+	    android:id="@+id/text_jester_comment"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@id/buttonChangeStat"
+	    android:layout_marginTop="30dp"
+	    android:gravity="center"
+	    android:text="@string/jester_comment"
+	    android:textColor="@color/royal_blue"
+	    android:textSize="22sp" />
 
 </RelativeLayout>

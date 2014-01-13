@@ -75,8 +75,8 @@
 					android:id="@+id/event_icon"
 					android:layout_width="fill_parent"
 					android:layout_height="wrap_content"
-					android:layout_marginTop="40dp"
-					android:src="@drawable/ic_event_flood" />
+					android:layout_marginTop="32dp"
+					android:src="@drawable/ic_marcus_4" />
                 
             </LinearLayout>
 			<LinearLayout 
@@ -121,7 +121,7 @@
 		           android:layout_alignParentTop="true"
 		           android:layout_alignParentLeft="true"
 		           android:layout_marginTop="20dp"
-		           android:src="@drawable/ic_marginred_l" />
+		           android:src="@drawable/im_mar_red_top_left" />
                 <ImageView
 		           android:id="@+id/imageBorderRight1"
 		           android:layout_width="wrap_content"
@@ -129,7 +129,23 @@
 		           android:layout_alignParentTop="true"
 		           android:layout_alignParentRight="true"
 		           android:layout_marginTop="20dp"
-		           android:src="@drawable/ic_marginred_r" />
+		           android:src="@drawable/im_mar_red_top_right" />
+                <ImageView
+		           android:id="@+id/imageBorderLeftBottom1"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_alignParentBottom="true"
+		           android:layout_alignParentLeft="true"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/im_mar_red_down_left" />
+                <ImageView
+		           android:id="@+id/imageBorderRightBottom1"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_alignParentBottom="true"
+		           android:layout_alignParentRight="true"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/im_mar_red_down_right" />
 
                 
                 <ImageView
@@ -175,15 +191,14 @@
                 android:orientation="vertical"
                 android:background="@color/royal_teal" >
              	
-                <ImageView
+               <ImageView
 		           android:id="@+id/imageBorderLeft2"
 		           android:layout_width="wrap_content"
 		           android:layout_height="wrap_content"
 		           android:layout_alignParentTop="true"
 		           android:layout_alignParentLeft="true"
 		           android:layout_marginTop="20dp"
-		           android:src="@drawable/ic_marginblu_l" />
-                
+		           android:src="@drawable/im_mar_blu_top_left" />
                 <ImageView
 		           android:id="@+id/imageBorderRight2"
 		           android:layout_width="wrap_content"
@@ -191,7 +206,23 @@
 		           android:layout_alignParentTop="true"
 		           android:layout_alignParentRight="true"
 		           android:layout_marginTop="20dp"
-		           android:src="@drawable/ic_marginblu_r" />
+		           android:src="@drawable/im_mar_blu_top_right" />
+                <ImageView
+		           android:id="@+id/imageBorderLeftBottom2"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_alignParentBottom="true"
+		           android:layout_alignParentLeft="true"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/im_mar_blu_down_left" />
+                <ImageView
+		           android:id="@+id/imageBorderRightBottom2"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_alignParentBottom="true"
+		           android:layout_alignParentRight="true"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/im_mar_blu_down_right" />
              	
                 <ImageView
 		           android:id="@+id/imageOption02"
@@ -236,14 +267,14 @@
                 android:orientation="vertical"
                 android:background="@color/royal_orange" >
                 
-                <ImageView
+               <ImageView
 		           android:id="@+id/imageBorderLeft3"
 		           android:layout_width="wrap_content"
 		           android:layout_height="wrap_content"
 		           android:layout_alignParentTop="true"
 		           android:layout_alignParentLeft="true"
 		           android:layout_marginTop="20dp"
-		           android:src="@drawable/ic_marginred_l" />
+		           android:src="@drawable/im_mar_red_top_left" />
                 <ImageView
 		           android:id="@+id/imageBorderRight3"
 		           android:layout_width="wrap_content"
@@ -251,7 +282,23 @@
 		           android:layout_alignParentTop="true"
 		           android:layout_alignParentRight="true"
 		           android:layout_marginTop="20dp"
-		           android:src="@drawable/ic_marginred_r" />
+		           android:src="@drawable/im_mar_red_top_right" />
+                <ImageView
+		           android:id="@+id/imageBorderLeftBottom3"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_alignParentBottom="true"
+		           android:layout_alignParentLeft="true"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/im_mar_red_down_left" />
+                <ImageView
+		           android:id="@+id/imageBorderRightBottom3"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_alignParentBottom="true"
+		           android:layout_alignParentRight="true"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/im_mar_red_down_right" />
                 
                 <ImageView
 		           android:id="@+id/imageOption03"
@@ -297,15 +344,14 @@
                 android:orientation="vertical"
                 android:background="@color/royal_teal" >
                 
-                <ImageView
+               <ImageView
 		           android:id="@+id/imageBorderLeft4"
 		           android:layout_width="wrap_content"
 		           android:layout_height="wrap_content"
 		           android:layout_alignParentTop="true"
 		           android:layout_alignParentLeft="true"
 		           android:layout_marginTop="20dp"
-		           android:src="@drawable/ic_marginblu_l" />
-                
+		           android:src="@drawable/im_mar_blu_top_left" />
                 <ImageView
 		           android:id="@+id/imageBorderRight4"
 		           android:layout_width="wrap_content"
@@ -313,7 +359,23 @@
 		           android:layout_alignParentTop="true"
 		           android:layout_alignParentRight="true"
 		           android:layout_marginTop="20dp"
-		           android:src="@drawable/ic_marginblu_r" />
+		           android:src="@drawable/im_mar_blu_top_right" />
+                <ImageView
+		           android:id="@+id/imageBorderLeftBottom4"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_alignParentBottom="true"
+		           android:layout_alignParentLeft="true"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/im_mar_blu_down_left" />
+                <ImageView
+		           android:id="@+id/imageBorderRightBottom4"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_alignParentBottom="true"
+		           android:layout_alignParentRight="true"
+		           android:layout_marginTop="20dp"
+		           android:src="@drawable/im_mar_blu_down_right" />
                 
                 <ImageView
 		           android:id="@+id/imageOption04"
