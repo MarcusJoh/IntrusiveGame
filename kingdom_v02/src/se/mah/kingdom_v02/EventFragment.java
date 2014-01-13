@@ -146,6 +146,7 @@ public class EventFragment extends Fragment implements
 		option3Text = (TextView) rootView.findViewById(R.id.text_option3);
 		option4Text = (TextView) rootView.findViewById(R.id.text_option4);
 
+		
 		String[] eventNames = eventName.split("Å");
 		String eventMain = eventNames[0];
 		String eventChar = eventNames[1];

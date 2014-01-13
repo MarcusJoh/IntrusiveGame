@@ -200,7 +200,7 @@
 		           android:layout_alignParentTop="true"
 		           android:layout_centerHorizontal="true"
 		           android:layout_marginTop="20dp"
-		           android:src="@drawable/ic_option_one" />
+		           android:src="@drawable/ic_option_two" />
 
                 <TextView
                     android:id="@+id/text_option2"
@@ -260,7 +260,7 @@
 		           android:layout_alignParentTop="true"
 		           android:layout_centerHorizontal="true"
 		           android:layout_marginTop="20dp"
-		           android:src="@drawable/ic_option_one" />
+		           android:src="@drawable/ic_option_three" />
 
                 <TextView
                     android:id="@+id/text_option3"
@@ -322,7 +322,7 @@
 		           android:layout_alignParentTop="true"
 		           android:layout_centerHorizontal="true"
 		           android:layout_marginTop="20dp"
-		           android:src="@drawable/ic_option_one" />
+		           android:src="@drawable/ic_option_four" />
 
                 <TextView
                     android:id="@+id/text_option4"
