@@ -61,6 +61,7 @@ public class EventFragment extends Fragment implements
 	private double totalTimeElapsed;
 	private int likenessOfEmergency;
 	private boolean emergencyHappening;
+	private String saveEventName = "";
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -149,6 +150,7 @@ public class EventFragment extends Fragment implements
 		
 		String[] eventNames = eventName.split("Å");
 		String eventMain = eventNames[0];
+		ResourcesKingdom.setEventName(eventNames[0]);
 		String eventChar = eventNames[1];
 		String eventIcon = eventNames[2];
 		ImageView minister = (ImageView) rootView
@@ -357,7 +359,9 @@ public class EventFragment extends Fragment implements
 				decline();
 				Intent intent = new Intent(getActivity().getBaseContext(),
 						StoryManager.class);
-
+				
+				ResourcesKingdom.setEventOption(1);
+				
 				getActivity().finish();
 
 				startActivity(intent);
@@ -444,6 +448,8 @@ public class EventFragment extends Fragment implements
 				}
 				Intent intent = new Intent(getActivity().getBaseContext(),
 						StoryManager.class);
+				
+				ResourcesKingdom.setEventOption(2);
 
 				getActivity().finish();
 
@@ -530,6 +536,8 @@ public class EventFragment extends Fragment implements
 				}
 				Intent intent = new Intent(getActivity().getBaseContext(),
 						StoryManager.class);
+				
+				ResourcesKingdom.setEventOption(3);
 
 				getActivity().finish();
 
@@ -616,6 +624,8 @@ public class EventFragment extends Fragment implements
 				}
 				Intent intent = new Intent(getActivity().getBaseContext(),
 						StoryManager.class);
+				
+				ResourcesKingdom.setEventOption(4);
 
 				getActivity().finish();
 

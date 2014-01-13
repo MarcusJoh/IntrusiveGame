@@ -8,6 +8,8 @@ public class ResourcesKingdom {
 	private static int food = 500;
 	private static int gold = 500;
 	private static int happy = 500;
+	private static String eventName = "";
+	private static int eventOption = 10;
 	private static boolean gameOver = true;
 	private static final String KEY_PREFS_GAME = "Game";
 	private static final String KEY_PREFS_FOOD = "Food";
@@ -33,7 +35,26 @@ public class ResourcesKingdom {
 		resourceEditor.commit();
 		return gameOver;
 	}
+	public static String getEventName()
+	{
+		return eventName;
+	}
+	
+	public static void setEventName(String event)
+	{
+		eventName = event;
+	}
 
+	public static void setEventOption(int option)
+	{
+		eventOption = option;
+	}
+	
+	public static int getEventOption()
+	{
+		return eventOption;
+	}
+	
 	public static boolean getstateGame() {
 		return resourcePref.getBoolean(KEY_PREFS_GAME, gameOver);
 	}
