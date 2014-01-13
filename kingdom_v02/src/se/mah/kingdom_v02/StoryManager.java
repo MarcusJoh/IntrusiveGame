@@ -38,7 +38,7 @@ public class StoryManager extends Activity {
 		time.setTimeInMillis(System.currentTimeMillis());
 		if(ResourcesKingdom.getstateGame())
 		{
-			time.add(Calendar.MINUTE, update);
+			time.add(Calendar.SECOND, update);
 			ResourcesKingdom.setstateGame();
 			alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(),pendingIntent);
 		}
