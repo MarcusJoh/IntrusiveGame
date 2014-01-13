@@ -42,7 +42,12 @@ public class DecideCall extends Service{
 				StartCall();
 		}
 		else
+		{
+			Intent intent2 = new Intent(this, Event.class);
+	        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 
+			//this.startActivity(intent2);
 			return;
+		}
 		int min = ((60 - c.get(Calendar.MINUTE)) );
 		int max = 60;
 		int random = rand.nextInt(max);
