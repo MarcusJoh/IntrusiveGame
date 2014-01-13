@@ -9,15 +9,16 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 public class StoryManager extends Activity {
-	private int gold = 2;
-	private int food = 2;
-	private int happy = 2;
+	private int gold = 0;
+	private int food = 0;
+	private int happy = 0;
 	private ResourcesKingdom resourcePrefs;
 
 	@Override
@@ -41,24 +42,12 @@ public class StoryManager extends Activity {
 			ResourcesKingdom.setstateGame();
 			alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(),pendingIntent);
 		}
-		ImageView fl = (ImageView) findViewById(R.id.imageMapLF);
-		ImageView fm = (ImageView) findViewById(R.id.imageMapMF);
-		ImageView fh = (ImageView) findViewById(R.id.imageMapHF);
-		ImageView gl = (ImageView) findViewById(R.id.imageMapLG);
-		ImageView gm = (ImageView) findViewById(R.id.imageMapMG);
-		ImageView gh = (ImageView) findViewById(R.id.imageMapHG);
-		ImageView hl = (ImageView) findViewById(R.id.imageMapLH);
-		ImageView hm = (ImageView) findViewById(R.id.imageMapMH);
-		ImageView hh = (ImageView) findViewById(R.id.imageMapHH);
-		fl.setVisibility(4);
-		fm.setVisibility(4);
-		fh.setVisibility(4);
-		gl.setVisibility(4);
-		gm.setVisibility(4);
-		gh.setVisibility(4);
-		hl.setVisibility(4);
-		hm.setVisibility(4);
-		hh.setVisibility(4);
+		loadResources();
+		Log.i("food", Integer.toString(food));
+		Log.i("gold", Integer.toString(gold));
+		Log.i("happy", Integer.toString(happy));
+		refresh();
+		
 	}
 
 	@Override 
@@ -76,7 +65,31 @@ public class StoryManager extends Activity {
 		Button butt = (Button) findViewById(R.id.buttonChangeStat);
 		butt.setText(Integer.toString(gold));
 		
+		refresh();
 		
+	}
+	
+	public void loadResources(){
+		food=getStat(ResourcesKingdom.getFood());
+		gold=getStat(ResourcesKingdom.getGold());
+		happy=getStat(ResourcesKingdom.getHappy());
+		
+		
+	}
+	public int getStat (int number){
+		if (number<40){
+			number=1;
+		}
+		else if (number>70){
+			number=3;
+		}
+		else {
+			number=2;
+		}
+		return number;
+	}
+	
+	public void refresh(){
 		ImageView fl = (ImageView) findViewById(R.id.imageMapLF);
 		ImageView fm = (ImageView) findViewById(R.id.imageMapMF);
 		ImageView fh = (ImageView) findViewById(R.id.imageMapHF);
@@ -148,6 +161,12 @@ public class StoryManager extends Activity {
 			break;
 		}
 	}
+	}
+	@Override
+	public void onPause(){
+		super.onPause();
+		loadResources();
+		refresh();
 	}
 
 }
