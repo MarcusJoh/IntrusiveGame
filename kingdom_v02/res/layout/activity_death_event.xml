@@ -21,16 +21,6 @@
         android:textColor="@color/royal_blue"
         android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/grave_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/image_grave"
-        android:layout_alignTop="@+id/grave_headline"
-        android:text="@string/death_text"
-        android:textColor="@color/royal_blue"
-        android:textSize="42sp" />
-
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
@@ -47,5 +37,15 @@
         android:layout_above="@+id/button1"
         android:layout_alignLeft="@+id/grave_headline"
         android:src="@drawable/grave" />
+
+    <TextView
+        android:id="@+id/grave_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/grave_headline"
+        android:layout_alignParentRight="true"
+        android:text="@string/death_text"
+        android:textColor="@color/royal_blue"
+        android:textSize="42sp" />
 
 </RelativeLayout>

@@ -23,15 +23,14 @@ public class DeathEvent extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_death_event);
-		String empty = ResourcesKingdom.EmptyResource();
-		Log.i("empty resource",empty);
 		deathSentence = (TextView) findViewById(id.grave_headline);
 		if(ResourcesKingdom.getFood() <=0)
-			deathSentence.setText("You starved to death");
+			deathSentence.setText("You starved to death!");
 		else if(ResourcesKingdom.getGold() <=0)
-			deathSentence.setText("You went bankrupt");
+			deathSentence.setText("You went bankrupt!");
 		else
-			deathSentence.setText("You died during the revolt");
+			deathSentence.setText("You died during a revolt!");
+		ResourcesKingdom.resetGame();
 	}
 
 	@Override
@@ -43,26 +42,10 @@ public class DeathEvent extends Activity {
 	
 	public void Restart(View v)
 	{
-//		Calendar c = Calendar.getInstance();
-//		Random rand = new Random();
-//		int update = 0;
-//		Log.i("Resources", String.valueOf(ResourcesKingdom.CombinedResources()));
-//		int min = ((60 - c.get(Calendar.MINUTE)) );
-//		int max = 60;
-//		int random = rand.nextInt(max);
-//		update = random + min;
-//		int maxMins = (max + min);
-//		AlarmManager alarmMgr = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
-//		Intent intent = new Intent(this,AlarmReceiver.class);
-//		PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
-//		Calendar time = Calendar.getInstance();
-//		time.setTimeInMillis(System.currentTimeMillis());
-//		time.add(Calendar.SECOND, update);
-//		Log.i("Update", String.valueOf(update));
-//		alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(), pendingIntent);
 		Intent intent2 = new Intent(this, StoryManager.class);
         intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 
-		this.startActivity(intent2);
+        DeathEvent.this.finish();
+		startActivity(intent2);
 	}
 
 }

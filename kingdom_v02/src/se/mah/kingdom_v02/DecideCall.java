@@ -46,9 +46,9 @@ public class DecideCall extends Service{
 			Log.i("game over","you suck gg game over noob!");
 			Restart();
 			ResourcesKingdom.setstateGame();
-			ResourcesKingdom.resetGame();
 			Intent intent2 = new Intent(this, DeathEvent.class);
 	        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 
+	        DecideCall.this.stopSelf();
 			this.startActivity(intent2);
 			return;
 		}
@@ -66,6 +66,7 @@ public class DecideCall extends Service{
 		time.add(Calendar.SECOND, update);
 		Log.i("Update", String.valueOf(update));
 		alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(), pendingIntent);
+		this.stopSelf();
 		
 	}
 
