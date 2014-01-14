@@ -58,15 +58,17 @@ public class Event extends Activity {
 		String eventOption1 = null;
 		String[] optionSplit = event.split("/");
 		eventName = optionSplit[0];
+		
 		eventOption1 = optionSplit[2];
 		String[] eventNames = eventName.split("Å");
-
+		ResourcesKingdom.setEventName(eventNames[0]);
 		String eventChar = eventNames[1];
 
 		ImageView minister = (ImageView) findViewById(R.id.image_minister);
 		TextView minister_first_name = (TextView) findViewById(R.id.text_minister_name_1);
 		TextView minister_last_name = (TextView) findViewById(R.id.text_minister_name_2);
 		
+		Log.i("Event is ", event);
 		
 		if (eventChar.equals("c1")) {
 			Log.i("Char is ", "The Chancellor");
