@@ -43,13 +43,23 @@ public class DecideCall extends Service{
 		}
 		else
 		{
-			Intent intent2 = new Intent(this, Event.class);
+			ResourcesKingdom.setstateGame();
+			ResourcesKingdom.resetGame();
+			String emptyResource = "";
+			if(ResourcesKingdom.getFood() <=0)
+				emptyResource ="food";
+			else if(ResourcesKingdom.getGold() <= 0)
+				emptyResource = "gold";
+			else
+				emptyResource = "happy";
+			Intent intent2 = new Intent(this, DeathEvent.class);
 	        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 
-			//this.startActivity(intent2);
+	        intent2.putExtra("resource", emptyResource);
+			this.startActivity(intent2);
 			return;
 		}
-		int min = ((60 - c.get(Calendar.MINUTE)) );
-		int max = 60;
+		int min = ((60 - c.get(Calendar.MINUTE)))/increaseRate;
+		int max = 60/increaseRate;
 		int random = rand.nextInt(max);
 		update = random + min;
 		int maxMins = (max + min);
@@ -81,6 +91,13 @@ public class DecideCall extends Service{
 			return true;
 		}
 		return false;
+	}
+	
+	public void Restart()
+	{
+		totalTimeElapsed = 0;
+		increaseRate = 0;
+		
 	}
 
 	@Override

@@ -5,12 +5,14 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 
 public class ResourcesKingdom {
-	private static int food = 500;
-	private static int gold = 500;
-	private static int happy = 500;
-	private static String eventName = "e1";
-	private static int eventOption = 1;
+	private static int food = 1;
+	private static int gold = 1;
+	private static int happy = -1;
+	private static String eventName = "";
+	private static int eventOption = 10;
 	private static boolean gameOver = true;
+	private static final String KEY_PREFS_EVENTOPTION = "EventOption";
+	private static final String KEY_PREFS_EVENTNAME = "Event";
 	private static final String KEY_PREFS_GAME = "Game";
 	private static final String KEY_PREFS_FOOD = "Food";
 	private static final String KEY_PREFS_GOLD = "Gold";
@@ -37,12 +39,14 @@ public class ResourcesKingdom {
 	}
 	public static String getEventName()
 	{
-		return eventName;
+		return resourcePref.getString(KEY_PREFS_EVENTNAME, eventName);
 	}
 	
 	public static void setEventName(String event)
 	{
 		eventName = event;
+		resourceEditor.putString(KEY_PREFS_EVENTNAME, eventName);
+		resourceEditor.commit();
 	}
 
 	public static void setEventOption(int option)
@@ -52,7 +56,7 @@ public class ResourcesKingdom {
 	
 	public static int getEventOption()
 	{
-		return eventOption;
+		return resourcePref.getInt(KEY_PREFS_EVENTOPTION, eventOption);
 	}
 	
 	public static boolean getstateGame() {
@@ -67,8 +71,11 @@ public class ResourcesKingdom {
 		resourceEditor.putInt(KEY_PREFS_GOLD, gold);
 		happy = 100;
 		resourceEditor.putInt(KEY_PREFS_HAPPY, happy);
+		eventName="";
+		resourceEditor.putString(KEY_PREFS_EVENTNAME, eventName);
+		eventOption=-1;
+		resourceEditor.putInt(KEY_PREFS_EVENTOPTION,eventOption);
 		resourceEditor.commit();
-			
 		}
 	}
 

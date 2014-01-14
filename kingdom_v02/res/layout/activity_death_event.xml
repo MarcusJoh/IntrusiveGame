@@ -9,38 +9,43 @@
     tools:context=".DeathEvent"
     android:background="@color/royal_red"
     style="@style/NoActionBar" >
-    
+
     <TextView
         android:id="@+id/grave_headline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
         android:text="@string/death_headline"
-        android:layout_gravity="center"
-        android:layout_centerHorizontal="true"
-        android:textSize="24sp"
-        android:textColor="@color/royal_blue" />
-    
-    <ImageView
-	    android:id="@+id/image_grave"
-	    android:layout_width="fill_parent"
-	    android:layout_height="300dp"
-	    android:layout_marginTop="30dp"
-	    android:layout_gravity="center"
-	    android:layout_below="@id/grave_headline"
-	    android:layout_centerHorizontal="true"
-	    android:src="@drawable/grave" />
+        android:textColor="@color/royal_blue"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/grave_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/image_grave"
-        android:layout_marginTop="24dp"
+        android:layout_alignRight="@+id/image_grave"
+        android:layout_alignTop="@+id/grave_headline"
         android:text="@string/death_text"
-        android:layout_gravity="center"
+        android:textColor="@color/royal_blue"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textSize="42sp"
-        android:textColor="@color/royal_blue" />
+        android:onClick="Restart"
+        android:text="Restart" />
+
+    <ImageView
+        android:id="@+id/image_grave"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_above="@+id/button1"
+        android:layout_alignLeft="@+id/grave_headline"
+        android:src="@drawable/grave" />
 
 </RelativeLayout>
