@@ -96,8 +96,12 @@ public class EventFragment extends Fragment implements
 		
 		ImageView eventIconPicture = (ImageView)rootView.findViewById(R.id.event_icon);
 		String eventCode = ResourcesKingdom.getEventName();
+		try{
 		eventIconPicture.setImageDrawable(getResources().getDrawable(getResources().getIdentifier("ic_"+eventCode, "drawable", getActivity().getPackageName())));
-
+		}
+		catch(Exception e){
+			
+		}
 		timer = new Timer();
 		time = Calendar.getInstance();
 		update = 1;
