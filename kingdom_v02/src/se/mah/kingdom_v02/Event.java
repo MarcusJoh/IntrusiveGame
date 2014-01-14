@@ -26,6 +26,7 @@ public class Event extends Activity {
 	public String resourceEffect1 = null;
 	public boolean beenPaused = true;
 	private ResourcesKingdom resourcePrefs;
+	private String character="thorp";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -66,30 +67,34 @@ public class Event extends Activity {
 		TextView minister_first_name = (TextView) findViewById(R.id.text_minister_name_1);
 		TextView minister_last_name = (TextView) findViewById(R.id.text_minister_name_2);
 		
+		
 		if (eventChar.equals("c1")) {
 			Log.i("Char is ", "The Chancellor");
 			minister.setImageResource(R.drawable.ic_char_laurent);
 			minister_first_name.setText("LADY LAURENT");
 			minister_last_name.setText("FORTESCUE");
-			
+			character="fortescue";
 		}
 		if (eventChar.equals("c2")) {
 			Log.i("Char is ", "The Minister of Finance");
 			minister.setImageResource(R.drawable.ic_char_krane);
 			minister_first_name.setText("DUKE LUDWIG von");
 			minister_last_name.setText("KRANE");
+			character="krane";
 		}
 		if (eventChar.equals("c3")) {
 			Log.i("Char is ", "The Minister of Defence");
 			minister.setImageResource(R.drawable.ic_char_brion);
 			minister_first_name.setText("SER GODFRIED");
 			minister_last_name.setText("BRION");
+			character="brion";
 		}
 		if (eventChar.equals("c4")) {
 			Log.i("Char is ", "The Minister of Agriculture");
 			minister.setImageResource(R.drawable.ic_char_agriculture);
 			minister_first_name.setText("BARON BARTHOLOMEW");
 			minister_last_name.setText("THORP");
+			character="thorp";
 		}
 		String[] optionEffect1 = eventOption1.split("¤");
 		resourceEffect1 = optionEffect1[1];
@@ -247,7 +252,7 @@ public class Event extends Activity {
 		event_am.setSpeakerphoneOn(false);
 		event_am.setBluetoothScoOn(true);
 		Resources res = this.getResources();
-		musicfileid = getResources().getIdentifier("event_voice", "raw",
+		musicfileid = getResources().getIdentifier(character, "raw",
 				"se.mah.kingdom_v02");
 		event_player = MediaPlayer.create(Event.this, musicfileid);
 		event_player.start();

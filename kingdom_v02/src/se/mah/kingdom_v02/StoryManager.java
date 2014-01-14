@@ -49,7 +49,12 @@ public class StoryManager extends Activity {
 		Log.i("happy", Integer.toString(happy));
 		refresh();
 		TextView jesterComment = (TextView)findViewById(R.id.text_jester_comment);
-		jesterComment.setText(getResources().getString(getResources().getIdentifier(ResourcesKingdom.getEventName()+"_jester_o"+Integer.toString(ResourcesKingdom.getEventOption()), "string", this.getPackageName())));
+		String s1 = ResourcesKingdom.getEventName()+"_jester_o"+Integer.toString(ResourcesKingdom.getEventOption());
+		Log.i("identificator", s1);
+		int i1 = getResources().getIdentifier(s1, "string", this.getPackageName());
+		String s2 = getResources().getString(i1);
+		Log.i("line jester", s2);
+		jesterComment.setText(s2);
 		
 	}
 
