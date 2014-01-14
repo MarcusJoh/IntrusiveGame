@@ -695,7 +695,7 @@ public class EventFragment extends Fragment implements
 			startActivity(intent);
 		}
 
-		super.onPause();
+		super.onResume();
 
 	}
 
