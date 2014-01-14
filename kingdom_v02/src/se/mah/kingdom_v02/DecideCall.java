@@ -21,7 +21,7 @@ public class DecideCall extends Service{
 
 	private int update = 1;
 	private double increaseInterval=60*4;
-	private int increaseRate = 1;
+	private int increaseRate = 3;
 	private double totalTimeElapsed = 0;
 	
 	
