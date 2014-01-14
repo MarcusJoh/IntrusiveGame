@@ -204,9 +204,10 @@ public final class R {
     public static final class layout {
         public static final int activity_coronation=0x7f030000;
         public static final int activity_death_event=0x7f030001;
-        public static final int activity_story_manager=0x7f030002;
-        public static final int activity_wake_up=0x7f030003;
-        public static final int event_fragment=0x7f030004;
+        public static final int activity_start_event=0x7f030002;
+        public static final int activity_story_manager=0x7f030003;
+        public static final int activity_wake_up=0x7f030004;
+        public static final int event_fragment=0x7f030005;
     }
     public static final class menu {
         public static final int coronation=0x7f0a0000;
@@ -506,6 +507,7 @@ public final class R {
         public static final int title_activity_death_event=0x7f07001c;
         public static final int title_activity_event__manager=0x7f070000;
         public static final int title_activity_event_manager=0x7f070018;
+        public static final int title_activity_start_event=0x7f07011e;
         public static final int title_activity_wake_up=0x7f070006;
     }
     public static final class style {

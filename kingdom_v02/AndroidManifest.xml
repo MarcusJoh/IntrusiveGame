@@ -59,6 +59,10 @@
             android:name="se.mah.kingdom_v02.Coronation"
             android:label="@string/title_activity_coronation" >
         </activity>
+        <activity
+            android:name="se.mah.kingdom_v02.StartEvent"
+            android:label="@string/title_activity_start_event" >
+        </activity>
     </application>
 
 </manifest>
