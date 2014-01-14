@@ -11,9 +11,11 @@ public class ResourcesKingdom {
 	private static String eventName = "e1";
 	private static int eventOption = 1;
 	private static boolean gameOver = true;
+	private static boolean newPlayer = true;
 	private static final String KEY_PREFS_EVENTOPTION = "EventOption";
 	private static final String KEY_PREFS_EVENTNAME = "Event";
 	private static final String KEY_PREFS_GAME = "Game";
+	private static final String KEY_PREFS_PLAYER = "Player";
 	private static final String KEY_PREFS_FOOD = "Food";
 	private static final String KEY_PREFS_GOLD = "Gold";
 	private static final String KEY_PREFS_HAPPY = "Happy";
@@ -24,8 +26,8 @@ public class ResourcesKingdom {
 	private static Editor resourceEditor;
 
 	public ResourcesKingdom(Context context) {
-		ResourcesKingdom.resourcePref = context.getSharedPreferences(APP_SHARED_PREFS,
-				Context.MODE_PRIVATE);
+		ResourcesKingdom.resourcePref = context.getSharedPreferences(
+				APP_SHARED_PREFS, Context.MODE_PRIVATE);
 		ResourcesKingdom.resourceEditor = resourcePref.edit();
 	}
 
@@ -37,47 +39,59 @@ public class ResourcesKingdom {
 		resourceEditor.commit();
 		return gameOver;
 	}
-	public static String getEventName()
-	{
+
+	public static boolean newPlayerstate() {
+		resourcePref.getBoolean(KEY_PREFS_PLAYER, newPlayer);
+
+		return newPlayer;
+	}
+
+	public static void newPlayerChange() {
+		resourcePref.getBoolean(KEY_PREFS_PLAYER, newPlayer);
+		resourceEditor.putBoolean(KEY_PREFS_PLAYER,
+				!resourcePref.getBoolean(KEY_PREFS_PLAYER, newPlayer));
+		resourceEditor.commit();
+
+	}
+
+	public static String getEventName() {
 		return resourcePref.getString(KEY_PREFS_EVENTNAME, eventName);
 	}
-	
-	public static void setEventName(String event)
-	{
+
+	public static void setEventName(String event) {
 		eventName = event;
 		resourceEditor.putString(KEY_PREFS_EVENTNAME, eventName);
 		resourceEditor.commit();
 	}
 
-	public static void setEventOption(int option)
-	{
+	public static void setEventOption(int option) {
 		eventOption = option;
 		resourceEditor.putInt(KEY_PREFS_EVENTOPTION, eventOption);
 		resourceEditor.commit();
 	}
-	
-	public static int getEventOption()
-	{
+
+	public static int getEventOption() {
 		return resourcePref.getInt(KEY_PREFS_EVENTOPTION, eventOption);
 	}
-	
+
 	public static boolean getstateGame() {
 		return resourcePref.getBoolean(KEY_PREFS_GAME, gameOver);
 	}
 
 	public static void resetGame() {
 		if (resourcePref.getBoolean(KEY_PREFS_GAME, gameOver)) {
-		food = 100;
-		resourceEditor.putInt(KEY_PREFS_FOOD, food);
-		gold = 100;
-		resourceEditor.putInt(KEY_PREFS_GOLD, gold);
-		happy = 100;
-		resourceEditor.putInt(KEY_PREFS_HAPPY, happy);
-		eventName="";
-		resourceEditor.putString(KEY_PREFS_EVENTNAME, eventName);
-		eventOption=-1;
-		resourceEditor.putInt(KEY_PREFS_EVENTOPTION,eventOption);
-		resourceEditor.commit();
+			food = 100;
+			resourceEditor.putInt(KEY_PREFS_FOOD, food);
+			gold = 100;
+			resourceEditor.putInt(KEY_PREFS_GOLD, gold);
+			happy = 100;
+			resourceEditor.putInt(KEY_PREFS_HAPPY, happy);
+			eventName = "e1";
+			resourceEditor.putString(KEY_PREFS_EVENTNAME, eventName);
+			eventOption = 1;
+			resourceEditor.putInt(KEY_PREFS_EVENTOPTION, eventOption);
+			setstateGame();
+			resourceEditor.commit();
 		}
 	}
 
@@ -124,30 +138,13 @@ public class ResourcesKingdom {
 
 	}
 
-	public static int CombinedResources()
-	{
+	public static int CombinedResources() {
 
-		return ((food+happy)+gold)/3;
+		return ((food + happy) + gold) / 3;
 	}
 
-	
-	
-	public static boolean ResourceIsZero()
-	{
-		return (food <= 0 || gold <= 0|| happy <= 0) ? true : false;
+	public static boolean ResourceIsZero() {
+		return (food <= 0 || gold <= 0 || happy <= 0) ? true : false;
 	}
 
-	public static String EmptyResource()
-	{
-		int theGold = getGold();
-		int theFood = getFood();
-		int theHappy=getHappy();
-		if(theGold<=0)
-			return"gold";
-		else if(theFood<=0)
-			return "food";
-		else if(theHappy<=0)
-			return "happy";
-		return"";
-	}
 }
