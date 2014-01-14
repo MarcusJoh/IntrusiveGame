@@ -43,18 +43,12 @@ public class DecideCall extends Service{
 		}
 		else
 		{
+			Log.i("game over","you suck gg game over noob!");
+			Restart();
 			ResourcesKingdom.setstateGame();
 			ResourcesKingdom.resetGame();
-			String emptyResource = "";
-			if(ResourcesKingdom.getFood() <=0)
-				emptyResource ="food";
-			else if(ResourcesKingdom.getGold() <= 0)
-				emptyResource = "gold";
-			else
-				emptyResource = "happy";
 			Intent intent2 = new Intent(this, DeathEvent.class);
 	        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 
-	        intent2.putExtra("resource", emptyResource);
 			this.startActivity(intent2);
 			return;
 		}
