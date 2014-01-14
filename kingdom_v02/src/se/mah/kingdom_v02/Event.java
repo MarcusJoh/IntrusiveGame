@@ -26,7 +26,7 @@ public class Event extends Activity {
 	public String resourceEffect1 = null;
 	public boolean beenPaused = true;
 	private ResourcesKingdom resourcePrefs;
-	private String character="thorp";
+	private String character = "thorp";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +58,7 @@ public class Event extends Activity {
 		String eventOption1 = null;
 		String[] optionSplit = event.split("/");
 		eventName = optionSplit[0];
-		
+
 		eventOption1 = optionSplit[2];
 		String[] eventNames = eventName.split("Å");
 		ResourcesKingdom.setEventName(eventNames[0]);
@@ -67,36 +67,36 @@ public class Event extends Activity {
 		ImageView minister = (ImageView) findViewById(R.id.image_minister);
 		TextView minister_first_name = (TextView) findViewById(R.id.text_minister_name_1);
 		TextView minister_last_name = (TextView) findViewById(R.id.text_minister_name_2);
-		
+
 		Log.i("Event is ", event);
-		
+
 		if (eventChar.equals("c1")) {
 			Log.i("Char is ", "The Chancellor");
 			minister.setImageResource(R.drawable.ic_char_laurent);
 			minister_first_name.setText("LADY LAURENT");
 			minister_last_name.setText("FORTESCUE");
-			character="fortescue";
+			character = "fortescue";
 		}
 		if (eventChar.equals("c2")) {
 			Log.i("Char is ", "The Minister of Finance");
 			minister.setImageResource(R.drawable.ic_char_krane);
 			minister_first_name.setText("DUKE LUDWIG von");
 			minister_last_name.setText("KRANE");
-			character="krane";
+			character = "krane";
 		}
 		if (eventChar.equals("c3")) {
 			Log.i("Char is ", "The Minister of Defence");
 			minister.setImageResource(R.drawable.ic_char_brion);
 			minister_first_name.setText("SER GODFRIED");
 			minister_last_name.setText("BRION");
-			character="brion";
+			character = "brion";
 		}
 		if (eventChar.equals("c4")) {
 			Log.i("Char is ", "The Minister of Agriculture");
 			minister.setImageResource(R.drawable.ic_char_agriculture);
 			minister_first_name.setText("BARON BARTHOLOMEW");
 			minister_last_name.setText("THORP");
-			character="thorp";
+			character = "thorp";
 		}
 		String[] optionEffect1 = eventOption1.split("¤");
 		resourceEffect1 = optionEffect1[1];
@@ -223,7 +223,7 @@ public class Event extends Activity {
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
 
 		if (beenPaused == true) {
-			
+
 			Intent intent = new Intent(Event.this, StoryManager.class);
 
 			Event.this.finish();
@@ -248,8 +248,8 @@ public class Event extends Activity {
 	public void phone_button(View v) {
 		event_player.stop();
 		int musicfileid;
-		event_am = (AudioManager) Event.this.getSystemService(
-				Context.AUDIO_SERVICE);
+		event_am = (AudioManager) Event.this
+				.getSystemService(Context.AUDIO_SERVICE);
 		event_am.setMode(AudioManager.MODE_IN_CALL);
 		event_am.setSpeakerphoneOn(false);
 		event_am.setBluetoothScoOn(true);
@@ -258,21 +258,24 @@ public class Event extends Activity {
 				"se.mah.kingdom_v02");
 		event_player = MediaPlayer.create(Event.this, musicfileid);
 		event_player.start();
-
+		ImageView Bi = (ImageView) findViewById(R.id.btn_phone_accept);
+		Bi.setVisibility(View.GONE);
+		ImageView Bc = (ImageView) findViewById(R.id.btn_phone_decline);
+		Bc.setVisibility(View.GONE);
 		Handler handler = new Handler();
 		handler.postDelayed(new Runnable() {
-		    public void run() {
-		     Intent intent = new Intent(Event.this, EventManager.class);
-		intent.putExtra("event", event);
-		Event.this.finish();
-		startActivity(intent);// Actions to do after 5 seconds
-		    }
+			public void run() {
+				Intent intent = new Intent(Event.this, EventManager.class);
+				intent.putExtra("event", event);
+				Event.this.finish();
+				startActivity(intent);// Actions to do after 5 seconds
+			}
 		}, 5000);
-		
+
 	}
 
 	public void btnDecline(View v) {
-		
+
 		decline();
 		Intent intent = new Intent(Intent.ACTION_MAIN);
 		intent.addCategory(Intent.CATEGORY_HOME);
