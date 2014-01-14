@@ -3,6 +3,7 @@ package se.mah.kingdom_v02;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 
 public class StartEvent extends Activity {
@@ -17,8 +18,9 @@ public class StartEvent extends Activity {
 	}
 
 	public void newGame(View v) {
-
 		ResourcesKingdom.newPlayerChange();
+		Log.i("not a new player", String.valueOf(ResourcesKingdom.newPlayerstate()));
+
 		Intent intent = new Intent(StartEvent.this, StoryManager.class);
 
 		StartEvent.this.finish();

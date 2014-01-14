@@ -3,6 +3,7 @@ package se.mah.kingdom_v02;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.util.Log;
 
 public class ResourcesKingdom {
 	private static int food = 500;
@@ -41,16 +42,15 @@ public class ResourcesKingdom {
 	}
 
 	public static boolean newPlayerstate() {
-		resourcePref.getBoolean(KEY_PREFS_PLAYER, newPlayer);
-
-		return newPlayer;
+		return resourcePref.getBoolean(KEY_PREFS_PLAYER, newPlayer);
 	}
 
-	public static void newPlayerChange() {
-		resourcePref.getBoolean(KEY_PREFS_PLAYER, newPlayer);
-		resourceEditor.putBoolean(KEY_PREFS_PLAYER,
-				!resourcePref.getBoolean(KEY_PREFS_PLAYER, newPlayer));
+	public static boolean newPlayerChange() {
+
+		newPlayer = false;
+		resourceEditor.putBoolean(KEY_PREFS_PLAYER, newPlayer);
 		resourceEditor.commit();
+		return newPlayer;
 
 	}
 
