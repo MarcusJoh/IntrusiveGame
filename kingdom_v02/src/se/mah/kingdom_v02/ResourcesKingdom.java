@@ -6,7 +6,7 @@ import android.content.SharedPreferences.Editor;
 
 public class ResourcesKingdom {
 	private static int food = 500;
-	private static int gold = 500;
+	private static int gold = -1;
 	private static int happy = 500;
 	private static String eventName = "e1";
 	private static int eventOption = 1;
@@ -52,6 +52,8 @@ public class ResourcesKingdom {
 	public static void setEventOption(int option)
 	{
 		eventOption = option;
+		resourceEditor.putInt(KEY_PREFS_EVENTOPTION, eventOption);
+		resourceEditor.commit();
 	}
 	
 	public static int getEventOption()
@@ -135,4 +137,17 @@ public class ResourcesKingdom {
 		return (food <= 0 || gold <= 0|| happy <= 0) ? true : false;
 	}
 
+	public static String EmptyResource()
+	{
+		int theGold = getGold();
+		int theFood = getFood();
+		int theHappy=getHappy();
+		if(theGold<=0)
+			return"gold";
+		else if(theFood<=0)
+			return "food";
+		else if(theHappy<=0)
+			return "happy";
+		return"";
+	}
 }
