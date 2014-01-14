@@ -50,7 +50,6 @@ public class StoryManager extends Activity {
 		refresh();
 		TextView jesterComment = (TextView)findViewById(R.id.text_jester_comment);
 		jesterComment.setText(getResources().getString(getResources().getIdentifier(ResourcesKingdom.getEventName()+"_jester_o"+Integer.toString(ResourcesKingdom.getEventOption()), "string", this.getPackageName())));
-		//jesterComment.setText(getResources().getText(getResources().getIdentifier(ResourcesKingdom.getEventName()+"_jester_"+Integer.toString(ResourcesKingdom.getEventOption()), "strings", this.getPackageName())));
 		
 	}
 

@@ -7,6 +7,7 @@ import java.util.Timer;
 import org.w3c.dom.Text;
 
 import se.mah.kingdom_v02.ObservableScrollView;
+import se.mah.kingdom_v02.R.drawable;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
@@ -93,8 +94,9 @@ public class EventFragment extends Fragment implements
 		event_am.setSpeakerphoneOn(false);
 		event_am.setBluetoothScoOn(true);
 		
-		ImageView eventIcon = (ImageView)rootView.findViewById(R.id.event_icon);
-		eventIcon.set
+		ImageView eventIconPicture = (ImageView)rootView.findViewById(R.id.event_icon);
+		String eventCode = ResourcesKingdom.getEventName();
+		eventIconPicture.setImageDrawable(getResources().getDrawable(getResources().getIdentifier("ic_"+eventCode, "drawable", getActivity().getPackageName())));
 
 		timer = new Timer();
 		time = Calendar.getInstance();

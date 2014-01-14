@@ -76,7 +76,7 @@
 					android:layout_width="fill_parent"
 					android:layout_height="wrap_content"
 					android:layout_marginTop="32dp"
-					android:src="@drawable/ic_marcus_4" />
+					android:src="@drawable/ic_marcus_9" />
                 
             </LinearLayout>
 			<LinearLayout 
