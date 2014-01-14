@@ -46,7 +46,6 @@ public class DecideCall extends Service{
 			Log.i("game over","you suck gg game over noob!");
 			Restart();
 			ResourcesKingdom.setstateGame();
-			ResourcesKingdom.resetGame();
 			Intent intent2 = new Intent(this, DeathEvent.class);
 	        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 
 			this.startActivity(intent2);

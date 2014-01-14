@@ -73,9 +73,9 @@ public class ResourcesKingdom {
 		resourceEditor.putInt(KEY_PREFS_GOLD, gold);
 		happy = 100;
 		resourceEditor.putInt(KEY_PREFS_HAPPY, happy);
-		eventName="";
+		eventName="e1";
 		resourceEditor.putString(KEY_PREFS_EVENTNAME, eventName);
-		eventOption=-1;
+		eventOption=1;
 		resourceEditor.putInt(KEY_PREFS_EVENTOPTION,eventOption);
 		resourceEditor.commit();
 		}
@@ -137,17 +137,4 @@ public class ResourcesKingdom {
 		return (food <= 0 || gold <= 0|| happy <= 0) ? true : false;
 	}
 
-	public static String EmptyResource()
-	{
-		int theGold = getGold();
-		int theFood = getFood();
-		int theHappy=getHappy();
-		if(theGold<=0)
-			return"gold";
-		else if(theFood<=0)
-			return "food";
-		else if(theHappy<=0)
-			return "happy";
-		return"";
-	}
 }
