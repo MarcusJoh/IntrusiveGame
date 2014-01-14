@@ -136,7 +136,6 @@
 		           android:layout_height="wrap_content"
 		           android:layout_alignParentBottom="true"
 		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="20dp"
 		           android:src="@drawable/im_mar_red_down_left" />
                 <ImageView
 		           android:id="@+id/imageBorderRightBottom1"
@@ -144,7 +143,6 @@
 		           android:layout_height="wrap_content"
 		           android:layout_alignParentBottom="true"
 		           android:layout_alignParentRight="true"
-		           android:layout_marginTop="20dp"
 		           android:src="@drawable/im_mar_red_down_right" />
 
                 
@@ -166,20 +164,21 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginLeft="60dp"
                     android:layout_marginRight="60dp"
+                    android:layout_marginTop="36dp"
                     android:layout_centerHorizontal="true"
                     android:gravity="center_vertical|center_horizontal"
                     android:text="@string/event_option_1"
                     android:textColor="@color/royal_red"
-                    android:textSize="16sp" />
+                    android:textSize="22sp" />
                 
-             	<TextView
+             	<ImageView
                     android:id="@+id/btn_option1_confirm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="20dp"
-                    android:text="Accept" />
+                    android:layout_marginBottom="48dp"
+                    android:src="@drawable/btn_accept_red" />
             </RelativeLayout>
 
             
@@ -213,7 +212,6 @@
 		           android:layout_height="wrap_content"
 		           android:layout_alignParentBottom="true"
 		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="20dp"
 		           android:src="@drawable/im_mar_blu_down_left" />
                 <ImageView
 		           android:id="@+id/imageBorderRightBottom2"
@@ -221,7 +219,6 @@
 		           android:layout_height="wrap_content"
 		           android:layout_alignParentBottom="true"
 		           android:layout_alignParentRight="true"
-		           android:layout_marginTop="20dp"
 		           android:src="@drawable/im_mar_blu_down_right" />
              	
                 <ImageView
@@ -242,20 +239,21 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginLeft="60dp"
                     android:layout_marginRight="60dp"
+                    android:layout_marginTop="36dp"
                     android:layout_centerHorizontal="true"
                     android:gravity="center"
                     android:text="@string/event_option_2"
                     android:textColor="@color/royal_blue"
-                    android:textSize="16sp" />
+                    android:textSize="22sp" />
                 
-                <TextView
+                <ImageView
                     android:id="@+id/btn_option2_confirm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="20dp"
-                    android:text="Accept" />
+                    android:layout_marginBottom="48dp"
+                    android:src="@drawable/btn_accept_blue"  />
             </RelativeLayout>
             
             
@@ -289,7 +287,6 @@
 		           android:layout_height="wrap_content"
 		           android:layout_alignParentBottom="true"
 		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="20dp"
 		           android:src="@drawable/im_mar_red_down_left" />
                 <ImageView
 		           android:id="@+id/imageBorderRightBottom3"
@@ -297,7 +294,6 @@
 		           android:layout_height="wrap_content"
 		           android:layout_alignParentBottom="true"
 		           android:layout_alignParentRight="true"
-		           android:layout_marginTop="20dp"
 		           android:src="@drawable/im_mar_red_down_right" />
                 
                 <ImageView
@@ -318,20 +314,21 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginLeft="60dp"
                     android:layout_marginRight="60dp"
+                    android:layout_marginTop="36dp"
                     android:layout_centerHorizontal="true"
                     android:gravity="center"
                     android:text="@string/event_option_3"
                     android:textColor="@color/royal_red"
-                    android:textSize="16sp" />
+                    android:textSize="22sp" />
                 
-                <TextView
+                <ImageView
                     android:id="@+id/btn_option3_confirm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="20dp"
-                    android:text="Accept" />
+                    android:layout_marginBottom="48dp"
+                    android:src="@drawable/btn_accept_red"  />
 
             </RelativeLayout>
             
@@ -358,7 +355,6 @@
 		           android:layout_height="wrap_content"
 		           android:layout_alignParentTop="true"
 		           android:layout_alignParentRight="true"
-		           android:layout_marginTop="20dp"
 		           android:src="@drawable/im_mar_blu_top_right" />
                 <ImageView
 		           android:id="@+id/imageBorderLeftBottom4"
@@ -366,7 +362,6 @@
 		           android:layout_height="wrap_content"
 		           android:layout_alignParentBottom="true"
 		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="20dp"
 		           android:src="@drawable/im_mar_blu_down_left" />
                 <ImageView
 		           android:id="@+id/imageBorderRightBottom4"
@@ -374,7 +369,6 @@
 		           android:layout_height="wrap_content"
 		           android:layout_alignParentBottom="true"
 		           android:layout_alignParentRight="true"
-		           android:layout_marginTop="20dp"
 		           android:src="@drawable/im_mar_blu_down_right" />
                 
                 <ImageView
@@ -395,20 +389,21 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginLeft="60dp"
                     android:layout_marginRight="60dp"
+                    android:layout_marginTop="36dp"
                     android:gravity="center"
                     android:layout_centerHorizontal="true"
                     android:text="@string/event_option_4"
                     android:textColor="@color/royal_blue"
-                    android:textSize="16sp" />
+                    android:textSize="22sp" />
                 
-                <TextView
+                <ImageView
                     android:id="@+id/btn_option4_confirm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="20dp"
-                    android:text="Accept" />
+                    android:layout_marginBottom="48dp"
+                    android:src="@drawable/btn_accept_blue"  />
             </RelativeLayout>
         </LinearLayout>
 		

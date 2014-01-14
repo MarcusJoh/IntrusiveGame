@@ -85,16 +85,16 @@ public class EventFragment extends Fragment implements
 
 
 
-		TextView btnOption1 = (TextView) rootView
+		ImageView btnOption1 = (ImageView) rootView
 				.findViewById(R.id.btn_option1_confirm);
 		btnOption1.setOnClickListener(this);
-		TextView btnOption2 = (TextView) rootView
+		ImageView btnOption2 = (ImageView) rootView
 				.findViewById(R.id.btn_option2_confirm);
 		btnOption2.setOnClickListener(this);
-		TextView btnOption3 = (TextView) rootView
+		ImageView btnOption3 = (ImageView) rootView
 				.findViewById(R.id.btn_option3_confirm);
 		btnOption3.setOnClickListener(this);
-		TextView btnOption4 = (TextView) rootView
+		ImageView btnOption4 = (ImageView) rootView
 				.findViewById(R.id.btn_option4_confirm);
 		btnOption4.setOnClickListener(this);
 
