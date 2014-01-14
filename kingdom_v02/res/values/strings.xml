@@ -59,15 +59,50 @@
         <item>e15Åc2Åi1/Your Majesty, we have found new gold veins in High Mountains. This could dramatically improve our treasury./I have more pressing issues now.¤gold#0/Get some men and open a mine!¤happ#-5Ögold#20/Open the mine and give workers share of the profit!¤gold#15Öhapp#10/none/3¤none</item>
         <item>e16Åc2Åi1/Your Majesty, there is not enough funds for this years Yule celebration. But the people will be very disappointed to see the kingdom not follow through with this tradition./Do nothing and let people be disappointed.¤happ#-20/Tax the people and earn the money required to buy fireworks. If the people want to celebrate, they must pay a share for it.¤gold#10Öhapp#-15/Ask the Church to announce that Fireworks are the devil and will not be allowed in the kingdom anymore.¤happ#-20Ögold#-5/Take out some of the money kept aside for food, crops and use it for the Fireworks instead.¤food#-20Ögold#10/4¤none</item>
         <item>e20p1Åc1Åi1/Your Grace, Preachers are gathering and agitating the common folk at the town centre, to worship a new kind of deity./Let them preach, faith has never hurt anyone. ¤happ#15/These so called preachers are a burden on my kingdom. Make the city-guard help them remove themselves¤gold#-10/none/none/2¤e20p2</item>
-        <item>e20p2Åc1Åi1/Your Grace, It seems like the common folk have started to join and convert to this new faith that has gained popularity in your land./There is always a faith that will come and always a faith that will go. Let the faithful be faithful I would say.¤gold#0/We can not have my subjects follow such profanity. Set up a new law that any mention of the divinity will be granted a whip lash for each mention.¤happ#-15/If faith in this divinity makes my subjects happy I would say we should reward this faith.FInd a mason and set him to erect a monument for this divinity.¤happ#10Ögold#-10/none/3¤none</item>
+        <item>e20p2Åc1Åi1
+            /Your Grace, It seems like the common folk have started to join and convert to this new faith that has gained popularity in your land.
+            /There is always a faith that will come and always a faith that will go. Let the faithful be faithful I would say.¤gold#0
+            /We can not have my subjects follow such profanity. Set up a new law that any mention of the divinity will be granted a whip lash for each mention.¤happ#-15
+            /If faith in this divinity makes my subjects happy I would say we should reward this faith.Find a mason and set him to erect a monument for this divinity.¤happ#10Ögold#-10
+            /none
+            /3¤none</item>
         <item>e21p1Åc1Åi1/Your Grace, your virtuous rule is one of the fairest among men, and the empire can attest that. Alas, I beseech you to spread out reign towards the Southern Plains, occupied by boorish men who deserve not to./Methinks the time is unbeseeming! Alas my Lady, be patient¤happ#-10/Its high time indeed, dispatch an armed expedition and claim the lands¤gold#-15Öhapp#5/Though its a grand idea, thine approach be blunt. Nay my Lady, seal thou this league in a more civic manner¤gold#-10Öhapp#5/none/3¤e21p2</item>
-        <item>e21p2Åc1Åi1/Your Grace, the Southern Plains were annexed! Manage the lands however you think best. Our horizons have expanded, our country now two fold and at your high command./May the Southern Plains remain untouched¤gold#0/May the fields be used to favour our harvest.¤food#20/May the soil be exploited for riches¤gold#20/May the land serve to construct houses for the needy.¤happ#20/none/2¤none</item>
+        <item>e21p2Åc1Åi1
+            /Your Grace, the Southern Plains were annexed! Manage the lands however you think best. Our horizons have expanded, our country now two fold and at your high command.
+            /May the Southern Plains remain untouched¤gold#0
+            /May the fields be used to favour our harvest.¤food#20
+            /May the soil be exploited for riches¤gold#20
+            /May the land serve to construct houses for the needy.¤happ#20
+            /2¤none</item>
         <item>e32p2Åc1Åi1/Your Grace, ferried fellows have arrived from the most exotic sort, merchants it seems. Their freight was lost at sea and at the hands of the looters, so of no value to us. Shall I get rid of them or welcome instead?/Such traders, with nothing to trade. Expel these goons from my kingdom!¤happ#-10/Nay, they have endured such a fate, see that they get proper accommodation¤gold#-5Öhapp#5/A handsome amount of our men perished in their rescue, to no avail! Execute them promptly¤happ#-15/Their rescue is been costly, attend them but bid them farewell, the instant the dawn breaks.¤gold#5/4¤e32p3</item>
-        <item>e32p3Åc1Åi1/Your Grace, the Ambassador of the Kingdom of Trigarta has fared great distances to have an audience with your Grace. When shall I arrange for this parley?/It is of no relevance to me having an audience with this stranger ¤happ#-5/At noon ¤gold#0/When the sun breaks ¤gold#0/We shall parley in the evening. ¤gold#0/4¤none</item>
+        <item>e32p3Åc1Åi1
+            /Your Grace, the Ambassador of the Kingdom of Trigarta has fared great distances to have an audience with your Grace. When shall I arrange for this parley?
+            /It is of no relevance to me having an audience with this stranger ¤happ#-5
+            /At noon ¤gold#0
+            /When the sun breaks ¤gold#0
+            /We shall parley in the evening.¤gold#0
+               /4¤none</item>
         <item>e24Åc1Åi1/Your Grace, there are comedians in the town, who ask for permission to perform here. Must we take part in their humour, me lord, the decision is on you./Well, who cares…¤happ#-5/Give them my permission¤happ#10/Great! Welcome them and provide them comfort they deserve!¤gold#5Öhapp#20/none/3¤none</item>
-        <item>e25p1Åc1Åi1/Your Grace, King Charles would like to seal our friendship with marriage proposal to his oldest daughter. My Lord, might you be prepared to take up this offer?/I don not want to get married now.¤gold#0/Such a great idea!¤gold#10/Prepare great feast and let whole kingdom celebrate.¤happ#20/none/3¤e25p2</item>
-        <item>e25p2Åc1Åi1/Your Grace, the tide hath flow by your side. Congratulations! It is a boy! Finally you have descendant!/Fine, but I am working now. Can you remind me later?¤gold#0/Great news! I am so blessed man!¤food#0/Prepare great feast and let whole kingdom celebrate. ¤happ#20Ögold#-10/none/3¤none</item>
-        <item>e26p1Åc1Åi1/Your Grace, I have chanced upon a worthy rumour. They say a new dictator is being borned in the Far West. A good orator, you must look into this man lest his words blow thy crown off thy head./Do nothing, as he poses no threat as of now.¤gold#0/Banish the man from the kingdom and send him to Exile.¤happ#-15Ögold#-10/Find the man and appoint him as a senior minister in the Kingdom.¤happ#20/ Threaten to terminate the citizenship of any man who follows the orders of the dictator/ is seen as part of his league.¤happ#-20Ögold#-5/4¤e26p2</item>
+        <item>e25p1Åc1Åi1
+            /Your Grace, King Charles would like to seal our friendship with marriage proposal to his oldest daughter. My Lord, might you be prepared to take up this offer?
+            /I don not want to get married now.¤gold#0
+            /Such a great idea!¤gold#10
+            /Prepare great feast and let whole kingdom celebrate.¤happ#20
+            /none
+            /3¤e25p2</item>
+        <item>e25p2Åc1Åi1
+            /Your Grace, the tide hath flow by your side. Congratulations! It is a boy! Finally you have descendant!
+            /Fine, but I am working now. Can you remind me later?¤gold#0
+            /Great news! I am so blessed man!¤food#0
+            /Prepare great feast and let whole kingdom celebrate.¤happ#20Ögold#-10
+            /none
+            /3¤none</item>
+        <item>e26p1Åc1Åi1
+            /Your Grace, I have chanced upon a worthy rumour. They say a new dictator is being borned in the Far West. A good orator, you must look into this man lest his words blow thy crown off thy head./Do nothing, as he poses no threat as of now.¤gold#0
+            /Banish the man from the kingdom and send him to Exile.¤happ#-15Ögold#-10
+            /Find the man and appoint him as a senior minister in the Kingdom.¤happ#20
+            /Threaten to terminate the citizenship of any man who follows the orders of the dictator is seen as part of his league.¤happ#-20Ögold#-5
+            /none/4¤e26p2</item>
         <item>e27p2Åc1Åi1/Your Grace, the Church has decided to curse at the skies that our land will be throttled by the fiery Tempest for seven forthcoming years. The people are scared and have not left their homes in three days me lord./Do nothing about it. ¤happ#-10Ögold#20/Declare that no church can predict weather and the Tempest is untrue premonition.¤happ#-10Ögold10/Propose to the people to choose a new religion and religious leader to follow instead of the church¤happ#10Ögold#-20/Apologize to the church regarding the dissolution and donate a huge some of money to it.¤happ#5Ögold#-20/4¤none</item>
         <item>e26p2Åc1Åi1/Your Grace, the tides seem rough this day. What I foresaw, has finally happened! People and running angry on the streets, burning houses because of their beloved dictator!/Do nothing about it.¤food#-20Ögold#-20/Send out the Army to contain the revolt.¤happ#-20Ögold#-20/Bring him back from exile and appoint as a minister.¤happ#20Ögold#-10/Ask the priest to exorcise all the people revolting and take out the devil from inside them. ¤happ#-20Ögold#-20/4¤none</item>
         <item>e27p1Åc1Åi1/Your Grace, oh what has becomest of womenfolk today, I say. Our nuns from the monastery drank forth all the wine kept aside for and were found at the gates of your palace!/Do nothing about it.¤happ#-10/Make an example of the nuns and publicly embarrass them for blasphemous behavior, banishing them in the end.¤happ#20Ögold#-10/Declare the kingdom to be a liberal state and let the nuns go with a small fine, but dissolve the church.¤happ#20Ögold#-15/ Declare a ban on all kinds of alcohol, unless authorized by the King, the royal family or the main priest of the church.¤happ#-20Ögold#10/4¤e27p2</item>
@@ -77,315 +112,261 @@
     <string name="quick_return_item">Quick Return</string>
     <string name="title_activity_death_event">DeathEvent</string>
     <string name="title_activity_coronation">Coronation</string>
-    
     <string name="jester_comment">e4-o4</string>
-    
     <string name="e1_name">Rats in the city.</string>
     <string name="e1_jester_o1">e1-o1</string>
     <string name="e1_jester_o2">e1-o2</string>
     <string name="e1_jester_o3">e1-o3</string>
     <string name="e1_jester_o4">e1-o1</string>
-    
     <string name="e2_name">Harvest problem.</string>
     <string name="e2_jester_o1">e2-o1</string>
     <string name="e2_jester_o2">e2-o2</string>
     <string name="e2_jester_o3">e2-o3</string>
     <string name="e2_jester_o4">e2-o1</string>
-    
     <string name="e3p1_name">Rebuilding castle.</string>
     <string name="e3p1_jester_o1">e3p1-o1</string>
     <string name="e3p1_jester_o2">e3p1-o2</string>
     <string name="e3p1_jester_o3">e3p1-o3</string>
     <string name="e3p1_jester_o4">e3p1-o1</string>
-    
     <string name="e3p2_name">Angry farmers</string>
     <string name="e3p2_jester_o1">e3p2-o1</string>
     <string name="e3p2_jester_o2">e3p2-o2</string>
     <string name="e3p2_jester_o3">e3p2-o3</string>
     <string name="e3p2_jester_o4">e3p2-o1</string>
-    
     <string name="e3p3_name">Crops destroyed</string>
     <string name="e3p3_jester_o1">e3p3-o1</string>
     <string name="e3p3_jester_o2">e3p3-o2</string>
     <string name="e3p3_jester_o3">e3p3-o3</string>
     <string name="e3p3_jester_o4">e3p3-o1</string>
-    
     <string name="e4p1_name">Delayed rains</string>
     <string name="e4p1_jester_o1">e4p1-o1</string>
     <string name="e4p1_jester_o2">e4p1-o2</string>
     <string name="e4p1_jester_o3">e4p1-o3</string>
     <string name="e4p1_jester_o4">e4p1-o1</string>
-    
     <string name="e4p2_name">Drought</string>
     <string name="e4p2_jester_o1">e4p2-o1</string>
     <string name="e4p2_jester_o2">e4p2-o2</string>
     <string name="e4p2_jester_o3">e4p2-o3</string>
     <string name="e4p2_jester_o4">e4p2-o1</string>
-    
     <string name="e5_name">e1-o1</string>
     <string name="e5_jester_o1">e5-o1</string>
     <string name="e5_jester_o2">e5-o2</string>
     <string name="e5_jester_o3">e5-o3</string>
     <string name="e5_jester_o4">e5-o1</string>
-    
     <string name="e6_name">e1-o1</string>
     <string name="e6_jester_o1">e6-o1</string>
     <string name="e6_jester_o2">e6-o2</string>
     <string name="e6_jester_o3">e6-o3</string>
     <string name="e6_jester_o4">e6-o1</string>
-    
     <string name="e7_name">e1-o1</string>
     <string name="e7_jester_o1">e7-o1</string>
     <string name="e7_jester_o2">e7-o2</string>
     <string name="e7_jester_o3">e7-o3</string>
     <string name="e7_jester_o4">e7-o1</string>
-    
     <string name="e8_name">e1-o1</string>
     <string name="e8_jester_o1">e8-o1</string>
     <string name="e8_jester_o2">e8-o2</string>
     <string name="e8_jester_o3">e8-o3</string>
     <string name="e8_jester_o4">e8-o1</string>
-    
     <string name="e9_name">e1-o1</string>
     <string name="e9_jester_o1">e9-o1</string>
     <string name="e9_jester_o2">e9-o2</string>
     <string name="e9_jester_o3">e9-o3</string>
     <string name="e9_jester_o4">e9-o1</string>
-    
     <string name="e10_name">e1-o1</string>
     <string name="e10_jester_o1">e10-o1</string>
     <string name="e10_jester_o2">e10-o2</string>
     <string name="e10_jester_o3">e10-o3</string>
     <string name="e10_jester_o4">e10-o1</string>
-    
     <string name="e11_name">Rain problems</string>
     <string name="e11_jester_o1">e11-o1</string>
     <string name="e11_jester_o2">e11-o2</string>
     <string name="e11_jester_o3">e11-o3</string>
     <string name="e11_jester_o4">e11-o1</string>
-    
     <string name="e12_name">Helping our neighbor</string>
     <string name="e12_jester_o1">e12-o1</string>
     <string name="e12_jester_o2">e12-o2</string>
     <string name="e12_jester_o3">e12-o3</string>
     <string name="e12_jester_o4">e12-o1</string>
-    
     <string name="e13p1_name">Explorer</string>
     <string name="e13p1_jester_o1">e13p1-o1</string>
     <string name="e13p1_jester_o2">e13p1-o2</string>
     <string name="e13p1_jester_o3">e13p1-o3</string>
     <string name="e13p1_jester_o4">e13p1-o1</string>
-    
     <string name="e13p2_name">New land</string>
     <string name="e13p2_jester_o1">e13p2-o1</string>
     <string name="e13p2_jester_o2">e13p2-o2</string>
     <string name="e13p2_jester_o3">e13p2-o3</string>
     <string name="e13p2_jester_o4">e13p2-o1</string>
-    
     <string name="e14_name">Paintings</string>
     <string name="e14_jester_o1">e14-o1</string>
     <string name="e14_jester_o2">e14-o2</string>
     <string name="e14_jester_o3">e14-o3</string>
     <string name="e14_jester_o4">e14-o1</string>
-    
     <string name="e15_name">New gold resources</string>
     <string name="e15_jester_o1">e15-o1</string>
     <string name="e15_jester_o2">e15-o2</string>
     <string name="e15_jester_o3">e15-o3</string>
     <string name="e15_jester_o4">e15-o1</string>
-    
     <string name="e16_name">Fireworks</string>
     <string name="e16_jester_o1">e16-o1</string>
     <string name="e16_jester_o2">e16-o2</string>
     <string name="e16_jester_o3">e16-o3</string>
     <string name="e16_jester_o4">e16-o1</string>
-    
     <string name="e17_name">e1-o1</string>
     <string name="e17_jester_o1">e17-o1</string>
     <string name="e17_jester_o2">e17-o2</string>
     <string name="e17_jester_o3">e17-o3</string>
     <string name="e17_jester_o4">e17-o1</string>
-    
     <string name="e18_name">e1-o1</string>
     <string name="e18_jester_o1">e18-o1</string>
     <string name="e18_jester_o2">e18-o2</string>
     <string name="e18_jester_o3">e18-o3</string>
     <string name="e18_jester_o4">e18-o1</string>
-    
     <string name="e19_name">e1-o1</string>
     <string name="e19_jester_o1">e19-o1</string>
     <string name="e19_jester_o2">e19-o2</string>
     <string name="e19_jester_o3">e19-o3</string>
     <string name="e19_jester_o4">e19-o1</string>
-    
     <string name="e20p1_name">Preachers on the streets</string>
     <string name="e20p1_jester_o1">e20p1-o1</string>
     <string name="e20p1_jester_o2">e20p1-o2</string>
     <string name="e20p1_jester_o3">e20p1-o3</string>
     <string name="e20p1_jester_o4">e20p1-o1</string>
-    
     <string name="e20p2_name">New divinity</string>
     <string name="e20p2_jester_o1">e20p2-o1</string>
     <string name="e20p2_jester_o2">e20p2-o2</string>
     <string name="e20p2_jester_o3">e20p2-o3</string>
     <string name="e20p2_jester_o4">e20p2-o1</string>
-    
     <string name="e21p1_name">Territory expansion</string>
     <string name="e21p1_jester_o1">e21p1-o1</string>
     <string name="e21p1_jester_o2">e21p1-o2</string>
     <string name="e21p1_jester_o3">e21p1-o3</string>
     <string name="e21p1_jester_o4">e21p1-o1</string>
-    
     <string name="e21p2_name">New grounds</string>
     <string name="e21p2_jester_o1">e21p2-o1</string>
     <string name="e21p2_jester_o2">e21p2-o2</string>
     <string name="e21p2_jester_o3">e21p2-o3</string>
     <string name="e21p2_jester_o4">e21p2-o1</string>
-    
     <string name="e22_name">e1-o1</string>
     <string name="e22_jester_o1">e22-o1</string>
     <string name="e22_jester_o2">e22-o2</string>
     <string name="e22_jester_o3">e22-o3</string>
     <string name="e22_jester_o4">e22-o1</string>
-    
     <string name="e23_name">e1-o1</string>
     <string name="e23_jester_o1">e23-o1</string>
     <string name="e23_jester_o2">e23-o2</string>
     <string name="e23_jester_o3">e23-o3</string>
     <string name="e23_jester_o4">e23-o1</string>
-    
     <string name="e24_name">Comedians</string>
     <string name="e24_jester_o1">e24-o1</string>
     <string name="e24_jester_o2">e24-o2</string>
     <string name="e24_jester_o3">e24-o3</string>
     <string name="e24_jester_o4">e24-o1</string>
-    
     <string name="e25p1_name">Marrige proposal</string>
     <string name="e25p1_jester_o1">e25p1-o1</string>
     <string name="e25p1_jester_o2">e25p1-o2</string>
     <string name="e25p1_jester_o3">e25p1-o3</string>
     <string name="e25p1_jester_o4">e25p1-o1</string>
-    
     <string name="e25p2_name">Descendend</string>
     <string name="e25p2_jester_o1">e25p2-o1</string>
     <string name="e25p2_jester_o2">e25p2-o2</string>
     <string name="e25p2_jester_o3">e25p2-o3</string>
     <string name="e25p2_jester_o4">e25p2-o1</string>
-    
     <string name="e26p1_name">Dictator</string>
     <string name="e26p1_jester_o1">e26p1-o1</string>
     <string name="e26p1_jester_o2">e26p1-o2</string>
     <string name="e26p1_jester_o3">e26p1-o3</string>
     <string name="e26p1_jester_o4">e26p1-o1</string>
-    
     <string name="e26p2_name">Revolt</string>
     <string name="e26p2_jester_o1">e26p2-o1</string>
     <string name="e26p2_jester_o2">e26p2-o2</string>
     <string name="e26p2_jester_o3">e26p2-o3</string>
     <string name="e26p2_jester_o4">e26p2-o1</string>
-    
     <string name="e27p1_name">Drunken nuns</string>
     <string name="e27p1_jester_o1">e27p1-o1</string>
     <string name="e27p1_jester_o2">e27p1-o2</string>
     <string name="e27p1_jester_o3">e27p1-o3</string>
     <string name="e27p1_jester_o4">e27p1-o1</string>
-    
     <string name="e27p2_name">Curse</string>
     <string name="e27p2_jester_o1">e27p2-o1</string>
     <string name="e27p2_jester_o2">e27p2-o2</string>
     <string name="e27p2_jester_o3">e27p2-o3</string>
     <string name="e27p2_jester_o4">e27p2-o1</string>
-    
     <string name="e28_name">e1-o1</string>
     <string name="e28_jester_o1">e28-o1</string>
     <string name="e28_jester_o2">e28-o2</string>
     <string name="e28_jester_o3">e28-o3</string>
     <string name="e28_jester_o4">e28-o1</string>
-    
     <string name="e29_name">e1-o1</string>
     <string name="e29_jester_o1">e29-o1</string>
     <string name="e29_jester_o2">e29-o2</string>
     <string name="e29_jester_o3">e29-o3</string>
     <string name="e29_jester_o4">e29-o1</string>
-
     <string name="e30p1_name">Problems in the outskirts</string>
     <string name="e30p1_jester_o1">e30p1-o1</string>
     <string name="e30p1_jester_o2">e30p1-o2</string>
     <string name="e30p1_jester_o3">e30p1-o3</string>
     <string name="e30p1_jester_o4">e30p1-o1</string>
-    
     <string name="e30p2_name">Filled dungeon</string>
     <string name="e30p2_jester_o1">e30p2-o1</string>
     <string name="e30p2_jester_o2">e30p2-o2</string>
     <string name="e30p2_jester_o3">e30p2-o3</string>
     <string name="e30p2_jester_o4">e30p2-o1</string>
-    
     <string name="e31_name">Beast at large</string>
     <string name="e31_jester_o1">e31-o1</string>
     <string name="e31_jester_o2">e31-o2</string>
     <string name="e31_jester_o3">e31-o3</string>
     <string name="e31_jester_o4">e31-o1</string>
-    
     <string name="e32p1_name">Castaways</string>
     <string name="e32p1_jester_o1">e32p1-o1</string>
     <string name="e32p1_jester_o2">e32p1-o2</string>
     <string name="e32p1_jester_o3">e32p1-o3</string>
     <string name="e32p1_jester_o4">e32p1-o1</string>
-    
     <string name="e32p2_name">Merchants from afar</string>
     <string name="e32p2_jester_o1">e32p2-o1</string>
     <string name="e32p2_jester_o2">e32p2-o2</string>
     <string name="e32p2_jester_o3">e32p2-o3</string>
     <string name="e32p2_jester_o4">e32p2-o1</string>
-    
     <string name="e32p3_name">Emissary</string>
     <string name="e32p3_jester_o1">e32p3-o1</string>
     <string name="e32p3_jester_o2">e32p3-o2</string>
     <string name="e32p3_jester_o3">e32p3-o3</string>
     <string name="e32p3_jester_o4">e32p3-o1</string>
-    
     <string name="e33_name">e1-o1</string>
     <string name="e33_jester_o1">e33-o1</string>
     <string name="e33_jester_o2">e33-o2</string>
     <string name="e33_jester_o3">e33-o3</string>
     <string name="e33_jester_o4">e33-o1</string>
-    
     <string name="e34_name">e1-o1</string>
     <string name="e34_jester_o1">e34-o1</string>
     <string name="e34_jester_o2">e34-o2</string>
     <string name="e34_jester_o3">e34-o3</string>
     <string name="e34_jester_o4">e34-o1</string>
-    
     <string name="e35_name">e1-o1</string>
     <string name="e35_jester_o1">e35-o1</string>
     <string name="e35_jester_o2">e35-o2</string>
     <string name="e35_jester_o3">e35-o3</string>
     <string name="e35_jester_o4">e35-o1</string>
-    
     <string name="e36_name">e1-o1</string>
     <string name="e36_jester_o1">e36-o1</string>
     <string name="e36_jester_o2">e36-o2</string>
     <string name="e36_jester_o3">e36-o3</string>
     <string name="e36_jester_o4">e36-o1</string>
-    
     <string name="e37_name">e1-o1</string>
     <string name="e37_jester_o1">e37-o1</string>
     <string name="e37_jester_o2">e37-o2</string>
     <string name="e37_jester_o3">e37-o3</string>
     <string name="e37_jester_o4">e37-o1</string>
-    
     <string name="e38_name">e1-o1</string>
     <string name="e38_jester_o1">e38-o1</string>
     <string name="e38_jester_o2">e38-o2</string>
     <string name="e38_jester_o3">e38-o3</string>
     <string name="e38_jester_o4">e38-o1</string>
-    
     <string name="e39_name">e1-o1</string>
     <string name="e39_jester_o1">e39-o1</string>
     <string name="e39_jester_o2">e39-o2</string>
     <string name="e39_jester_o3">e39-o3</string>
     <string name="e39_jester_o4">e39-o1</string>
-    
-    
 
 </resources>
