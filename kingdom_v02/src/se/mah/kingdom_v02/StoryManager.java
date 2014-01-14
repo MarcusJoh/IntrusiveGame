@@ -169,7 +169,7 @@ public class StoryManager extends Activity {
 			break;
 		}
 	}
-	}
+}
 	@Override
 	public void onPause(){
 		super.onPause();
