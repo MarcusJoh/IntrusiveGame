@@ -2,17 +2,12 @@ package se.mah.kingdom_v02;
 
 import java.util.Calendar;
 import java.util.Random;
-import java.util.Timer;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.app.Service;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
-import android.os.Bundle;
 import android.os.IBinder;
 import android.util.Log;
 import android.widget.Toast;
@@ -63,7 +58,7 @@ public class DecideCall extends Service{
 		PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
 		Calendar time = Calendar.getInstance();
 		time.setTimeInMillis(System.currentTimeMillis());
-		time.add(Calendar.SECOND, update);
+		time.add(Calendar.SECOND, 20);
 		Log.i("Update", String.valueOf(update));
 		alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(), pendingIntent);
 		this.stopSelf();

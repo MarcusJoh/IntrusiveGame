@@ -1,19 +1,10 @@
 package se.mah.kingdom_v02;
 
-import java.util.Calendar;
-import java.util.Random;
-import java.util.Timer;
-
-import org.w3c.dom.Text;
-
 import se.mah.kingdom_v02.ObservableScrollView;
-import se.mah.kingdom_v02.R.drawable;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.media.AudioManager;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -21,8 +12,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
-import android.webkit.WebView.FindListener;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -42,7 +31,6 @@ public class EventFragment extends Fragment implements
 	//private MediaPlayer event_player;
 	private AudioManager event_am;
 
-	private ResourcesKingdom resourcePrefs;
 	public String optionEvent1 = null;
 	public String optionEvent2 = null;
 	public String optionEvent3 = null;
@@ -53,16 +41,6 @@ public class EventFragment extends Fragment implements
 	public String resourceEffect4 = null;
 	public boolean beenPaused = true;
 
-	private Timer timer;
-	private int update;
-	private int timesHappend;
-	private Calendar time;
-	private double increaseInterval;
-	private int increaseRate;
-	private double totalTimeElapsed;
-	private int likenessOfEmergency;
-	private boolean emergencyHappening;
-	private String saveEventName = "";
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -104,24 +82,8 @@ public class EventFragment extends Fragment implements
 		catch(Exception e){
 			Log.i("icon set exeption", e.toString());
 		}
-		timer = new Timer();
-		time = Calendar.getInstance();
-		update = 1;
-		increaseInterval = 1 * 60;
-		timesHappend = 0;
-		increaseRate = 1;
-		totalTimeElapsed = 0;
-		likenessOfEmergency = 1;
-		emergencyHappening = false;
-		//int musicfileid;
-		
-		/*musicfileid = getResources().getIdentifier("event_voice", "raw",
-				"se.mah.kingdom_v02");
-		event_player = MediaPlayer.create(getActivity(), musicfileid);
-		event_player.start();*/
 
-		resourcePrefs = new ResourcesKingdom(getActivity()
-				.getApplicationContext());
+
 
 		TextView btnOption1 = (TextView) rootView
 				.findViewById(R.id.btn_option1_confirm);
