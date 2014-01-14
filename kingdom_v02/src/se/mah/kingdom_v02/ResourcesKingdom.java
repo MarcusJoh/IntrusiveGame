@@ -10,8 +10,8 @@ public class ResourcesKingdom {
 	private static int happy = 500;
 	private static String eventName = "e1";
 	private static int eventOption = 1;
-	private static boolean gameOver = true;
-	private static boolean newPlayer = true;
+	private static boolean gameOver = true;// true= its a dead player
+	private static boolean newPlayer = true;// true= its a new player
 	private static final String KEY_PREFS_EVENTOPTION = "EventOption";
 	private static final String KEY_PREFS_EVENTNAME = "Event";
 	private static final String KEY_PREFS_GAME = "Game";

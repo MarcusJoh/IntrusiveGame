@@ -1,26 +1,28 @@
 package se.mah.kingdom_v02;
 
-import java.util.Calendar;
-import java.util.Random;
-
 import android.os.Bundle;
 import android.app.Activity;
-import android.app.AlarmManager;
-import android.app.PendingIntent;
-import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 
 public class StartEvent extends Activity {
+	private ResourcesKingdom resourcePrefs;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_start_event);
+		resourcePrefs = new ResourcesKingdom(
+				StartEvent.this.getApplicationContext());
 	}
-	public void newGame (View v) {
-		
+
+	public void newGame(View v) {
+
+		ResourcesKingdom.newPlayerChange();
+		Intent intent = new Intent(StartEvent.this, StoryManager.class);
+
+		StartEvent.this.finish();
+		startActivity(intent);
+
 	}
 }
