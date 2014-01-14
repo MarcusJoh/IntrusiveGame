@@ -82,6 +82,8 @@ public class EventFragment extends Fragment implements
 		catch(Exception e){
 			Log.i("icon set exeption", e.toString());
 		}
+		TextView eventNameText = (TextView)rootView.findViewById(R.id.eventName);
+		eventNameText.setText(getResources().getText(getResources().getIdentifier(eventCode+"_name", "string", getActivity().getPackageName())));
 
 
 
