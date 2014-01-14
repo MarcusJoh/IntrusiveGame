@@ -44,6 +44,7 @@ public class DeathEvent extends Activity {
 	{
 		Intent intent2 = new Intent(this, StoryManager.class);
         intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 
+        DeathEvent.this.finish();
 		startActivity(intent2);
 	}
 
