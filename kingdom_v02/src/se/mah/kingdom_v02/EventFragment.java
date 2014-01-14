@@ -38,7 +38,7 @@ public class EventFragment extends Fragment implements
 	private ObservableScrollView mObservableScrollView;
 	private View stickyView;
 
-	private MediaPlayer event_player;
+	//private MediaPlayer event_player;
 	private AudioManager event_am;
 
 	private ResourcesKingdom resourcePrefs;
@@ -92,6 +92,9 @@ public class EventFragment extends Fragment implements
 		event_am.setMode(AudioManager.MODE_IN_CALL);
 		event_am.setSpeakerphoneOn(false);
 		event_am.setBluetoothScoOn(true);
+		
+		ImageView eventIcon = (ImageView)rootView.findViewById(R.id.event_icon);
+		eventIcon.set
 
 		timer = new Timer();
 		time = Calendar.getInstance();
@@ -102,12 +105,12 @@ public class EventFragment extends Fragment implements
 		totalTimeElapsed = 0;
 		likenessOfEmergency = 1;
 		emergencyHappening = false;
-		int musicfileid;
-		Resources res = this.getResources();
-		musicfileid = getResources().getIdentifier("event_voice", "raw",
+		//int musicfileid;
+		
+		/*musicfileid = getResources().getIdentifier("event_voice", "raw",
 				"se.mah.kingdom_v02");
 		event_player = MediaPlayer.create(getActivity(), musicfileid);
-		event_player.start();
+		event_player.start();*/
 
 		resourcePrefs = new ResourcesKingdom(getActivity()
 				.getApplicationContext());
@@ -659,7 +662,7 @@ public class EventFragment extends Fragment implements
 	@Override
 	public void onDestroy() {
 		decline();
-		event_player.release();
+		//event_player.release();
 
 		super.onDestroy();
 
@@ -667,7 +670,7 @@ public class EventFragment extends Fragment implements
 
 	@Override
 	public void onResume() {
-		event_player.stop();
+		//event_player.stop();
 		if (beenPaused == true) {
 			Intent intent = new Intent(getActivity().getBaseContext(),
 					StoryManager.class);
@@ -685,7 +688,7 @@ public class EventFragment extends Fragment implements
 	public void onPause() {
 		decline();
 		beenPaused = true;
-		event_player.stop();
+		//event_player.stop();
 		super.onPause();
 
 	}
