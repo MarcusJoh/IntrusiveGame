@@ -280,6 +280,7 @@ public class EventFragment extends Fragment implements
 
 	public void decline() {
 		int resourceNumber = 0;
+		ResourcesKingdom.setEventOption(1);
 		if (resourceEffect1.length() <= 8) {
 			String[] resourceEffect = resourceEffect1.split("#");
 

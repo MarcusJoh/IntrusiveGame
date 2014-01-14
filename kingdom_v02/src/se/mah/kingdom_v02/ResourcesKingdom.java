@@ -5,9 +5,9 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 
 public class ResourcesKingdom {
-	private static int food = 1;
-	private static int gold = 1;
-	private static int happy = -1;
+	private static int food = 500;
+	private static int gold = 500;
+	private static int happy = 500;
 	private static String eventName = "";
 	private static int eventOption = 10;
 	private static boolean gameOver = true;
