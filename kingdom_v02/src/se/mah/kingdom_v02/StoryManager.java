@@ -26,78 +26,87 @@ public class StoryManager extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_story_manager);
-		resourcePrefs = new ResourcesKingdom(StoryManager.this.getApplicationContext());
-		AlarmManager alarmMgr = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
+		resourcePrefs = new ResourcesKingdom(
+				StoryManager.this.getApplicationContext());
+		AlarmManager alarmMgr = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
 		Intent intent = new Intent(this, AlarmReceiver.class);
-		PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
+		PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0,
+				intent, 0);
 		Calendar time = Calendar.getInstance();
-		int min = ((60 - time.get(Calendar.MINUTE)) );
+		int min = ((60 - time.get(Calendar.MINUTE)));
 		int max = 60;
 		Random rand = new Random();
 		int random = rand.nextInt(max);
 		int update = random + min;
 		time.setTimeInMillis(System.currentTimeMillis());
-		if(ResourcesKingdom.getstateGame())
-		{
+		if (ResourcesKingdom.newPlayerstate()==true) {
+			Intent newEvent = new Intent(StoryManager.this, StartEvent.class);
+
+			StoryManager.this.finish();
+			startActivity(newEvent);
+		}
+
+		if (ResourcesKingdom.getstateGame()) {
 			time.add(Calendar.SECOND, 5);
 			ResourcesKingdom.setstateGame();
-			alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(),pendingIntent);
+			alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(),
+					pendingIntent);
 		}
 		loadResources();
 		Log.i("food", Integer.toString(food));
 		Log.i("gold", Integer.toString(gold));
 		Log.i("happy", Integer.toString(happy));
 		refresh();
-		TextView jesterComment = (TextView)findViewById(R.id.text_jester_comment);
-		String s1 = ResourcesKingdom.getEventName()+"_jester_o"+Integer.toString(ResourcesKingdom.getEventOption());
+		TextView jesterComment = (TextView) findViewById(R.id.text_jester_comment);
+		String s1 = ResourcesKingdom.getEventName() + "_jester_o"
+				+ Integer.toString(ResourcesKingdom.getEventOption());
 		Log.i("identificator", s1);
-		int i1 = getResources().getIdentifier(s1, "string", this.getPackageName());
+		int i1 = getResources().getIdentifier(s1, "string",
+				this.getPackageName());
 		String s2 = getResources().getString(i1);
 		Log.i("line jester", s2);
 		jesterComment.setText(s2);
-		
+
 	}
 
-	@Override 
+	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-	
-	public void changeStat (View v){
+
+	public void changeStat(View v) {
 		Random r = new Random();
-		gold=r.nextInt(3)+1;
-		food=r.nextInt(3)+1;
-		happy=r.nextInt(3)+1;
+		gold = r.nextInt(3) + 1;
+		food = r.nextInt(3) + 1;
+		happy = r.nextInt(3) + 1;
 		Button butt = (Button) findViewById(R.id.buttonChangeStat);
 		butt.setText(Integer.toString(gold));
-		
+
 		refresh();
-		
+
 	}
-	
-	public void loadResources(){
-		food=getStat(ResourcesKingdom.getFood());
-		gold=getStat(ResourcesKingdom.getGold());
-		happy=getStat(ResourcesKingdom.getHappy());
-		
-		
+
+	public void loadResources() {
+		food = getStat(ResourcesKingdom.getFood());
+		gold = getStat(ResourcesKingdom.getGold());
+		happy = getStat(ResourcesKingdom.getHappy());
+
 	}
-	public int getStat (int number){
-		if (number<40){
-			number=1;
-		}
-		else if (number>70){
-			number=3;
-		}
-		else {
-			number=2;
+
+	public int getStat(int number) {
+		if (number < 40) {
+			number = 1;
+		} else if (number > 70) {
+			number = 3;
+		} else {
+			number = 2;
 		}
 		return number;
 	}
-	
-	public void refresh(){
+
+	public void refresh() {
 		ImageView fl = (ImageView) findViewById(R.id.imageMapLF);
 		ImageView fm = (ImageView) findViewById(R.id.imageMapMF);
 		ImageView fh = (ImageView) findViewById(R.id.imageMapHF);
@@ -107,29 +116,29 @@ public class StoryManager extends Activity {
 		ImageView hl = (ImageView) findViewById(R.id.imageMapLH);
 		ImageView hm = (ImageView) findViewById(R.id.imageMapMH);
 		ImageView hh = (ImageView) findViewById(R.id.imageMapHH);
-		
-		switch (gold){
-			case 1: {
-				gl.setVisibility(View.VISIBLE);
-				gm.setVisibility(View.GONE);
-				gh.setVisibility(View.GONE);
-				break;
-			}
-			case 2: {
-				gl.setVisibility(View.GONE);
-				gm.setVisibility(View.VISIBLE);
-				gh.setVisibility(View.GONE);
-				break;
-			}
-			case 3: {
-				gl.setVisibility(View.GONE);
-				gm.setVisibility(View.GONE);
-				gh.setVisibility(View.VISIBLE);
-				break;
-			}
+
+		switch (gold) {
+		case 1: {
+			gl.setVisibility(View.VISIBLE);
+			gm.setVisibility(View.GONE);
+			gh.setVisibility(View.GONE);
+			break;
 		}
-		
-		switch (food){
+		case 2: {
+			gl.setVisibility(View.GONE);
+			gm.setVisibility(View.VISIBLE);
+			gh.setVisibility(View.GONE);
+			break;
+		}
+		case 3: {
+			gl.setVisibility(View.GONE);
+			gm.setVisibility(View.GONE);
+			gh.setVisibility(View.VISIBLE);
+			break;
+		}
+		}
+
+		switch (food) {
 		case 1: {
 			fl.setVisibility(View.VISIBLE);
 			fm.setVisibility(View.GONE);
@@ -148,8 +157,8 @@ public class StoryManager extends Activity {
 			fh.setVisibility(View.VISIBLE);
 			break;
 		}
-	}
-		switch (happy){
+		}
+		switch (happy) {
 		case 1: {
 			hl.setVisibility(View.VISIBLE);
 			hm.setVisibility(View.GONE);
@@ -168,10 +177,11 @@ public class StoryManager extends Activity {
 			hh.setVisibility(View.VISIBLE);
 			break;
 		}
+		}
 	}
-}
+
 	@Override
-	public void onPause(){
+	public void onPause() {
 		super.onPause();
 		loadResources();
 		refresh();
