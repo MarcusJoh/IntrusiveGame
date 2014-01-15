@@ -6,9 +6,11 @@ import android.content.SharedPreferences.Editor;
 import android.util.Log;
 
 public class ResourcesKingdom {
-	private static int food = 500;
-	private static int gold = 500;
-	private static int happy = 500;
+	private static int food = 14;
+	private static int gold = 7;
+	private static int happy = 0;
+	private static final int maxEvent = 12;
+	private static int amountOfEvents = 13;
 	private static String eventName = "e1";
 	private static int eventOption = 1;
 	private static boolean gameOver = true;// true= its a dead player
@@ -20,6 +22,7 @@ public class ResourcesKingdom {
 	private static final String KEY_PREFS_FOOD = "Food";
 	private static final String KEY_PREFS_GOLD = "Gold";
 	private static final String KEY_PREFS_HAPPY = "Happy";
+	private static final String KEY_PREFS_EVENTSMADE= "EventsMade";
 
 	private static final String APP_SHARED_PREFS = ResourcesKingdom.class
 			.getSimpleName(); // Name of the file -.xml
@@ -53,7 +56,19 @@ public class ResourcesKingdom {
 		return newPlayer;
 
 	}
-
+	
+	public static void setAmountOfEventsMadeChange()
+	{
+		int eve = resourcePref.getInt(KEY_PREFS_EVENTSMADE, amountOfEvents);
+		eve++;
+		resourceEditor.putInt(KEY_PREFS_EVENTSMADE, eve);
+		resourceEditor.commit();
+	}
+	
+	public static int getAmountOfEventsMade()
+	{
+		return resourcePref.getInt(KEY_PREFS_EVENTSMADE, amountOfEvents);
+	}
 	public static String getEventName() {
 		return resourcePref.getString(KEY_PREFS_EVENTNAME, eventName);
 	}
@@ -88,6 +103,8 @@ public class ResourcesKingdom {
 			resourceEditor.putInt(KEY_PREFS_HAPPY, happy);
 			eventName = "e1";
 			resourceEditor.putString(KEY_PREFS_EVENTNAME, eventName);
+			amountOfEvents = 0;
+			resourceEditor.putInt(KEY_PREFS_EVENTOPTION, amountOfEvents);
 			eventOption = 1;
 			resourceEditor.putInt(KEY_PREFS_EVENTOPTION, eventOption);
 			setstateGame();
@@ -144,7 +161,7 @@ public class ResourcesKingdom {
 	}
 
 	public static boolean ResourceIsZero() {
-		return (food <= 0 || gold <= 0 || happy <= 0) ? true : false;
+		return (getFood() <= 0 || getGold() <= 0 || getHappy() <= 0|| getAmountOfEventsMade() >= 12) ? true : false;
 	}
 
 }

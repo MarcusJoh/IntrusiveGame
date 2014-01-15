@@ -336,5 +336,25 @@
     <string name="e39_jester_o3">e39-o3</string>
     <string name="e39_jester_o4">e39-o1</string>
     <string name="title_activity_start_event">StartEvent</string>
+    
+     <string-array name="kings_ranking">
+         <!-- good 0--><item>Harold bluetooth</item>
+         <!-- good 1--><item>Gustav Adolf I </item>
+         <!--good  2--><item>Charles IV </item>
+         <!-- good 3--><item>Richard I</item>
+        <!-- good 4--> <item>Cleopatra</item>
+         <!-- good 5--><item>Caesar</item>
+         <!--  good6--><item>Alexander Great</item>
+         <!--  good7--><item>Ludwig XIV</item>
+         
+        <!-- bad 8--><item>Ludwig XIV </item>
+        <!-- bad 9--> <item>Caligula </item>
+        <!-- bad 10--> <item>Bloody mary </item>
+         <!-- bad 11 --><item>Nero</item>
+         <!-- bad 12--><item>Henry VI</item>
+         <!-- bad 13--><item>Mariette I  </item>
+         <!-- bad 14--><item>Ghenghis Kahn </item>
+         
+     </string-array>
 
 </resources>

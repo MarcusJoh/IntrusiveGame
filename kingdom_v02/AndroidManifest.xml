@@ -54,7 +54,8 @@
 
         <activity
             android:name="se.mah.kingdom_v02.DeathEvent"
-            android:label="@string/title_activity_death_event" >
+            android:label="@string/title_activity_death_event" 
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name="se.mah.kingdom_v02.Coronation"
