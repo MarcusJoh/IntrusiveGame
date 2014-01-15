@@ -66,9 +66,8 @@
 			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content"
 			        android:layout_marginLeft="48dp"
-			        android:layout_alignBaseline="@+id/btn_phone_decline"
-			        android:layout_alignBottom="@+id/btn_phone_decline"
 			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentBottom="true"
 			        android:onClick="phone_button"
 			        android:src="@drawable/ic_accept" />
 
