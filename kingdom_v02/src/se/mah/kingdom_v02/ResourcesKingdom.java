@@ -107,7 +107,8 @@ public class ResourcesKingdom {
 			resourceEditor.putInt(KEY_PREFS_EVENTOPTION, amountOfEvents);
 			eventOption = 1;
 			resourceEditor.putInt(KEY_PREFS_EVENTOPTION, eventOption);
-			setstateGame();
+			gameOver = true;
+			resourceEditor.putBoolean(KEY_PREFS_GAME, gameOver);
 			resourceEditor.commit();
 		}
 	}
