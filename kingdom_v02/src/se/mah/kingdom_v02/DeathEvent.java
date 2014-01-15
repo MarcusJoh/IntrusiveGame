@@ -31,19 +31,11 @@ public class DeathEvent extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_death_event);
-<<<<<<< HEAD
 		
 		deathSentence = (TextView) findViewById(id.text_intro_story_text_p1);
 		kingText = (TextView) findViewById(id.text_story_ranking);
 		ImageView button = (ImageView) findViewById(id.restartbutton);
 		
-=======
-
-		deathSentence = (TextView) findViewById(id.grave_headline);
-		kingText = (TextView) findViewById(id.king);
-		button = (Button) findViewById(id.fuckingbutton);
-
->>>>>>> 1fc2aef578916a2cee02da5a76c18ef81ca99a15
 		Resources resStory = getResources();
 		kings = resStory.getStringArray(R.array.kings_ranking);
 		int ranking = ResourcesKingdom.CombinedResources();
@@ -91,15 +83,10 @@ public class DeathEvent extends Activity {
 			kingText.setText(kings[0]);
 			numberInArray = 0;
 		}
-<<<<<<< HEAD
+
 		
 		//button.setText("Klick to find out more about " + kings[numberInArray]);
 		
-=======
-
-		button.setText("Klick to find out more about " + kings[numberInArray]);
-
->>>>>>> 1fc2aef578916a2cee02da5a76c18ef81ca99a15
 		if (ResourcesKingdom.getFood() <= 0)
 			deathSentence.setText("You starved to death!");
 		else if (ResourcesKingdom.getGold() <= 0)
