@@ -13,6 +13,8 @@
     <string name="makeChoice">MAKE A CHOICE</string>
     <string name="text_minister_first_name">BARON BARTHOLOMEW</string>
     <string name="text_minister_last_name">THORP</string>
+    <string name="jester_first_name">PESTY the</string>
+    <string name="jester_last_name">JESTER</string>
     <string name="game_name">Arbitrea</string>
     <string name="death_headline">You DIED!</string>
     <string name="death_text">Sucker!</string>
