@@ -1,180 +1,179 @@
-    <ScrollView 
-        xmlns:tools="http://schemas.android.com/tools"
-    	android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:background="@android:color/white"
-	    tools:context=".StoryManager" xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    tools:context=".StoryManager" >
 
-		<LinearLayout
-		    android:layout_width="match_parent"
-		    android:layout_height="wrap_content"
-		    android:orientation="vertical" >
-            
-	        <RelativeLayout
-	            android:layout_width="match_parent"
-	            android:layout_height="match_parent"
-	             >
-	
-	            <ImageView
-	                android:id="@+id/banner"
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-	                android:src="@drawable/ic_launcher" />
-	
-	            <ImageView
-	                android:id="@+id/imageMapBase"
-	                android:layout_width="fill_parent"
-	                android:layout_height="wrap_content"
-	                android:layout_marginTop="20dp"
-	                android:src="@drawable/map_base"
-	                android:visibility="visible" />
-	
-	            <ImageView
-	                android:id="@+id/imageMapLF"
-	                android:layout_width="fill_parent"
-	                android:layout_height="wrap_content"
-	                android:layout_marginTop="20dp"
-	                android:src="@drawable/map_food_low"
-	                android:visibility="visible" />
-	
-	            <ImageView
-	                android:id="@+id/imageMapMF"
-	                android:layout_width="fill_parent"
-	                android:layout_height="wrap_content"
-	                android:layout_marginTop="20dp"
-	                android:src="@drawable/map_food_med"
-	                android:visibility="visible" />
-	
-	            <ImageView
-	                android:id="@+id/imageMapHF"
-	                android:layout_width="fill_parent"
-	                android:layout_height="wrap_content"
-	                android:layout_marginTop="20dp"
-	                android:src="@drawable/map_food_hi"
-	                android:visibility="visible" />
-	
-	            <ImageView
-	                android:id="@+id/imageMapLG"
-	                android:layout_width="fill_parent"
-	                android:layout_height="wrap_content"
-	                android:layout_marginTop="20dp"
-	                android:src="@drawable/map_money_low"
-	                android:visibility="visible" />
-	
-	            <ImageView
-	                android:id="@+id/imageMapMG"
-	                android:layout_width="fill_parent"
-	                android:layout_height="wrap_content"
-	                android:layout_marginTop="20dp"
-	                android:src="@drawable/map_money_med"
-	                android:visibility="visible" />
-	
-	            <ImageView
-	                android:id="@+id/imageMapHG"
-	                android:layout_width="fill_parent"
-	                android:layout_height="wrap_content"
-	                android:layout_marginTop="20dp"
-	                android:src="@drawable/map_money_hi"
-	                android:visibility="visible" />
-	
-	            <ImageView
-	                android:id="@+id/imageMapLH"
-	                android:layout_width="fill_parent"
-	                android:layout_height="wrap_content"
-	                android:layout_marginTop="20dp"
-	                android:src="@drawable/map_happy_low"
-	                android:visibility="visible" />
-	
-	            <ImageView
-	                android:id="@+id/imageMapMH"
-	                android:layout_width="fill_parent"
-	                android:layout_height="wrap_content"
-	                android:layout_marginTop="20dp"
-	                android:src="@drawable/map_happy_med"
-	                android:visibility="visible" />
-	
-	            <ImageView
-	                android:id="@+id/imageMapHH"
-	                android:layout_width="fill_parent"
-	                android:layout_height="wrap_content"
-	                android:layout_marginTop="20dp"
-	                android:src="@drawable/map_happy_hi"
-	                android:visibility="visible" />
-	        </RelativeLayout>
-	
-	        <RelativeLayout
-	                android:layout_width="match_parent"
-	                android:layout_height="wrap_content"
-	                android:background="@color/royal_red"
-	                android:orientation="vertical"
-	                android:layout_marginTop="48dp" >
-	
-	                <ImageView
-	                    android:id="@+id/icon_start_jester_top"
-	                    android:layout_width="wrap_content"
-	                    android:layout_height="wrap_content"
-	                    android:layout_alignParentLeft="true"
-	                    android:layout_alignParentTop="true"
-	                    android:layout_marginTop="12dp"
-	                    android:layout_marginLeft="12dp"
-	                    android:src="@drawable/ic_launcher"
-	                    android:visibility="visible" />
-	
-	                <ImageView
-	                    android:id="@+id/image_start_jester_portrait"
-	                    android:layout_width="wrap_content"
-	                    android:layout_height="wrap_content"
-	                    android:layout_alignParentTop="true"
-	                    android:layout_centerHorizontal="true"
-	                    android:layout_marginTop="48dp"
-	                    android:src="@drawable/ic_char_jester"
-	                    android:visibility="visible" />
-	
-	                <TextView
-	                    android:id="@+id/text_start_jester_first_name"
-	                    android:layout_width="fill_parent"
-	                    android:layout_height="wrap_content"
-	                    android:layout_below="@id/image_start_jester_portrait"               
-	                    android:gravity="center"
-	                    android:layout_marginTop="24dp"
-	                    android:text="@string/jester_first_name"
-	                    android:textColor="@color/royal_beige"
-	                    android:textSize="24sp" />
-	
-	                <TextView
-	                    android:id="@+id/text_start_jester_last_name"
-	                    android:layout_width="fill_parent"
-	                    android:layout_height="wrap_content"
-	                    android:layout_below="@id/text_start_jester_first_name"
-	                    android:gravity="center"
-	                    android:text="@string/jester_last_name"
-	                    android:textColor="@color/royal_beige"
-	                    android:textSize="48sp" />
-	                <TextView
-	                    android:id="@+id/text_jester_comment"
-	                    android:layout_width="fill_parent"
-	                    android:layout_height="wrap_content"
-	                    android:layout_below="@id/text_start_jester_last_name"
-	                    android:layout_marginTop="48dp"
-	                    android:layout_marginRight="48dp"
-	                    android:layout_marginLeft="48dp"
-	                    android:layout_marginBottom="48dp"
-	                    android:gravity="center"
-	                    android:text="@string/jester_comment"
-	                    android:textColor="@color/royal_beige"
-	                    android:textSize="26sp" />
-	
-	                <Button
-	                    android:id="@+id/buttonChangeStat"
-	                    android:layout_width="wrap_content"
-	                    android:layout_height="wrap_content"
-	                    android:layout_alignParentBottom="true"
-	                    android:layout_centerHorizontal="true"
-	                    android:onClick="changeStat"
-	                    android:visibility="gone"
-	                    android:text="Change" />
-	
-	                
-	            </RelativeLayout>
-            </LinearLayout>
-    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/imageMapBase"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/map_base"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageMapLF"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/map_food_low"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageMapMF"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/map_food_med"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageMapHF"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/map_food_hi"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageMapLG"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/map_money_low"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageMapMG"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/map_money_med"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageMapHG"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/map_money_hi"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageMapLH"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/map_happy_low"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageMapMH"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/map_happy_med"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageMapHH"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/map_happy_hi"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@color/royal_red"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/icon_start_jester_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_launcher"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/image_start_jester_portrait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="48dp"
+                android:src="@drawable/ic_char_jester"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/text_start_jester_first_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_start_jester_portrait"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="@string/jester_first_name"
+                android:textColor="@color/royal_beige"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_start_jester_last_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_start_jester_first_name"
+                android:gravity="center"
+                android:text="@string/jester_last_name"
+                android:textColor="@color/royal_beige"
+                android:textSize="48sp" />
+
+            <TextView
+                android:id="@+id/text_jester_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_start_jester_last_name"
+                android:layout_marginBottom="48dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="48dp"
+                android:gravity="center"
+                android:text="@string/jester_comment"
+                android:textColor="@color/royal_beige"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/buttonChangeStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="changeStat"
+                android:text="Change"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
