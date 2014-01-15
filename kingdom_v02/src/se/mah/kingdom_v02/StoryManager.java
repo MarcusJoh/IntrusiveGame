@@ -39,7 +39,7 @@ public class StoryManager extends Activity {
 		int random = rand.nextInt(max);
 		int update = random + min;
 		time.setTimeInMillis(System.currentTimeMillis());
-		if (ResourcesKingdom.newPlayerstate()==true) {
+		if (ResourcesKingdom.newPlayerstate() == true) {
 			Intent newEvent = new Intent(StoryManager.this, StartEvent.class);
 
 			StoryManager.this.finish();
@@ -67,13 +67,6 @@ public class StoryManager extends Activity {
 		Log.i("line jester", s2);
 		jesterComment.setText(s2);
 
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
 	}
 
 	public void changeStat(View v) {
