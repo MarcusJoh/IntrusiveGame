@@ -136,20 +136,20 @@ public class EventFragment extends Fragment implements
 				.findViewById(R.id.text_minister_name_2);
 		if (eventChar.equals("c1")) {
 			Log.i("Char is ", "The Chancellor");
-			minister.setImageResource(R.drawable.ic_char_laurent);
+			minister.setImageResource(R.drawable.ic_char_chancelor);
 			minister_first_name.setText("LADY LAURENT");
 			minister_last_name.setText("FORTESCUE");
 
 		}
 		if (eventChar.equals("c2")) {
 			Log.i("Char is ", "The Minister of Finance");
-			minister.setImageResource(R.drawable.ic_char_krane);
+			minister.setImageResource(R.drawable.ic_char_finance);
 			minister_first_name.setText("DUKE LUDWIG von");
 			minister_last_name.setText("KRANE");
 		}
 		if (eventChar.equals("c3")) {
 			Log.i("Char is ", "The Minister of Defence");
-			minister.setImageResource(R.drawable.ic_char_brion);
+			minister.setImageResource(R.drawable.ic_char_defence);
 			minister_first_name.setText("SER GODFRIED");
 			minister_last_name.setText("BRION");
 		}

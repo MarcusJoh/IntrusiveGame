@@ -127,7 +127,7 @@
 	                    android:layout_alignParentTop="true"
 	                    android:layout_centerHorizontal="true"
 	                    android:layout_marginTop="48dp"
-	                    android:src="@drawable/ic_char_brion"
+	                    android:src="@drawable/ic_char_jester"
 	                    android:visibility="visible" />
 	
 	                <TextView
@@ -150,6 +150,19 @@
 	                    android:text="@string/jester_last_name"
 	                    android:textColor="@color/royal_beige"
 	                    android:textSize="48sp" />
+	                <TextView
+	                    android:id="@+id/text_jester_comment"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_below="@id/text_start_jester_last_name"
+	                    android:layout_marginTop="48dp"
+	                    android:layout_marginRight="48dp"
+	                    android:layout_marginLeft="48dp"
+	                    android:layout_marginBottom="48dp"
+	                    android:gravity="center"
+	                    android:text="@string/jester_comment"
+	                    android:textColor="@color/royal_beige"
+	                    android:textSize="26sp" />
 	
 	                <Button
 	                    android:id="@+id/buttonChangeStat"
@@ -158,18 +171,10 @@
 	                    android:layout_alignParentBottom="true"
 	                    android:layout_centerHorizontal="true"
 	                    android:onClick="changeStat"
+	                    android:visibility="gone"
 	                    android:text="Change" />
 	
-	                <TextView
-	                    android:id="@+id/text_jester_comment"
-	                    android:layout_width="fill_parent"
-	                    android:layout_height="wrap_content"
-	                    android:layout_above="@id/buttonChangeStat"
-	                    android:layout_marginTop="30dp"
-	                    android:gravity="center"
-	                    android:text="@string/jester_comment"
-	                    android:textColor="@color/royal_blue"
-	                    android:textSize="22sp" />
+	                
 	            </RelativeLayout>
             </LinearLayout>
     </ScrollView>
