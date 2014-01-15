@@ -28,9 +28,6 @@ public class EventFragment extends Fragment implements
 	private ObservableScrollView mObservableScrollView;
 	private View stickyView;
 
-	// private MediaPlayer event_player;
-	private AudioManager event_am;
-
 	public String optionEvent1 = null;
 	public String optionEvent2 = null;
 	public String optionEvent3 = null;
@@ -40,6 +37,7 @@ public class EventFragment extends Fragment implements
 	public String resourceEffect3 = null;
 	public String resourceEffect4 = null;
 	public boolean beenPaused = true;
+	public boolean doneStuff = true;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -64,12 +62,6 @@ public class EventFragment extends Fragment implements
 						onScrollChanged(mObservableScrollView.getScrollY());
 					}
 				});
-
-		event_am = (AudioManager) getActivity().getSystemService(
-				Context.AUDIO_SERVICE);
-		event_am.setMode(AudioManager.MODE_IN_CALL);
-		event_am.setSpeakerphoneOn(false);
-		event_am.setBluetoothScoOn(true);
 
 		ImageView eventIconPicture = (ImageView) rootView
 				.findViewById(R.id.event_icon);
@@ -331,7 +323,9 @@ public class EventFragment extends Fragment implements
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
+
 		case R.id.btn_option1_confirm:
+			doneStuff = false;
 			Log.i("btn_pressed", "o1");
 			ResourcesKingdom.setEventOption(1);
 			int resourceNumber = 0;
@@ -346,6 +340,7 @@ public class EventFragment extends Fragment implements
 			}
 			break;
 		case R.id.btn_option2_confirm:
+			doneStuff = false;
 			Log.i("btn_pressed", "o2");
 			ResourcesKingdom.setEventOption(2);
 			resourceNumber = 0;
@@ -437,6 +432,7 @@ public class EventFragment extends Fragment implements
 
 			break;
 		case R.id.btn_option3_confirm:
+			doneStuff = false;
 			Log.i("btn_pressed", "o3");
 			ResourcesKingdom.setEventOption(3);
 			resourceNumber = 0;
@@ -524,6 +520,7 @@ public class EventFragment extends Fragment implements
 
 			break;
 		case R.id.btn_option4_confirm:
+			doneStuff = false;
 			Log.i("btn_pressed", "o4");
 			ResourcesKingdom.setEventOption(4);
 			resourceNumber = 0;
@@ -635,8 +632,6 @@ public class EventFragment extends Fragment implements
 
 	@Override
 	public void onDestroy() {
-		decline();
-		// event_player.release();
 
 		super.onDestroy();
 
@@ -644,7 +639,7 @@ public class EventFragment extends Fragment implements
 
 	@Override
 	public void onResume() {
-		// event_player.stop();
+
 		if (beenPaused == true) {
 			Intent intent = new Intent(getActivity().getBaseContext(),
 					StoryManager.class);
@@ -660,9 +655,13 @@ public class EventFragment extends Fragment implements
 
 	@Override
 	public void onPause() {
-		// decline();
+
+		if (doneStuff == true) {
+			decline();
+
+		}
 		beenPaused = true;
-		// event_player.stop();
+
 		super.onPause();
 
 	}

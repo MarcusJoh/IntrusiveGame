@@ -14,23 +14,31 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Event extends Activity {
 	public MediaPlayer event_player;
 	public AudioManager event_am;
-	private static PowerManager.WakeLock wakeLock;
+
 	public String event = null;
 	public String resourceEffect1 = null;
 	public boolean beenPaused = true;
+	public boolean doneStuff = true;
+	public Vibrator phoneVib;
+	public ImageView rotate;
 	private ResourcesKingdom resourcePrefs;
 	private String character = "thorp";
 	private Handler h;
-	public Vibrator phoneVib;
+	private static PowerManager.WakeLock wakeLock;
 	private Runnable runnable = new Runnable() {
 		public void run() {
 			decline();
@@ -48,6 +56,7 @@ public class Event extends Activity {
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
 		wakeDevice();
 		beenPaused = false;
+
 		// Get instance of Vibrator from current Context
 		phoneVib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
@@ -59,6 +68,15 @@ public class Event extends Activity {
 		// The '0' here means to repeat indefinitely
 		// '-1' would play the vibration once
 		phoneVib.vibrate(pattern, 0);
+
+		rotate = (ImageView) findViewById(R.id.iconclock);
+		/* Create Animation */
+		Animation rotation = AnimationUtils.loadAnimation(getBaseContext(),
+				R.anim.button_rotate);
+		rotation.setRepeatCount(Animation.INFINITE);
+
+		/* start Animation */
+		rotate.startAnimation(rotation);
 
 		event_am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 		event_am.setMode(AudioManager.MODE_NORMAL);
@@ -167,7 +185,7 @@ public class Event extends Activity {
 				resourceNumber = Integer.parseInt(resourceEffect[1]);
 
 				ResourcesKingdom.setFoodChange(resourceNumber);
-			} 
+			}
 		} else {
 			String[] resourceEffect = resourceEffect1.split("Ö");
 			String[] resourceEffectOne = resourceEffect[0].split("#");
@@ -214,7 +232,7 @@ public class Event extends Activity {
 				resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
 
 				ResourcesKingdom.setFoodChange(resourceNumber);
-			} 
+			}
 		}
 
 	}
@@ -235,17 +253,13 @@ public class Event extends Activity {
 	}
 
 	@Override
-	public void onStart() {
-		event_player.start();
-		super.onStart();
-	}
-
-	@Override
 	public void onDestroy() {
 		getWindow()
 				.clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
+		event_player.reset();
 		event_player.release();
-		decline();
+
+		Log.i("onDestroy", "onDestroy");
 		super.onDestroy();
 
 	}
@@ -253,11 +267,7 @@ public class Event extends Activity {
 	@Override
 	public void onResume() {
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
-		event_am.setMode(AudioManager.USE_DEFAULT_STREAM_TYPE);
-		event_am.setMode(AudioManager.MODE_NORMAL);
-		event_player.setAudioStreamType(AudioManager.MODE_NORMAL);
-		event_am.setSpeakerphoneOn(true);
-		event_am.setBluetoothScoOn(false);
+
 		if (beenPaused == true) {
 
 			Intent intent = new Intent(Event.this, StoryManager.class);
@@ -275,12 +285,12 @@ public class Event extends Activity {
 		phoneVib.cancel();
 		getWindow()
 				.clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
-		decline();
-		event_am.setMode(AudioManager.USE_DEFAULT_STREAM_TYPE);
-		event_am.setMode(AudioManager.MODE_NORMAL);
-		event_player.setAudioStreamType(AudioManager.MODE_NORMAL);
-		event_am.setSpeakerphoneOn(true);
-		event_am.setBluetoothScoOn(false);
+
+		if (doneStuff == true) {
+			decline();
+
+		}
+
 		beenPaused = true;
 		event_player.stop();
 		super.onPause();
@@ -288,13 +298,15 @@ public class Event extends Activity {
 	}
 
 	public void phone_button(View v) {
+		doneStuff = false;
 		h.removeCallbacks(runnable);
 		event_player.stop();
+		event_player.reset();
+		event_player.release();
 		phoneVib.cancel();
 		int musicfileid;
-
+		rotate.clearAnimation();
 		event_am.setMode(AudioManager.MODE_IN_CALL);
-		event_player.setAudioStreamType(AudioManager.MODE_IN_CALL);
 		event_am.setSpeakerphoneOn(false);
 		event_am.setBluetoothScoOn(true);
 		Resources res = this.getResources();
@@ -310,7 +322,6 @@ public class Event extends Activity {
 		handler.postDelayed(new Runnable() {
 			public void run() {
 				event_am.setMode(AudioManager.USE_DEFAULT_STREAM_TYPE);
-				event_am.setMode(AudioManager.MODE_NORMAL);
 				event_player.setAudioStreamType(AudioManager.MODE_NORMAL);
 				event_am.setSpeakerphoneOn(true);
 				event_am.setBluetoothScoOn(false);
@@ -320,19 +331,15 @@ public class Event extends Activity {
 				Event.this.finish();
 				startActivity(intent);// Actions to do after 5 seconds
 			}
-		}, 5000);
+		}, 6000);
 
 	}
 
 	public void btnDecline(View v) {
+		doneStuff = false;
 		h.removeCallbacks(runnable);
 		phoneVib.cancel();
 		decline();
-		event_am.setMode(AudioManager.USE_DEFAULT_STREAM_TYPE);
-		event_am.setMode(AudioManager.MODE_NORMAL);
-		event_player.setAudioStreamType(AudioManager.MODE_NORMAL);
-		event_am.setSpeakerphoneOn(true);
-		event_am.setBluetoothScoOn(false);
 
 		Intent intent = new Intent(Event.this, StoryManager.class);
 
