@@ -338,22 +338,40 @@
     <string name="title_activity_start_event">StartEvent</string>
     
      <string-array name="kings_ranking">
-         <!-- good 0--><item>Harold bluetooth</item>
-         <!-- good 1--><item>Gustav Adolf I </item>
+         <!-- good 0--><item>Harold Bluetooth</item>
+         <!-- good 1--><item>Gustav II Adolf </item>
          <!--good  2--><item>Charles IV </item>
          <!-- good 3--><item>Richard I</item>
         <!-- good 4--> <item>Cleopatra</item>
          <!-- good 5--><item>Caesar</item>
          <!--  good6--><item>Alexander Great</item>
-         <!--  good7--><item>Ludwig XIV</item>
+         <!--  good7--><item>Louis XIV</item>
          
-        <!-- bad 8--><item>Ludwig XIV </item>
+        <!-- bad 8--><item>Louis XIV </item>
         <!-- bad 9--> <item>Caligula </item>
         <!-- bad 10--> <item>Bloody mary </item>
          <!-- bad 11 --><item>Nero</item>
          <!-- bad 12--><item>Henry VI</item>
-         <!-- bad 13--><item>Mariette I  </item>
-         <!-- bad 14--><item>Ghenghis Kahn </item>
+         <!-- bad 13--><item>Ghenghis Kahn </item>
+         
+     </string-array>
+     
+     <string-array name="kings_webpage">
+         <!-- good 0--><item>http://en.wikipedia.org/wiki/Harold_Bluetooth</item>
+         <!-- good 1--><item> http://en.wikipedia.org/wiki/Gustavus_Adolphus_of_Sweden</item>
+         <!--good  2--><item>http://en.wikipedia.org/wiki/Charles_IV,_Holy_Roman_Emperor </item>
+         <!-- good 3--><item>http://en.wikipedia.org/wiki/Richard_I</item>
+        <!-- good 4--> <item>http://en.wikipedia.org/wiki/Cleopatra</item>
+         <!-- good 5--><item>http://en.wikipedia.org/wiki/Caesar</item>
+         <!--  good6--><item>http://en.wikipedia.org/wiki/Alexander_the_Great</item>
+         <!--  good7--><item>http://en.wikipedia.org/wiki/The_Sun_King</item>
+         
+        <!-- bad 8--><item>http://en.wikipedia.org/wiki/The_Sun_King </item>
+        <!-- bad 9--> <item>http://en.wikipedia.org/wiki/Caligula </item>
+        <!-- bad 10--> <item>http://en.wikipedia.org/wiki/Mary_I_of_England </item>
+         <!-- bad 11 --><item>http://en.wikipedia.org/wiki/Nero</item>
+         <!-- bad 12--><item>http://en.wikipedia.org/wiki/Henry_VI_of_England</item>
+         <!-- bad 13--><item>http://en.wikipedia.org/wiki/Ghenghis_Kahn </item>
          
      </string-array>
 

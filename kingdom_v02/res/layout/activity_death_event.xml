@@ -39,6 +39,16 @@
         android:layout_marginBottom="102dp"
         android:layout_marginLeft="35dp"
         android:text="Large Text"
+        android:onClick ="page"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/fuckingbutton"
+        android:onClick="Something"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/king"
+        android:layout_alignParentRight="true"
+        android:text="Klick to find out more about the king/queen" />
 
 </RelativeLayout>
