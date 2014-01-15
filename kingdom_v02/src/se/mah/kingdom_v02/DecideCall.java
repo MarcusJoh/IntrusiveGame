@@ -51,7 +51,6 @@ public class DecideCall extends Service{
 		int max = 60/increaseRate;
 		int random = rand.nextInt(max);
 		update = random + min;
-		int maxMins = (max + min);
 		UpdateRate_Increase();
 		AlarmManager alarmMgr = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
 		Intent intent = new Intent(this,AlarmReceiver.class);
