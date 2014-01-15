@@ -1,6 +1,7 @@
 package se.mah.kingdom_v02;
 
 import java.util.Random;
+import java.util.Timer;
 
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -27,6 +28,16 @@ public class Event extends Activity {
 	public boolean beenPaused = true;
 	private ResourcesKingdom resourcePrefs;
 	private String character = "thorp";
+	private Handler h;
+	private Runnable runnable = new Runnable() {
+		public void run() {
+			decline();
+			Intent intent = new Intent(Event.this, StoryManager.class);
+			intent.putExtra("event", event);
+			Event.this.finish();
+			startActivity(intent);// Actions to do after 5 seconds
+		}
+	};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -101,6 +112,18 @@ public class Event extends Activity {
 		String[] optionEffect1 = eventOption1.split("¤");
 		resourceEffect1 = optionEffect1[1];
 		beenPaused = false;
+		
+		h = new Handler();
+		h.postDelayed(runnable, 30000);
+//		h.postDelayed(new Runnable() {
+//			public void run() {
+//				decline();
+//				Intent intent = new Intent(Event.this, StoryManager.class);
+//				intent.putExtra("event", event);
+//				Event.this.finish();
+//				startActivity(intent);// Actions to do after 5 seconds
+//			}
+//		}, 30000);
 
 	}
 
@@ -246,6 +269,7 @@ public class Event extends Activity {
 	}
 
 	public void phone_button(View v) {
+		h.removeCallbacks(runnable);
 		event_player.stop();
 		int musicfileid;
 		event_am = (AudioManager) Event.this
@@ -275,7 +299,7 @@ public class Event extends Activity {
 	}
 
 	public void btnDecline(View v) {
-
+		h.removeCallbacks(runnable);
 		decline();
 		Intent intent = new Intent(Intent.ACTION_MAIN);
 		intent.addCategory(Intent.CATEGORY_HOME);
