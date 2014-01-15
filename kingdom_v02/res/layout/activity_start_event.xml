@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ic_story_top"
-            android:layout_marginTop="96dp"
+            android:layout_marginTop="200dp"
             android:layout_centerHorizontal="true"
             android:src="@drawable/ic_launcher" />
 
@@ -39,17 +39,17 @@
             android:id="@+id/ic_story_arrows"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/ic_story_game_over"
+            android:layout_below="@id/ic_story_map"
             android:layout_centerHorizontal="true"
             android:src="@drawable/ic_launcher" />
 
         <ImageView
             android:id="@+id/ic_story_picture_one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:layout_below="@id/ic_story_arrows"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/intro_1_blu" />
 
         <TextView
             android:id="@+id/text_story_you_were"
@@ -58,7 +58,7 @@
             android:layout_below="@id/ic_story_picture_one"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:text="@string/coronation_headline"
+            android:text="@string/text_story_you_were"
             android:textColor="@color/royal_teal"
             android:textSize="24sp" />
 
@@ -69,7 +69,7 @@
             android:layout_below="@id/text_story_you_were"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:text="@string/coronation_headline"
+            android:text="@string/text_story_assassinated"
             android:textColor="@color/royal_teal"
             android:textSize="24sp" />
 
@@ -80,7 +80,7 @@
             android:layout_below="@id/text_story_assassinated"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:text="@string/coronation_headline"
+            android:text="@string/text_story_text"
             android:textColor="@color/royal_teal"
             android:textSize="24sp" />
 
@@ -99,7 +99,7 @@
             android:layout_below="@id/ic_story_picture_two"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:text="@string/coronation_headline"
+            android:text="@string/text_story_you_will_be"
             android:textColor="@color/royal_teal"
             android:textSize="24sp" />
 
@@ -110,7 +110,7 @@
             android:layout_below="@id/text_story_you_will_be"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:text="@string/coronation_headline"
+            android:text="@string/text_story_forgotten"
             android:textColor="@color/royal_teal"
             android:textSize="24sp" />
 
@@ -129,7 +129,7 @@
             android:layout_below="@id/ic_story_bottom"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:text="@string/coronation_headline"
+            android:text="@string/text_story_your_rank_is"
             android:textColor="@color/royal_teal"
             android:textSize="24sp" />
 
@@ -140,7 +140,7 @@
             android:layout_below="@id/text_story_your_rank_is"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:text="@string/coronation_headline"
+            android:text="@string/text_story_ranking"
             android:textColor="@color/royal_teal"
             android:textSize="24sp" />
 
