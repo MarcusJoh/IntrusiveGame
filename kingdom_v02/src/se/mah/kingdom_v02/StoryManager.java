@@ -28,6 +28,12 @@ public class StoryManager extends Activity {
 		setContentView(R.layout.activity_story_manager);
 		resourcePrefs = new ResourcesKingdom(
 				StoryManager.this.getApplicationContext());
+		if (ResourcesKingdom.newPlayerstate() == true) {
+			Intent newEvent = new Intent(StoryManager.this, StartEvent.class);
+
+			StoryManager.this.finish();
+			startActivity(newEvent);
+		}
 		AlarmManager alarmMgr = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
 		Intent intent = new Intent(this, AlarmReceiver.class);
 		PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0,
@@ -39,12 +45,6 @@ public class StoryManager extends Activity {
 		int random = rand.nextInt(max);
 		int update = random + min;
 		time.setTimeInMillis(System.currentTimeMillis());
-		if (ResourcesKingdom.newPlayerstate() == true) {
-			Intent newEvent = new Intent(StoryManager.this, StartEvent.class);
-
-			StoryManager.this.finish();
-			startActivity(newEvent);
-		}
 
 		if (ResourcesKingdom.getstateGame()) {
 			time.add(Calendar.SECOND, 5);
