@@ -55,15 +55,20 @@
         <activity
             android:name="se.mah.kingdom_v02.DeathEvent"
             android:label="@string/title_activity_death_event" 
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar">
         </activity>
         <activity
             android:name="se.mah.kingdom_v02.Coronation"
-            android:label="@string/title_activity_coronation" >
+            android:label="@string/title_activity_coronation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" >
         </activity>
         <activity
             android:name="se.mah.kingdom_v02.StartEvent"
-            android:label="@string/title_activity_start_event" >
+            android:label="@string/title_activity_start_event"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" >
         </activity>
     </application>
 
