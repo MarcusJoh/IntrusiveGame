@@ -61,7 +61,7 @@ public class Event extends Activity {
 		phoneVib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
 		// Start without a delay
-		// Vibrate for 100 milliseconds
+		// Vibrate for 1000 milliseconds
 		// Sleep for 1000 milliseconds
 		long[] pattern = { 0, 1000, 1000 };
 
