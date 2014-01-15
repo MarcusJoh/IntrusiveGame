@@ -20,6 +20,14 @@
     <string name="death_text">Sucker!</string>
     <string name="coronation_headline">Coronation</string>
     <string name="coronation_text">Sucker!</string>
+    
+    <string name="text_story_you_were">YOU WERE</string>
+	<string name="text_story_assassinated">ASSASSINATED</string>
+	<string name="text_story_text">text_story_text</string>
+	<string name="text_story_you_will_be">YOU WILL BE</string>
+	<string name="text_story_forgotten">FORGOTTEN!</string>
+      <string name="text_story_your_rank_is">YOUR RANK IS</string>
+      <string name="text_story_ranking">KING GEORGE II.</string>
 
     <color name="black">#FF000000</color>
     <color name="green">#FF00FF00</color>
