@@ -46,7 +46,7 @@
         <ImageView
             android:id="@+id/ic_story_picture_one"
             android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_height="330dp"
             android:layout_below="@id/ic_story_arrows"
             android:layout_centerHorizontal="true"
             android:src="@drawable/intro_1_blu" />
@@ -86,11 +86,11 @@
 
         <ImageView
             android:id="@+id/ic_story_picture_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:layout_below="@id/text_story_text"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/intro_2_red" />
 
         <TextView
             android:id="@+id/text_story_you_will_be"
