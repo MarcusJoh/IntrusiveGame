@@ -71,7 +71,8 @@ public class StoryManager extends Activity {
 
 	public void changeStat(View v) {
 		Random r = new Random();
-		gold = r.nextInt(3) + 1;
+		//gold = r.nextInt(3) + 1;
+		gold = 2;
 		food = r.nextInt(3) + 1;
 		happy = r.nextInt(3) + 1;
 		Button butt = (Button) findViewById(R.id.buttonChangeStat);

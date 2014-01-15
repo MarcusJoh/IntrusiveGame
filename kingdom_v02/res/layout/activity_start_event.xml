@@ -1,47 +1,39 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NoActionBar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/NoActionBar"
+    android:background="@color/royal_cream"
     tools:context=".Coronation" >
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/royal_beige"
-         >
-
-        <ImageView
-            android:id="@+id/ic_story_top"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/ic_launcher" />
+        android:layout_height="match_parent" >
 
         <ImageView
             android:id="@+id/ic_story_map"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/ic_story_top"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/map_base" />
+            android:src="@drawable/im_map_band_end" />
 
         <ImageView
             android:id="@+id/ic_story_game_over"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/ic_story_top"
-            android:layout_marginTop="200dp"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/ic_launcher" />
+            android:layout_marginTop="200dp"
+            android:src="@drawable/im_banner_gameover" />
 
         <ImageView
             android:id="@+id/ic_story_arrows"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_below="@id/ic_story_map"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/ic_arrow_redoran" />
 
         <ImageView
             android:id="@+id/ic_story_picture_one"
@@ -59,7 +51,7 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:text="@string/text_story_you_were"
-            android:textColor="@color/royal_teal"
+            android:textColor="@color/royal_red"
             android:textSize="24sp" />
 
         <TextView
@@ -70,25 +62,25 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:text="@string/text_story_assassinated"
-            android:textColor="@color/royal_teal"
+            android:textColor="@color/royal_red"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/text_story_text"
+            android:id="@+id/text_intro_story_text_p1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/text_story_assassinated"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:text="@string/text_story_text"
-            android:textColor="@color/royal_teal"
+            android:text="@string/text_intro_story_text_p2"
+            android:textColor="@color/royal_red"
             android:textSize="24sp" />
 
         <ImageView
             android:id="@+id/ic_story_picture_two"
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:layout_below="@id/text_story_text"
+            android:layout_below="@id/text_intro_story_text_p1"
             android:layout_centerHorizontal="true"
             android:src="@drawable/intro_2_red" />
 
@@ -100,7 +92,7 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:text="@string/text_story_you_will_be"
-            android:textColor="@color/royal_teal"
+            android:textColor="@color/royal_red"
             android:textSize="24sp" />
 
         <TextView
@@ -111,46 +103,29 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:text="@string/text_story_forgotten"
-            android:textColor="@color/royal_teal"
+            android:textColor="@color/royal_red"
             android:textSize="24sp" />
 
-        <ImageView
-            android:id="@+id/ic_story_bottom"
+        <TextView
+            android:id="@+id/text_intro_story_text_p2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/text_story_forgotten"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/ic_launcher" />
-
-        <TextView
-            android:id="@+id/text_story_your_rank_is"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/ic_story_bottom"
-            android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:text="@string/text_story_your_rank_is"
-            android:textColor="@color/royal_teal"
+            android:text="@string/text_intro_story_text_p2"
+            android:textColor="@color/royal_red"
             android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/text_story_ranking"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text_story_your_rank_is"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:text="@string/text_story_ranking"
-            android:textColor="@color/royal_teal"
-            android:textSize="24sp" />
-
-        <Button
+        <ImageView
             android:id="@+id/newgame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_below="@id/text_intro_story_text_p2"
+            android:layout_centerHorizontal="true"
             android:onClick="newGame"
-            android:text="New Game" />
+            android:src="@drawable/im_banner_start" />
     </RelativeLayout>
 
 </ScrollView>

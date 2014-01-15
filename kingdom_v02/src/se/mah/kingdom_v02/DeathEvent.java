@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class DeathEvent extends Activity {
@@ -25,16 +26,15 @@ public class DeathEvent extends Activity {
 	String[] kings;
 	TextView kingText;
 	int numberInArray = 0;
-	Button button;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_death_event);
 		
-		deathSentence = (TextView) findViewById(id.grave_headline);
-		kingText = (TextView) findViewById(id.king);
-		button = (Button) findViewById(id.fuckingbutton);
+		deathSentence = (TextView) findViewById(id.text_intro_story_text_p1);
+		kingText = (TextView) findViewById(id.text_story_ranking);
+		ImageView button = (ImageView) findViewById(id.restartbutton);
 		
 		Resources resStory = getResources();
 		kings = resStory.getStringArray(R.array.kings_ranking);
@@ -111,7 +111,7 @@ public class DeathEvent extends Activity {
 			numberInArray = 0;
 		}
 		
-		button.setText("Klick to find out more about " + kings[numberInArray]);
+		//button.setText("Klick to find out more about " + kings[numberInArray]);
 		
 		if (ResourcesKingdom.getFood() <= 0)
 			deathSentence.setText("You starved to death!");

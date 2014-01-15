@@ -1,54 +1,129 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NoActionBar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".DeathEvent"
-    android:background="@color/royal_red"
-    style="@style/NoActionBar" >
+    android:background="@color/royal_cream"
+    tools:context=".Coronation" >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="Restart"
-        android:text="Restart" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/grave_headline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="83dp"
-        android:text="@string/death_headline"
-        android:textColor="@color/royal_blue"
-        android:textSize="24sp" />
+        <ImageView
+            android:id="@+id/ic_story_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/im_map_band_end" />
 
-    <TextView
-        android:id="@+id/king"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="102dp"
-        android:layout_marginLeft="35dp"
-        android:text="Large Text"
-        android:onClick ="page"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        <ImageView
+            android:id="@+id/ic_story_game_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/im_banner_gameover" />
 
-    <Button
-        android:id="@+id/fuckingbutton"
-        android:onClick="Something"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/king"
-        android:layout_alignParentRight="true"
-        android:text="Klick to find out more about the king/queen" />
+        <ImageView
+            android:id="@+id/ic_story_arrows"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/ic_story_map"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_arrow_redoran" />
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/ic_story_picture_one"
+            android:layout_width="300dp"
+            android:layout_height="330dp"
+            android:layout_below="@id/ic_story_arrows"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/intro_1_blu" />
+
+        <TextView
+            android:id="@+id/text_story_you_were"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ic_story_picture_one"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/text_story_you_were"
+            android:textColor="@color/royal_red"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_story_assassinated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_story_you_were"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/text_story_assassinated"
+            android:textColor="@color/royal_red"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_intro_story_text_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_story_assassinated"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/text_intro_story_text_p2"
+            android:textColor="@color/royal_red"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/ic_story_picture_two"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/text_intro_story_text_p1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/intro_2_red" />
+
+        <TextView
+            android:id="@+id/text_story_you_will_be"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ic_story_picture_two"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/text_story_you_will_be"
+            android:textColor="@color/royal_red"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_story_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_story_you_will_be"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/text_story_ranking"
+            android:textColor="@color/royal_red"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_intro_story_text_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_story_ranking"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/text_intro_story_text_p2"
+            android:textColor="@color/royal_red"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/restartbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="restart"
+            android:src="@drawable/im_banner_retry" />
+    </RelativeLayout>
+
+</ScrollView>
