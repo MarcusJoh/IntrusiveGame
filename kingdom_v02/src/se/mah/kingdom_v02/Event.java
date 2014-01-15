@@ -267,7 +267,7 @@ public class Event extends Activity {
 	@Override
 	public void onResume() {
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
-
+		doneStuff = false;
 		if (beenPaused == true) {
 
 			Intent intent = new Intent(Event.this, StoryManager.class);

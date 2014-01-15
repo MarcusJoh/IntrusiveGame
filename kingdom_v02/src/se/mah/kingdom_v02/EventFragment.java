@@ -639,7 +639,7 @@ public class EventFragment extends Fragment implements
 
 	@Override
 	public void onResume() {
-
+		doneStuff = false;
 		if (beenPaused == true) {
 			Intent intent = new Intent(getActivity().getBaseContext(),
 					StoryManager.class);
