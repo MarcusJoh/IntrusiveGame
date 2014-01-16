@@ -18,7 +18,7 @@ public class StartEvent extends Activity {
 	}
 
 	public void newGame(View v) {
-		ResourcesKingdom.newPlayerChange();
+		ResourcesKingdom.newPlayerChange(false);
 		Log.i("not a new player", String.valueOf(ResourcesKingdom.newPlayerstate()));
 
 		Intent intent = new Intent(StartEvent.this, StoryManager.class);

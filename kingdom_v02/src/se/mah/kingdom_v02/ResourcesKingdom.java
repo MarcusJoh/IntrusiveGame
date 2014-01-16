@@ -6,11 +6,11 @@ import android.content.SharedPreferences.Editor;
 import android.util.Log;
 
 public class ResourcesKingdom {
-	private static int food = 1000;
-	private static int gold = 0;
-	private static int happy = 1000;
-	private static final int maxEvents = 1000;
-	private static int amountOfEvents = 0;
+	private static int food = 100;
+	private static int gold = 100;
+	private static int happy = 100;
+	private static final int maxEvents = 12;
+	private static int amountOfEvents = 11;
 	private static String eventName = "e1";
 	private static int eventOption = 1;
 	private static boolean gameOver = true;// true= its a dead player
@@ -53,9 +53,9 @@ public class ResourcesKingdom {
 		return resourcePref.getBoolean(KEY_PREFS_PLAYER, newPlayer);
 	}
 
-	public static boolean newPlayerChange() {
+	public static boolean newPlayerChange(boolean playerNew) {
 
-		newPlayer = false;
+		newPlayer = playerNew;
 		resourceEditor.putBoolean(KEY_PREFS_PLAYER, newPlayer);
 		resourceEditor.commit();
 		return newPlayer;
