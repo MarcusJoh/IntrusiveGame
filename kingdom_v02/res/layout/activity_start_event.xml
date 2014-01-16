@@ -44,24 +44,25 @@
             android:src="@drawable/intro_1_blu" />
 
         <TextView
-            android:id="@+id/text_story_you_were"
+            android:id="@+id/text_story_kingdom_of"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:layout_below="@id/ic_story_picture_one"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:text="@string/text_story_you_were"
+            android:text="@string/text_story_kingdom_of"
             android:textColor="@color/royal_red"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/text_story_assassinated"
+            android:id="@+id/text_story_arbitrea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text_story_you_were"
+            android:layout_below="@id/text_story_kingdom_of"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:text="@string/text_story_assassinated"
+            android:text="@string/text_story_arbitrea"
             android:textColor="@color/royal_red"
             android:textSize="24sp" />
 
@@ -69,10 +70,14 @@
             android:id="@+id/text_intro_story_text_p1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text_story_assassinated"
+            android:layout_below="@id/text_story_arbitrea"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:text="@string/text_intro_story_text_p2"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/text_intro_story_text_p1"
+            android:textAlignment="center"
             android:textColor="@color/royal_red"
             android:textSize="24sp" />
 
@@ -80,18 +85,34 @@
             android:id="@+id/ic_story_picture_two"
             android:layout_width="300dp"
             android:layout_height="300dp"
+            android:layout_marginTop="24dp"
             android:layout_below="@id/text_intro_story_text_p1"
             android:layout_centerHorizontal="true"
             android:src="@drawable/intro_2_red" />
 
         <TextView
-            android:id="@+id/text_story_you_will_be"
+            android:id="@+id/text_intro_story_text_p2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ic_story_picture_two"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:text="@string/text_story_you_will_be"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/text_intro_story_text_p2"
+            android:textColor="@color/royal_red"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_story_you_will_be"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_below="@id/text_intro_story_text_p2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/text_story_king_is_dead"
             android:textColor="@color/royal_red"
             android:textSize="24sp" />
 
@@ -102,18 +123,7 @@
             android:layout_below="@id/text_story_you_will_be"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:text="@string/text_story_forgotten"
-            android:textColor="@color/royal_red"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/text_intro_story_text_p2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text_story_forgotten"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:text="@string/text_intro_story_text_p2"
+            android:text="@string/text_story_long_live_the_king"
             android:textColor="@color/royal_red"
             android:textSize="24sp" />
 
@@ -121,8 +131,9 @@
             android:id="@+id/newgame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:layout_alignParentBottom="true"
-            android:layout_below="@id/text_intro_story_text_p2"
+            android:layout_below="@id/text_story_forgotten"
             android:layout_centerHorizontal="true"
             android:onClick="newGame"
             android:src="@drawable/im_banner_start" />

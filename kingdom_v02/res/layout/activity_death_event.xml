@@ -69,6 +69,7 @@
             android:id="@+id/text_intro_story_text_p1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:layout_below="@id/text_story_assassinated"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
@@ -123,7 +124,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:onClick="restart"
+            android:onClick="Restart"
             android:src="@drawable/im_banner_retry" />
     </RelativeLayout>
 

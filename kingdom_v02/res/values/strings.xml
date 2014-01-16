@@ -22,14 +22,18 @@
     <string name="coronation_text">Sucker!</string>
     <string name="text_story_you_were">YOU WERE</string>
     <string name="text_story_assassinated">ASSASSINATED</string>
-    <string name="text_intro_story_text_p2">text_story_text</string>
-    <string name="text_intro_story_text_p1">text_story_text</string>
+    <string name="text_intro_story_text_p1">Ruled by the Great king - your father. It was time of great prosperity and development. Kingdom expanded and was respected all over the continent.</string>
+    <string name="text_intro_story_text_p2">When he was dying, all kingdom was mourning. And from now on, its going to be your responsibility. Will you be able continue where your father finished? Or are you gonna lead your kingdom to damnation?</string>
     <string name="text_outro_story_text_p2">text_story_text</string>
     <string name="text_outro_story_text_p1">text_story_text</string>
+    <string name="text_story_king_is_dead">KING IS DEAD!</string>
+    <string name="text_story_long_live_the_king">LONG LIVE THE KING!</string>
     <string name="text_story_you_will_be">YOU WILL BE</string>
     <string name="text_story_forgotten">FORGOTTEN!</string>
     <string name="text_story_your_rank_is">YOUR RANK IS</string>
     <string name="text_story_ranking">KING GEORGE II.</string>
+    <string name="text_story_kingdom_of">KINGDOM of</string>
+    <string name="text_story_arbitrea">ARBITREA</string>
 
     <color name="black">#FF000000</color>
     <color name="green">#FF00FF00</color>
