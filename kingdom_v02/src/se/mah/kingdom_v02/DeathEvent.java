@@ -34,6 +34,9 @@ public class DeathEvent extends Activity {
 
 		TextView textYouWere = (TextView) findViewById(R.id.text_story_you_were);
 		TextView textAssassinated = (TextView) findViewById(R.id.text_story_assassinated);
+		TextView textStory1 = (TextView) findViewById(R.id.text_outro_story_text_p1);
+		TextView textStory2 = (TextView) findViewById(R.id.text_outro_story_text_p2);
+		TextView textForgotten = (TextView) findViewById(R.id.text_forgotten);
 		kingText = (TextView) findViewById(R.id.text_story_ranking);
 		ImageView button = (ImageView) findViewById(R.id.restartbutton);
 		ImageView picture1 = (ImageView) findViewById(R.id.ic_story_picture_one);
@@ -95,12 +98,19 @@ public class DeathEvent extends Activity {
 			textAssassinated.setText("ASSASSINATED!");
 			picture1.setImageDrawable(getResources().getDrawable(R.drawable.end_1_bad));
 			picture2.setImageDrawable(getResources().getDrawable(R.drawable.end_2_bad));
+			textStory1.setText(R.string.text_outro_story_text_bad);
+			textStory2.setText(R.string.text_outro_story_text_bad_p2);
+			textForgotten.setText("FORGOTTEN");
 		} 
 		else{
 			textYouWere.setText("YOU DIED OF");
 			textAssassinated.setText("NATURAL CAUSES!");
 			picture1.setImageDrawable(getResources().getDrawable(R.drawable.end_1_good));
-			picture2.setImageDrawable(getResources().getDrawable(R.drawable.end_2_good));}
+			picture2.setImageDrawable(getResources().getDrawable(R.drawable.end_2_good));
+			textStory1.setText(R.string.text_outro_story_text_good);
+			textStory2.setText(R.string.text_outro_story_text_good_p2);
+			textForgotten.setText("REMEMBERED");
+			}
 		
 	}
 
