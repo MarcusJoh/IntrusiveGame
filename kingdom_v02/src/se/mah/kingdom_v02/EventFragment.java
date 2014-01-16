@@ -158,12 +158,15 @@ public class EventFragment extends Fragment implements
 
 		String[] optionChain = optionSplit[6].split("¤");
 		int optionNumber = Integer.parseInt(optionChain[0]);
+		RelativeLayout layout4 = (RelativeLayout) rootView.findViewById(R.id.option4Frame);
+		RelativeLayout layout3 = (RelativeLayout) rootView.findViewById(R.id.option3Frame);
 		if (optionNumber == 3) {
-			RelativeLayout layout4 = (RelativeLayout) rootView
-					.findViewById(R.id.option4Frame);
+			
 			layout4.setVisibility(View.GONE);
 		}
 		if (optionNumber == 2) {
+			layout4.setVisibility(View.GONE);
+			layout3.setVisibility(View.GONE);
 			Log.i("eventArrey", eventCont + " " + eventOption1 + " "
 					+ eventOption2);
 
