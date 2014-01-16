@@ -91,7 +91,7 @@ public class DeathEvent extends Activity {
 			deathSentence.setText("You starved to death!");
 		else if (ResourcesKingdom.getGold() <= 0)
 			deathSentence.setText("You went bankrupt!");
-		else if (ResourcesKingdom.getAmountOfEventsMade() >= 12)
+		else if (ResourcesKingdom.getAmountOfEventsMade() >= ResourcesKingdom.getMaxEvents())
 			deathSentence
 					.setText("You grew old and died peacefully in your sleep.");
 		else
