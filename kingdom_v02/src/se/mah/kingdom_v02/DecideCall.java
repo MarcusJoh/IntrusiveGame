@@ -73,8 +73,6 @@ public class DecideCall extends Service{
 		if (totalTimeElapsed >= increaseInterval) {
 			increaseRate++;
 			totalTimeElapsed = 0;
-			Toast.makeText(this, "increaseRate is up ", Toast.LENGTH_LONG)
-					.show();
 			return true;
 		}
 		return false;
