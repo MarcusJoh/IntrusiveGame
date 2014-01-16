@@ -282,6 +282,7 @@ public class Event extends Activity {
 
 	@Override
 	public void onPause() {
+		Log.i("onPause", "onPause");
 		phoneVib.cancel();
 		getWindow()
 				.clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
