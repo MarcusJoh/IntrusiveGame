@@ -27,7 +27,6 @@ public class DecideCall extends Service{
 			resourcePrefs = new ResourcesKingdom(
 					DecideCall.this.getApplicationContext());
 		  SetAlarm();
-		  Log.i("Crash?", "Crash?");
 	    return Service.START_NOT_STICKY;
 	  }
 
@@ -36,17 +35,12 @@ public class DecideCall extends Service{
 		totalTimeElapsed += update;
 		Calendar c = Calendar.getInstance();
 		Random rand = new Random();
-		Log.i("Resources", String.valueOf(ResourcesKingdom.CombinedResources()));
 		if (!ResourcesKingdom.ResourceIsZero()) {
-			  Log.i("Crash1?", "Crash1?");
 				ResourcesKingdom.setAmountOfEventsMadeChange();
-				  Log.i("Crash2?", "Crash2?");
 				StartCall();
-				  Log.i("Crash3?", "Crash3?");
 		}
 		else
 		{
-			Log.i("game over","you suck gg game over noob!");
 			Restart();
 			ResourcesKingdom.setstateGame();
 			Intent intent2 = new Intent(this, DeathEvent.class);
@@ -65,7 +59,6 @@ public class DecideCall extends Service{
 		Calendar time = Calendar.getInstance();
 		time.setTimeInMillis(System.currentTimeMillis());
 		time.add(Calendar.SECOND, 40);
-		Log.i("Update", String.valueOf(update));
 		alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(), pendingIntent);
 	}
 

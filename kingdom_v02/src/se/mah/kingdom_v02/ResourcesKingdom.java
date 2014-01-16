@@ -166,25 +166,15 @@ public class ResourcesKingdom {
 	}
 
 	public static boolean ResourceIsZero() {
-		  Log.i("Crash4?", "Crash4?");
 		boolean trying = false;
-		Log.i("events",Integer.toString(getFood()));
-		Log.i("events",Integer.toString(getGold()));
-		Log.i("events",Integer.toString(getHappy()));
-		Log.i("events",Integer.toString(getAmountOfEventsMade()));
 		try
 		{
-			  Log.i("Crash5?", "Crash5?");
 			trying = (getFood() <= 0 || getGold() <= 0 || getHappy() <= 0|| getAmountOfEventsMade() >= getMaxEvents()) ? true : false;
 		}
 		catch(Exception e)
 		{
-			  Log.i("Crash6?", "Crash6?");
 			trying = true;
 		}
-		  Log.i("Crash7?", "Crash7?");
-		Log.i("events",Integer.toString(getAmountOfEventsMade()));
-		Log.i("resource value",String.valueOf(trying));
 		return trying;
 	}
 
