@@ -24,8 +24,10 @@
     <string name="text_story_assassinated">ASSASSINATED</string>
     <string name="text_intro_story_text_p1">Ruled by the Great king - your father. It was time of great prosperity and development. Kingdom expanded and was respected all over the continent.</string>
     <string name="text_intro_story_text_p2">When he was dying, all kingdom was mourning. And from now on, its going to be your responsibility. Will you be able continue where your father finished? Or are you gonna lead your kingdom to damnation?</string>
-    <string name="text_outro_story_text_p2">text_story_text</string>
-    <string name="text_outro_story_text_p1">text_story_text</string>
+    <string name="text_outro_story_text_good_p1">text_story_text</string>
+    <string name="text_outro_story_text_good_p2">text_story_text</string>
+    <string name="text_outro_story_text_bad_p1">text_story_text</string>
+    <string name="text_outro_story_text_bad_p2">text_story_text</string>
     <string name="text_story_king_is_dead">KING IS DEAD!</string>
     <string name="text_story_long_live_the_king">LONG LIVE THE KING!</string>
     <string name="text_story_you_will_be">YOU WILL BE</string>

@@ -7,7 +7,7 @@ import android.util.Log;
 
 public class ResourcesKingdom {
 	private static int food = 1000;
-	private static int gold = 1000;
+	private static int gold = 0;
 	private static int happy = 1000;
 	private static final int maxEvents = 1000;
 	private static int amountOfEvents = 0;
