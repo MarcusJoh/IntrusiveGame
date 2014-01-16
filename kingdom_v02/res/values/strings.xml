@@ -422,7 +422,7 @@
         <item>Louis XIV</item>
 
         <!-- bad 8 -->
-        <item>Louis XIV </item>
+        <item>Louis XVI </item>
         <!-- bad 9 -->
         <item>Caligula </item>
         <!-- bad 10 -->
@@ -440,7 +440,7 @@
         <item>http://en.wikipedia.org/wiki/Harold_Bluetooth</item>
         <!-- good 1 -->
         <item> http://en.wikipedia.org/wiki/Gustavus_Adolphus_of_Sweden</item>
-        <!-- good  2 -->
+        <!-- good 2 -->
         <item>http://en.wikipedia.org/wiki/Charles_IV,_Holy_Roman_Emperor </item>
         <!-- good 3 -->
         <item>http://en.wikipedia.org/wiki/Richard_I</item>
@@ -448,13 +448,13 @@
         <item>http://en.wikipedia.org/wiki/Cleopatra</item>
         <!-- good 5 -->
         <item>http://en.wikipedia.org/wiki/Caesar</item>
-        <!-- good6 -->
+        <!-- good 6 -->
         <item>http://en.wikipedia.org/wiki/Alexander_the_Great</item>
-        <!-- good7 -->
+        <!-- good 7 -->
         <item>http://en.wikipedia.org/wiki/The_Sun_King</item>
 
         <!-- bad 8 -->
-        <item>http://en.wikipedia.org/wiki/The_Sun_King </item>
+        <item>http://en.wikipedia.org/wiki/Louis_XVI_of_France </item>
         <!-- bad 9 -->
         <item>http://en.wikipedia.org/wiki/Caligula </item>
         <!-- bad 10 -->

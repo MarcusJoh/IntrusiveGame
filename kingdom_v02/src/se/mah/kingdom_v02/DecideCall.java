@@ -18,12 +18,16 @@ public class DecideCall extends Service{
 	private double increaseInterval=60*4;
 	private int increaseRate = 3;
 	private double totalTimeElapsed = 0;
+	private ResourcesKingdom resourcePrefs;
 	
 	
 	  @Override
 	  public int onStartCommand(Intent intent, int flags, int startId) {
 	    //TODO do something useful
+			resourcePrefs = new ResourcesKingdom(
+					DecideCall.this.getApplicationContext());
 		  SetAlarm();
+		  Log.i("Crash?", "Crash?");
 	    return Service.START_NOT_STICKY;
 	  }
 
@@ -34,8 +38,11 @@ public class DecideCall extends Service{
 		Random rand = new Random();
 		Log.i("Resources", String.valueOf(ResourcesKingdom.CombinedResources()));
 		if (!ResourcesKingdom.ResourceIsZero()) {
+			  Log.i("Crash1?", "Crash1?");
 				ResourcesKingdom.setAmountOfEventsMadeChange();
+				  Log.i("Crash2?", "Crash2?");
 				StartCall();
+				  Log.i("Crash3?", "Crash3?");
 		}
 		else
 		{
@@ -43,8 +50,7 @@ public class DecideCall extends Service{
 			Restart();
 			ResourcesKingdom.setstateGame();
 			Intent intent2 = new Intent(this, DeathEvent.class);
-	        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 
-	        DecideCall.this.stopSelf();
+	        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 			this.startActivity(intent2);
 			return;
 		}
@@ -61,8 +67,6 @@ public class DecideCall extends Service{
 		time.add(Calendar.SECOND, 40);
 		Log.i("Update", String.valueOf(update));
 		alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(), pendingIntent);
-		this.stopSelf();
-		
 	}
 
 	public void StartCall()
