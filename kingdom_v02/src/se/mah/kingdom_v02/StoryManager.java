@@ -60,8 +60,9 @@ public class StoryManager extends Activity {
 		Log.i("happy", Integer.toString(happy));
 		refresh();
 		TextView jesterComment = (TextView) findViewById(R.id.text_jester_comment);
-		String s1 = ResourcesKingdom.getEventName() + "_jester_o"
-				+ Integer.toString(ResourcesKingdom.getEventOption());
+		String sPart1 = ResourcesKingdom.getEventName();
+		int sPart2 = ResourcesKingdom.getEventOption();
+		String s1 = sPart1 + "_jester_o" + Integer.toString(sPart2);
 		Log.i("identificator", s1);
 		int i1 = getResources().getIdentifier(s1, "string",
 				this.getPackageName());

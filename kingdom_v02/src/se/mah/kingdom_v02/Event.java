@@ -101,8 +101,8 @@ public class Event extends Activity {
 
 		eventOption1 = optionSplit[2];
 		String[] eventNames = eventName.split("Å");
-		String eventMacFix= eventNames[0];
-		ResourcesKingdom.setEventName(eventMacFix);
+		String eventnamesOne= eventNames[0];
+		ResourcesKingdom.setEventName(eventnamesOne);
 		
 		String eventChar = eventNames[1];
 
