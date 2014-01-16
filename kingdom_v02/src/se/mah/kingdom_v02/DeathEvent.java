@@ -100,7 +100,9 @@ public class DeathEvent extends Activity {
 	}
 
 	public void Restart(View v) {
-		ResourcesKingdom.newPlayerChange();
+		Log.i("New player", Boolean.toString(ResourcesKingdom.newPlayerstate()));
+		ResourcesKingdom.newPlayerChange(true);
+		Log.i("New player", Boolean.toString(ResourcesKingdom.newPlayerstate()));
 		Intent intent2 = new Intent(this, StoryManager.class);
 		intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		DeathEvent.this.finish();
