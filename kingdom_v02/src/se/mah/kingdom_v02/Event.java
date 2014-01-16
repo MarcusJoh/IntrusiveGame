@@ -101,7 +101,9 @@ public class Event extends Activity {
 
 		eventOption1 = optionSplit[2];
 		String[] eventNames = eventName.split("Å");
-		ResourcesKingdom.setEventName(eventNames[0]);
+		String eventMacFix= eventNames[0];
+		ResourcesKingdom.setEventName(eventMacFix);
+		
 		String eventChar = eventNames[1];
 
 		ImageView minister = (ImageView) findViewById(R.id.image_minister);
