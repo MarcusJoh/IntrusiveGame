@@ -405,20 +405,20 @@
     <string-array name="kings_ranking">
 
         <!-- good 0 -->
-        <item>Harold Bluetooth</item>
-        <!-- good 1 -->
-        <item>Gustav II Adolf </item>
-        <!-- good  2 -->
-        <item>Charles IV </item>
-        <!-- good 3 -->
-        <item>Richard I</item>
-        <!-- good 4 -->
-        <item>Cleopatra</item>
-        <!-- good 5 -->
         <item>Caesar</item>
-        <!-- good6 -->
+        <!-- good 1 -->
         <item>Alexander Great</item>
-        <!-- good7 -->
+        <!-- good 2 -->
+        <item>Gustav II Adolf </item>
+        <!-- good 3 -->
+        <item>Charles IV </item>
+        <!-- good 4 -->
+        <item>Richard I</item>
+        <!-- good 5 -->
+        <item>Harold Bluetooth</item>
+        <!-- good 6 -->
+        <item>Cleopatra</item>
+        <!-- good 7 -->
         <item>Louis XIV</item>
 
         <!-- bad 8 -->
