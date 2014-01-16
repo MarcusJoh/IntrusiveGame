@@ -3,7 +3,6 @@ package se.mah.kingdom_v02;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.util.Log;
 
 public class ResourcesKingdom {
 	private static int food = 100;
@@ -22,7 +21,7 @@ public class ResourcesKingdom {
 	private static final String KEY_PREFS_FOOD = "Food";
 	private static final String KEY_PREFS_GOLD = "Gold";
 	private static final String KEY_PREFS_HAPPY = "Happy";
-	private static final String KEY_PREFS_EVENTSMADE= "EventsMade";
+	private static final String KEY_PREFS_EVENTSMADE = "EventsMade";
 
 	private static final String APP_SHARED_PREFS = ResourcesKingdom.class
 			.getSimpleName(); // Name of the file -.xml
@@ -34,9 +33,8 @@ public class ResourcesKingdom {
 				APP_SHARED_PREFS, Context.MODE_PRIVATE);
 		ResourcesKingdom.resourceEditor = resourcePref.edit();
 	}
-	
-	public static int getMaxEvents()
-	{
+
+	public static int getMaxEvents() {
 		return maxEvents;
 	}
 
@@ -61,18 +59,18 @@ public class ResourcesKingdom {
 		return newPlayer;
 
 	}
-	
-	public static void setAmountOfEventsMadeChange()
-	{
-		amountOfEvents = resourcePref.getInt(KEY_PREFS_EVENTSMADE, amountOfEvents) + 1;
+
+	public static void setAmountOfEventsMadeChange() {
+		amountOfEvents = resourcePref.getInt(KEY_PREFS_EVENTSMADE,
+				amountOfEvents) + 1;
 		resourceEditor.putInt(KEY_PREFS_EVENTSMADE, amountOfEvents);
 		resourceEditor.commit();
 	}
-	
-	public static int getAmountOfEventsMade()
-	{
+
+	public static int getAmountOfEventsMade() {
 		return resourcePref.getInt(KEY_PREFS_EVENTSMADE, amountOfEvents);
 	}
+
 	public static String getEventName() {
 		return resourcePref.getString(KEY_PREFS_EVENTNAME, eventName);
 	}
@@ -167,12 +165,10 @@ public class ResourcesKingdom {
 
 	public static boolean ResourceIsZero() {
 		boolean trying = false;
-		try
-		{
-			trying = (getFood() <= 0 || getGold() <= 0 || getHappy() <= 0|| getAmountOfEventsMade() >= getMaxEvents()) ? true : false;
-		}
-		catch(Exception e)
-		{
+		try {
+			trying = (getFood() <= 0 || getGold() <= 0 || getHappy() <= 0 || getAmountOfEventsMade() >= getMaxEvents()) ? true
+					: false;
+		} catch (Exception e) {
 			trying = true;
 		}
 		return trying;

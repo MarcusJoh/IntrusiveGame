@@ -1,23 +1,12 @@
 package se.mah.kingdom_v02;
 
-import java.util.Calendar;
-import java.util.Random;
-
-import se.mah.kingdom_v02.R.drawable;
-import se.mah.kingdom_v02.R.id;
-
-import android.net.Uri;
-import android.os.Bundle;
 import android.app.Activity;
-import android.app.AlarmManager;
-import android.app.PendingIntent;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.net.Uri;
+import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -38,7 +27,6 @@ public class DeathEvent extends Activity {
 		TextView textStory2 = (TextView) findViewById(R.id.text_outro_story_text_p2);
 		TextView textForgotten = (TextView) findViewById(R.id.text_forgotten);
 		kingText = (TextView) findViewById(R.id.text_story_ranking);
-		ImageView button = (ImageView) findViewById(R.id.restartbutton);
 		ImageView picture1 = (ImageView) findViewById(R.id.ic_story_picture_one);
 		ImageView picture2 = (ImageView) findViewById(R.id.ic_story_picture_two);
 
@@ -90,28 +78,30 @@ public class DeathEvent extends Activity {
 			numberInArray = 0;
 		}
 
-		// button.setText("Klick to find out more about " +
-		// kings[numberInArray]);
-
-		if ((ResourcesKingdom.getFood() <= 0) ||(ResourcesKingdom.getGold() <= 0)||(ResourcesKingdom.getHappy() <= 0)){
+		if ((ResourcesKingdom.getFood() <= 0)
+				|| (ResourcesKingdom.getGold() <= 0)
+				|| (ResourcesKingdom.getHappy() <= 0)) {
 			textYouWere.setText("YOU WERE");
 			textAssassinated.setText("ASSASSINATED!");
-			picture1.setImageDrawable(getResources().getDrawable(R.drawable.end_1_bad));
-			picture2.setImageDrawable(getResources().getDrawable(R.drawable.end_2_bad));
+			picture1.setImageDrawable(getResources().getDrawable(
+					R.drawable.end_1_bad));
+			picture2.setImageDrawable(getResources().getDrawable(
+					R.drawable.end_2_bad));
 			textStory1.setText(R.string.text_outro_story_text_bad);
 			textStory2.setText(R.string.text_outro_story_text_bad_p2);
 			textForgotten.setText("FORGOTTEN");
-		} 
-		else{
+		} else {
 			textYouWere.setText("YOU DIED OF");
 			textAssassinated.setText("NATURAL CAUSES!");
-			picture1.setImageDrawable(getResources().getDrawable(R.drawable.end_1_good));
-			picture2.setImageDrawable(getResources().getDrawable(R.drawable.end_2_good));
+			picture1.setImageDrawable(getResources().getDrawable(
+					R.drawable.end_1_good));
+			picture2.setImageDrawable(getResources().getDrawable(
+					R.drawable.end_2_good));
 			textStory1.setText(R.string.text_outro_story_text_good);
 			textStory2.setText(R.string.text_outro_story_text_good_p2);
 			textForgotten.setText("REMEMBERED");
-			}
-		
+		}
+
 	}
 
 	public void Restart(View v) {

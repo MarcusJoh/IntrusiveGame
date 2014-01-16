@@ -1,10 +1,7 @@
 package se.mah.kingdom_v02;
 
-import se.mah.kingdom_v02.ObservableScrollView;
 import android.app.Fragment;
-import android.content.Context;
 import android.content.Intent;
-import android.media.AudioManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -117,7 +114,6 @@ public class EventFragment extends Fragment implements
 		option4Text = (TextView) rootView.findViewById(R.id.text_option4);
 
 		String[] eventNames = eventName.split("Å");
-		String eventMain = eventNames[0];
 		ResourcesKingdom.setEventName(eventNames[0]);
 		String eventChar = eventNames[1];
 		String eventIcon = eventNames[2];
@@ -158,10 +154,12 @@ public class EventFragment extends Fragment implements
 
 		String[] optionChain = optionSplit[6].split("¤");
 		int optionNumber = Integer.parseInt(optionChain[0]);
-		RelativeLayout layout4 = (RelativeLayout) rootView.findViewById(R.id.option4Frame);
-		RelativeLayout layout3 = (RelativeLayout) rootView.findViewById(R.id.option3Frame);
+		RelativeLayout layout4 = (RelativeLayout) rootView
+				.findViewById(R.id.option4Frame);
+		RelativeLayout layout3 = (RelativeLayout) rootView
+				.findViewById(R.id.option3Frame);
 		if (optionNumber == 3) {
-			
+
 			layout4.setVisibility(View.GONE);
 		}
 		if (optionNumber == 2) {

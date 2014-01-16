@@ -1,12 +1,13 @@
 package se.mah.kingdom_v02;
 
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
 public class StartEvent extends Activity {
+	@SuppressWarnings("unused")
 	private ResourcesKingdom resourcePrefs;
 
 	@Override
@@ -19,7 +20,8 @@ public class StartEvent extends Activity {
 
 	public void newGame(View v) {
 		ResourcesKingdom.newPlayerChange(false);
-		Log.i("not a new player", String.valueOf(ResourcesKingdom.newPlayerstate()));
+		Log.i("not a new player",
+				String.valueOf(ResourcesKingdom.newPlayerstate()));
 
 		Intent intent = new Intent(StartEvent.this, StoryManager.class);
 

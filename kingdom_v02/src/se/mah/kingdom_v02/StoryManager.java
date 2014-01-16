@@ -3,14 +3,13 @@ package se.mah.kingdom_v02;
 import java.util.Calendar;
 import java.util.Random;
 
-import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -20,6 +19,7 @@ public class StoryManager extends Activity {
 	private int gold = 0;
 	private int food = 0;
 	private int happy = 0;
+	@SuppressWarnings("unused")
 	private ResourcesKingdom resourcePrefs;
 
 	@Override
@@ -48,7 +48,7 @@ public class StoryManager extends Activity {
 
 		if (ResourcesKingdom.newPlayerstate() == false) {
 			if (ResourcesKingdom.getstateGame()) {
-				time.add(Calendar.SECOND, 5);
+				time.add(Calendar.SECOND, 10);
 				ResourcesKingdom.setstateGame();
 				alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(),
 						pendingIntent);
@@ -74,7 +74,6 @@ public class StoryManager extends Activity {
 	public void changeStat(View v) {
 		Random r = new Random();
 		gold = r.nextInt(3) + 1;
-		//gold = 2;
 		food = r.nextInt(3) + 1;
 		happy = r.nextInt(3) + 1;
 		Button butt = (Button) findViewById(R.id.buttonChangeStat);

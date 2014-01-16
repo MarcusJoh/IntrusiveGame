@@ -1,8 +1,11 @@
 package se.mah.kingdom_v02;
 
 import java.util.Random;
-import java.util.Timer;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.res.Resources;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -10,13 +13,6 @@ import android.os.Handler;
 import android.os.PowerManager;
 import android.os.Vibrator;
 import android.provider.Settings;
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Matrix;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -35,11 +31,13 @@ public class Event extends Activity {
 	public boolean doneStuff = true;
 	public Vibrator phoneVib;
 	public ImageView rotate;
+	@SuppressWarnings("unused")
 	private ResourcesKingdom resourcePrefs;
 	private String character = "thorp";
 	private Handler h;
 	private static PowerManager.WakeLock wakeLock;
 	private Runnable runnable = new Runnable() {
+		@Override
 		public void run() {
 			decline();
 			Intent intent = new Intent(Event.this, StoryManager.class);
@@ -67,7 +65,7 @@ public class Event extends Activity {
 
 		// The '0' here means to repeat indefinitely
 		// '-1' would play the vibration once
-		//phoneVib.vibrate(pattern, 0);
+		phoneVib.vibrate(pattern, 0);
 
 		rotate = (ImageView) findViewById(R.id.iconclock);
 		/* Create Animation */
@@ -146,15 +144,6 @@ public class Event extends Activity {
 
 		h = new Handler();
 		h.postDelayed(runnable, 30000);
-		// h.postDelayed(new Runnable() {
-		// public void run() {
-		// decline();
-		// Intent intent = new Intent(Event.this, StoryManager.class);
-		// intent.putExtra("event", event);
-		// Event.this.finish();
-		// startActivity(intent);// Actions to do after 5 seconds
-		// }
-		// }, 30000);
 
 	}
 
@@ -237,6 +226,7 @@ public class Event extends Activity {
 
 	}
 
+	@SuppressWarnings("deprecation")
 	public void wakeDevice() {
 		PowerManager powerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
 		wakeLock = powerManager
@@ -310,6 +300,7 @@ public class Event extends Activity {
 		event_am.setMode(AudioManager.MODE_IN_CALL);
 		event_am.setSpeakerphoneOn(false);
 		event_am.setBluetoothScoOn(true);
+		@SuppressWarnings("unused")
 		Resources res = this.getResources();
 		musicfileid = getResources().getIdentifier(character, "raw",
 				"se.mah.kingdom_v02");
@@ -321,6 +312,7 @@ public class Event extends Activity {
 		Bc.setVisibility(View.GONE);
 		Handler handler = new Handler();
 		handler.postDelayed(new Runnable() {
+			@Override
 			public void run() {
 				event_am.setMode(AudioManager.USE_DEFAULT_STREAM_TYPE);
 				event_player.setAudioStreamType(AudioManager.MODE_NORMAL);
