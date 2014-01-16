@@ -24,10 +24,10 @@
     <string name="text_story_assassinated">ASSASSINATED</string>
     <string name="text_intro_story_text_p1">Ruled by the Great king - your father. It was time of great prosperity and development. Kingdom expanded and was respected all over the continent.</string>
     <string name="text_intro_story_text_p2">When he was dying, all kingdom was mourning. And from now on, its going to be your responsibility. Will you be able continue where your father finished? Or are you gonna lead your kingdom to damnation?</string>
-    <string name="text_outro_story_text_good_p1">text_story_text</string>
-    <string name="text_outro_story_text_good_p2">text_story_text</string>
-    <string name="text_outro_story_text_bad_p1">text_story_text</string>
-    <string name="text_outro_story_text_bad_p2">text_story_text</string>
+    <string name="text_outro_story_text_good">An unusual silence impregnates the streets of Arbitrea. The morning arrived with news of the passing of their beloved King. A gracious governor, who not only managed to fill in after the Great Kings death, but also one that won the respect and admiration of his people by his own right. A series of well thought decisions led the young King to a successful and lengthy rule.</string>
+    <string name="text_outro_story_text_good_p2">The historians acknowledge your period as the golden age of the Kingdom of Arbitrea, securing that&#8230;</string>
+    <string name="text_outro_story_text_bad">Your rule is over, a series of careless decisions slowly lead you towards this tragic outcome. As the head of state of the Kingdom of Arbitrea, you failed to achieve a balance for the needs of your people. Their frustration could not be contained any longer, and after plotting a clever scheme, an organized group of insurgents infiltrated your palace, with the aid of some of your most loyal men, and put an end to your life!</string>
+    <string name="text_outro_story_text_bad_p2">Your thoughtless reign disappeared in the annals of history, ensuring that&#8230;</string>
     <string name="text_story_king_is_dead">KING IS DEAD!</string>
     <string name="text_story_long_live_the_king">LONG LIVE THE KING!</string>
     <string name="text_story_you_will_be">YOU WILL BE</string>
