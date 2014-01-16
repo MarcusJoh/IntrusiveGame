@@ -33,7 +33,7 @@ public class DeathEvent extends Activity {
 		setContentView(R.layout.activity_death_event);
 		
 		deathSentence = (TextView) findViewById(id.text_story_assassinated);
-		kingText = (TextView) findViewById(id.text_story_ranking);
+		kingText = (TextView) findViewById(id.text_story_ranking_text);
 		ImageView button = (ImageView) findViewById(id.restartbutton);
 		
 		Resources resStory = getResources();
