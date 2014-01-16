@@ -108,7 +108,7 @@ public class ResourcesKingdom {
 			eventName = "e1";
 			resourceEditor.putString(KEY_PREFS_EVENTNAME, eventName);
 			amountOfEvents = 0;
-			resourceEditor.putInt(KEY_PREFS_EVENTOPTION, amountOfEvents);
+			resourceEditor.putInt(KEY_PREFS_EVENTSMADE, amountOfEvents);
 			eventOption = 1;
 			resourceEditor.putInt(KEY_PREFS_EVENTOPTION, eventOption);
 			gameOver = true;
