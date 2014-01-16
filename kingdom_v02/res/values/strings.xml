@@ -110,17 +110,17 @@
     <string name="e2_jester_o3">Oh, your heiniess&#8230; Farmers are releived, that you lowered the taxes. But whats better? Happy, but hungry farmers, or grumpy ones with enough food?</string>
     <string name="e2_jester_o4">Oh, your heiniess&#8230; You showed those laze farmers, who do nothing all day long who rules here.</string>
    
-    <string name="e3p1_name">Rebuilding castle.</string>
-    <string name="e3p1_jester_o1">e3p1-o1</string>
-    <string name="e3p1_jester_o2">e3p1-o2</string>
-    <string name="e3p1_jester_o3">e3p1-o3</string>
-    <string name="e3p1_jester_o4">e3p1-o1</string>
+    <string name="e3p1_name">Expanding</string>
+    <string name="e3p1_jester_o1">Oh, your heiniess&#8230; Some of the lines shouldn't be crossed even for greater good. You will have to find place for expanding somewhere else. </string>
+    <string name="e3p1_jester_o2">Oh, your heiniess&#8230; On your command, thiefs hand, was cut off. How lucky, that you are making those decisions.</string>
+    <string name="e3p1_jester_o3">Oh, your heiniess&#8230; I thought making royalty happy is my job. But you are doing such a great job. Especially when commoners are paying fir that.</string>
+    <string name="e3p1_jester_o4">Oh, your heiniess&#8230; Slavery? Shouldn't we also re-open your torture chamber to satisfy your delicate appetite?</string>
     
     <string name="e3p2_name">Angry farmers</string>
-    <string name="e3p2_jester_o1">e3p2-o1</string>
-    <string name="e3p2_jester_o2">e3p2-o2</string>
-    <string name="e3p2_jester_o3">e3p2-o3</string>
-    <string name="e3p2_jester_o4">e3p2-o1</string>
+    <string name="e3p2_jester_o1">Oh, your heiniess&#8230; Farmers protest quite loudly. Hopefully they got bored soon.</string>
+    <string name="e3p2_jester_o2">Oh, your heiniess&#8230; I just remembered story where dog wanted to steal bone, but as soon as he was caught, he ran away...</string>
+    <string name="e3p2_jester_o3">Oh, your heiniess&#8230; I've found new title for your Majesty, which would fit with your magnificance. Great usurper. Is your heiness pleased</string>
+    <string name="e3p2_jester_o4">Oh, your heiniess&#8230; I've found new title for your Majesty, which would fit with your magnificance. Great usurper. Is your heiness pleased</string>
     
     <string name="e3p3_name">Crops destroyed</string>
     <string name="e3p3_jester_o1">e3p3-o1</string>
