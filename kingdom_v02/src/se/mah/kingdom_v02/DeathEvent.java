@@ -97,10 +97,10 @@ public class DeathEvent extends Activity {
 			picture2.setImageDrawable(getResources().getDrawable(R.drawable.end_2_bad));
 		} 
 		else{
-			textYouWere.setText("YOU WERE");
-			textAssassinated.setText("ASSASSINATED!");
-			picture1.setImageDrawable(getResources().getDrawable(R.drawable.end_1_bad));
-			picture2.setImageDrawable(getResources().getDrawable(R.drawable.end_2_bad));}
+			textYouWere.setText("YOU DIED OF");
+			textAssassinated.setText("NATURAL CAUSES!");
+			picture1.setImageDrawable(getResources().getDrawable(R.drawable.end_1_good));
+			picture2.setImageDrawable(getResources().getDrawable(R.drawable.end_2_good));}
 		
 	}
 
