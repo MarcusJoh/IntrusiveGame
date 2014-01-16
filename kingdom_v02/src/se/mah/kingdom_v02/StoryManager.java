@@ -46,11 +46,13 @@ public class StoryManager extends Activity {
 		int update = random + min;
 		time.setTimeInMillis(System.currentTimeMillis());
 
-		if (ResourcesKingdom.getstateGame()) {
-			time.add(Calendar.SECOND, 5);
-			ResourcesKingdom.setstateGame();
-			alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(),
-					pendingIntent);
+		if (ResourcesKingdom.newPlayerstate() == false) {
+			if (ResourcesKingdom.getstateGame()) {
+				time.add(Calendar.SECOND, 5);
+				ResourcesKingdom.setstateGame();
+				alarmMgr.set(AlarmManager.RTC_WAKEUP, time.getTimeInMillis(),
+						pendingIntent);
+			}
 		}
 		loadResources();
 		Log.i("food", Integer.toString(food));
@@ -71,7 +73,7 @@ public class StoryManager extends Activity {
 
 	public void changeStat(View v) {
 		Random r = new Random();
-		//gold = r.nextInt(3) + 1;
+		// gold = r.nextInt(3) + 1;
 		gold = 2;
 		food = r.nextInt(3) + 1;
 		happy = r.nextInt(3) + 1;
