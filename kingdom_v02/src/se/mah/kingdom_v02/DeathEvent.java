@@ -3,6 +3,7 @@ package se.mah.kingdom_v02;
 import java.util.Calendar;
 import java.util.Random;
 
+import se.mah.kingdom_v02.R.drawable;
 import se.mah.kingdom_v02.R.id;
 
 import android.net.Uri;
@@ -22,7 +23,6 @@ import android.widget.TextView;
 
 public class DeathEvent extends Activity {
 
-	TextView deathSentence;
 	String[] kings;
 	TextView kingText;
 	int numberInArray = 0;
@@ -31,11 +31,14 @@ public class DeathEvent extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_death_event);
-		
-		deathSentence = (TextView) findViewById(id.text_story_assassinated);
-		kingText = (TextView) findViewById(id.text_story_ranking_text);
-		ImageView button = (ImageView) findViewById(id.restartbutton);
-		
+
+		TextView textYouWere = (TextView) findViewById(R.id.text_story_you_were);
+		TextView textAssassinated = (TextView) findViewById(R.id.text_story_assassinated);
+		kingText = (TextView) findViewById(R.id.text_story_ranking);
+		ImageView button = (ImageView) findViewById(R.id.restartbutton);
+		ImageView picture1 = (ImageView) findViewById(R.id.ic_story_picture_one);
+		ImageView picture2 = (ImageView) findViewById(R.id.ic_story_picture_two);
+
 		Resources resStory = getResources();
 		kings = resStory.getStringArray(R.array.kings_ranking);
 		int ranking = ResourcesKingdom.CombinedResources();
@@ -84,23 +87,26 @@ public class DeathEvent extends Activity {
 			numberInArray = 0;
 		}
 
+		// button.setText("Klick to find out more about " +
+		// kings[numberInArray]);
+
+		if ((ResourcesKingdom.getFood() <= 0) ||(ResourcesKingdom.getGold() <= 0)||(ResourcesKingdom.getHappy() <= 0)){
+			textYouWere.setText("YOU WERE");
+			textAssassinated.setText("ASSASSINATED!");
+			picture1.setImageDrawable(getResources().getDrawable(R.drawable.end_1_bad));
+			picture2.setImageDrawable(getResources().getDrawable(R.drawable.end_2_bad));
+		} 
+		else{
+			textYouWere.setText("YOU WERE");
+			textAssassinated.setText("ASSASSINATED!");
+			picture1.setImageDrawable(getResources().getDrawable(R.drawable.end_1_bad));
+			picture2.setImageDrawable(getResources().getDrawable(R.drawable.end_2_bad));}
 		
-		//button.setText("Klick to find out more about " + kings[numberInArray]);
-		
-		if (ResourcesKingdom.getFood() <= 0)
-			deathSentence.setText("You starved to death!");
-		else if (ResourcesKingdom.getGold() <= 0)
-			deathSentence.setText("You went bankrupt!");
-		else if (ResourcesKingdom.getAmountOfEventsMade() >= ResourcesKingdom.getMaxEvents())
-			deathSentence
-					.setText("You grew old and died peacefully in your sleep.");
-		else
-			deathSentence.setText("You died during a revolt!");
-		ResourcesKingdom.resetGame();
 	}
 
 	public void Restart(View v) {
 		Log.i("New player", Boolean.toString(ResourcesKingdom.newPlayerstate()));
+		ResourcesKingdom.resetGame();
 		ResourcesKingdom.newPlayerChange(true);
 		Log.i("New player", Boolean.toString(ResourcesKingdom.newPlayerstate()));
 		Intent intent2 = new Intent(this, StoryManager.class);
