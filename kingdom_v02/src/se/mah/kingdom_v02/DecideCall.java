@@ -34,6 +34,7 @@ public class DecideCall extends Service{
 		Random rand = new Random();
 		Log.i("Resources", String.valueOf(ResourcesKingdom.CombinedResources()));
 		if (!ResourcesKingdom.ResourceIsZero()) {
+				ResourcesKingdom.setAmountOfEventsMadeChange();
 				StartCall();
 		}
 		else

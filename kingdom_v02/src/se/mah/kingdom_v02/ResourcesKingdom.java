@@ -9,7 +9,7 @@ public class ResourcesKingdom {
 	private static int food = 1000;
 	private static int gold = 1000;
 	private static int happy = 1000;
-	private static final int maxEvents = 100;
+	private static final int maxEvents = 1000;
 	private static int amountOfEvents = 0;
 	private static String eventName = "e1";
 	private static int eventOption = 1;
@@ -167,7 +167,18 @@ public class ResourcesKingdom {
 	}
 
 	public static boolean ResourceIsZero() {
-		return (getFood() <= 0 || getGold() <= 0 || getHappy() <= 0|| getAmountOfEventsMade() >= getMaxEvents()) ? true : false;
+		boolean trying = false;
+		try
+		{
+			trying = (getFood() <= 0 || getGold() <= 0 || getHappy() <= 0|| getAmountOfEventsMade() >= getMaxEvents()) ? true : false;
+		}
+		catch(Exception e)
+		{
+			trying = true;
+		}
+		Log.i("events",Integer.toString(getAmountOfEventsMade()));
+		Log.i("resource value",String.valueOf(trying));
+		return trying;
 	}
 
 }

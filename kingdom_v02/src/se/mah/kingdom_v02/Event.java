@@ -67,7 +67,7 @@ public class Event extends Activity {
 
 		// The '0' here means to repeat indefinitely
 		// '-1' would play the vibration once
-		phoneVib.vibrate(pattern, 0);
+		//phoneVib.vibrate(pattern, 0);
 
 		rotate = (ImageView) findViewById(R.id.iconclock);
 		/* Create Animation */
