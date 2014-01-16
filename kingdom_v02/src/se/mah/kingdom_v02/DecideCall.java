@@ -83,7 +83,7 @@ public class DecideCall extends Service{
 	public void Restart()
 	{
 		totalTimeElapsed = 0;
-		increaseRate = 0;
+		increaseRate = 1;
 		
 	}
 
