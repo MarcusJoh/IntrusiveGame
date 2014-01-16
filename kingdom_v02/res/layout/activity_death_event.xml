@@ -41,7 +41,7 @@
             android:layout_height="330dp"
             android:layout_below="@id/ic_story_arrows"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/intro_1_blu" />
+            android:src="@drawable/end_1_bad" />
 
         <TextView
             android:id="@+id/text_story_you_were"
@@ -82,7 +82,7 @@
             android:layout_height="300dp"
             android:layout_below="@id/text_intro_story_text_p1"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/intro_2_red" />
+            android:src="@drawable/end_2_bad" />
 
         <TextView
             android:id="@+id/text_story_you_will_be"
@@ -122,6 +122,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
             android:onClick="restart"
             android:src="@drawable/im_banner_retry" />
     </RelativeLayout>
