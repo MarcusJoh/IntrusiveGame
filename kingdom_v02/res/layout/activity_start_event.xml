@@ -25,7 +25,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="200dp"
-            android:src="@drawable/im_banner_gameover" />
+            android:src="@drawable/im_banner_arbitera" />
 
         <ImageView
             android:id="@+id/ic_story_arrows"
