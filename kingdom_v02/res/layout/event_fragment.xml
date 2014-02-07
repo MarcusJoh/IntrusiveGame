@@ -12,18 +12,17 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
-  -->
+-->
 
-<se.mah.kingdom_v02.ObservableScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<se.mah.kingdom_v02.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/scroll_view"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" >
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/royal_red">
+        android:background="@color/royal_red" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,146 +31,180 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="500dp"
+                android:layout_height="wrap_content"
                 android:background="@color/royal_blue"
                 android:orientation="vertical" >
-                
+
                 <ImageView
-		           android:id="@+id/image_minister"
-		           android:layout_width="fill_parent"
-		           android:layout_height="wrap_content"
-		           android:layout_marginTop="30dp"
-		           android:layout_gravity="center"
-		           android:src="@drawable/ic_char_agriculture" />
+                    android:id="@+id/image_minister"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/ic_char_agriculture" />
 
                 <TextView
                     android:id="@+id/text_minister_name_1"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="-5sp"
+                    android:layout_marginTop="24dp"
                     android:gravity="center"
                     android:text="@string/text_minister_first_name"
-                    android:textColor="@color/royal_beige"
-                    android:textSize="22sp" />
-                
+                    android:textColor="@color/price_blue"
+                    android:textScaleX="0"
+                    android:textSize="25sp"
+                     />
+
                 <TextView
                     android:id="@+id/text_minister_name_2"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="-10sp"
                     android:gravity="center"
                     android:text="@string/text_minister_last_name"
                     android:textColor="@color/royal_beige"
-                    android:textSize="54sp" />
+                    android:textScaleX="1"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
 
-                
+                <ImageView
+                    android:id="@+id/line"
+                    android:layout_width="250dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:background="@color/price_blue" />
+
+                <TextView
+                    android:id="@+id/text_royal_member"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:gravity="center"
+                    android:text="Member of the royal court"
+                    android:textAllCaps="true"
+                    android:textColor="@color/royal_beige"
+                    android:textScaleX="0"
+                    android:textSize="12sp" 
+                    />
+
+                <ImageView
+                    android:id="@+id/ic_icon_minister_name"
+                    android:layout_width="56dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="72dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/ic_stamp_blu_gold" />
             </LinearLayout>
-            <LinearLayout 
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="@color/royal_red"
                 android:orientation="vertical" >
-                
+
                 <ImageView
-					android:id="@+id/event_icon"
-					android:layout_width="fill_parent"
-					android:layout_height="wrap_content"
-					android:layout_marginTop="32dp"
-					android:src="@drawable/ic_marcus_9" />
-                
+                    android:id="@+id/event_icon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/ic_marcus_9" />
             </LinearLayout>
-			<LinearLayout 
-			    android:id="@+id/placeholder"
+
+            <LinearLayout
+                android:id="@+id/placeholder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical" >
             </LinearLayout>
-            
-			
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginTop="200dp"
-                android:orientation="horizontal"
-                android:background="@color/royal_blue" >
-                
+                android:background="@color/royal_blue"
+                android:orientation="horizontal" >
+
                 <TextView
                     android:id="@+id/text_make_choice"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_marginTop="30dp"
+                    android:gravity="center"
                     android:text="@string/makeChoice"
                     android:textColor="@android:color/white"
                     android:textSize="16sp" />
             </LinearLayout>
 
-            
             <RelativeLayout
                 android:id="@+id/option1Frame"
-                android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="360dp"
+                android:background="@color/royal_orange"
                 android:orientation="horizontal"
-                android:background="@color/royal_orange" >
-                
-                <ImageView
-		           android:id="@+id/imageBorderLeft1"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="20dp"
-		           android:src="@drawable/im_mar_red_top_left" />
-                <ImageView
-		           android:id="@+id/imageBorderRight1"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentRight="true"
-		           android:layout_marginTop="20dp"
-		           android:src="@drawable/im_mar_red_top_right" />
-                <ImageView
-		           android:id="@+id/imageBorderLeftBottom1"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentBottom="true"
-		           android:layout_alignParentLeft="true"
-		           android:src="@drawable/im_mar_red_down_left" />
-                <ImageView
-		           android:id="@+id/imageBorderRightBottom1"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentBottom="true"
-		           android:layout_alignParentRight="true"
-		           android:src="@drawable/im_mar_red_down_right" />
+                android:visibility="visible" >
 
-                
                 <ImageView
-		           android:id="@+id/imageOption01"
-		           android:layout_width="100dp"
-		           android:layout_height="100dp"
-		           android:layout_alignParentTop="true"
-		           android:layout_centerHorizontal="true"
-		           android:layout_marginTop="20dp"
-		           android:src="@drawable/ic_option_one" />
+                    android:id="@+id/imageBorderLeft1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/im_mar_red_top_left" />
+
+                <ImageView
+                    android:id="@+id/imageBorderRight1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/im_mar_red_top_right" />
+
+                <ImageView
+                    android:id="@+id/imageBorderLeftBottom1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/im_mar_red_down_left" />
+
+                <ImageView
+                    android:id="@+id/imageBorderRightBottom1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/im_mar_red_down_right" />
+
+                <ImageView
+                    android:id="@+id/imageOption01"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_option_one" />
 
                 <TextView
                     android:id="@+id/text_option1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/imageOption01"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true"
+                    android:layout_below="@id/imageOption01"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginLeft="60dp"
                     android:layout_marginRight="60dp"
                     android:layout_marginTop="24dp"
-                    android:layout_centerHorizontal="true"
                     android:gravity="center_vertical|center_horizontal"
                     android:text="@string/event_option_1"
                     android:textColor="@color/royal_red"
                     android:textSize="22sp" />
-                
-             	<ImageView
+
+                <ImageView
                     android:id="@+id/btn_option1_confirm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -181,71 +214,73 @@
                     android:src="@drawable/btn_accept_red" />
             </RelativeLayout>
 
-            
             <RelativeLayout
                 android:id="@+id/option2Frame"
-                android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="360dp"
+                android:background="@color/royal_teal"
                 android:orientation="vertical"
-                android:background="@color/royal_teal" >
-             	
-               <ImageView
-		           android:id="@+id/imageBorderLeft2"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="20dp"
-		           android:src="@drawable/im_mar_blu_top_left" />
+                android:visibility="visible" >
+
                 <ImageView
-		           android:id="@+id/imageBorderRight2"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentRight="true"
-		           android:layout_marginTop="20dp"
-		           android:src="@drawable/im_mar_blu_top_right" />
+                    android:id="@+id/imageBorderLeft2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/im_mar_blu_top_left" />
+
                 <ImageView
-		           android:id="@+id/imageBorderLeftBottom2"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentBottom="true"
-		           android:layout_alignParentLeft="true"
-		           android:src="@drawable/im_mar_blu_down_left" />
+                    android:id="@+id/imageBorderRight2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/im_mar_blu_top_right" />
+
                 <ImageView
-		           android:id="@+id/imageBorderRightBottom2"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentBottom="true"
-		           android:layout_alignParentRight="true"
-		           android:src="@drawable/im_mar_blu_down_right" />
-             	
+                    android:id="@+id/imageBorderLeftBottom2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/im_mar_blu_down_left" />
+
                 <ImageView
-		           android:id="@+id/imageOption02"
-		           android:layout_width="100dp"
-		           android:layout_height="100dp"
-		           android:layout_alignParentTop="true"
-		           android:layout_centerHorizontal="true"
-		           android:layout_marginTop="20dp"
-		           android:src="@drawable/ic_option_two" />
+                    android:id="@+id/imageBorderRightBottom2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/im_mar_blu_down_right" />
+
+                <ImageView
+                    android:id="@+id/imageOption02"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_option_two" />
 
                 <TextView
                     android:id="@+id/text_option2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/imageOption02"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true"
+                    android:layout_below="@id/imageOption02"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginLeft="60dp"
                     android:layout_marginRight="60dp"
                     android:layout_marginTop="24dp"
-                    android:layout_centerHorizontal="true"
                     android:gravity="center"
                     android:text="@string/event_option_2"
                     android:textColor="@color/royal_blue"
                     android:textSize="22sp" />
-                
+
                 <ImageView
                     android:id="@+id/btn_option2_confirm"
                     android:layout_width="wrap_content"
@@ -253,74 +288,76 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="48dp"
-                    android:src="@drawable/btn_accept_blue"  />
+                    android:src="@drawable/btn_accept_blue" />
             </RelativeLayout>
-            
-            
+
             <RelativeLayout
                 android:id="@+id/option3Frame"
-                android:visibility="visible"
-                android:layout_width="match_parent"                
+                android:layout_width="match_parent"
                 android:layout_height="360dp"
+                android:background="@color/royal_orange"
                 android:orientation="vertical"
-                android:background="@color/royal_orange" >
-                
-               <ImageView
-		           android:id="@+id/imageBorderLeft3"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="20dp"
-		           android:src="@drawable/im_mar_red_top_left" />
+                android:visibility="visible" >
+
                 <ImageView
-		           android:id="@+id/imageBorderRight3"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentRight="true"
-		           android:layout_marginTop="20dp"
-		           android:src="@drawable/im_mar_red_top_right" />
+                    android:id="@+id/imageBorderLeft3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/im_mar_red_top_left" />
+
                 <ImageView
-		           android:id="@+id/imageBorderLeftBottom3"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentBottom="true"
-		           android:layout_alignParentLeft="true"
-		           android:src="@drawable/im_mar_red_down_left" />
+                    android:id="@+id/imageBorderRight3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/im_mar_red_top_right" />
+
                 <ImageView
-		           android:id="@+id/imageBorderRightBottom3"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentBottom="true"
-		           android:layout_alignParentRight="true"
-		           android:src="@drawable/im_mar_red_down_right" />
-                
+                    android:id="@+id/imageBorderLeftBottom3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/im_mar_red_down_left" />
+
                 <ImageView
-		           android:id="@+id/imageOption03"
-		           android:layout_width="100dp"
-		           android:layout_height="100dp"
-		           android:layout_alignParentTop="true"
-		           android:layout_centerHorizontal="true"
-		           android:layout_marginTop="20dp"
-		           android:src="@drawable/ic_option_three" />
+                    android:id="@+id/imageBorderRightBottom3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/im_mar_red_down_right" />
+
+                <ImageView
+                    android:id="@+id/imageOption03"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_option_three" />
 
                 <TextView
                     android:id="@+id/text_option3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/imageOption03"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true"
+                    android:layout_below="@id/imageOption03"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginLeft="60dp"
                     android:layout_marginRight="60dp"
                     android:layout_marginTop="24dp"
-                    android:layout_centerHorizontal="true"
                     android:gravity="center"
                     android:text="@string/event_option_3"
                     android:textColor="@color/royal_red"
                     android:textSize="22sp" />
-                
+
                 <ImageView
                     android:id="@+id/btn_option3_confirm"
                     android:layout_width="wrap_content"
@@ -328,74 +365,75 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="48dp"
-                    android:src="@drawable/btn_accept_red"  />
-
+                    android:src="@drawable/btn_accept_red" />
             </RelativeLayout>
-            
-            
+
             <RelativeLayout
                 android:id="@+id/option4Frame"
-                android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="360dp"
+                android:background="@color/royal_teal"
                 android:orientation="vertical"
-                android:background="@color/royal_teal" >
-                
-               <ImageView
-		           android:id="@+id/imageBorderLeft4"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentLeft="true"
-		           android:layout_marginTop="20dp"
-		           android:src="@drawable/im_mar_blu_top_left" />
+                android:visibility="visible" >
+
                 <ImageView
-		           android:id="@+id/imageBorderRight4"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentTop="true"
-		           android:layout_alignParentRight="true"
-		           android:src="@drawable/im_mar_blu_top_right" />
+                    android:id="@+id/imageBorderLeft4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/im_mar_blu_top_left" />
+
                 <ImageView
-		           android:id="@+id/imageBorderLeftBottom4"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentBottom="true"
-		           android:layout_alignParentLeft="true"
-		           android:src="@drawable/im_mar_blu_down_left" />
+                    android:id="@+id/imageBorderRight4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/im_mar_blu_top_right" />
+
                 <ImageView
-		           android:id="@+id/imageBorderRightBottom4"
-		           android:layout_width="wrap_content"
-		           android:layout_height="wrap_content"
-		           android:layout_alignParentBottom="true"
-		           android:layout_alignParentRight="true"
-		           android:src="@drawable/im_mar_blu_down_right" />
-                
+                    android:id="@+id/imageBorderLeftBottom4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/im_mar_blu_down_left" />
+
                 <ImageView
-		           android:id="@+id/imageOption04"
-		           android:layout_width="100dp"
-		           android:layout_height="100dp"
-		           android:layout_alignParentTop="true"
-		           android:layout_centerHorizontal="true"
-		           android:layout_marginTop="20dp"
-		           android:src="@drawable/ic_option_four" />
+                    android:id="@+id/imageBorderRightBottom4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/im_mar_blu_down_right" />
+
+                <ImageView
+                    android:id="@+id/imageOption04"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_option_four" />
 
                 <TextView
                     android:id="@+id/text_option4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/imageOption04"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true"
+                    android:layout_below="@id/imageOption04"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginLeft="60dp"
                     android:layout_marginRight="60dp"
                     android:layout_marginTop="24dp"
                     android:gravity="center"
-                    android:layout_centerHorizontal="true"
                     android:text="@string/event_option_4"
                     android:textColor="@color/royal_blue"
                     android:textSize="22sp" />
-                
+
                 <ImageView
                     android:id="@+id/btn_option4_confirm"
                     android:layout_width="wrap_content"
@@ -403,47 +441,43 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="48dp"
-                    android:src="@drawable/btn_accept_blue"  />
+                    android:src="@drawable/btn_accept_blue" />
             </RelativeLayout>
         </LinearLayout>
-		
-  
-	    <LinearLayout 
-		    android:layout_width="match_parent"
-		  	android:layout_height="wrap_content"
-		   	android:orientation="vertical"
-		   	android:id="@+id/linear"
-		   	android:background="@color/royal_red" >
-		
-		    <TextView
-				android:id="@+id/eventName"
-				android:layout_width="fill_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="40dp"
-				android:text="@string/event_name"
-				android:gravity="center"
-				android:textColor="@android:color/white"
-				android:textSize="22sp" />
-					
-			<TextView
-				android:id="@+id/eventText"
-				android:layout_width="fill_parent"
-				android:layout_height="wrap_content"
-				android:gravity="center"
-				android:layout_marginLeft="24dp"
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/royal_red"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/eventName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/event_name"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/eventText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-				android:text="@string/event_text"
-				android:textColor="@color/royal_beige"
-				android:textSize="16sp" />
-		
-			<LinearLayout 
-			    android:layout_width="fill_parent"
-				android:layout_height="40dp">    
-			</LinearLayout>
-	  	</LinearLayout>
+                android:gravity="center"
+                android:text="@string/event_text"
+                android:textColor="@color/royal_beige"
+                android:textSize="16sp" />
 
-
-
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" >
+            </LinearLayout>
+        </LinearLayout>
     </FrameLayout>
 
 </se.mah.kingdom_v02.ObservableScrollView>

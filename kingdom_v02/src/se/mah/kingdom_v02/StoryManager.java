@@ -64,11 +64,11 @@ public class StoryManager extends Activity {
 		int sPart2 = ResourcesKingdom.getEventOption();
 		String s1 = sPart1 + "_jester_o" + Integer.toString(sPart2);
 		Log.i("identificator", s1);
-//		int i1 = getResources().getIdentifier(s1, "string",
-//				this.getPackageName());
-//		String s2 = getResources().getString(i1);
-//		Log.i("line jester", s2);
-//		jesterComment.setText(s2);
+		int i1 = getResources().getIdentifier(s1, "string",
+				this.getPackageName());
+		String s2 = getResources().getString(i1);
+		Log.i("line jester", s2);
+		jesterComment.setText(s2);
 
 	}
 

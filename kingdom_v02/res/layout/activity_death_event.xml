@@ -41,6 +41,7 @@
             android:layout_height="330dp"
             android:layout_below="@id/ic_story_arrows"
             android:layout_centerHorizontal="true"
+            android:layout_marginBottom="48dp"
             android:src="@drawable/end_1_bad" />
 
         <TextView
@@ -50,9 +51,13 @@
             android:layout_below="@id/ic_story_picture_one"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
+            android:layout_marginBottom="-15sp"
+            android:layout_marginTop="-25sp"
             android:text="@string/text_story_you_were"
             android:textColor="@color/royal_red"
-            android:textSize="24sp" />
+            android:textScaleX="0"
+            android:textSize="38sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/text_story_assassinated"
@@ -61,45 +66,61 @@
             android:layout_below="@id/text_story_you_were"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
+            android:layout_marginTop="0sp"
             android:text="@string/text_story_assassinated"
             android:textColor="@color/royal_red"
-            android:textSize="24sp" />
+            android:textScaleX="1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/text_outro_story_text_p1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_below="@id/text_story_assassinated"
+            android:layout_gravity="center"
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
-            android:layout_below="@id/text_story_assassinated"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:lineSpacingExtra="8sp"
             android:text="@string/text_outro_story_text_bad"
             android:textColor="@color/royal_red"
-            android:textSize="24sp" />
-        
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/icon_outro"
+            android:layout_width="56dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/text_outro_story_text_p1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_stamp_red_gold" />
+
         <TextView
             android:id="@+id/text_outro_story_text_p2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="12dp"
-            android:layout_below="@id/text_outro_story_text_p1"
+            android:layout_below="@id/icon_outro"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:lineSpacingExtra="8sp"
             android:text="@string/text_outro_story_text_bad_p2"
             android:textColor="@color/royal_red"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
         <ImageView
             android:id="@+id/ic_story_picture_two"
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:layout_marginTop="24dp"
             android:layout_below="@id/text_outro_story_text_p2"
             android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
             android:src="@drawable/end_2_bad" />
 
         <TextView
@@ -109,10 +130,13 @@
             android:layout_below="@id/ic_story_picture_two"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
+            android:layout_marginBottom="-15sp"
             android:text="@string/text_story_you_will_be"
             android:textColor="@color/royal_red"
-            android:textSize="24sp" />
-        
+            android:textScaleX="1"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/text_forgotten"
             android:layout_width="wrap_content"
@@ -120,17 +144,20 @@
             android:layout_below="@id/text_story_you_will_be"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
+            android:layout_marginTop="-5sp"
             android:text="@string/text_story_forgotten"
             android:textColor="@color/royal_red"
-            android:textSize="24sp" />
-        
+            android:textScaleX="0"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
         <ImageView
             android:id="@+id/ic_icon_story_down"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_width="56dp"
+            android:layout_height="65dp"
             android:layout_below="@id/text_forgotten"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
             android:src="@drawable/ic_stamp_red_gold" />
 
         <TextView
@@ -138,13 +165,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ic_icon_story_down"
-            android:layout_marginTop="24dp"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
+            android:layout_marginBottom="-15sp"
+            android:layout_marginTop="24dp"
             android:text="@string/text_story_ranking_text"
             android:textColor="@color/royal_red"
-            android:textSize="24sp" />
-        
+            android:textScaleX="1"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/text_story_ranking"
             android:layout_width="wrap_content"
@@ -152,19 +182,24 @@
             android:layout_below="@id/text_story_ranking_text"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
+            android:layout_marginBottom="-15sp"
             android:text="@string/text_story_ranking"
             android:textColor="@color/royal_red"
-            android:textSize="24sp" />
-
+            android:textScaleX="1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/restartbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
             android:layout_below="@id/text_story_ranking"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
             android:onClick="Restart"
+            android:paddingBottom="24dp"
+            android:paddingRight="5dp"
             android:src="@drawable/im_banner_retry" />
     </RelativeLayout>
 

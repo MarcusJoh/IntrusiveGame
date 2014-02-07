@@ -13,7 +13,7 @@
     <string name="makeChoice">MAKE A CHOICE</string>
     <string name="text_minister_first_name">BARON BARTHOLOMEW</string>
     <string name="text_minister_last_name">THORP</string>
-    <string name="jester_first_name">PESTY the</string>
+    <string name="jester_first_name">PESTE THE</string>
     <string name="jester_last_name">JESTER</string>
     <string name="game_name">Arbitrea</string>
     <string name="death_headline">You DIED!</string>
@@ -22,8 +22,8 @@
     <string name="coronation_text">Sucker!</string>
     <string name="text_story_you_were">YOU WERE</string>
     <string name="text_story_assassinated">ASSASSINATED</string>
-    <string name="text_intro_story_text_p1">Ruled by the Great king - your father. It was time of great prosperity and development. Kingdom expanded and was respected all over the continent.</string>
-    <string name="text_intro_story_text_p2">When he was dying, all kingdom was mourning. And from now on, its going to be your responsibility. Will you be able continue where your father finished? Or are you gonna lead your kingdom to damnation?</string>
+    <string name="text_intro_story_text_p1">Ruled by the Great king - your father. It was time of great prosperity and development. The Kingdom expanded and was respected all over the continent.</string>
+    <string name="text_intro_story_text_p2">When he died, all the kingdom was mourning. And from now on, its going to be your responsibility. Will you be able to continue where your father finished? Or are you going to lead your kingdom to damnation?</string>
     <string name="text_outro_story_text_good">An unusual silence impregnates the streets of Arbitrea. The morning arrived with news of the passing of their beloved King. A gracious governor, who not only managed to fill in after the Great Kings death, but also one that won the respect and admiration of his people by his own right. A series of well thought decisions led the young King to a successful and lengthy rule.</string>
     <string name="text_outro_story_text_good_p2">The historians acknowledge your period as the golden age of the Kingdom of Arbitrea, securing that&#8230;</string>
     <string name="text_outro_story_text_bad">Your rule is over, a series of careless decisions slowly lead you towards this tragic outcome. As the head of state of the Kingdom of Arbitrea, you failed to achieve a balance for the needs of your people. Their frustration could not be contained any longer, and after plotting a clever scheme, an organized group of insurgents infiltrated your palace, with the aid of some of your most loyal men, and put an end to your life!</string>
@@ -35,7 +35,7 @@
     <string name="text_story_forgotten">FORGOTTEN!</string>
     <string name="text_story_your_rank_is">YOUR RANK IS</string>
     <string name="text_story_ranking">KING GEORGE II.</string>
-    <string name="text_story_kingdom_of">KINGDOM of</string>
+    <string name="text_story_kingdom_of">KINGDOM OF</string>
     <string name="text_story_arbitrea">ARBITREA</string>
 
     <color name="black">#FF000000</color>
@@ -74,7 +74,7 @@
         <item>e12Åc2Åi1/Your Majesty, savages are plundering mountain villages close to our north border./If its outside my kingdoms border its not my kingdoms problem.¤gold#0/The savages have gotten more bold lately, soon they with move into my kingdom if we let them be. Send a company of riders north to make sure the savages never again get close to our border.¤gold#-10Öhapp#10/Does poor villagers, it must be hard to live so far north. Station a guard company up there to help them.¤gold#-5Öhapp5/none/3¤none </item>
         <item>e13p1Åc2Åi1/Your Majesty, there is well known explorer, who ask you to fund expedition to discover new lands for your kingdom./Neither I nor my Kingdom require new lands so badly that we would set such task in the hands of a mare explorer no matter how many common folk know him.¤gold#0/Ah! New land for my kingdom would sit well. Give him three ships to find these new lands and tell him to claim them under my name.¤gold#-10Öfood#-10/There is likely no new lands to claim anymore but tell him that I with gift him 1 ship to search for new trade in the faraway lands¤gold#-5/none/3¤e13p2</item>
         <item>e13p2Åc1Åi1/Your Majesty, the explorer has come back from his eventful journey at sea and claims the he has found a great new land for your kingdom./The kingdom cannot manage and does not need any more lands.¤happ#-5/Perfect! Just what I was hoping for, arrange for settling these new lands for my kingdom.¤gold#-20Öhapp#15/Well I did not expect him to find new land, but if it is as he claims arrange for a small convoy of our own to see these great lands he speaks about.¤gold#-10/I did not ask for new land! I asked for trade! Tell him to set sail again and to not come without trade this time around.¤gold#5Öhapp#-5/4¤none</item>
-        <item>e14Åc2Åi1/Your Majesty, art merchant offers another genuine Mona Sarah. It would be our fifth. Should we buy it?/I do not care about this staff. Do not bother me with that again!¤gold#0/My father already lost fortune buying those nonsense! Show him out of the city so people can see what we do with thieves like this!¤happ#5/Yes! What if this one is the  genuine one? Buy it!¤gold#-15/none/3¤none</item>
+        <item>e14Åc2Åi1/Your Majesty, art merchant offers another genuine Mona Sarah. It would be our fifth. Should we buy it?/I do not care about this staff. Do not bother me with that again!¤gold#0/Nonsense! Show him out of the city so people can see what we do with thieves like this!¤happ#5/Yes! What if this one is the  genuine one? Buy it!¤gold#-15/none/3¤none</item>
         <item>e15Åc2Åi1/Your Majesty, we have found new gold veins in High Mountains. This could dramatically improve our treasury./I have more pressing issues now.¤gold#0/Get some men and open a mine!¤happ#-5Ögold#20/Open the mine and give workers share of the profit!¤gold#15Öhapp#10/none/3¤none</item>
         <item>e16Åc2Åi1/Your Majesty, there is not enough funds for this years Yule celebration. But the people will be very disappointed to see the kingdom not follow through with this tradition./Do nothing and let people be disappointed.¤happ#-20/Tax the people and earn the money required to buy fireworks. If the people want to celebrate, they must pay a share for it.¤gold#10Öhapp#-15/Ask the Church to announce that Fireworks are the devil and will not be allowed in the kingdom anymore.¤happ#-20Ögold#-5/Take out some of the money kept aside for food, crops and use it for the Fireworks instead.¤food#-20Ögold#10/4¤none</item>
         <item>e20p1Åc1Åi1/Your Grace, Preachers are gathering and agitating the common folk at the town centre, to worship a new kind of deity./Let them preach, faith has never hurt anyone.¤happ#15/These so called preachers are a burden on my kingdom. Make the city-guard help them remove themselves¤gold#-10/none/none/2¤e20p2</item>
@@ -91,313 +91,262 @@
         <item>e26p2Åc1Åi1/Your Grace, the tides seem rough this day. What I foresaw, has finally happened! People and running angry on the streets, burning houses because of their beloved dictator!/Do nothing about it.¤food#-20Ögold#-20/Send out the Army to contain the revolt.¤happ#-20Ögold#-20/Bring him back from exile and appoint as a minister.¤happ#20Ögold#-10/Ask the priest to exorcise all the people revolting and take out the devil from inside them.¤happ#-20Ögold#-20/4¤none</item>
         <item>e27p1Åc1Åi1/Your Grace, oh what has becomest of womenfolk today, I say. Our nuns from the monastery drank forth all the wine kept aside for and were found at the gates of your palace!/Do nothing about it.¤happ#-10/Make an example of the nuns and publicly embarrass them for blasphemous behavior, banishing them in the end.¤happ#20Ögold#-10/Declare the kingdom to be a liberal state and let the nuns go with a small fine, but dissolve the church.¤happ#20Ögold#-15/Declare a ban on all kinds of alcohol, unless authorized by the King, the royal family or the main priest of the church.¤happ#-20Ögold#10/4¤e27p2</item>
     </string-array>
-    
+
     <string name="sticky_item">Sticky</string>
     <string name="quick_return_item">Quick Return</string>
     <string name="title_activity_death_event">DeathEvent</string>
     <string name="title_activity_coronation">Coronation</string>
-    
     <string name="jester_comment">e4-o4</string>
     <string name="e1_name">Rats in the city.</string>
     <string name="e1_jester_o1">Oh, your heiniess&#8230; Rats attacked our city. I hope you have enjoyed the show, because due to your reluctance, soon we wont have food to eat.</string>
     <string name="e1_jester_o2">Oh, your heiniess&#8230; Why hiring Rats to deal with rats?</string>
     <string name="e1_jester_o3">Oh, your heiniess&#8230; Cats from all over the kingdom stands ready and awaits your commands!</string>
     <string name="e1_jester_o4">Oh, your heiniess&#8230; Todays chefs special is rats cooked with root vegetable. Our beloved subjects brought so many rats, that we have enough meat until Spring.</string>
-    
     <string name="e2_name">Harvest problem.</string>
     <string name="e2_jester_o1">Oh, your heiniess&#8230; Farmers have problems and what you do? Nothing. How royal!</string>
     <string name="e2_jester_o2">Oh, your heiniess&#8230; Farmers are releived, that you lowered the taxes. But whats better? Happy, but hungry farmers, or grumpy ones with enough food?</string>
     <string name="e2_jester_o3">Oh, your heiniess&#8230; Farmers are releived, that you lowered the taxes. But whats better? Happy, but hungry farmers, or grumpy ones with enough food?</string>
     <string name="e2_jester_o4">Oh, your heiniess&#8230; You showed those laze farmers, who do nothing all day long who rules here.</string>
-   
     <string name="e3p1_name">Expanding</string>
     <string name="e3p1_jester_o1">Oh, your heiniess&#8230; Some of the lines shouldnt be crossed even for greater good. You will have to find place for expanding somewhere else. </string>
     <string name="e3p1_jester_o2">Oh, your heiniess&#8230; On your command, thiefs hand, was cut off. How lucky, that you are making those decisions.</string>
-    <string name="e3p1_jester_o3">Oh, your heiniess&#8230; I thought making royalty happy is my job. But you are doing such a great job. Especially when commoners are paying fir that.</string>
+    <string name="e3p1_jester_o3">Oh, your heiniess&#8230; I thought making royalty happy is my job. But you are doing such a great job. Especially when commoners are paying for that.</string>
     <string name="e3p1_jester_o4">Oh, your heiniess&#8230; Slavery? Shouldnt we also re-open your torture chamber to satisfy your delicate appetite?</string>
-    
     <string name="e3p2_name">Angry farmers</string>
     <string name="e3p2_jester_o1">Oh, your heiniess&#8230; Farmers protest quite loudly. Hopefully they got bored soon.</string>
     <string name="e3p2_jester_o2">Oh, your heiniess&#8230; I just remembered story where dog wanted to steal bone, but as soon as he was caught, he ran away...</string>
     <string name="e3p2_jester_o3">Oh, your heiniess&#8230; Ive found new title for your Majesty, which would fit with your magnificance. Great usurper. Is your heiness pleased</string>
     <string name="e3p2_jester_o4">Oh, your heiniess&#8230; Ive found new title for your Majesty, which would fit with your magnificance. Great usurper. Is your heiness pleased</string>
-    
     <string name="e3p3_name">Crops destroyed</string>
     <string name="e3p3_jester_o1">e3p3-o1</string>
     <string name="e3p3_jester_o2">e3p3-o2</string>
     <string name="e3p3_jester_o3">e3p3-o3</string>
     <string name="e3p3_jester_o4">e3p3-o1</string>
-    
     <string name="e4p1_name">Delayed rains</string>
     <string name="e4p1_jester_o1">e4p1-o1</string>
     <string name="e4p1_jester_o2">e4p1-o2</string>
     <string name="e4p1_jester_o3">e4p1-o3</string>
     <string name="e4p1_jester_o4">e4p1-o1</string>
-    
     <string name="e4p2_name">Drought</string>
     <string name="e4p2_jester_o1">e4p2-o1</string>
     <string name="e4p2_jester_o2">e4p2-o2</string>
     <string name="e4p2_jester_o3">e4p2-o3</string>
     <string name="e4p2_jester_o4">e4p2-o1</string>
-    
     <string name="e5_name">e1-o1</string>
     <string name="e5_jester_o1">e5-o1</string>
     <string name="e5_jester_o2">e5-o2</string>
     <string name="e5_jester_o3">e5-o3</string>
     <string name="e5_jester_o4">e5-o1</string>
-    
     <string name="e6_name">e1-o1</string>
     <string name="e6_jester_o1">e6-o1</string>
     <string name="e6_jester_o2">e6-o2</string>
     <string name="e6_jester_o3">e6-o3</string>
     <string name="e6_jester_o4">e6-o1</string>
-    
     <string name="e7_name">e1-o1</string>
     <string name="e7_jester_o1">e7-o1</string>
     <string name="e7_jester_o2">e7-o2</string>
     <string name="e7_jester_o3">e7-o3</string>
     <string name="e7_jester_o4">e7-o1</string>
-    
     <string name="e8_name">e1-o1</string>
     <string name="e8_jester_o1">e8-o1</string>
     <string name="e8_jester_o2">e8-o2</string>
     <string name="e8_jester_o3">e8-o3</string>
     <string name="e8_jester_o4">e8-o1</string>
-   
     <string name="e9_name">e1-o1</string>
     <string name="e9_jester_o1">e9-o1</string>
     <string name="e9_jester_o2">e9-o2</string>
     <string name="e9_jester_o3">e9-o3</string>
     <string name="e9_jester_o4">e9-o1</string>
-    
     <string name="e10_name">e1-o1</string>
     <string name="e10_jester_o1">e10-o1</string>
     <string name="e10_jester_o2">e10-o2</string>
     <string name="e10_jester_o3">e10-o3</string>
     <string name="e10_jester_o4">e10-o1</string>
-    
     <string name="e11_name">Rain problems</string>
     <string name="e11_jester_o1">e11-o1</string>
     <string name="e11_jester_o2">e11-o2</string>
     <string name="e11_jester_o3">e11-o3</string>
     <string name="e11_jester_o4">e11-o1</string>
-    
     <string name="e12_name">Helping our neighbor</string>
     <string name="e12_jester_o1">e12-o1</string>
     <string name="e12_jester_o2">e12-o2</string>
     <string name="e12_jester_o3">e12-o3</string>
     <string name="e12_jester_o4">e12-o1</string>
-    
     <string name="e13p1_name">Explorer</string>
     <string name="e13p1_jester_o1">e13p1-o1</string>
     <string name="e13p1_jester_o2">e13p1-o2</string>
     <string name="e13p1_jester_o3">e13p1-o3</string>
     <string name="e13p1_jester_o4">e13p1-o1</string>
-    
     <string name="e13p2_name">New land</string>
     <string name="e13p2_jester_o1">Bravo my Lord! Large empires are always pathetic like the Roman Empire, in the years to come not a soul will know remember such a name! Arbitrea will be the kingdom everyone will remember with fondness!</string>
     <string name="e13p2_jester_o2">Your Heiniess, oversea colonies are the latest trend at this moment, good to see our fair country joining all our neighbours in the invading and pillaging of foreign lands!</string>
     <string name="e13p2_jester_o3">Your Heiniess, wise command, this honest jester can assure you, if these terrains are worth a looting, Lord Ludvig will most certainly know!</string>
     <string name="e13p2_jester_o4">Oh Your Heiniess, what shall be done with these explorers? Always exploring further away than what they are commanded to! If the cahp cannot read a sea chart, he perhaps should find a better suited office</string>
-    
     <string name="e14_name">Paintings</string>
     <string name="e14_jester_o1">e14-o1</string>
     <string name="e14_jester_o2">e14-o2</string>
     <string name="e14_jester_o3">e14-o3</string>
     <string name="e14_jester_o4">e14-o1</string>
-    
     <string name="e15_name">New gold resources</string>
     <string name="e15_jester_o1">e15-o1</string>
     <string name="e15_jester_o2">e15-o2</string>
     <string name="e15_jester_o3">e15-o3</string>
     <string name="e15_jester_o4">e15-o1</string>
-    
     <string name="e16_name">Fireworks</string>
     <string name="e16_jester_o1">e16-o1</string>
     <string name="e16_jester_o2">e16-o2</string>
     <string name="e16_jester_o3">e16-o3</string>
     <string name="e16_jester_o4">e16-o1</string>
-   
     <string name="e17_name">e1-o1</string>
     <string name="e17_jester_o1">e17-o1</string>
     <string name="e17_jester_o2">e17-o2</string>
     <string name="e17_jester_o3">e17-o3</string>
     <string name="e17_jester_o4">e17-o1</string>
-    
     <string name="e18_name">e1-o1</string>
     <string name="e18_jester_o1">e18-o1</string>
     <string name="e18_jester_o2">e18-o2</string>
     <string name="e18_jester_o3">e18-o3</string>
     <string name="e18_jester_o4">e18-o1</string>
-    
     <string name="e19_name">e1-o1</string>
     <string name="e19_jester_o1">e19-o1</string>
     <string name="e19_jester_o2">e19-o2</string>
     <string name="e19_jester_o3">e19-o3</string>
-    <string name="e19_jester_o4">e19-o1</string> 
-    
+    <string name="e19_jester_o4">e19-o1</string>
     <string name="e20p1_name">Preachers on the streets</string>
     <string name="e20p1_jester_o1">Oh Your Heiniess, of course not, conflicting beliefs has and never will be a catalyst for violence! This jester can assure you, they will get well along</string>
     <string name="e20p1_jester_o2">Your Heiniess, a brave an wise move, though some folks may regard this as repression, but fear not, they are of the same sort that claims that all men are born equal!</string>
     <string name="e20p1_jester_o3">e20p1-o3</string>
     <string name="e20p1_jester_o4">e20p1-o1</string>
-    
     <string name="e20p2_name">New divinity</string>
     <string name="e20p2_jester_o1">Your Heiniess, As fair as your command is, this stage of freedom can be seen as debauchery! If your grace is not careful, next time they will want to refuse to pay taxes!</string>
     <string name="e20p2_jester_o2">Your Heiniess, such benevolence in yer command, in this manner, by each whip lash, infidels will adore whatever deity your Grace desires ‘em to.</string>
     <string name="e20p2_jester_o3">Your Heiniess, such a fair command, yet we cannot spare to raise a monument for each idol that comes forth. This humble jester commends you to act more prudently next time.</string>
     <string name="e20p2_jester_o4">e20p2-o1</string>
-    
     <string name="e21p1_name">Territory expansion</string>
     <string name="e21p1_jester_o1">Your Heiniess, in an attempt of not coming off blunt, may this simple jester raise the question, what is the reward in yer passiveness?</string>
     <string name="e21p1_jester_o2">Your Heiniess, these terrains constitute a gift nature has granted us! The prevailing inhabitants of those lands are keeping us from our divine right! It is only fair we execute the bandits!</string>
     <string name="e21p1_jester_o3">Your Heiniess, ‘tis a great scheme to annex this land to our reign, alas the tolerant approach is worrying this humble jester. As your Grace is not exactly known as an alms-giving sovereign.</string>
     <string name="e21p1_jester_o4">e21p1-o1</string>
-    
     <string name="e21p2_name">New grounds</string>
     <string name="e21p2_jester_o1">Your Heiniess, a wise plot for these new lands, laying claim to a barren territory to eventually leave it as it was, is good enough. The difference is that now these desolated lands are ours!</string>
     <string name="e21p2_jester_o2">Your Heiniess, a wise plot for the new claimed lands, this servile jester assures you that people will not go hungry this winter, nor the rats that still inhabit the plains for that matter!</string>
     <string name="e21p2_jester_o3">Your Heiniess, a wise plot for the new claimed lands, this honest jester assures you that gold will not be an issue for the kingdom anymore, not at least ‘till the resource is spent on the castle ampliations your Grace has planned of course!</string>
     <string name="e21p2_jester_o4">Your Heiniess, a wise plot for the new claimed lands, this lenient jester assures you that folks will rejoice, at least until them new dens get overcrowded by the boastful ammount of needy people that lives in this land!</string>
-    
     <string name="e22_name">e1-o1</string>
     <string name="e22_jester_o1">e22-o1</string>
     <string name="e22_jester_o2">e22-o2</string>
     <string name="e22_jester_o3">e22-o3</string>
     <string name="e22_jester_o4">e22-o1</string>
-    
     <string name="e23_name">e1-o1</string>
     <string name="e23_jester_o1">e23-o1</string>
     <string name="e23_jester_o2">e23-o2</string>
     <string name="e23_jester_o3">e23-o3</string>
     <string name="e23_jester_o4">e23-o1</string>
-    
     <string name="e24_name">Comedians</string>
     <string name="e24_jester_o1">Your Heiniess does not need any more comedians! The plump buffoon, that behaves as if everything is a joke; The sour old timer that has seen better days; The amusingly covetous fellow and the snobbish princess without a crown! Oh and me of course!</string>
     <string name="e24_jester_o2">Oh Your Heiniess, allowing fellow comedians to perform! What a pleasant surprise! I do hope your Grace is not looking for jester replacements!</string>
     <string name="e24_jester_o3">Oh Your Heiniess, treating foreign performers with such warmth! This local jester would not mind such a preferential treatment as well!</string>
     <string name="e24_jester_o4">e24-o1</string>
-    
     <string name="e25p1_name">Marrige proposal</string>
     <string name="e25p1_jester_o1">Oh Your Heiniess, always making well thought decisions! That princess is up to no good! This rightful jester assures you, that behind all that charity, uncountable fortune and exuberant beauty, she’s a wench!</string>
     <string name="e25p1_jester_o2">Oh Your Heiniess, Congratulations! The news is all over town, this truthful jester assures you, that arranged marriages always brings happiness to all parties, specially the spouses!</string>
     <string name="e25p1_jester_o3">Oh Your Heiniess, Congratulations! This sincere jester assures you, that the whole kingdom will celebrate the engagement, alas in their own dens, without the vast amounts of wine and food. But celebrating nonetheless!</string>
     <string name="e25p1_jester_o4">e25p1-o1</string>
-    
     <string name="e25p2_name">Descendend</string>
     <string name="e25p2_jester_o1">Oh Your Heiniess, parental skills are innate to your grace! This child is blessed with the outmost concerning father and will grow old knowing that!</string>
     <string name="e25p2_jester_o2">Oh Your Heiniess, ‘tis a blessing indeed, yet another new addition to the royal family, for me to serve and amuse, I’ve been blessed as well&#8230;</string>
     <string name="e25p2_jester_o3">Oh Your Heiniess, a feast for the common folk? Let these novel events not bedim your future decisions!</string>
     <string name="e25p2_jester_o4">e25p2-o1</string>
-    
     <string name="e26p1_name">Dictator</string>
     <string name="e26p1_jester_o1">Oh Your Heiniess, Benevolence overall, most likely this man just wanted to acquaint himself with the glory of fame. Fear not my lord, ‘tis a fad, folks only desire you to govern over them!</string>
     <string name="e26p1_jester_o2">Oh Your Heiniess, in an attempt to not come off as blunt, is it not exile a too harsh sanction for a great orator like this man? Lady Laurent can be excessively precautious</string>
     <string name="e26p1_jester_o3">Oh Your Heiniess, with the most utmost respect, a rebel this caliber, specially one that desires power does not deserves the fair treatment your Grace offers. Off with his head I would advise!</string>
     <string name="e26p1_jester_o4">Oh Your Heiniess, threatening with expatriation’s a proper punishment for rebels who plot against your rule. Hopefully they will not be enough to create their own nation!</string>
-    
     <string name="e26p2_name">Revolt</string>
     <string name="e26p2_jester_o1">Oh Your Heiniess, this rebellion affair has both made us gloomy, this tuneful jester can perform for your Grace some cheerful sonnets, as soon as the protesting outside stops!</string>
     <string name="e26p2_jester_o2">A most wise decision, fighting fire with fire will prove the commoners that there is but one hand in the kingdom that gives commands, and that is your Heiniess!</string>
     <string name="e26p2_jester_o3">Oh Your Heiniess, with due respect, bring back a rebel from exile and offer him hospitality? He certainly deserves a much worse fate</string>
     <string name="e26p2_jester_o4">Oh Your Heiniess will be remembered for ages to come by making such brilliant decisions!</string>
-    
     <string name="e27p1_name">Drunken nuns</string>
     <string name="e27p1_jester_o1">Oh Your Heiniess, hope this prudent jester’s advice don’t come off as too blunt, but a punishment has to be made, nuns can and should not commit such a crime”</string>
     <string name="e27p1_jester_o2">Oh Your Heiniess, the guilt o the guilt of these sinners! Surely this example will be enough to avoid similar occurrences in the future. Your Grace will see how the kingdom will sober up by the morrow.</string>
     <string name="e27p1_jester_o3">Oh Your Heiniess, fine and proper as always! The believers among the folk will certainly be understanding about the dissolution of their temple!</string>
     <string name="e27p1_jester_o4">Oh Your Heiniess, a prohibition like this definitely work. Nobody will object at your rule. And the citizens of this kingdom are honest enough to not consume unauthorized alcohol</string>
-    
     <string name="e27p2_name">Curse</string>
     <string name="e27p2_jester_o1">Oh Your Heiniess, Would your Grace ignore this premonition? This skeptical jester agrees, although them clouds looks awkward today!</string>
     <string name="e27p2_jester_o2">Oh Your Heiniess, this fearful jester would never doubt yer word, but what would we do in the event of this coming true? Your Grace is worth of my trust but, as a matter of fact, them clouds looks awkward today!</string>
     <string name="e27p2_jester_o3">Oh Your Heiniess, even the wisest men repents! Alas your Grace should build a new cathedral as well!</string>
     <string name="e27p2_jester_o4">Oh Your Heiniess, a terrific idea to appease the commoners! This believing jester suggest your Grace to become their all-around ruler and spiritual leader!</string>
-    
     <string name="e28_name">e1-o1</string>
     <string name="e28_jester_o1">e28-o1</string>
     <string name="e28_jester_o2">e28-o2</string>
     <string name="e28_jester_o3">e28-o3</string>
     <string name="e28_jester_o4">e28-o1</string>
-    
     <string name="e29_name">e1-o1</string>
     <string name="e29_jester_o1">e29-o1</string>
     <string name="e29_jester_o2">e29-o2</string>
     <string name="e29_jester_o3">e29-o3</string>
     <string name="e29_jester_o4">e29-o1</string>
-    
     <string name="e30p1_name">Problems in the outskirts</string>
     <string name="e30p1_jester_o1">Oh your Heiniess, You must certainly will be remembered for yer wit! Let the fittest survive in this jungle!</string>
     <string name="e30p1_jester_o2">Your Heiniess, nowadays the scoundrels roaming freely outside the kingdom are more important than the ones flooding the streets inside yer kingdom! What has the world come up to!</string>
     <string name="e30p1_jester_o3">Oh your Heiniess, with all these handsome rewards, this jester wonders if the honest citizens of this fair kingdom, would be fair enough to not willfully accusate their fellow neighbors</string>
     <string name="e30p1_jester_o4">e30p1-o1</string>
-    
     <string name="e30p2_name">Filled dungeon</string>
     <string name="e30p2_jester_o1">Oh your Heiniess, this wisdom of yours, they’re villains after all, not people! Why associate ‘em?</string>
     <string name="e30p2_jester_o2">Oh your Heiniess, mercyful as always, them dungeons certainly seem more vacant now</string>
     <string name="e30p2_jester_o3">Oh your Heiniess, hard work is undoubtedly the path to freedom, these villains will certainly be thankful once they achieve their liberation</string>
     <string name="e30p2_jester_o4">e30p2-o1</string>
-    
     <string name="e31_name">Beast at large</string>
     <string name="e31_jester_o1">Oh your Heiniess, you are in the right, why wasting your time in these gossips about monsters, when you can use that same time to explain your kingdom, how were these commoners slain</string>
     <string name="e31_jester_o2">Oh Your Heiniess, I have yet to receive notice from Ser Godfrey, this jester wonders how he’d fared against this murderous beast&#8230;</string>
     <string name="e31_jester_o3">Oh your Heiniess, what a great command, may this ludicrous fool ask, how plausible is the scenario of commoners capturing a such vile beast?</string>
     <string name="e31_jester_o4">e31-o1</string>
-    
     <string name="e32p1_name">Castaways</string>
     <string name="e32p1_jester_o1">Oh Your Heiniess, always so magnanimous, is evident, had they been in our moccasins they would have done the same</string>
     <string name="e32p1_jester_o2">Oh your Heiniess, this jester hopes, for our troops sake, that these foul corsairs are all too tired from the plundering to have a go at our men</string>
     <string name="e32p1_jester_o3">Your Heiniess, prompt in voice and command as well, fencing fire with fire is as clever as it is logical for this affair</string>
     <string name="e32p1_jester_o4">e32p1-o1</string>
-   
     <string name="e32p2_name">Merchants from afar</string>
     <string name="e32p2_jester_o1">Oh Your Heiniess, we need not to show hospitality towards strangers, especially if they arrive to us empty handed. Your Grace has acted most accordingly!</string>
     <string name="e32p2_jester_o2">Oh Your Heiniess, this devoted jester is well informed of the fate occurred to these “merchants” but performing in this samaritan manner, might attract more stranded chaps to these lands!</string>
     <string name="e32p2_jester_o3">Oh Your Heiniess, your accurate command never ceases to impress this ordinary jester, examples like this will make castaways ponder twice before setting a foot in these lands!</string>
     <string name="e32p2_jester_o4">Oh Your Heiniess, a hasteful farewell is just what these fools deserve, who cares if their vessel and crew were recently ravaged?  Your Grace also have seen hard days at the throne</string>
-    
     <string name="e32p3_name">Emissary</string>
     <string name="e32p3_jester_o1">Oh Your Heiniess, a parley with a foreign ambassador? Your Grace is in the right, this affair seems queer, Who knows what evil can this person bring upon us!</string>
     <string name="e32p3_jester_o2">Oh Your Heiniess, a parley with a foreign ambassador? Must certainly due to the wise decisions your Grace have commanded!</string>
     <string name="e32p3_jester_o3">Oh Your Heiniess, a parley with a foreign ambassador? Must certainly due to the wise decisions your Grace have commanded!</string>
     <string name="e32p3_jester_o4">Oh Your Heiniess, a parley with a foreign ambassador? Must certainly due to the wise decisions your Grace have commanded!</string>
-   
     <string name="e33_name">e1-o1</string>
     <string name="e33_jester_o1">e33-o1</string>
     <string name="e33_jester_o2">e33-o2</string>
     <string name="e33_jester_o3">e33-o3</string>
     <string name="e33_jester_o4">e33-o1</string>
-    
     <string name="e34_name">e1-o1</string>
     <string name="e34_jester_o1">e34-o1</string>
     <string name="e34_jester_o2">e34-o2</string>
     <string name="e34_jester_o3">e34-o3</string>
     <string name="e34_jester_o4">e34-o1</string>
-    
     <string name="e35_name">e1-o1</string>
     <string name="e35_jester_o1">e35-o1</string>
     <string name="e35_jester_o2">e35-o2</string>
     <string name="e35_jester_o3">e35-o3</string>
     <string name="e35_jester_o4">e35-o1</string>
-    
     <string name="e36_name">e1-o1</string>
     <string name="e36_jester_o1">e36-o1</string>
     <string name="e36_jester_o2">e36-o2</string>
     <string name="e36_jester_o3">e36-o3</string>
     <string name="e36_jester_o4">e36-o1</string>
-    
     <string name="e37_name">e1-o1</string>
     <string name="e37_jester_o1">e37-o1</string>
     <string name="e37_jester_o2">e37-o2</string>
     <string name="e37_jester_o3">e37-o3</string>
     <string name="e37_jester_o4">e37-o1</string>
-   
     <string name="e38_name">e1-o1</string>
     <string name="e38_jester_o1">e38-o1</string>
     <string name="e38_jester_o2">e38-o2</string>
     <string name="e38_jester_o3">e38-o3</string>
     <string name="e38_jester_o4">e38-o1</string>
-   
     <string name="e39_name">e1-o1</string>
     <string name="e39_jester_o1">e39-o1</string>
     <string name="e39_jester_o2">e39-o2</string>

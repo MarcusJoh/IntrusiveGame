@@ -100,7 +100,7 @@ public class Event extends Activity {
 		eventName = optionSplit[0];
 
 		eventOption1 = optionSplit[2];
-		String[] eventNames = eventName.split("Å");
+		String[] eventNames = eventName.split("Ã…");
 		String eventnamesOne= eventNames[0];
 		ResourcesKingdom.setEventName(eventnamesOne);
 		
@@ -140,7 +140,7 @@ public class Event extends Activity {
 			minister_last_name.setText("THORP");
 			character = "thorp";
 		}
-		String[] optionEffect1 = eventOption1.split("¤");
+		String[] optionEffect1 = eventOption1.split("Â¤");
 		resourceEffect1 = optionEffect1[1];
 		beenPaused = false;
 
@@ -178,7 +178,7 @@ public class Event extends Activity {
 				ResourcesKingdom.setFoodChange(resourceNumber);
 			}
 		} else {
-			String[] resourceEffect = resourceEffect1.split("Ö");
+			String[] resourceEffect = resourceEffect1.split("Ã–");
 			String[] resourceEffectOne = resourceEffect[0].split("#");
 			String[] resourceEffectTwo = resourceEffect[1].split("#");
 

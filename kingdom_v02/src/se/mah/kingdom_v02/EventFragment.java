@@ -15,7 +15,6 @@ import android.widget.TextView;
 
 public class EventFragment extends Fragment implements
 		ObservableScrollView.Callbacks, OnClickListener {
-
 	private TextView eventText;
 	private TextView option1Text;
 	private TextView option2Text;
@@ -24,7 +23,6 @@ public class EventFragment extends Fragment implements
 	private View mPlaceholderView;
 	private ObservableScrollView mObservableScrollView;
 	private View stickyView;
-
 	public String optionEvent1 = null;
 	public String optionEvent2 = null;
 	public String optionEvent3 = null;
@@ -45,13 +43,10 @@ public class EventFragment extends Fragment implements
 		View rootView = inflater.inflate(R.layout.event_fragment, container,
 				false);
 		stickyView = rootView.findViewById(R.id.linear);
-
 		mObservableScrollView = (ObservableScrollView) rootView
 				.findViewById(R.id.scroll_view);
 		mObservableScrollView.setCallbacks(this);
-
 		mPlaceholderView = rootView.findViewById(R.id.placeholder);
-
 		mObservableScrollView.getViewTreeObserver().addOnGlobalLayoutListener(
 				new ViewTreeObserver.OnGlobalLayoutListener() {
 					@Override
@@ -59,7 +54,6 @@ public class EventFragment extends Fragment implements
 						onScrollChanged(mObservableScrollView.getScrollY());
 					}
 				});
-
 		ImageView eventIconPicture = (ImageView) rootView
 				.findViewById(R.id.event_icon);
 		String eventCode = ResourcesKingdom.getEventName();
@@ -77,7 +71,6 @@ public class EventFragment extends Fragment implements
 		eventNameText.setText(getResources().getText(
 				getResources().getIdentifier(eventCode + "_name", "string",
 						getActivity().getPackageName())));
-
 		ImageView btnOption1 = (ImageView) rootView
 				.findViewById(R.id.btn_option1_confirm);
 		btnOption1.setOnClickListener(this);
@@ -90,7 +83,6 @@ public class EventFragment extends Fragment implements
 		ImageView btnOption4 = (ImageView) rootView
 				.findViewById(R.id.btn_option4_confirm);
 		btnOption4.setOnClickListener(this);
-
 		String eventid = getActivity().getIntent().getExtras()
 				.getString("event");
 		String eventCont = null;
@@ -112,8 +104,7 @@ public class EventFragment extends Fragment implements
 		option2Text = (TextView) rootView.findViewById(R.id.text_option2);
 		option3Text = (TextView) rootView.findViewById(R.id.text_option3);
 		option4Text = (TextView) rootView.findViewById(R.id.text_option4);
-
-		String[] eventNames = eventName.split("Å");
+		String[] eventNames = eventName.split("Ã…");
 		ResourcesKingdom.setEventName(eventNames[0]);
 		String eventChar = eventNames[1];
 		String eventIcon = eventNames[2];
@@ -128,7 +119,6 @@ public class EventFragment extends Fragment implements
 			minister.setImageResource(R.drawable.ic_char_chancelor);
 			minister_first_name.setText("LADY LAURENT");
 			minister_last_name.setText("FORTESCUE");
-
 		}
 		if (eventChar.equals("c2")) {
 			Log.i("Char is ", "The Minister of Finance");
@@ -151,15 +141,13 @@ public class EventFragment extends Fragment implements
 		if (eventIcon.equals("i1")) {
 			Log.i("Icon is ", eventIcon);
 		}
-
-		String[] optionChain = optionSplit[6].split("¤");
+		String[] optionChain = optionSplit[6].split("Â¤");
 		int optionNumber = Integer.parseInt(optionChain[0]);
 		RelativeLayout layout4 = (RelativeLayout) rootView
 				.findViewById(R.id.option4Frame);
 		RelativeLayout layout3 = (RelativeLayout) rootView
 				.findViewById(R.id.option3Frame);
 		if (optionNumber == 3) {
-
 			layout4.setVisibility(View.GONE);
 		}
 		if (optionNumber == 2) {
@@ -167,12 +155,9 @@ public class EventFragment extends Fragment implements
 			layout3.setVisibility(View.GONE);
 			Log.i("eventArrey", eventCont + " " + eventOption1 + " "
 					+ eventOption2);
-
 			eventText.setText(eventCont);
-
-			String[] optionEffect1 = eventOption1.split("¤");
-			String[] optionEffect2 = eventOption2.split("¤");
-
+			String[] optionEffect1 = eventOption1.split("Â¤");
+			String[] optionEffect2 = eventOption2.split("Â¤");
 			Log.i("optionEffect", optionEffect1[0] + "" + optionEffect1[1]);
 			optionEvent1 = optionEffect1[0];
 			optionEvent2 = optionEffect2[0];
@@ -180,18 +165,15 @@ public class EventFragment extends Fragment implements
 			option2Text.setText(optionEvent2);
 			resourceEffect1 = optionEffect1[1];
 			resourceEffect2 = optionEffect2[1];
-
 			eventChain = optionChain[1];
 		}
 		if (optionNumber == 3) {
 			Log.i("eventArrey", eventCont + " " + eventOption1 + " "
 					+ eventOption2 + " " + eventOption3);
 			eventText.setText(eventCont);
-
-			String[] optionEffect1 = eventOption1.split("¤");
-			String[] optionEffect2 = eventOption2.split("¤");
-			String[] optionEffect3 = eventOption3.split("¤");
-
+			String[] optionEffect1 = eventOption1.split("Â¤");
+			String[] optionEffect2 = eventOption2.split("Â¤");
+			String[] optionEffect3 = eventOption3.split("Â¤");
 			Log.i("optionEffect", optionEffect1[0] + "" + optionEffect1[1]);
 			optionEvent1 = optionEffect1[0];
 			optionEvent2 = optionEffect2[0];
@@ -202,18 +184,16 @@ public class EventFragment extends Fragment implements
 			resourceEffect1 = optionEffect1[1];
 			resourceEffect2 = optionEffect2[1];
 			resourceEffect3 = optionEffect3[1];
-
 			eventChain = optionChain[1];
 		}
 		if (optionNumber == 4) {
 			Log.i("eventArrey", eventCont + " " + eventOption1 + " "
 					+ eventOption2 + " " + eventOption3 + " " + eventOption4);
 			eventText.setText(eventCont);
-
-			String[] optionEffect1 = eventOption1.split("¤");
-			String[] optionEffect2 = eventOption2.split("¤");
-			String[] optionEffect3 = eventOption3.split("¤");
-			String[] optionEffect4 = eventOption4.split("¤");
+			String[] optionEffect1 = eventOption1.split("Â¤");
+			String[] optionEffect2 = eventOption2.split("Â¤");
+			String[] optionEffect3 = eventOption3.split("Â¤");
+			String[] optionEffect4 = eventOption4.split("Â¤");
 			Log.i("optionEffect", optionEffect1[0] + "" + optionEffect1[1]);
 			optionEvent1 = optionEffect1[0];
 			optionEvent2 = optionEffect2[0];
@@ -227,19 +207,15 @@ public class EventFragment extends Fragment implements
 			resourceEffect2 = optionEffect2[1];
 			resourceEffect3 = optionEffect3[1];
 			resourceEffect4 = optionEffect4[1];
-
 			eventChain = optionChain[1];
 		}
 		if (eventChain != null) {
-
 			if (eventChain.equals("e1p2")) {
 				Log.i("chain", "saved " + eventChain);
-
 			}
 		}
 		beenPaused = false;
 		return rootView;
-
 	}
 
 	public void decline() {
@@ -248,74 +224,62 @@ public class EventFragment extends Fragment implements
 		// ResourcesKingdom.setEventOption(1);
 		if (resourceEffect1.length() <= 8) {
 			String[] resourceEffect = resourceEffect1.split("#");
-
 			if (resourceEffect[0].equals("gold")) {
 				Log.i("resourceEffect d", resourceEffect[0] + ""
 						+ resourceEffect[1]);
-
 				resourceNumber = Integer.parseInt(resourceEffect[1]);
-
 				ResourcesKingdom.setGoldChange(resourceNumber);
 			}
 			if (resourceEffect[0].equals("happ")) {
 				Log.i("resourceEffect d", resourceEffect[0] + ""
 						+ resourceEffect[1]);
 				resourceNumber = Integer.parseInt(resourceEffect[1]);
-
 				ResourcesKingdom.setHappyChange(resourceNumber);
 			}
 			if (resourceEffect[0].equals("food")) {
 				Log.i("resourceEffect d", resourceEffect[0] + ""
 						+ resourceEffect[1]);
 				resourceNumber = Integer.parseInt(resourceEffect[1]);
-
 				ResourcesKingdom.setFoodChange(resourceNumber);
 			}
 		} else {
-			String[] resourceEffect = resourceEffect1.split("Ö");
+			String[] resourceEffect = resourceEffect1.split("Ã–");
 			String[] resourceEffectOne = resourceEffect[0].split("#");
 			String[] resourceEffectTwo = resourceEffect[1].split("#");
-
 			if (resourceEffectOne[0].equals("gold")) {
 				Log.i("resourceEffectOne d", resourceEffectOne[0] + ""
 						+ resourceEffectOne[1]);
 				resourceNumber = Integer.parseInt(resourceEffectOne[1]);
-
 				ResourcesKingdom.setGoldChange(resourceNumber);
 			}
 			if (resourceEffectOne[0].equals("happ")) {
 				Log.i("resourceEffectOne d", resourceEffectOne[0] + ""
 						+ resourceEffectOne[1]);
 				resourceNumber = Integer.parseInt(resourceEffectOne[1]);
-
 				ResourcesKingdom.setHappyChange(resourceNumber);
 			}
 			if (resourceEffectOne[0].equals("food")) {
 				Log.i("resourceEffectOne d", resourceEffectOne[0] + ""
 						+ resourceEffectOne[1]);
 				resourceNumber = Integer.parseInt(resourceEffectOne[1]);
-
 				ResourcesKingdom.setFoodChange(resourceNumber);
 			}
 			if (resourceEffectTwo.equals("gold")) {
 				Log.i("resourceEffectTwo d", resourceEffectTwo[0] + ""
 						+ resourceEffectTwo[1]);
 				resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
-
 				ResourcesKingdom.setGoldChange(resourceNumber);
 			}
 			if (resourceEffectTwo.equals("happ")) {
 				Log.i("resourceEffectTwo d", resourceEffectTwo[0] + ""
 						+ resourceEffectTwo[1]);
 				resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
-
 				ResourcesKingdom.setHappyChange(resourceNumber);
 			}
 			if (resourceEffectTwo.equals("food")) {
 				Log.i("resourceEffectTwo d", resourceEffectTwo[0] + ""
 						+ resourceEffectTwo[1]);
 				resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
-
 				ResourcesKingdom.setFoodChange(resourceNumber);
 			}
 		}
@@ -324,7 +288,6 @@ public class EventFragment extends Fragment implements
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-
 		case R.id.btn_option1_confirm:
 			doneStuff = false;
 			Log.i("btn_pressed", "o1");
@@ -334,9 +297,7 @@ public class EventFragment extends Fragment implements
 				decline();
 				Intent intent = new Intent(getActivity().getBaseContext(),
 						StoryManager.class);
-
 				getActivity().finish();
-
 				startActivity(intent);
 			}
 			break;
@@ -347,90 +308,72 @@ public class EventFragment extends Fragment implements
 			resourceNumber = 0;
 			if (optionEvent2 != null) {
 				Log.i("resourceEffect", resourceEffect2);
-
 				if (resourceEffect2.length() <= 8) {
 					String[] resourceEffect = resourceEffect2.split("#");
-
 					if (resourceEffect[0].equals("gold")) {
 						Log.i("resourceEffect o2g", resourceEffect[0] + ""
 								+ resourceEffect[1]);
-
 						resourceNumber = Integer.parseInt(resourceEffect[1]);
-
 						ResourcesKingdom.setGoldChange(resourceNumber);
 					}
 					if (resourceEffect[0].equals("happ")) {
 						Log.i("resourceEffecto2h", resourceEffect[0] + ""
 								+ resourceEffect[1]);
 						resourceNumber = Integer.parseInt(resourceEffect[1]);
-
 						ResourcesKingdom.setHappyChange(resourceNumber);
 					}
 					if (resourceEffect[0].equals("food")) {
 						Log.i("resourceEffecto2f", resourceEffect[0] + ""
 								+ resourceEffect[1]);
 						resourceNumber = Integer.parseInt(resourceEffect[1]);
-
 						ResourcesKingdom.setFoodChange(resourceNumber);
 					}
 				} else {
-
-					String[] resourceEffect = resourceEffect2.split("Ö");
+					String[] resourceEffect = resourceEffect2.split("Ã–");
 					String[] resourceEffectOne = resourceEffect[0].split("#");
 					String[] resourceEffectTwo = resourceEffect[1].split("#");
-
 					if (resourceEffectOne[0].equals("gold")) {
 						Log.i("resourceEffectOne o2gold", resourceEffectOne[0]
 								+ "" + resourceEffectOne[1]);
 						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
-
 						ResourcesKingdom.setGoldChange(resourceNumber);
 					}
 					if (resourceEffectOne[0].equals("happ")) {
 						Log.i("resourceEffectOne 02happ", resourceEffectOne[0]
 								+ "" + resourceEffectOne[1]);
 						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
-
 						ResourcesKingdom.setHappyChange(resourceNumber);
 					}
 					if (resourceEffectOne[0].equals("food")) {
 						Log.i("resourceEffectOne o2food", resourceEffectOne[0]
 								+ "" + resourceEffectOne[1]);
 						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
-
 						ResourcesKingdom.setFoodChange(resourceNumber);
 					}
 					if (resourceEffectTwo.equals("gold")) {
 						Log.i("resourceEffectTwo o2g", resourceEffectTwo[0]
 								+ "" + resourceEffectTwo[1]);
 						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
-
 						ResourcesKingdom.setGoldChange(resourceNumber);
 					}
 					if (resourceEffectTwo.equals("happ")) {
 						Log.i("resourceEffectTwo o2h", resourceEffectTwo[0]
 								+ "" + resourceEffectTwo[1]);
 						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
-
 						ResourcesKingdom.setHappyChange(resourceNumber);
 					}
 					if (resourceEffectTwo.equals("food")) {
 						Log.i("resourceEffectTwo o2f", resourceEffectTwo[0]
 								+ "" + resourceEffectTwo[1]);
 						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
-
 						ResourcesKingdom.setFoodChange(resourceNumber);
 					}
 				}
-
 				Intent intent = new Intent(getActivity().getBaseContext(),
 						StoryManager.class);
-
 				getActivity().finish();
-
 				startActivity(intent);
 			}
-
 			break;
 		case R.id.btn_option3_confirm:
 			doneStuff = false;
@@ -440,85 +383,70 @@ public class EventFragment extends Fragment implements
 			if (optionEvent3 != null) {
 				if (resourceEffect1.length() <= 8) {
 					String[] resourceEffect = resourceEffect1.split("#");
-
 					if (resourceEffect[0].equals("gold")) {
 						Log.i("resourceEffect o3g", resourceEffect[0] + ""
 								+ resourceEffect[1]);
-
 						resourceNumber = Integer.parseInt(resourceEffect[1]);
-
 						ResourcesKingdom.setGoldChange(resourceNumber);
 					}
 					if (resourceEffect[0].equals("happ")) {
 						Log.i("resourceEffect o3h", resourceEffect[0] + ""
 								+ resourceEffect[1]);
 						resourceNumber = Integer.parseInt(resourceEffect[1]);
-
 						ResourcesKingdom.setHappyChange(resourceNumber);
 					}
 					if (resourceEffect[0].equals("food")) {
 						Log.i("resourceEffect o3f", resourceEffect[0] + ""
 								+ resourceEffect[1]);
 						resourceNumber = Integer.parseInt(resourceEffect[1]);
-
 						ResourcesKingdom.setFoodChange(resourceNumber);
 					}
 				} else {
-					String[] resourceEffect = resourceEffect3.split("Ö");
+					String[] resourceEffect = resourceEffect3.split("Ã–");
 					String[] resourceEffectOne = resourceEffect[0].split("#");
 					String[] resourceEffectTwo = resourceEffect[1].split("#");
-
 					if (resourceEffectOne[0].equals("gold")) {
 						Log.i("resourceEffectOne o3gold", resourceEffectOne[0]
 								+ "" + resourceEffectOne[1]);
 						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
-
 						ResourcesKingdom.setGoldChange(resourceNumber);
 					}
 					if (resourceEffectOne[0].equals("happ")) {
 						Log.i("resourceEffectOne o3 happ", resourceEffectOne[0]
 								+ "" + resourceEffectOne[1]);
 						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
-
 						ResourcesKingdom.setHappyChange(resourceNumber);
 					}
 					if (resourceEffectOne[0].equals("food")) {
 						Log.i("resourceEffectOne o3food", resourceEffectOne[0]
 								+ "" + resourceEffectOne[1]);
 						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
-
 						ResourcesKingdom.setFoodChange(resourceNumber);
 					}
 					if (resourceEffectTwo.equals("gold")) {
 						Log.i("resourceEffectTwo o3g", resourceEffectTwo[0]
 								+ "" + resourceEffectTwo[1]);
 						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
-
 						ResourcesKingdom.setGoldChange(resourceNumber);
 					}
 					if (resourceEffectTwo.equals("happ")) {
 						Log.i("resourceEffectTwo o3h", resourceEffectTwo[0]
 								+ "" + resourceEffectTwo[1]);
 						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
-
 						ResourcesKingdom.setHappyChange(resourceNumber);
 					}
 					if (resourceEffectTwo.equals("food")) {
 						Log.i("resourceEffectTwo o3f", resourceEffectTwo[0]
 								+ "" + resourceEffectTwo[1]);
 						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
-
 						ResourcesKingdom.setFoodChange(resourceNumber);
 					}
 				}
 				Intent intent = new Intent(getActivity().getBaseContext(),
 						StoryManager.class);
-
 				getActivity().finish();
-
 				startActivity(intent);
 			}
-
 			break;
 		case R.id.btn_option4_confirm:
 			doneStuff = false;
@@ -528,114 +456,93 @@ public class EventFragment extends Fragment implements
 			if (optionEvent4 != null) {
 				if (resourceEffect1.length() <= 8) {
 					String[] resourceEffect = resourceEffect1.split("#");
-
 					if (resourceEffect[0].equals("gold")) {
 						Log.i("resourceEffect o4g", resourceEffect[0] + ""
 								+ resourceEffect[1]);
-
 						resourceNumber = Integer.parseInt(resourceEffect[1]);
-
 						ResourcesKingdom.setGoldChange(resourceNumber);
 					}
 					if (resourceEffect[0].equals("happ")) {
 						Log.i("resourceEffect o4h", resourceEffect[0] + ""
 								+ resourceEffect[1]);
 						resourceNumber = Integer.parseInt(resourceEffect[1]);
-
 						ResourcesKingdom.setHappyChange(resourceNumber);
 					}
 					if (resourceEffect[0].equals("food")) {
 						Log.i("resourceEffect o4f", resourceEffect[0] + ""
 								+ resourceEffect[1]);
 						resourceNumber = Integer.parseInt(resourceEffect[1]);
-
 						ResourcesKingdom.setFoodChange(resourceNumber);
 					}
 				} else {
-					String[] resourceEffect = resourceEffect1.split("Ö");
+					String[] resourceEffect = resourceEffect1.split("Ã–");
 					String[] resourceEffectOne = resourceEffect[0].split("#");
 					String[] resourceEffectTwo = resourceEffect[1].split("#");
-
 					if (resourceEffectOne[0].equals("gold")) {
 						Log.i("resourceEffectOne o4 gold", resourceEffectOne[0]
 								+ "" + resourceEffectOne[1]);
 						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
-
 						ResourcesKingdom.setGoldChange(resourceNumber);
 					}
 					if (resourceEffectOne[0].equals("happ")) {
 						Log.i("resourceEffectOne o4 happ", resourceEffectOne[0]
 								+ "" + resourceEffectOne[1]);
 						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
-
 						ResourcesKingdom.setHappyChange(resourceNumber);
 					}
 					if (resourceEffectOne[0].equals("food")) {
 						Log.i("resourceEffectOne o4 food", resourceEffectOne[0]
 								+ "" + resourceEffectOne[1]);
 						resourceNumber = Integer.parseInt(resourceEffectOne[1]);
-
 						ResourcesKingdom.setFoodChange(resourceNumber);
 					}
 					if (resourceEffectTwo.equals("gold")) {
 						Log.i("resourceEffectTwo o4g", resourceEffectTwo[0]
 								+ "" + resourceEffectTwo[1]);
 						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
-
 						ResourcesKingdom.setGoldChange(resourceNumber);
 					}
 					if (resourceEffectTwo.equals("happ")) {
 						Log.i("resourceEffectTwo o4h", resourceEffectTwo[0]
 								+ "" + resourceEffectTwo[1]);
 						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
-
 						ResourcesKingdom.setHappyChange(resourceNumber);
 					}
 					if (resourceEffectTwo.equals("food")) {
 						Log.i("resourceEffectTwo o4f", resourceEffectTwo[0]
 								+ "" + resourceEffectTwo[1]);
 						resourceNumber = Integer.parseInt(resourceEffectTwo[1]);
-
 						ResourcesKingdom.setFoodChange(resourceNumber);
 					}
 				}
 				Intent intent = new Intent(getActivity().getBaseContext(),
 						StoryManager.class);
-
 				getActivity().finish();
-
 				startActivity(intent);
 			}
-
 			break;
 		}
-
 	}
 
 	@Override
 	public void onScrollChanged(int scrollY) {
 		stickyView
 				.setTranslationY(Math.max(mPlaceholderView.getTop(), scrollY));
-
 	}
 
 	@Override
 	public void onDownMotionEvent() {
 		// TODO Auto-generated method stub
-
 	}
 
 	@Override
 	public void onUpOrCancelMotionEvent() {
 		// TODO Auto-generated method stub
-
 	}
 
 	@Override
 	public void onDestroy() {
-
 		super.onDestroy();
-
 	}
 
 	@Override
@@ -644,27 +551,18 @@ public class EventFragment extends Fragment implements
 		if (beenPaused == true) {
 			Intent intent = new Intent(getActivity().getBaseContext(),
 					StoryManager.class);
-
 			getActivity().finish();
-
 			startActivity(intent);
 		}
-
 		super.onResume();
-
 	}
 
 	@Override
 	public void onPause() {
-
 		if (doneStuff == true) {
 			decline();
-
 		}
 		beenPaused = true;
-
 		super.onPause();
-
 	}
-
 }
