@@ -10,7 +10,7 @@ public class ResourcesKingdom {
 	private static int happy = 100;
 	private static final int maxEvents = 12;
 	private static int amountOfEvents = 11;
-	private static String eventName = "e1";
+	private static String eventName = "e0";
 	private static int eventOption = 1;
 	private static boolean gameOver = true;// true= its a dead player
 	private static boolean newPlayer = true;// true= its a new player
@@ -103,7 +103,7 @@ public class ResourcesKingdom {
 			resourceEditor.putInt(KEY_PREFS_GOLD, gold);
 			happy = 100;
 			resourceEditor.putInt(KEY_PREFS_HAPPY, happy);
-			eventName = "e1";
+			eventName = "e0";
 			resourceEditor.putString(KEY_PREFS_EVENTNAME, eventName);
 			amountOfEvents = 0;
 			resourceEditor.putInt(KEY_PREFS_EVENTSMADE, amountOfEvents);
