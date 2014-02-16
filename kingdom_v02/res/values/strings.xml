@@ -97,6 +97,9 @@
     <string name="title_activity_death_event">DeathEvent</string>
     <string name="title_activity_coronation">Coronation</string>
     
+    <string name="e0_jester_o1">Oh, your heiniess&#8230; Are you ready to begin your rule?</string>
+    
+      
     <string name="jester_comment">e4-o4</string>
     <string name="e1_name">Rats in the city.</string>
     <string name="e1_jester_o1">Oh, your heiniess&#8230; Rats attacked our city. I hope you have enjoyed the show, because due to your reluctance, soon we wont have food to eat.</string>
@@ -125,7 +128,7 @@
     <string name="e3p3_name">Crops destroyed</string>
     <string name="e3p3_jester_o1">Oh, your heiniess&#8230; Because we are running low on supplys, I suggest to start to eat the corpses.</string>
     <string name="e3p3_jester_o2">Oh, your heiniess&#8230; Such a great decision. It might prevent the famine. Hopefully our treasure is big enough.</string>
-    <string name="e3p3_jester_o3">Oh, your heiniess&#8230; </string>
+    <string name="e3p3_jester_o3">Oh, your heiniess&#8230; Next time they will have to save some money before they want to rebel.</string>
     <string name="e3p3_jester_o4">Oh, your heiniess&#8230; It seems you have decided to get rid of problem even with its roots.</string>
     
     <string name="e4p1_name">Delayed rains</string>
