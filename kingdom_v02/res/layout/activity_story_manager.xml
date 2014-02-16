@@ -18,13 +18,15 @@
                 android:id="@+id/banner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_launcher" />
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/im_banner_arbitera" />
 
             <ImageView
                 android:id="@+id/imageMapBase"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="48dp"
                 android:src="@drawable/map_base"
                 android:visibility="visible" />
 
@@ -32,7 +34,7 @@
                 android:id="@+id/imageMapLF"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="48dp"
                 android:src="@drawable/map_food_low"
                 android:visibility="visible" />
 
@@ -40,7 +42,7 @@
                 android:id="@+id/imageMapMF"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="48dp"
                 android:src="@drawable/map_food_med"
                 android:visibility="visible" />
 
@@ -48,7 +50,7 @@
                 android:id="@+id/imageMapHF"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="40dp"
                 android:src="@drawable/map_food_hi"
                 android:visibility="visible" />
 
@@ -56,7 +58,7 @@
                 android:id="@+id/imageMapLG"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="48dp"
                 android:src="@drawable/map_money_low"
                 android:visibility="visible" />
 
@@ -64,7 +66,7 @@
                 android:id="@+id/imageMapMG"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="48dp"
                 android:src="@drawable/map_money_med"
                 android:visibility="visible" />
 
@@ -72,7 +74,7 @@
                 android:id="@+id/imageMapHG"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="48dp"
                 android:src="@drawable/map_money_hi"
                 android:visibility="visible" />
 
@@ -80,7 +82,7 @@
                 android:id="@+id/imageMapLH"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="48dp"
                 android:src="@drawable/map_happy_low"
                 android:visibility="visible" />
 
@@ -88,7 +90,7 @@
                 android:id="@+id/imageMapMH"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="48dp"
                 android:src="@drawable/map_happy_med"
                 android:visibility="visible" />
 
@@ -96,35 +98,33 @@
                 android:id="@+id/imageMapHH"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="48dp"
                 android:src="@drawable/map_happy_hi"
                 android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ic_story_arrows"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/imageMapBase"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_arrow_redoran" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="24dp"
             android:background="@color/royal_red"
             android:orientation="vertical" >
 
             <ImageView
-                android:id="@+id/icon_start_jester_top"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="12dp"
-                android:src="@drawable/ic_launcher"
-                android:visibility="visible" />
-
-            <ImageView
                 android:id="@+id/image_start_jester_portrait"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="216dp"
+                android:layout_height="216dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
+                android:layout_marginBottom="24dp"
                 android:layout_marginTop="48dp"
                 android:src="@drawable/ic_char_jester"
                 android:visibility="visible" />
@@ -134,35 +134,79 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/image_start_jester_portrait"
-                android:layout_marginTop="24dp"
                 android:gravity="center"
                 android:text="@string/jester_first_name"
                 android:textColor="@color/royal_beige"
-                android:textSize="24sp" />
+                android:textScaleX="0"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="200dp"
+                android:layout_height="4dp"
+                android:layout_below="@id/text_start_jester_first_name"
+                android:layout_centerInParent="true"
+                android:background="@color/white" />
 
             <TextView
                 android:id="@+id/text_start_jester_last_name"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/text_start_jester_first_name"
+                android:layout_below="@id/line"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="-10sp"
                 android:gravity="center"
                 android:text="@string/jester_last_name"
                 android:textColor="@color/royal_beige"
-                android:textSize="48sp" />
+                android:textScaleX="1"
+                android:textSize="52sp"
+                android:textStyle="bold" />
+/
+            <!--
+            <TextView
+                android:id="@+id/kvot1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/text_jester_comment"
+                android:layout_marginTop="-30sp"
+                android:paddingTop="30sp"
+                android:text="“"
+                android:textColor="@color/royal_beige"
+                android:textScaleX="1"
+                android:textStyle="bold"
+                android:textSize="76sp" />
+            -->
 
             <TextView
                 android:id="@+id/text_jester_comment"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text_start_jester_last_name"
-                android:layout_marginBottom="48dp"
                 android:layout_marginLeft="48dp"
                 android:layout_marginRight="48dp"
-                android:layout_marginTop="48dp"
                 android:gravity="center"
+                android:lineSpacingExtra="8sp"
                 android:text="@string/jester_comment"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            /<!--  
+            <TextView
+                android:id="@+id/kvot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/text_jester_comment"
+                android:layout_marginBottom="-50sp"
+                android:paddingBottom="20sp"
+                android:text="”"
                 android:textColor="@color/royal_beige"
-                android:textSize="26sp" />
+                android:textScaleX="1"
+                android:textSize="76sp"
+                android:textStyle="bold" />
+                 -->
+
 
             <Button
                 android:id="@+id/buttonChangeStat"
@@ -171,14 +215,25 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:onClick="changeStat"
-                android:visibility="gone"
-                android:text="Change" />
+                android:text="Change"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/icon_start_jester_bottom"
+                android:layout_width="56dp"
+                android:layout_marginTop="24dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/text_jester_comment"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_stamp_gold" />
         </RelativeLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:background="@color/royal_red"
-            android:orientation="vertical" ></RelativeLayout>
+            android:orientation="vertical" >
+        </RelativeLayout>
     </LinearLayout>
 
 </ScrollView>
